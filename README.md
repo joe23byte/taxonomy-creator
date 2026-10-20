@@ -4,42 +4,148 @@ Intent Studio turns customer-service transcripts into a traceable **L1 → L2 �
 L1/L2 are predefined and fixed; L3/L4 are discovered from the data with a local LLM (Ollama), semantic
 embeddings and density-based clustering. Every step is persisted, streamed live to the UI, reviewable and exportable.
 
-```
-Transcript ──► LLM extraction (qwen3:8b, JSON schema) ──► atomic intents + evidence + L2
-          ──► embeddings (qwen3-embedding:0.6b, cached) ──► match existing L4 (cosine ≥ threshold)
-                                                         └─► otherwise: open candidate
-every N interactions (batch) ──► HDBSCAN per L2 ──► LLM names clusters ──► L3/L4 proposals
-                                                  ──► overlap / split detection ──► merge/split proposals
-end of run ──► LLM places rare intents (outliers) or leaves them for human review
+![Workspace with live activity feed and discovery curve](docs/screenshots/workspace.png)
+
+## How it works in one picture
+
+```mermaid
+flowchart TD
+    A["Transcript"] --> B["1 · Extract<br/>LLM finds each customer intent,<br/>a supporting quote and the L2 topic"]
+    B --> C["2 · Embed<br/>each intent becomes a vector<br/>(cached, computed once)"]
+    C --> D{"3 · Match<br/>very similar to an<br/>existing L4 category?"}
+    D -- yes --> E["Assigned to that L4"]
+    D -- no --> F["Open candidate<br/>(L1/L2 known, L4 not yet)"]
+    F --> G["4 · Every 25 interactions<br/>similar candidates are grouped,<br/>the LLM names each group"]
+    G --> H["New L3/L4 category<br/>or existing one"]
+    G --> I["Overlaps, merges, splits:<br/>proposals for human review"]
+    H --> J["5 · Human review<br/>confirm, correct, flag"]
+    I --> J
+    E --> J
 ```
 
-## Quick start
+| Step | What happens | Model |
+| --- | --- | --- |
+| 1. Extract | Each transcript is split into atomic customer intents, each with a verbatim quote and an L2 topic | `qwen3:8b` |
+| 2. Embed | Intent texts are turned into 1024-dimensional vectors and cached in SQLite | `qwen3-embedding:0.6b` |
+| 3. Match | An intent joins an existing L4 only when it is very similar; otherwise it waits as an open candidate | – |
+| 4. Refine | Per batch, open candidates are clustered (HDBSCAN) and the LLM turns each cluster into a category | `qwen3:8b` |
+| 5. Review | Merges, splits and uncertain decisions wait for a human; reviewed items are never overwritten by the AI | – |
 
-Requirements: Python 3.11+, Node 18+, an Ollama server with `qwen3:8b` and `qwen3-embedding:0.6b`.
+## Screenshots
+
+| Taxonomy Explorer | Interactions & review |
+| --- | --- |
+| ![Taxonomy tree with category details and supporting customer statements](docs/screenshots/taxonomy.png) | ![Review table with L1–L4 paths per intent](docs/screenshots/interactions.png) |
+| **Conversation detail** | **Insights** |
+| ![Transcript with highlighted evidence and extracted intents](docs/screenshots/interaction-detail.png) | ![Discovery curve, batch statistics and ground-truth comparison](docs/screenshots/insights.png) |
+
+## Installation
+
+You need two machines (or one machine that does both):
+
+- **The AI machine** (e.g. a gaming PC with a GPU) runs Ollama and the models.
+- **Your computer** runs Intent Studio: the backend (Python) and the web interface (Node.js). All data stays here.
+
+### 1. AI machine: Ollama and the models
+
+1. Install Ollama from [ollama.com/download](https://ollama.com/download).
+2. Download the two models (about 6 GB in total):
+
+   ```bash
+   ollama pull qwen3:8b
+   ollama pull qwen3-embedding:0.6b
+   ```
+
+3. **Only if Ollama runs on a different machine than Intent Studio:** allow network access.
+   By default, Ollama only accepts connections from its own machine.
+   - Windows: set the environment variable `OLLAMA_HOST` to `0.0.0.0` (System settings → *Environment variables*),
+     then quit Ollama from the system tray and start it again. Allow port `11434` in the Windows firewall if asked.
+   - macOS / Linux: start Ollama with `OLLAMA_HOST=0.0.0.0 ollama serve`.
+4. Note the machine's IP address (e.g. `192.168.1.20`). From your computer, this should list both models:
+
+   ```bash
+   curl http://192.168.1.20:11434/api/tags
+   ```
+
+A GPU with 8 GB VRAM or more is recommended. Without a GPU it works, but much more slowly.
+
+### 2. Your computer: the tools
+
+| Tool | Why | How to install | Check |
+| --- | --- | --- | --- |
+| Git | download the project | macOS: `xcode-select --install`; Windows: [git-scm.com](https://git-scm.com) | `git --version` |
+| uv | installs Python 3.12 and the backend packages | `curl -LsSf https://astral.sh/uv/install.sh \| sh` (Windows: see [docs.astral.sh/uv](https://docs.astral.sh/uv/getting-started/installation/)) | `uv --version` |
+| Node.js 20 or newer (LTS) | builds and serves the web interface | installer from [nodejs.org](https://nodejs.org) | `node --version` |
+
+You do **not** need to install Python yourself: uv downloads Python 3.12 automatically (the Python 3.9 that ships with
+macOS is too old). Docker, databases or cloud accounts are not needed.
+
+### 3. Your computer: download and set up Intent Studio
 
 ```bash
-# 1. configuration
-cp .env.example .env            # set OLLAMA_URL=http://<gaming-pc>:11434
+git clone https://github.com/joe23byte/taxonomy-creator.git
+cd taxonomy-creator
 
-# 2. backend (FastAPI on http://127.0.0.1:8000)
+# configuration: point Intent Studio to the AI machine
+cp .env.example .env
+# open .env in a text editor and set OLLAMA_URL, e.g. OLLAMA_URL=http://192.168.1.20:11434
+# (keep http://localhost:11434 if Ollama runs on this computer)
+
+# backend: Python environment and packages (once)
 cd backend
-uv venv --python 3.12 .venv     # or: python3.12 -m venv .venv
-uv pip install --python .venv/bin/python -r requirements.txt   # or: .venv/bin/pip install -r requirements.txt
-.venv/bin/python -m app
+uv venv --python 3.12 .venv
+uv pip install --python .venv/bin/python -r requirements.txt
+cd ..
 
-# 3. frontend (Vite on http://127.0.0.1:5173, proxies /api to the backend)
+# web interface: packages (once)
 cd frontend
 npm install
+cd ..
+```
+
+### 4. Start
+
+Open **two terminal windows** in the project folder and leave both running:
+
+```bash
+# terminal 1 – backend (http://127.0.0.1:8000)
+cd backend
+.venv/bin/python -m app
+```
+
+```bash
+# terminal 2 – web interface (http://127.0.0.1:5173)
+cd frontend
 npm run dev
 ```
 
-Open **http://127.0.0.1:5173**, check the connection indicator in the header (Settings → *Test connection*
-runs a real inference and embedding request), click **Load 100 Sample Interactions**, then **Start Analysis**.
+Then open **http://127.0.0.1:5173** in your browser:
 
-Single-process alternative: `cd frontend && npm run build`, then start only the backend and open http://127.0.0.1:8000.
+1. The header should show **Ollama connected**. If not, open Settings (gear icon), check the Ollama URL and click
+   *Test connection* (it runs a real inference and embedding request).
+2. Click **Load 100 Sample Interactions**, then **Start Analysis**. 100 interactions take roughly 10–15 minutes.
 
-Tests: `cd backend && .venv/bin/python -m pytest` (uses a deterministic fake Ollama; no network).
-Regenerate the synthetic dataset: `cd backend && .venv/bin/python scripts/generate_sample_data.py`.
+To stop, press `Ctrl+C` in both terminals. Everything is saved; after the next start you continue where you left off.
+
+**Windows:** use `.venv\Scripts\python` instead of `.venv/bin/python` (also in the `uv pip install` command), and
+`copy .env.example .env` instead of `cp`.
+
+### Optional
+
+- **One process instead of two:** `cd frontend && npm run build` once; afterwards only start the backend and open
+  http://127.0.0.1:8000.
+- **Tests:** `cd backend && .venv/bin/python -m pytest` (uses a fake Ollama, no network needed).
+- **Regenerate the synthetic dataset:** `cd backend && .venv/bin/python scripts/generate_sample_data.py`.
+
+### Troubleshooting
+
+| Problem | Fix |
+| --- | --- |
+| Header shows **Ollama offline** | Is the AI machine awake and Ollama running? Does `curl http://<ip>:11434/api/tags` work? Is `OLLAMA_HOST=0.0.0.0` set there? |
+| Header shows **Model missing** | Run the two `ollama pull` commands on the AI machine (hover the indicator to see which model is missing). |
+| Web page loads but shows no data | The backend (terminal 1) is not running. |
+| `Address already in use` | Intent Studio is already running in another terminal. Stop it or use that one. |
+| Analysis pauses by itself | Ollama became unreachable twice in a row. Fix the connection, then click **Resume**. |
 
 ## Demo walkthrough (acceptance test)
 
@@ -182,16 +288,7 @@ Committed: source code, the predefined taxonomy, the synthetic sample dataset an
 Never committed (see `.gitignore`): `.env` (Ollama URL and model settings), the SQLite database in `backend/var/`
 (transcripts, embeddings, reviews), exported result files, `node_modules/`, `.venv/` and build output.
 
-After cloning on another computer:
-
-```bash
-git clone https://github.com/joe23byte/taxonomy-creator.git && cd taxonomy-creator
-cp .env.example .env            # set OLLAMA_URL
-cd backend && uv venv --python 3.12 .venv && uv pip install --python .venv/bin/python -r requirements.txt
-cd ../frontend && npm install
-```
-
-The workspace (imports, taxonomy, reviews) lives only in the local database. To move it to another computer, copy
+On another computer, follow [Installation](#installation). The workspace (imports, taxonomy, reviews) lives only in the local database. To move it to another computer, copy
 `backend/var/intent_studio.db` while the backend is stopped, or use the JSON export.
 
 ## Limitations

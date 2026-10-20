@@ -85,6 +85,7 @@ export function TaxonomyTree({ nodes, selectedId, onSelect, autoExpand = true }:
         </div>
         <Tip content={allExpanded ? "Collapse all" : "Expand all"}>
           <button
+            aria-label={allExpanded ? "Collapse all" : "Expand all"}
             className="rounded-md p-1.5 text-zinc-500 hover:bg-zinc-100 cursor-pointer"
             onClick={() => setExpanded(allExpanded ? new Set() : new Set(nodes.filter((n) => children.has(n.id)).map((n) => n.id)))}
           >
