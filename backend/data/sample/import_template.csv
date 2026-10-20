@@ -1,0 +1,5 @@
+conversation_id,channel,segment,language,timestamp,queue,transcript
+CONV-0001,voice,prepaid,en,2026-10-20T10:00:00Z,Prepaid Support,"Customer: I topped up yesterday but the credit is missing.
+Agent: I can check the transaction for you."
+CONV-0002,whatsapp,postpaid,en,2026-10-20T11:30:00Z,WhatsApp Care,"Agent: Hi, how can I help?
+Customer: My bill shows the monthly fee twice."

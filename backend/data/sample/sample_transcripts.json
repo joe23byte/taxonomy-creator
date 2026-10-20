@@ -1,0 +1,4062 @@
+[
+  {
+    "conversation_id": "TELCO-0001",
+    "channel": "voice",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-09-26T09:28:00Z",
+    "queue": "Prepaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Daniel. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hi, the app says my account has been blocked for security reasons."
+      },
+      {
+        "speaker": "agent",
+        "text": "I can help unlock it. Can you confirm the account holder's name?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I know my password, it's just locked now."
+      },
+      {
+        "speaker": "agent",
+        "text": "The lock has been removed. I recommend enabling two-factor authentication."
+      },
+      {
+        "speaker": "customer",
+        "text": "Okay. And this won't happen again?"
+      },
+      {
+        "speaker": "agent",
+        "text": "I've added a note to your account so we can track it if it does."
+      },
+      {
+        "speaker": "customer",
+        "text": "Thanks, much appreciated."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Have a great day!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0002",
+    "channel": "web_messaging",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-13T18:31:00Z",
+    "queue": "Web Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hello, this is Tom. Thanks for contacting us via chat. How can I help?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hi, why am I being billed for roaming? I only used my phone on Wi-Fi when I was abroad."
+      },
+      {
+        "speaker": "agent",
+        "text": "I understand. Which country were you in and on what dates?"
+      },
+      {
+        "speaker": "customer",
+        "text": "The charge is listed as international data usage in the USA."
+      },
+      {
+        "speaker": "agent",
+        "text": "I can see the charges came from a network outside the included zone. As a goodwill gesture I've credited half."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alright, cheers."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Have a great day!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0003",
+    "channel": "voice",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-09-29T19:33:00Z",
+    "queue": "Prepaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Priya. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "There's no signal at all in Eastwood since this morning. Is there an outage?"
+      },
+      {
+        "speaker": "agent",
+        "text": "I'm sorry. Can you give me your postcode so I can check for outages?"
+      },
+      {
+        "speaker": "customer",
+        "text": "It's the whole area around Riverton centre, everyone on your network is affected."
+      },
+      {
+        "speaker": "agent",
+        "text": "Yes, there's a confirmed outage in Millbrook due to a damaged fibre link. Engineers expect it to be fixed by this evening."
+      },
+      {
+        "speaker": "customer",
+        "text": "Great, thank you so much."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Have a great day!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0004",
+    "channel": "voice",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-09-27T21:48:00Z",
+    "queue": "Prepaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Tom. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I think my data usage is being counted incorrectly."
+      },
+      {
+        "speaker": "agent",
+        "text": "I'll look at the data sessions. Did you install any new apps recently?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I didn't stream or download anything big."
+      },
+      {
+        "speaker": "agent",
+        "text": "I can see a background app synchronising large files. I've given you a 5 GB courtesy bundle and explained how to restrict it."
+      },
+      {
+        "speaker": "customer",
+        "text": "Great, thank you so much."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're welcome! Is there anything else I can help with?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0005",
+    "channel": "whatsapp",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-21T03:23:00Z",
+    "queue": "WhatsApp Care",
+    "turns": [
+      {
+        "speaker": "customer",
+        "text": "I paid my bill and then you took the payment again a few days later. I want the duplicate back."
+      },
+      {
+        "speaker": "agent",
+        "text": "Let me look into that. Which billing period are we talking about?"
+      },
+      {
+        "speaker": "customer",
+        "text": "It's the exact same amount, €9.99, listed twice under monthly charges."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're right, the monthly fee was applied twice due to a system error. The second charge has been reversed."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0006",
+    "channel": "web_messaging",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-09-02T21:28:00Z",
+    "queue": "Web Chat",
+    "turns": [
+      {
+        "speaker": "customer",
+        "text": "There's no signal at all in Eastwood since this morning. Is there an outage?"
+      },
+      {
+        "speaker": "agent",
+        "text": "I'm sorry. Can you give me your postcode so I can check for outages?"
+      },
+      {
+        "speaker": "customer",
+        "text": "It started around 9 am yesterday."
+      },
+      {
+        "speaker": "agent",
+        "text": "Yes, there's a confirmed outage in Eastwood due to a damaged fibre link. Engineers expect it to be fixed by this evening."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0007",
+    "channel": "web_messaging",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-27T15:25:00Z",
+    "queue": "Web Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hello, this is Daniel. Thanks for contacting us via chat. How can I help?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I want to cancel my contract."
+      },
+      {
+        "speaker": "agent",
+        "text": "I'm sorry to hear that. May I ask why you want to cancel?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I'm moving to Switzerland in two months."
+      },
+      {
+        "speaker": "agent",
+        "text": "Your cancellation is registered for the end of your minimum term. You'll receive a confirmation letter."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alright, cheers."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Have a great day!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0008",
+    "channel": "voice",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-06T04:43:00Z",
+    "queue": "Postpaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is James. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I was in Switzerland last week and got charged roaming fees even though roaming should be included in my plan."
+      },
+      {
+        "speaker": "agent",
+        "text": "Let me check your roaming usage. Did you have a travel add-on active?"
+      },
+      {
+        "speaker": "customer",
+        "text": "The charge is listed as international data usage in the USA."
+      },
+      {
+        "speaker": "agent",
+        "text": "The travel pass was not applied correctly. I've removed the €39.99 roaming charges from your bill."
+      },
+      {
+        "speaker": "customer",
+        "text": "Great, thank you so much."
+      },
+      {
+        "speaker": "agent",
+        "text": "My pleasure. Thanks for being with us."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0009",
+    "channel": "whatsapp",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-21T10:04:00Z",
+    "queue": "WhatsApp Care",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hi there 👋 You're chatting with James from customer care. What can I do for you?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Every time I try to pay with my card on your website, it says payment unsuccessful."
+      },
+      {
+        "speaker": "agent",
+        "text": "Can you tell me what error message you see when the payment fails?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I got an error code at the last step of the checkout."
+      },
+      {
+        "speaker": "agent",
+        "text": "Your direct debit mandate had expired. I've set up a new one, and no late fee will be charged."
+      },
+      {
+        "speaker": "customer",
+        "text": "How long will that take?"
+      },
+      {
+        "speaker": "agent",
+        "text": "It should be completed within 24 hours."
+      },
+      {
+        "speaker": "customer",
+        "text": "And by the way, the whole network was down in my area this morning."
+      },
+      {
+        "speaker": "agent",
+        "text": "There is planned maintenance on a mast near you. Service should be restored within a few hours."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0010",
+    "channel": "voice",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-09-14T19:18:00Z",
+    "queue": "Prepaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is James. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I need to reset my password, the 'forgot password' link isn't working for me."
+      },
+      {
+        "speaker": "agent",
+        "text": "No problem. Can you confirm the email address registered on your account?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I tried the reset link three times but nothing comes through."
+      },
+      {
+        "speaker": "agent",
+        "text": "Your account email was outdated. I've updated it and triggered a new reset link."
+      },
+      {
+        "speaker": "customer",
+        "text": "Okay. And this won't happen again?"
+      },
+      {
+        "speaker": "agent",
+        "text": "I've added a note to your account so we can track it if it does."
+      },
+      {
+        "speaker": "customer",
+        "text": "Perfect, thanks for your help."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Have a great day!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0011",
+    "channel": "whatsapp",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-10-04T04:41:00Z",
+    "queue": "WhatsApp Care",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hi there 👋 You're chatting with Lukas from customer care. What can I do for you?"
+      },
+      {
+        "speaker": "customer",
+        "text": "You billed me €79.99 twice for my contract this month, that can't be right."
+      },
+      {
+        "speaker": "agent",
+        "text": "I'm sorry about that. Can you tell me the amount and the dates of both charges?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Both charges are for €19.99, on the 3rd and the 15th."
+      },
+      {
+        "speaker": "agent",
+        "text": "I can confirm the duplicate charge. I've raised a refund of €24.5, it will be back on your account within five working days."
+      },
+      {
+        "speaker": "customer",
+        "text": "Okay, that's all, thanks."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're welcome! Is there anything else I can help with?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0012",
+    "channel": "voice",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-15T05:08:00Z",
+    "queue": "Postpaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Daniel. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I want to reduce my plan to the smallest one available."
+      },
+      {
+        "speaker": "agent",
+        "text": "Let me see which smaller plans are available for you."
+      },
+      {
+        "speaker": "customer",
+        "text": "I'm mostly on Wi-Fi now."
+      },
+      {
+        "speaker": "agent",
+        "text": "The downgrade is scheduled; your new lower price starts next month."
+      },
+      {
+        "speaker": "customer",
+        "text": "Perfect, thanks for your help."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Have a great day!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0013",
+    "channel": "web_messaging",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-03T00:47:00Z",
+    "queue": "Web Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hello, this is Priya. Thanks for contacting us via chat. How can I help?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Happy Friday by the way!"
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy Friday to you too!"
+      },
+      {
+        "speaker": "customer",
+        "text": "I got a huge roaming charge from my trip to Spain, I think it's a mistake."
+      },
+      {
+        "speaker": "agent",
+        "text": "Let me check your roaming usage. Did you have a travel add-on active?"
+      },
+      {
+        "speaker": "customer",
+        "text": "The charge is listed as international data usage in Morocco."
+      },
+      {
+        "speaker": "agent",
+        "text": "I can see the charges came from a network outside the included zone. As a goodwill gesture I've credited half."
+      },
+      {
+        "speaker": "customer",
+        "text": "How long will that take?"
+      },
+      {
+        "speaker": "agent",
+        "text": "It should be completed within 24 hours."
+      },
+      {
+        "speaker": "customer",
+        "text": "Perfect, thanks for your help."
+      },
+      {
+        "speaker": "agent",
+        "text": "My pleasure. Thanks for being with us."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0014",
+    "channel": "voice",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-10-06T21:17:00Z",
+    "queue": "Postpaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Sarah. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "My data counter is wrong, it shows 15 GB used but I'm always on Wi-Fi."
+      },
+      {
+        "speaker": "agent",
+        "text": "I'll look at the data sessions. Did you install any new apps recently?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I didn't stream or download anything big."
+      },
+      {
+        "speaker": "agent",
+        "text": "I can see a background app synchronising large files. I've given you a 5 GB courtesy bundle and explained how to restrict it."
+      },
+      {
+        "speaker": "customer",
+        "text": "Also, I think I was charged twice for last month as well, can you check that too?"
+      },
+      {
+        "speaker": "agent",
+        "text": "I'm sorry about that. Can you tell me the amount and the dates of both charges?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I can see two identical transactions on my banking app, both from you."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're right, the monthly fee was applied twice due to a system error. The second charge has been reversed."
+      },
+      {
+        "speaker": "customer",
+        "text": "Thanks, much appreciated."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Have a great day!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0015",
+    "channel": "social_media",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-09-29T23:16:00Z",
+    "queue": "Social Care",
+    "turns": [
+      {
+        "speaker": "customer",
+        "text": "There's no signal at all in Eastwood since this morning. Is there an outage?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Let me check the network status in your area. Which town are you in?"
+      },
+      {
+        "speaker": "customer",
+        "text": "It's the whole area around Lakeside centre, everyone on your network is affected."
+      },
+      {
+        "speaker": "agent",
+        "text": "There is planned maintenance on a mast near you. Service should be restored within a few hours."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0016",
+    "channel": "whatsapp",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-10-04T21:53:00Z",
+    "queue": "WhatsApp Care",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hi there 👋 You're chatting with Priya from customer care. What can I do for you?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hi, the data on my phone is crawling, I can barely load a web page."
+      },
+      {
+        "speaker": "agent",
+        "text": "Have you already tried restarting your phone or toggling airplane mode?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Wi-Fi is fine, it's only the mobile data that is slow."
+      },
+      {
+        "speaker": "agent",
+        "text": "I've refreshed your network settings and there was a capacity issue on a mast near you that has been fixed."
+      },
+      {
+        "speaker": "customer",
+        "text": "Will I get some kind of confirmation?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Yes, you'll receive an SMS confirmation shortly."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0017",
+    "channel": "whatsapp",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-09-20T05:20:00Z",
+    "queue": "WhatsApp Care",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hi there 👋 You're chatting with Maria from customer care. What can I do for you?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Can I switch to the unlimited plan? I keep running out of data."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Are you looking for unlimited data or a specific amount?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I'd like something with unlimited data if the price is reasonable."
+      },
+      {
+        "speaker": "agent",
+        "text": "I've upgraded you to the Unlimited Plus plan at €79.99 per month, starting today."
+      },
+      {
+        "speaker": "customer",
+        "text": "Also, my mobile internet has been really slow lately, is something wrong?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Have you already tried restarting your phone or toggling airplane mode?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I ran a speed test and got less than 1 Mbit per second."
+      },
+      {
+        "speaker": "agent",
+        "text": "Your device was stuck on an old network profile. I've pushed new settings, please restart the phone."
+      },
+      {
+        "speaker": "customer",
+        "text": "Perfect, thanks for your help."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Have a great day!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0018",
+    "channel": "voice",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-10-09T21:28:00Z",
+    "queue": "Prepaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Maria. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I purchased the weekend data pack in the app but I can't use it."
+      },
+      {
+        "speaker": "agent",
+        "text": "Of course. Which add-on would you like to activate?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I paid for it this morning and still have no extra data."
+      },
+      {
+        "speaker": "agent",
+        "text": "I've added the bundle to your account; it's active immediately and renews monthly."
+      },
+      {
+        "speaker": "customer",
+        "text": "Perfect, thanks for your help."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Have a great day!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0019",
+    "channel": "web_messaging",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-09-05T15:11:00Z",
+    "queue": "Web Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hello, this is Lukas. Thanks for contacting us via chat. How can I help?"
+      },
+      {
+        "speaker": "customer",
+        "text": "My streaming subscription renewed automatically without asking me."
+      },
+      {
+        "speaker": "agent",
+        "text": "Let me check that subscription. When did you first sign up?"
+      },
+      {
+        "speaker": "customer",
+        "text": "The trial was supposed to end automatically."
+      },
+      {
+        "speaker": "agent",
+        "text": "I've cancelled the renewal and refunded €9.99 as it was within the cooling-off period."
+      },
+      {
+        "speaker": "customer",
+        "text": "Okay. And this won't happen again?"
+      },
+      {
+        "speaker": "agent",
+        "text": "I've added a note to your account so we can track it if it does."
+      },
+      {
+        "speaker": "customer",
+        "text": "Also my credit from the €39.99 recharge is missing, can you look at that as well?"
+      },
+      {
+        "speaker": "agent",
+        "text": "The top-up failed on our side. I've credited €24.5 to your balance, please restart your phone."
+      },
+      {
+        "speaker": "customer",
+        "text": "Great, thank you so much."
+      },
+      {
+        "speaker": "agent",
+        "text": "My pleasure. Thanks for being with us."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0020",
+    "channel": "voice",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-21T22:35:00Z",
+    "queue": "Postpaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Priya. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "My bank statement shows two debits of €79.99 from you this month. Why did you take the money twice?"
+      },
+      {
+        "speaker": "agent",
+        "text": "I'm sorry about that. Can you tell me the amount and the dates of both charges?"
+      },
+      {
+        "speaker": "customer",
+        "text": "It's the exact same amount, €9.99, listed twice under monthly charges."
+      },
+      {
+        "speaker": "agent",
+        "text": "I can confirm the duplicate charge. I've raised a refund of €29.99, it will be back on your account within five working days."
+      },
+      {
+        "speaker": "customer",
+        "text": "Great, thank you so much."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're welcome! Is there anything else I can help with?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0021",
+    "channel": "whatsapp",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-09-10T01:43:00Z",
+    "queue": "WhatsApp Care",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hi there 👋 You're chatting with Tom from customer care. What can I do for you?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I recharged my number online and the money left my card, but I don't see the credit on my phone."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sorry to hear that. Can you tell me how and when you made the top-up?"
+      },
+      {
+        "speaker": "customer",
+        "text": "The receipt from the shop says the transaction was successful."
+      },
+      {
+        "speaker": "agent",
+        "text": "I found the transaction, it was stuck in processing. I've applied the €49.0 credit manually, you should see it now."
+      },
+      {
+        "speaker": "customer",
+        "text": "How long will that take?"
+      },
+      {
+        "speaker": "agent",
+        "text": "It should be completed within 24 hours."
+      },
+      {
+        "speaker": "customer",
+        "text": "Perfect, thanks for your help."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're welcome! Is there anything else I can help with?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0022",
+    "channel": "whatsapp",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-10-14T11:06:00Z",
+    "queue": "WhatsApp Care",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hi there 👋 You're chatting with Aisha from customer care. What can I do for you?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I paid my bill and then you took the payment again a few days later. I want the duplicate back."
+      },
+      {
+        "speaker": "agent",
+        "text": "Let me look into that. Which billing period are we talking about?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Both charges are for €24.5, on the 8th and the 15th."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're right, the monthly fee was applied twice due to a system error. The second charge has been reversed."
+      },
+      {
+        "speaker": "customer",
+        "text": "Okay. And this won't happen again?"
+      },
+      {
+        "speaker": "agent",
+        "text": "I've added a note to your account so we can track it if it does."
+      },
+      {
+        "speaker": "customer",
+        "text": "Thanks, much appreciated."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're welcome! Is there anything else I can help with?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0023",
+    "channel": "web_messaging",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-10-10T21:40:00Z",
+    "queue": "Web Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hello, this is Priya. Thanks for contacting us via chat. How can I help?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I've been on hold for ages listening to that music, it's stuck in my head now, haha."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sorry about the wait, and the music! Thanks for your patience."
+      },
+      {
+        "speaker": "customer",
+        "text": "My calls keep dropping after a few seconds."
+      },
+      {
+        "speaker": "agent",
+        "text": "Have you noticed this with all contacts or only some?"
+      },
+      {
+        "speaker": "customer",
+        "text": "It happens mostly at home, but sometimes in the city too."
+      },
+      {
+        "speaker": "agent",
+        "text": "I've enabled Voice over LTE on your line, which should improve call quality significantly."
+      },
+      {
+        "speaker": "customer",
+        "text": "Okay. And this won't happen again?"
+      },
+      {
+        "speaker": "agent",
+        "text": "I've added a note to your account so we can track it if it does."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0024",
+    "channel": "voice",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-24T05:36:00Z",
+    "queue": "Postpaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Daniel. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hi, the data on my phone is crawling, I can barely load a web page."
+      },
+      {
+        "speaker": "agent",
+        "text": "I'm sorry about that. Where do you notice the slow speeds, and since when?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Wi-Fi is fine, it's only the mobile data that is slow."
+      },
+      {
+        "speaker": "agent",
+        "text": "I've refreshed your network settings and there was a capacity issue on a mast near you that has been fixed."
+      },
+      {
+        "speaker": "customer",
+        "text": "Great, thank you so much."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Have a great day!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0025",
+    "channel": "voice",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-09-11T23:16:00Z",
+    "queue": "Prepaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Aisha. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Lovely weather today, isn't it? Finally some sunshine."
+      },
+      {
+        "speaker": "agent",
+        "text": "It really is! I hope you get to enjoy it later."
+      },
+      {
+        "speaker": "customer",
+        "text": "I purchased the weekend data pack in the app but I can't use it."
+      },
+      {
+        "speaker": "agent",
+        "text": "Of course. Which add-on would you like to activate?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I want it to start today if possible."
+      },
+      {
+        "speaker": "agent",
+        "text": "I've added the bundle to your account; it's active immediately and renews monthly."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alright, cheers."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're welcome! Is there anything else I can help with?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0026",
+    "channel": "voice",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-21T14:17:00Z",
+    "queue": "Postpaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Priya. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Could someone go through my bill with me? There are several items I don't recognise."
+      },
+      {
+        "speaker": "agent",
+        "text": "Of course, I'd be happy to go through it. Which items are unclear?"
+      },
+      {
+        "speaker": "customer",
+        "text": "There's a line called 'pro-rata charges' that I've never seen before."
+      },
+      {
+        "speaker": "agent",
+        "text": "That line is the partial month from when your contract started. Everything on the bill is correct."
+      },
+      {
+        "speaker": "customer",
+        "text": "Do I need to do anything else on my side?"
+      },
+      {
+        "speaker": "agent",
+        "text": "No, nothing else is needed from you."
+      },
+      {
+        "speaker": "customer",
+        "text": "Okay, that's all, thanks."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're welcome! Is there anything else I can help with?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0027",
+    "channel": "web_messaging",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-23T05:28:00Z",
+    "queue": "Web Chat",
+    "turns": [
+      {
+        "speaker": "customer",
+        "text": "I'd like to end my contract at the end of the minimum term."
+      },
+      {
+        "speaker": "agent",
+        "text": "I'm sorry to hear that. May I ask why you want to cancel?"
+      },
+      {
+        "speaker": "customer",
+        "text": "My contract ends next month anyway."
+      },
+      {
+        "speaker": "agent",
+        "text": "Your cancellation is registered for the end of your minimum term. You'll receive a confirmation letter."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0028",
+    "channel": "voice",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-09-14T16:04:00Z",
+    "queue": "Prepaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Aisha. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Is the network down? I can't make calls or use data anywhere in my area."
+      },
+      {
+        "speaker": "agent",
+        "text": "Let me check the network status in your area. Which town are you in?"
+      },
+      {
+        "speaker": "customer",
+        "text": "It started around 8:30 in the evening yesterday."
+      },
+      {
+        "speaker": "agent",
+        "text": "Yes, there's a confirmed outage in Brookhaven due to a damaged fibre link. Engineers expect it to be fixed by this evening."
+      },
+      {
+        "speaker": "customer",
+        "text": "How long will that take?"
+      },
+      {
+        "speaker": "agent",
+        "text": "It should be completed within 24 hours."
+      },
+      {
+        "speaker": "customer",
+        "text": "Perfect, thanks for your help."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Have a great day!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0029",
+    "channel": "web_messaging",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-10-14T17:50:00Z",
+    "queue": "Web Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hello, this is Sarah. Thanks for contacting us via chat. How can I help?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I want to reduce my plan to the smallest one available."
+      },
+      {
+        "speaker": "agent",
+        "text": "Let me see which smaller plans are available for you."
+      },
+      {
+        "speaker": "customer",
+        "text": "I only use about 2 GB a month."
+      },
+      {
+        "speaker": "agent",
+        "text": "I've moved you to the 5 GB plan at €79.99 per month from your next billing cycle."
+      },
+      {
+        "speaker": "customer",
+        "text": "Perfect, thanks for your help."
+      },
+      {
+        "speaker": "agent",
+        "text": "My pleasure. Thanks for being with us."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0030",
+    "channel": "web_messaging",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-10-10T04:22:00Z",
+    "queue": "Web Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hello, this is Sarah. Thanks for contacting us via chat. How can I help?"
+      },
+      {
+        "speaker": "customer",
+        "text": "How's your day going? Busy I imagine."
+      },
+      {
+        "speaker": "agent",
+        "text": "It's been busy, but good, thanks for asking!"
+      },
+      {
+        "speaker": "customer",
+        "text": "Videos keep buffering and apps take forever to load on mobile data. It used to be fast."
+      },
+      {
+        "speaker": "agent",
+        "text": "Have you already tried restarting your phone or toggling airplane mode?"
+      },
+      {
+        "speaker": "customer",
+        "text": "It's slow everywhere, at home in Eastwood and at work."
+      },
+      {
+        "speaker": "agent",
+        "text": "I've refreshed your network settings and there was a capacity issue on a mast near you that has been fixed."
+      },
+      {
+        "speaker": "customer",
+        "text": "And by the way, the whole network was down in my area this morning."
+      },
+      {
+        "speaker": "agent",
+        "text": "I'm sorry. Can you give me your postcode so I can check for outages?"
+      },
+      {
+        "speaker": "customer",
+        "text": "It started around 6 pm yesterday."
+      },
+      {
+        "speaker": "agent",
+        "text": "There is planned maintenance on a mast near you. Service should be restored within a few hours."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0031",
+    "channel": "voice",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-11T14:12:00Z",
+    "queue": "Postpaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Maria. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I purchased the weekend data pack in the app but I can't use it."
+      },
+      {
+        "speaker": "agent",
+        "text": "Of course. Which add-on would you like to activate?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I paid for it this morning and still have no extra data."
+      },
+      {
+        "speaker": "agent",
+        "text": "I've added the bundle to your account; it's active immediately and renews monthly."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alright, cheers."
+      },
+      {
+        "speaker": "agent",
+        "text": "My pleasure. Thanks for being with us."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0032",
+    "channel": "voice",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-10-02T19:46:00Z",
+    "queue": "Prepaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Tom. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hi, how do I activate the international calls bundle?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Of course. Which add-on would you like to activate?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I paid for it this morning and still have no extra data."
+      },
+      {
+        "speaker": "agent",
+        "text": "I've added the bundle to your account; it's active immediately and renews monthly."
+      },
+      {
+        "speaker": "customer",
+        "text": "Thanks, much appreciated."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Have a great day!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0033",
+    "channel": "web_messaging",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-02T11:23:00Z",
+    "queue": "Web Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hello, this is Priya. Thanks for contacting us via chat. How can I help?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hi, something on my bill doesn't add up, it feels like I'm paying more than I should."
+      },
+      {
+        "speaker": "agent",
+        "text": "I'm sorry about that. Can you tell me the amount and the dates of both charges?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I can see two identical transactions on my banking app, both from you."
+      },
+      {
+        "speaker": "agent",
+        "text": "I can confirm the duplicate charge. I've raised a refund of €9.99, it will be back on your account within five working days."
+      },
+      {
+        "speaker": "customer",
+        "text": "Perfect, thanks for your help."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Have a great day!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0034",
+    "channel": "whatsapp",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-09-16T08:12:00Z",
+    "queue": "WhatsApp Care",
+    "turns": [
+      {
+        "speaker": "customer",
+        "text": "Hi, my new phone needs a nano SIM, can I swap my old SIM for a smaller one?"
+      },
+      {
+        "speaker": "agent",
+        "text": "I can arrange that. Which phone model do you have?"
+      },
+      {
+        "speaker": "customer",
+        "text": "The phone only supports eSIM in the second slot."
+      },
+      {
+        "speaker": "agent",
+        "text": "I've generated an eSIM QR code and sent it to your email; your old SIM will stop working once you scan it."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0035",
+    "channel": "voice",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-09-04T18:05:00Z",
+    "queue": "Prepaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Sarah. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I forgot my password for the online account, how can I reset it?"
+      },
+      {
+        "speaker": "agent",
+        "text": "I can help with that. Which email address do you use to log in?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I just need to log in to download my bill."
+      },
+      {
+        "speaker": "agent",
+        "text": "I've sent a new password reset link to your email, it's valid for 30 minutes."
+      },
+      {
+        "speaker": "customer",
+        "text": "Thanks, much appreciated."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Have a great day!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0036",
+    "channel": "voice",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-16T16:31:00Z",
+    "queue": "Postpaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is James. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I got a message that my direct debit failed, but there's enough money in my account."
+      },
+      {
+        "speaker": "agent",
+        "text": "Can you tell me what error message you see when the payment fails?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I tried two different cards, both declined."
+      },
+      {
+        "speaker": "agent",
+        "text": "Your direct debit mandate had expired. I've set up a new one, and no late fee will be charged."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alright, cheers."
+      },
+      {
+        "speaker": "agent",
+        "text": "My pleasure. Thanks for being with us."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0037",
+    "channel": "web_messaging",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-10-07T15:32:00Z",
+    "queue": "Web Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hello, this is Daniel. Thanks for contacting us via chat. How can I help?"
+      },
+      {
+        "speaker": "customer",
+        "text": "My balance looks weird since yesterday, I'm not sure what happened to my money."
+      },
+      {
+        "speaker": "agent",
+        "text": "Do you have a transaction reference or receipt for the top-up?"
+      },
+      {
+        "speaker": "customer",
+        "text": "The receipt from the shop says the transaction was successful."
+      },
+      {
+        "speaker": "agent",
+        "text": "I found the transaction, it was stuck in processing. I've applied the €24.5 credit manually, you should see it now."
+      },
+      {
+        "speaker": "customer",
+        "text": "How long will that take?"
+      },
+      {
+        "speaker": "agent",
+        "text": "It should be completed within 24 hours."
+      },
+      {
+        "speaker": "customer",
+        "text": "Also, my calls keep cutting out, it's really annoying."
+      },
+      {
+        "speaker": "agent",
+        "text": "I've enabled Voice over LTE on your line, which should improve call quality significantly."
+      },
+      {
+        "speaker": "customer",
+        "text": "Perfect, thanks for your help."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're welcome! Is there anything else I can help with?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0038",
+    "channel": "whatsapp",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-09-18T08:54:00Z",
+    "queue": "WhatsApp Care",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hi there 👋 You're chatting with Daniel from customer care. What can I do for you?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Sorry, my dog is barking in the background."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ha, no worries, I can hear you fine."
+      },
+      {
+        "speaker": "customer",
+        "text": "I recharged my number online and the money left my card, but I don't see the credit on my phone."
+      },
+      {
+        "speaker": "agent",
+        "text": "Do you have a transaction reference or receipt for the top-up?"
+      },
+      {
+        "speaker": "customer",
+        "text": "The payment shows as completed on my card, €9.99."
+      },
+      {
+        "speaker": "agent",
+        "text": "I found the transaction, it was stuck in processing. I've applied the €79.99 credit manually, you should see it now."
+      },
+      {
+        "speaker": "customer",
+        "text": "Okay. And this won't happen again?"
+      },
+      {
+        "speaker": "agent",
+        "text": "I've added a note to your account so we can track it if it does."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0039",
+    "channel": "social_media",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-18T13:12:00Z",
+    "queue": "Social Care",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hi! Thanks for reaching out. I'm Tom from the support team, send us a few details and we'll help."
+      },
+      {
+        "speaker": "customer",
+        "text": "I got my SIM yesterday and it still has no service, can you activate it?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Let me help. Is this a brand new contract or a replacement SIM?"
+      },
+      {
+        "speaker": "customer",
+        "text": "It's for a new contract I signed last week."
+      },
+      {
+        "speaker": "agent",
+        "text": "I've activated the SIM card now. Please restart your phone, it should connect within ten minutes."
+      },
+      {
+        "speaker": "customer",
+        "text": "Perfect, thanks for your help."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're welcome! Is there anything else I can help with?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0040",
+    "channel": "voice",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-10-07T19:29:00Z",
+    "queue": "Postpaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is James. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Sorry, my dog is barking in the background."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ha, no worries, I can hear you fine."
+      },
+      {
+        "speaker": "customer",
+        "text": "My bill is higher than usual this month and I don't know why."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sure, let me open your latest invoice. What exactly looks unusual?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I just want to understand what each part of the bill is for."
+      },
+      {
+        "speaker": "agent",
+        "text": "The extra amount is a pro-rata charge because your plan changed mid-cycle. Next month it will be back to normal."
+      },
+      {
+        "speaker": "customer",
+        "text": "Will I get some kind of confirmation?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Yes, you'll receive an SMS confirmation shortly."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0041",
+    "channel": "whatsapp",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-14T21:49:00Z",
+    "queue": "WhatsApp Care",
+    "turns": [
+      {
+        "speaker": "customer",
+        "text": "Could someone go through my bill with me? There are several items I don't recognise."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sure, let me open your latest invoice. What exactly looks unusual?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I just want to understand what each part of the bill is for."
+      },
+      {
+        "speaker": "agent",
+        "text": "The extra amount is a pro-rata charge because your plan changed mid-cycle. Next month it will be back to normal."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0042",
+    "channel": "voice",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-10-05T15:00:00Z",
+    "queue": "Prepaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Lukas. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Sorry, my dog is barking in the background."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ha, no worries, I can hear you fine."
+      },
+      {
+        "speaker": "customer",
+        "text": "I topped up my prepaid account yesterday, but the credit is still missing."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sorry to hear that. Can you tell me how and when you made the top-up?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I did it through the app at around 8:30 in the evening, I have the confirmation email."
+      },
+      {
+        "speaker": "agent",
+        "text": "I found the transaction, it was stuck in processing. I've applied the €79.99 credit manually, you should see it now."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alright, cheers."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're welcome! Is there anything else I can help with?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0043",
+    "channel": "web_messaging",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-10-08T12:14:00Z",
+    "queue": "Web Chat",
+    "turns": [
+      {
+        "speaker": "customer",
+        "text": "You billed me €14.99 twice for my contract this month, that can't be right."
+      },
+      {
+        "speaker": "agent",
+        "text": "Let me look into that. Which billing period are we talking about?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I can see two identical transactions on my banking app, both from you."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're right, the monthly fee was applied twice due to a system error. The second charge has been reversed."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0044",
+    "channel": "voice",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-09-17T03:06:00Z",
+    "queue": "Prepaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Tom. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I'm switching to you from another provider and want to keep my old number. How does porting work?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Great to have you! Do you have the porting authorisation code from your old provider?"
+      },
+      {
+        "speaker": "customer",
+        "text": "My old provider gave me a PAC code already."
+      },
+      {
+        "speaker": "agent",
+        "text": "I've submitted the port request; your number will transfer within one working day."
+      },
+      {
+        "speaker": "customer",
+        "text": "Okay. And this won't happen again?"
+      },
+      {
+        "speaker": "agent",
+        "text": "I've added a note to your account so we can track it if it does."
+      },
+      {
+        "speaker": "customer",
+        "text": "Thanks, much appreciated."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're welcome! Is there anything else I can help with?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0045",
+    "channel": "voice",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-09-11T23:08:00Z",
+    "queue": "Prepaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Daniel. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I can't get into my account, it says it's locked and to contact support."
+      },
+      {
+        "speaker": "agent",
+        "text": "For security I need to verify you. Can you confirm your date of birth?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I entered the wrong PIN a few times and now it's locked."
+      },
+      {
+        "speaker": "agent",
+        "text": "Thanks, I've unlocked your account. You can log in again now."
+      },
+      {
+        "speaker": "customer",
+        "text": "Okay. And this won't happen again?"
+      },
+      {
+        "speaker": "agent",
+        "text": "I've added a note to your account so we can track it if it does."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0046",
+    "channel": "whatsapp",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-16T20:06:00Z",
+    "queue": "WhatsApp Care",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hi there 👋 You're chatting with Maria from customer care. What can I do for you?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Videos keep buffering and apps take forever to load on mobile data. It used to be fast."
+      },
+      {
+        "speaker": "agent",
+        "text": "Have you already tried restarting your phone or toggling airplane mode?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I ran a speed test and got less than 1 Mbit per second."
+      },
+      {
+        "speaker": "agent",
+        "text": "Your device was stuck on an old network profile. I've pushed new settings, please restart the phone."
+      },
+      {
+        "speaker": "customer",
+        "text": "Also, my last payment didn't go through, I don't know why."
+      },
+      {
+        "speaker": "agent",
+        "text": "I'm sorry about that. How are you trying to pay — card, direct debit or bank transfer?"
+      },
+      {
+        "speaker": "customer",
+        "text": "The bank says they didn't block anything on their side."
+      },
+      {
+        "speaker": "agent",
+        "text": "Your direct debit mandate had expired. I've set up a new one, and no late fee will be charged."
+      },
+      {
+        "speaker": "customer",
+        "text": "Thanks, much appreciated."
+      },
+      {
+        "speaker": "agent",
+        "text": "My pleasure. Thanks for being with us."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0047",
+    "channel": "voice",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-09-27T06:37:00Z",
+    "queue": "Prepaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Priya. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "My top-up didn't arrive. I paid €49.0 at the shop and nothing happened."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sorry to hear that. Can you tell me how and when you made the top-up?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I did it through the app at around 9 am, I have the confirmation email."
+      },
+      {
+        "speaker": "agent",
+        "text": "I found the transaction, it was stuck in processing. I've applied the €39.99 credit manually, you should see it now."
+      },
+      {
+        "speaker": "customer",
+        "text": "Okay, that's all, thanks."
+      },
+      {
+        "speaker": "agent",
+        "text": "My pleasure. Thanks for being with us."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0048",
+    "channel": "voice",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-10-06T19:56:00Z",
+    "queue": "Prepaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Sarah. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hi, I bought a €24.5 voucher this morning and my balance hasn't changed."
+      },
+      {
+        "speaker": "agent",
+        "text": "Do you have a transaction reference or receipt for the top-up?"
+      },
+      {
+        "speaker": "customer",
+        "text": "The receipt from the shop says the transaction was successful."
+      },
+      {
+        "speaker": "agent",
+        "text": "The top-up failed on our side. I've credited €9.99 to your balance, please restart your phone."
+      },
+      {
+        "speaker": "customer",
+        "text": "Okay, that's all, thanks."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Have a great day!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0049",
+    "channel": "voice",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-10-01T18:03:00Z",
+    "queue": "Prepaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Daniel. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "My data counter is wrong, it shows 15 GB used but I'm always on Wi-Fi."
+      },
+      {
+        "speaker": "agent",
+        "text": "Let me check your usage records. When did you notice the change?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Last month I used 2 GB, this month it says 15 GB."
+      },
+      {
+        "speaker": "agent",
+        "text": "I can see a background app synchronising large files. I've given you a 5 GB courtesy bundle and explained how to restrict it."
+      },
+      {
+        "speaker": "customer",
+        "text": "Okay. And this won't happen again?"
+      },
+      {
+        "speaker": "agent",
+        "text": "I've added a note to your account so we can track it if it does."
+      },
+      {
+        "speaker": "customer",
+        "text": "Okay, that's all, thanks."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're welcome! Is there anything else I can help with?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0050",
+    "channel": "whatsapp",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-10-12T11:15:00Z",
+    "queue": "WhatsApp Care",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hi there 👋 You're chatting with Maria from customer care. What can I do for you?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hi, why am I being billed for roaming? I only used my phone on Wi-Fi when I was abroad."
+      },
+      {
+        "speaker": "agent",
+        "text": "Let me check your roaming usage. Did you have a travel add-on active?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I was only there for three days and barely used data."
+      },
+      {
+        "speaker": "agent",
+        "text": "I can see the charges came from a network outside the included zone. As a goodwill gesture I've credited half."
+      },
+      {
+        "speaker": "customer",
+        "text": "Will I get some kind of confirmation?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Yes, you'll receive an SMS confirmation shortly."
+      },
+      {
+        "speaker": "customer",
+        "text": "Perfect, thanks for your help."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Have a great day!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0051",
+    "channel": "voice",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-17T13:22:00Z",
+    "queue": "Postpaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Priya. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hi, my current tariff isn't enough anymore, what bigger plans do you have?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Are you looking for unlimited data or a specific amount?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I'd like something with unlimited data if the price is reasonable."
+      },
+      {
+        "speaker": "agent",
+        "text": "I've upgraded you to the Unlimited Plus plan at €59.99 per month, starting today."
+      },
+      {
+        "speaker": "customer",
+        "text": "Great, thank you so much."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're welcome! Is there anything else I can help with?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0052",
+    "channel": "whatsapp",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-10-14T11:12:00Z",
+    "queue": "WhatsApp Care",
+    "turns": [
+      {
+        "speaker": "customer",
+        "text": "Calls on my phone are crackly and often disconnect."
+      },
+      {
+        "speaker": "agent",
+        "text": "I'm sorry to hear that. Does it happen everywhere or only in certain places?"
+      },
+      {
+        "speaker": "customer",
+        "text": "It started after the last software update on my phone."
+      },
+      {
+        "speaker": "agent",
+        "text": "I've enabled Voice over LTE on your line, which should improve call quality significantly."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0053",
+    "channel": "voice",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-10-14T16:13:00Z",
+    "queue": "Prepaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Lukas. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hi, how do I activate the international calls bundle?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Let me check. Which bundle did you purchase and when?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I paid for it this morning and still have no extra data."
+      },
+      {
+        "speaker": "agent",
+        "text": "The bundle was stuck in activation. I've activated it manually, you should have the extra data now."
+      },
+      {
+        "speaker": "customer",
+        "text": "Great, thank you so much."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Have a great day!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0054",
+    "channel": "whatsapp",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-10-07T15:05:00Z",
+    "queue": "WhatsApp Care",
+    "turns": [
+      {
+        "speaker": "customer",
+        "text": "I topped up my prepaid account yesterday, but the credit is still missing."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sorry to hear that. Can you tell me how and when you made the top-up?"
+      },
+      {
+        "speaker": "customer",
+        "text": "The receipt from the shop says the transaction was successful."
+      },
+      {
+        "speaker": "agent",
+        "text": "The top-up failed on our side. I've credited €29.99 to your balance, please restart your phone."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0055",
+    "channel": "voice",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-12T02:35:00Z",
+    "queue": "Postpaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Priya. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "My phone is just not working properly, the internet thing is weird and slow sometimes, I don't really know."
+      },
+      {
+        "speaker": "agent",
+        "text": "I'm sorry about that. Where do you notice the slow speeds, and since when?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Wi-Fi is fine, it's only the mobile data that is slow."
+      },
+      {
+        "speaker": "agent",
+        "text": "Your device was stuck on an old network profile. I've pushed new settings, please restart the phone."
+      },
+      {
+        "speaker": "customer",
+        "text": "Will I get some kind of confirmation?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Yes, you'll receive an SMS confirmation shortly."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alright, cheers."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're welcome! Is there anything else I can help with?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0056",
+    "channel": "social_media",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-21T19:09:00Z",
+    "queue": "Social Care",
+    "turns": [
+      {
+        "speaker": "customer",
+        "text": "I was in Spain last week and got charged roaming fees even though roaming should be included in my plan."
+      },
+      {
+        "speaker": "agent",
+        "text": "Let me check your roaming usage. Did you have a travel add-on active?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I had the travel pass activated before I left."
+      },
+      {
+        "speaker": "agent",
+        "text": "The travel pass was not applied correctly. I've removed the €39.99 roaming charges from your bill."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0057",
+    "channel": "social_media",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-09-21T08:20:00Z",
+    "queue": "Social Care",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hi! Thanks for reaching out. I'm Tom from the support team, send us a few details and we'll help."
+      },
+      {
+        "speaker": "customer",
+        "text": "Hi, the data on my phone is crawling, I can barely load a web page."
+      },
+      {
+        "speaker": "agent",
+        "text": "Have you already tried restarting your phone or toggling airplane mode?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I ran a speed test and got less than 1 Mbit per second."
+      },
+      {
+        "speaker": "agent",
+        "text": "Your device was stuck on an old network profile. I've pushed new settings, please restart the phone."
+      },
+      {
+        "speaker": "customer",
+        "text": "Perfect, thanks for your help."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Have a great day!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0058",
+    "channel": "voice",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-10-15T13:29:00Z",
+    "queue": "Postpaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Tom. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I lost my phone yesterday and need a new SIM card with the same number."
+      },
+      {
+        "speaker": "agent",
+        "text": "I'm sorry to hear that. I'll block the old SIM first. Can you confirm your address?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Please block the old SIM so nobody can use it."
+      },
+      {
+        "speaker": "agent",
+        "text": "The old SIM is blocked and a replacement with your number will arrive in two working days."
+      },
+      {
+        "speaker": "customer",
+        "text": "Okay, that's all, thanks."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're welcome! Is there anything else I can help with?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0059",
+    "channel": "web_messaging",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-10-03T14:43:00Z",
+    "queue": "Web Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hello, this is Lukas. Thanks for contacting us via chat. How can I help?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hi, I tried to pay my invoice online but the payment was declined."
+      },
+      {
+        "speaker": "agent",
+        "text": "Can you tell me what error message you see when the payment fails?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I tried two different cards, both declined."
+      },
+      {
+        "speaker": "agent",
+        "text": "There was an issue with the payment provider earlier today. I've taken the payment manually over the phone, it went through."
+      },
+      {
+        "speaker": "customer",
+        "text": "Thanks, much appreciated."
+      },
+      {
+        "speaker": "agent",
+        "text": "My pleasure. Thanks for being with us."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0060",
+    "channel": "whatsapp",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-10-05T07:49:00Z",
+    "queue": "WhatsApp Care",
+    "turns": [
+      {
+        "speaker": "customer",
+        "text": "I got a message that my direct debit failed, but there's enough money in my account."
+      },
+      {
+        "speaker": "agent",
+        "text": "I'm sorry about that. How are you trying to pay — card, direct debit or bank transfer?"
+      },
+      {
+        "speaker": "customer",
+        "text": "The bank says they didn't block anything on their side."
+      },
+      {
+        "speaker": "agent",
+        "text": "There was an issue with the payment provider earlier today. I've taken the payment manually over the phone, it went through."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0061",
+    "channel": "voice",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-10-09T17:54:00Z",
+    "queue": "Postpaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Sarah. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I bought the 10 GB data add-on but it hasn't been activated."
+      },
+      {
+        "speaker": "agent",
+        "text": "Let me check. Which bundle did you purchase and when?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I want it to start today if possible."
+      },
+      {
+        "speaker": "agent",
+        "text": "The bundle was stuck in activation. I've activated it manually, you should have the extra data now."
+      },
+      {
+        "speaker": "customer",
+        "text": "Great, thank you so much."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Have a great day!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0062",
+    "channel": "voice",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-15T15:22:00Z",
+    "queue": "Postpaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Daniel. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hi, I moved house and need to update my address on the account."
+      },
+      {
+        "speaker": "agent",
+        "text": "Of course. Could you give me the new address and postcode?"
+      },
+      {
+        "speaker": "customer",
+        "text": "The new address is in Northfield, I moved last week."
+      },
+      {
+        "speaker": "agent",
+        "text": "I've updated your address; your next bill will go to the new address."
+      },
+      {
+        "speaker": "customer",
+        "text": "How long will that take?"
+      },
+      {
+        "speaker": "agent",
+        "text": "It should be completed within 24 hours."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0063",
+    "channel": "voice",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-12T06:12:00Z",
+    "queue": "Postpaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Priya. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I forgot my password for the online account, how can I reset it?"
+      },
+      {
+        "speaker": "agent",
+        "text": "No problem. Can you confirm the email address registered on your account?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I changed my email recently, maybe that's the problem."
+      },
+      {
+        "speaker": "agent",
+        "text": "Your account email was outdated. I've updated it and triggered a new reset link."
+      },
+      {
+        "speaker": "customer",
+        "text": "Thanks, much appreciated."
+      },
+      {
+        "speaker": "agent",
+        "text": "My pleasure. Thanks for being with us."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0064",
+    "channel": "voice",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-29T05:49:00Z",
+    "queue": "Postpaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is James. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I forgot my password for the online account, how can I reset it?"
+      },
+      {
+        "speaker": "agent",
+        "text": "I can help with that. Which email address do you use to log in?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I tried the reset link three times but nothing comes through."
+      },
+      {
+        "speaker": "agent",
+        "text": "I've sent a new password reset link to your email, it's valid for 30 minutes."
+      },
+      {
+        "speaker": "customer",
+        "text": "Do I need to do anything else on my side?"
+      },
+      {
+        "speaker": "agent",
+        "text": "No, nothing else is needed from you."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0065",
+    "channel": "whatsapp",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-10-04T12:04:00Z",
+    "queue": "WhatsApp Care",
+    "turns": [
+      {
+        "speaker": "customer",
+        "text": "I can't get into my account, it says it's locked and to contact support."
+      },
+      {
+        "speaker": "agent",
+        "text": "I can help unlock it. Can you confirm the account holder's name?"
+      },
+      {
+        "speaker": "customer",
+        "text": "It's been locked since yesterday."
+      },
+      {
+        "speaker": "agent",
+        "text": "The lock has been removed. I recommend enabling two-factor authentication."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0066",
+    "channel": "social_media",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-21T12:10:00Z",
+    "queue": "Social Care",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hi! Thanks for reaching out. I'm Maria from the support team, send us a few details and we'll help."
+      },
+      {
+        "speaker": "customer",
+        "text": "What is this 'service adjustment' charge on my invoice?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Of course, I'd be happy to go through it. Which items are unclear?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I just want to understand what each part of the bill is for."
+      },
+      {
+        "speaker": "agent",
+        "text": "That line is the partial month from when your contract started. Everything on the bill is correct."
+      },
+      {
+        "speaker": "customer",
+        "text": "Also, I think I was charged twice for last month as well, can you check that too?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Let me look into that. Which billing period are we talking about?"
+      },
+      {
+        "speaker": "customer",
+        "text": "It's the exact same amount, €24.5, listed twice under monthly charges."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're right, the monthly fee was applied twice due to a system error. The second charge has been reversed."
+      },
+      {
+        "speaker": "customer",
+        "text": "Thanks, much appreciated."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're welcome! Is there anything else I can help with?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0067",
+    "channel": "voice",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-21T17:36:00Z",
+    "queue": "Postpaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Sarah. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "My bill this month just seems strange to me, I'm not sure if something is wrong or if I'm misreading it."
+      },
+      {
+        "speaker": "agent",
+        "text": "Of course, I'd be happy to go through it. Which items are unclear?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Normally I pay around €79.99 but this month it's quite a bit more."
+      },
+      {
+        "speaker": "agent",
+        "text": "The extra amount is a pro-rata charge because your plan changed mid-cycle. Next month it will be back to normal."
+      },
+      {
+        "speaker": "customer",
+        "text": "How long will that take?"
+      },
+      {
+        "speaker": "agent",
+        "text": "It should be completed within 24 hours."
+      },
+      {
+        "speaker": "customer",
+        "text": "And my add-on subscription renewed without my consent."
+      },
+      {
+        "speaker": "agent",
+        "text": "Let me check that subscription. When did you first sign up?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I never received a reminder before it renewed."
+      },
+      {
+        "speaker": "agent",
+        "text": "The trial was set to auto-renew. I've stopped it and reversed the charge."
+      },
+      {
+        "speaker": "customer",
+        "text": "Perfect, thanks for your help."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0068",
+    "channel": "voice",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-09-11T00:07:00Z",
+    "queue": "Prepaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Sarah. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Happy Friday by the way!"
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy Friday to you too!"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hi, I was charged for another year of the music add-on, I never agreed to renew it."
+      },
+      {
+        "speaker": "agent",
+        "text": "I understand. Which subscription are we talking about?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I never received a reminder before it renewed."
+      },
+      {
+        "speaker": "agent",
+        "text": "I've cancelled the renewal and refunded €24.5 as it was within the cooling-off period."
+      },
+      {
+        "speaker": "customer",
+        "text": "Perfect, thanks for your help."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Have a great day!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0069",
+    "channel": "voice",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-10-03T13:20:00Z",
+    "queue": "Postpaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Aisha. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Internet on my phone is so slow I can't even send pictures on WhatsApp."
+      },
+      {
+        "speaker": "agent",
+        "text": "Have you already tried restarting your phone or toggling airplane mode?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I ran a speed test and got less than 1 Mbit per second."
+      },
+      {
+        "speaker": "agent",
+        "text": "I've refreshed your network settings and there was a capacity issue on a mast near you that has been fixed."
+      },
+      {
+        "speaker": "customer",
+        "text": "Okay. And this won't happen again?"
+      },
+      {
+        "speaker": "agent",
+        "text": "I've added a note to your account so we can track it if it does."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0070",
+    "channel": "web_messaging",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-10-05T13:51:00Z",
+    "queue": "Web Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hello, this is Sarah. Thanks for contacting us via chat. How can I help?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hello, there's a double charge on my invoice — the monthly fee appears two times."
+      },
+      {
+        "speaker": "agent",
+        "text": "I'm sorry about that. Can you tell me the amount and the dates of both charges?"
+      },
+      {
+        "speaker": "customer",
+        "text": "It's the exact same amount, €79.99, listed twice under monthly charges."
+      },
+      {
+        "speaker": "agent",
+        "text": "I can confirm the duplicate charge. I've raised a refund of €39.99, it will be back on your account within five working days."
+      },
+      {
+        "speaker": "customer",
+        "text": "Perfect, thanks for your help."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're welcome! Is there anything else I can help with?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0071",
+    "channel": "web_messaging",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-29T06:23:00Z",
+    "queue": "Web Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hello, this is Maria. Thanks for contacting us via chat. How can I help?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I was charged extra for going over my data limit, but I never got a warning and I don't think I went over."
+      },
+      {
+        "speaker": "agent",
+        "text": "When was the out-of-bundle charge applied?"
+      },
+      {
+        "speaker": "customer",
+        "text": "The app showed I still had data left that day."
+      },
+      {
+        "speaker": "agent",
+        "text": "The spending cap wasn't applied correctly; I've removed the €9.99 overage charge."
+      },
+      {
+        "speaker": "customer",
+        "text": "Perfect, thanks for your help."
+      },
+      {
+        "speaker": "agent",
+        "text": "My pleasure. Thanks for being with us."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0072",
+    "channel": "social_media",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-10-10T22:48:00Z",
+    "queue": "Social Care",
+    "turns": [
+      {
+        "speaker": "customer",
+        "text": "Hi, can you explain my latest invoice? I don't understand some of the line items."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sure, let me open your latest invoice. What exactly looks unusual?"
+      },
+      {
+        "speaker": "customer",
+        "text": "There's a line called 'pro-rata charges' that I've never seen before."
+      },
+      {
+        "speaker": "agent",
+        "text": "The extra amount is a pro-rata charge because your plan changed mid-cycle. Next month it will be back to normal."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0073",
+    "channel": "whatsapp",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-29T09:20:00Z",
+    "queue": "WhatsApp Care",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hi there 👋 You're chatting with Lukas from customer care. What can I do for you?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Can I switch to the unlimited plan? I keep running out of data."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sure! How much data do you typically use per month?"
+      },
+      {
+        "speaker": "customer",
+        "text": "My current plan only has 10 GB."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're now on the 50 GB plan. The new price applies from your next billing cycle."
+      },
+      {
+        "speaker": "customer",
+        "text": "Perfect, thanks for your help."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're welcome! Is there anything else I can help with?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0074",
+    "channel": "whatsapp",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-07T14:56:00Z",
+    "queue": "WhatsApp Care",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hi there 👋 You're chatting with Aisha from customer care. What can I do for you?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Could someone go through my bill with me? There are several items I don't recognise."
+      },
+      {
+        "speaker": "agent",
+        "text": "Of course, I'd be happy to go through it. Which items are unclear?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Normally I pay around €49.0 but this month it's quite a bit more."
+      },
+      {
+        "speaker": "agent",
+        "text": "That line is the partial month from when your contract started. Everything on the bill is correct."
+      },
+      {
+        "speaker": "customer",
+        "text": "Okay. And this won't happen again?"
+      },
+      {
+        "speaker": "agent",
+        "text": "I've added a note to your account so we can track it if it does."
+      },
+      {
+        "speaker": "customer",
+        "text": "Okay, that's all, thanks."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Have a great day!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0075",
+    "channel": "voice",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-09-20T02:54:00Z",
+    "queue": "Prepaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Lukas. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "The password reset email never arrives, can you help me get into my account?"
+      },
+      {
+        "speaker": "agent",
+        "text": "No problem. Can you confirm the email address registered on your account?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I tried the reset link three times but nothing comes through."
+      },
+      {
+        "speaker": "agent",
+        "text": "Your account email was outdated. I've updated it and triggered a new reset link."
+      },
+      {
+        "speaker": "customer",
+        "text": "Also, I'd like to move to a cheaper plan."
+      },
+      {
+        "speaker": "agent",
+        "text": "The downgrade is scheduled; your new lower price starts next month."
+      },
+      {
+        "speaker": "customer",
+        "text": "Perfect, thanks for your help."
+      },
+      {
+        "speaker": "agent",
+        "text": "My pleasure. Thanks for being with us."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0076",
+    "channel": "web_messaging",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-10-08T08:09:00Z",
+    "queue": "Web Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hello, this is Lukas. Thanks for contacting us via chat. How can I help?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I lost my phone yesterday and need a new SIM card with the same number."
+      },
+      {
+        "speaker": "agent",
+        "text": "I'm sorry to hear that. I'll block the old SIM first. Can you confirm your address?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I already reported it to the police."
+      },
+      {
+        "speaker": "agent",
+        "text": "I've blocked the lost SIM and ordered a replacement free of charge."
+      },
+      {
+        "speaker": "customer",
+        "text": "How long will that take?"
+      },
+      {
+        "speaker": "agent",
+        "text": "It should be completed within 24 hours."
+      },
+      {
+        "speaker": "customer",
+        "text": "One more thing, I was charged for roaming in Italy even though it's in the EU."
+      },
+      {
+        "speaker": "agent",
+        "text": "I can see the charges came from a network outside the included zone. As a goodwill gesture I've credited half."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alright, cheers."
+      },
+      {
+        "speaker": "agent",
+        "text": "My pleasure. Thanks for being with us."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0077",
+    "channel": "voice",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-10-08T11:45:00Z",
+    "queue": "Postpaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Lukas. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Sorry, my dog is barking in the background."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ha, no worries, I can hear you fine."
+      },
+      {
+        "speaker": "customer",
+        "text": "Could someone go through my bill with me? There are several items I don't recognise."
+      },
+      {
+        "speaker": "agent",
+        "text": "Of course, I'd be happy to go through it. Which items are unclear?"
+      },
+      {
+        "speaker": "customer",
+        "text": "There's a line called 'pro-rata charges' that I've never seen before."
+      },
+      {
+        "speaker": "agent",
+        "text": "That line is the partial month from when your contract started. Everything on the bill is correct."
+      },
+      {
+        "speaker": "customer",
+        "text": "And I also want to change my SIM to an eSIM for my new phone."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sure. Do you want an eSIM profile or a physical replacement SIM?"
+      },
+      {
+        "speaker": "customer",
+        "text": "My current SIM is the old standard size."
+      },
+      {
+        "speaker": "agent",
+        "text": "A new triple-cut SIM is on its way; your number stays the same."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0078",
+    "channel": "voice",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-10-01T01:57:00Z",
+    "queue": "Prepaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Maria. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I received my new SIM card but I can't activate it."
+      },
+      {
+        "speaker": "agent",
+        "text": "Let me help. Is this a brand new contract or a replacement SIM?"
+      },
+      {
+        "speaker": "customer",
+        "text": "The activation website gives me an error."
+      },
+      {
+        "speaker": "agent",
+        "text": "The activation was pending identity verification. That's complete now and your SIM is active."
+      },
+      {
+        "speaker": "customer",
+        "text": "Thanks, much appreciated."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Have a great day!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0079",
+    "channel": "whatsapp",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-09-26T00:31:00Z",
+    "queue": "WhatsApp Care",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hi there 👋 You're chatting with Sarah from customer care. What can I do for you?"
+      },
+      {
+        "speaker": "customer",
+        "text": "My phone is just not working properly, the internet thing is weird and slow sometimes, I don't really know."
+      },
+      {
+        "speaker": "agent",
+        "text": "Have you already tried restarting your phone or toggling airplane mode?"
+      },
+      {
+        "speaker": "customer",
+        "text": "It's slow everywhere, at home in Eastwood and at work."
+      },
+      {
+        "speaker": "agent",
+        "text": "I've refreshed your network settings and there was a capacity issue on a mast near you that has been fixed."
+      },
+      {
+        "speaker": "customer",
+        "text": "Okay, that's all, thanks."
+      },
+      {
+        "speaker": "agent",
+        "text": "My pleasure. Thanks for being with us."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0080",
+    "channel": "social_media",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-27T05:27:00Z",
+    "queue": "Social Care",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hi! Thanks for reaching out. I'm Maria from the support team, send us a few details and we'll help."
+      },
+      {
+        "speaker": "customer",
+        "text": "Calls on my phone are crackly and often disconnect."
+      },
+      {
+        "speaker": "agent",
+        "text": "Have you noticed this with all contacts or only some?"
+      },
+      {
+        "speaker": "customer",
+        "text": "It started after the last software update on my phone."
+      },
+      {
+        "speaker": "agent",
+        "text": "There's a known issue with a mast near your home that's being repaired. I've logged your case."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alright, cheers."
+      },
+      {
+        "speaker": "agent",
+        "text": "My pleasure. Thanks for being with us."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0081",
+    "channel": "voice",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-12T12:36:00Z",
+    "queue": "Postpaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Priya. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I want to cancel my contract."
+      },
+      {
+        "speaker": "agent",
+        "text": "Let me check your contract end date."
+      },
+      {
+        "speaker": "customer",
+        "text": "I've found a cheaper offer elsewhere."
+      },
+      {
+        "speaker": "agent",
+        "text": "Your cancellation is registered for the end of your minimum term. You'll receive a confirmation letter."
+      },
+      {
+        "speaker": "customer",
+        "text": "Okay. And this won't happen again?"
+      },
+      {
+        "speaker": "agent",
+        "text": "I've added a note to your account so we can track it if it does."
+      },
+      {
+        "speaker": "customer",
+        "text": "Okay, that's all, thanks."
+      },
+      {
+        "speaker": "agent",
+        "text": "My pleasure. Thanks for being with us."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0082",
+    "channel": "voice",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-06T11:24:00Z",
+    "queue": "Postpaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Aisha. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I received my first bill and it's confusing, why is it €29.99 instead of my monthly price?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Of course, I'd be happy to go through it. Which items are unclear?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I just want to understand what each part of the bill is for."
+      },
+      {
+        "speaker": "agent",
+        "text": "The extra amount is a pro-rata charge because your plan changed mid-cycle. Next month it will be back to normal."
+      },
+      {
+        "speaker": "customer",
+        "text": "Do I need to do anything else on my side?"
+      },
+      {
+        "speaker": "agent",
+        "text": "No, nothing else is needed from you."
+      },
+      {
+        "speaker": "customer",
+        "text": "Perfect, thanks for your help."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Have a great day!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0083",
+    "channel": "voice",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-10-05T19:21:00Z",
+    "queue": "Postpaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Priya. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "My bank statement shows two debits of €19.99 from you this month. Why did you take the money twice?"
+      },
+      {
+        "speaker": "agent",
+        "text": "I'm sorry about that. Can you tell me the amount and the dates of both charges?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Both charges are for €49.0, on the 12th and the 21st."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're right, the monthly fee was applied twice due to a system error. The second charge has been reversed."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alright, cheers."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're welcome! Is there anything else I can help with?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0084",
+    "channel": "social_media",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-30T19:54:00Z",
+    "queue": "Social Care",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hi! Thanks for reaching out. I'm Priya from the support team, send us a few details and we'll help."
+      },
+      {
+        "speaker": "customer",
+        "text": "I've been on hold for ages listening to that music, it's stuck in my head now, haha."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sorry about the wait, and the music! Thanks for your patience."
+      },
+      {
+        "speaker": "customer",
+        "text": "The password reset email never arrives, can you help me get into my account?"
+      },
+      {
+        "speaker": "agent",
+        "text": "I can help with that. Which email address do you use to log in?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I tried the reset link three times but nothing comes through."
+      },
+      {
+        "speaker": "agent",
+        "text": "I've sent a new password reset link to your email, it's valid for 30 minutes."
+      },
+      {
+        "speaker": "customer",
+        "text": "Thanks, much appreciated."
+      },
+      {
+        "speaker": "agent",
+        "text": "My pleasure. Thanks for being with us."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0085",
+    "channel": "whatsapp",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-09-06T03:58:00Z",
+    "queue": "WhatsApp Care",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hi there 👋 You're chatting with James from customer care. What can I do for you?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I received my new SIM card but I can't activate it."
+      },
+      {
+        "speaker": "agent",
+        "text": "Let me help. Is this a brand new contract or a replacement SIM?"
+      },
+      {
+        "speaker": "customer",
+        "text": "It's for a new contract I signed last week."
+      },
+      {
+        "speaker": "agent",
+        "text": "I've activated the SIM card now. Please restart your phone, it should connect within ten minutes."
+      },
+      {
+        "speaker": "customer",
+        "text": "Will I get some kind of confirmation?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Yes, you'll receive an SMS confirmation shortly."
+      },
+      {
+        "speaker": "customer",
+        "text": "And my account got blocked after I tried logging in a few times."
+      },
+      {
+        "speaker": "agent",
+        "text": "I can help unlock it. Can you confirm the account holder's name?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I entered the wrong PIN a few times and now it's locked."
+      },
+      {
+        "speaker": "agent",
+        "text": "The lock has been removed. I recommend enabling two-factor authentication."
+      },
+      {
+        "speaker": "customer",
+        "text": "Thanks, much appreciated."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0086",
+    "channel": "web_messaging",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-10-05T05:35:00Z",
+    "queue": "Web Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hello, this is Lukas. Thanks for contacting us via chat. How can I help?"
+      },
+      {
+        "speaker": "customer",
+        "text": "My payment for this month's bill keeps failing."
+      },
+      {
+        "speaker": "agent",
+        "text": "Can you tell me what error message you see when the payment fails?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I tried two different cards, both declined."
+      },
+      {
+        "speaker": "agent",
+        "text": "Your direct debit mandate had expired. I've set up a new one, and no late fee will be charged."
+      },
+      {
+        "speaker": "customer",
+        "text": "Will I get some kind of confirmation?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Yes, you'll receive an SMS confirmation shortly."
+      },
+      {
+        "speaker": "customer",
+        "text": "Perfect, thanks for your help."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Have a great day!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0087",
+    "channel": "social_media",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-09-21T13:18:00Z",
+    "queue": "Social Care",
+    "turns": [
+      {
+        "speaker": "customer",
+        "text": "My phone is just not working properly, the internet thing is weird and slow sometimes, I don't really know."
+      },
+      {
+        "speaker": "agent",
+        "text": "Have you already tried restarting your phone or toggling airplane mode?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I ran a speed test and got less than 1 Mbit per second."
+      },
+      {
+        "speaker": "agent",
+        "text": "Your device was stuck on an old network profile. I've pushed new settings, please restart the phone."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0088",
+    "channel": "social_media",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-18T08:11:00Z",
+    "queue": "Social Care",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hi! Thanks for reaching out. I'm Priya from the support team, send us a few details and we'll help."
+      },
+      {
+        "speaker": "customer",
+        "text": "I want to move to a better tariff with 5G and more gigabytes."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Are you looking for unlimited data or a specific amount?"
+      },
+      {
+        "speaker": "customer",
+        "text": "My current plan only has 10 GB."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're now on the 50 GB plan. The new price applies from your next billing cycle."
+      },
+      {
+        "speaker": "customer",
+        "text": "Thanks, much appreciated."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Have a great day!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0089",
+    "channel": "social_media",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-12T21:00:00Z",
+    "queue": "Social Care",
+    "turns": [
+      {
+        "speaker": "customer",
+        "text": "I'd like to upgrade to a plan with more data."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sure! How much data do you typically use per month?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I'd like something with unlimited data if the price is reasonable."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're now on the 50 GB plan. The new price applies from your next billing cycle."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0090",
+    "channel": "voice",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-23T15:37:00Z",
+    "queue": "Postpaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Aisha. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "You billed me €19.99 twice for my contract this month, that can't be right."
+      },
+      {
+        "speaker": "agent",
+        "text": "I'm sorry about that. Can you tell me the amount and the dates of both charges?"
+      },
+      {
+        "speaker": "customer",
+        "text": "It's the exact same amount, €19.99, listed twice under monthly charges."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're right, the monthly fee was applied twice due to a system error. The second charge has been reversed."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alright, cheers."
+      },
+      {
+        "speaker": "agent",
+        "text": "My pleasure. Thanks for being with us."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0091",
+    "channel": "voice",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-10-16T04:54:00Z",
+    "queue": "Prepaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Daniel. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "The app says I've used all my data, but I've hardly been online this month."
+      },
+      {
+        "speaker": "agent",
+        "text": "I'll look at the data sessions. Did you install any new apps recently?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I'm on Wi-Fi at home and at work almost all the time."
+      },
+      {
+        "speaker": "agent",
+        "text": "I can see a background app synchronising large files. I've given you a 5 GB courtesy bundle and explained how to restrict it."
+      },
+      {
+        "speaker": "customer",
+        "text": "How long will that take?"
+      },
+      {
+        "speaker": "agent",
+        "text": "It should be completed within 24 hours."
+      },
+      {
+        "speaker": "customer",
+        "text": "Okay, that's all, thanks."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Have a great day!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0092",
+    "channel": "voice",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-30T10:23:00Z",
+    "queue": "Postpaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Tom. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I got a message that my direct debit failed, but there's enough money in my account."
+      },
+      {
+        "speaker": "agent",
+        "text": "Can you tell me what error message you see when the payment fails?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I got an error code at the last step of the checkout."
+      },
+      {
+        "speaker": "agent",
+        "text": "Your direct debit mandate had expired. I've set up a new one, and no late fee will be charged."
+      },
+      {
+        "speaker": "customer",
+        "text": "Okay. And this won't happen again?"
+      },
+      {
+        "speaker": "agent",
+        "text": "I've added a note to your account so we can track it if it does."
+      },
+      {
+        "speaker": "customer",
+        "text": "Great, thank you so much."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Have a great day!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0093",
+    "channel": "voice",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-10-09T21:19:00Z",
+    "queue": "Prepaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Aisha. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I received my new SIM card but I can't activate it."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sure. Can you read me the last four digits of the SIM card number?"
+      },
+      {
+        "speaker": "customer",
+        "text": "The activation website gives me an error."
+      },
+      {
+        "speaker": "agent",
+        "text": "The activation was pending identity verification. That's complete now and your SIM is active."
+      },
+      {
+        "speaker": "customer",
+        "text": "Great, thank you so much."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Have a great day!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0094",
+    "channel": "voice",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-09-27T06:41:00Z",
+    "queue": "Prepaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Sarah. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I'd like to upgrade to a plan with more data."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sure! How much data do you typically use per month?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I use around 30 GB a month now because of streaming."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're now on the 50 GB plan. The new price applies from your next billing cycle."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alright, cheers."
+      },
+      {
+        "speaker": "agent",
+        "text": "My pleasure. Thanks for being with us."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0095",
+    "channel": "voice",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-09-21T10:55:00Z",
+    "queue": "Prepaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Lukas. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Before we start, sorry, it's so loud here, I'm at a football match."
+      },
+      {
+        "speaker": "agent",
+        "text": "No problem at all, take your time!"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hello, I loaded credit through the app two hours ago and my balance still shows zero."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sorry to hear that. Can you tell me how and when you made the top-up?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I did it through the app at around 8:30 in the evening, I have the confirmation email."
+      },
+      {
+        "speaker": "agent",
+        "text": "I found the transaction, it was stuck in processing. I've applied the €19.99 credit manually, you should see it now."
+      },
+      {
+        "speaker": "customer",
+        "text": "Thanks, much appreciated."
+      },
+      {
+        "speaker": "agent",
+        "text": "My pleasure. Thanks for being with us."
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0096",
+    "channel": "voice",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-18T10:46:00Z",
+    "queue": "Postpaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Sarah. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I was charged extra for going over my data limit, but I never got a warning and I don't think I went over."
+      },
+      {
+        "speaker": "agent",
+        "text": "When was the out-of-bundle charge applied?"
+      },
+      {
+        "speaker": "customer",
+        "text": "The app showed I still had data left that day."
+      },
+      {
+        "speaker": "agent",
+        "text": "The spending cap wasn't applied correctly; I've removed the €39.99 overage charge."
+      },
+      {
+        "speaker": "customer",
+        "text": "Great, thank you so much."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Have a great day!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0097",
+    "channel": "web_messaging",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-19T13:12:00Z",
+    "queue": "Web Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hello, this is Lukas. Thanks for contacting us via chat. How can I help?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I got a huge roaming charge from my trip to Italy, I think it's a mistake."
+      },
+      {
+        "speaker": "agent",
+        "text": "Let me check your roaming usage. Did you have a travel add-on active?"
+      },
+      {
+        "speaker": "customer",
+        "text": "The charge is listed as international data usage in Spain."
+      },
+      {
+        "speaker": "agent",
+        "text": "The travel pass was not applied correctly. I've removed the €49.0 roaming charges from your bill."
+      },
+      {
+        "speaker": "customer",
+        "text": "Perfect, thanks for your help."
+      },
+      {
+        "speaker": "agent",
+        "text": "Happy to help. Have a great day!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0098",
+    "channel": "voice",
+    "segment": "prepaid",
+    "language": "en",
+    "timestamp": "2026-09-12T21:49:00Z",
+    "queue": "Prepaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is James. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "How's your day going? Busy I imagine."
+      },
+      {
+        "speaker": "agent",
+        "text": "It's been busy, but good, thanks for asking!"
+      },
+      {
+        "speaker": "customer",
+        "text": "I topped up my prepaid account yesterday, but the credit is still missing."
+      },
+      {
+        "speaker": "agent",
+        "text": "Do you have a transaction reference or receipt for the top-up?"
+      },
+      {
+        "speaker": "customer",
+        "text": "The receipt from the shop says the transaction was successful."
+      },
+      {
+        "speaker": "agent",
+        "text": "I found the transaction, it was stuck in processing. I've applied the €9.99 credit manually, you should see it now."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alright, cheers."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're welcome! Is there anything else I can help with?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0099",
+    "channel": "social_media",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-21T05:52:00Z",
+    "queue": "Social Care",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hi! Thanks for reaching out. I'm Maria from the support team, send us a few details and we'll help."
+      },
+      {
+        "speaker": "customer",
+        "text": "The password reset email never arrives, can you help me get into my account?"
+      },
+      {
+        "speaker": "agent",
+        "text": "I can help with that. Which email address do you use to log in?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I changed my email recently, maybe that's the problem."
+      },
+      {
+        "speaker": "agent",
+        "text": "Your account email was outdated. I've updated it and triggered a new reset link."
+      },
+      {
+        "speaker": "customer",
+        "text": "Okay. And this won't happen again?"
+      },
+      {
+        "speaker": "agent",
+        "text": "I've added a note to your account so we can track it if it does."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alright, cheers."
+      },
+      {
+        "speaker": "agent",
+        "text": "You're welcome! Is there anything else I can help with?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "TELCO-0100",
+    "channel": "voice",
+    "segment": "postpaid",
+    "language": "en",
+    "timestamp": "2026-09-12T23:06:00Z",
+    "queue": "Postpaid Support",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Thank you for calling customer service, my name is Sarah. How can I help you today?"
+      },
+      {
+        "speaker": "customer",
+        "text": "I can hear the other person but they can't hear me properly, the sound cuts out constantly."
+      },
+      {
+        "speaker": "agent",
+        "text": "I'm sorry to hear that. Does it happen everywhere or only in certain places?"
+      },
+      {
+        "speaker": "customer",
+        "text": "It happens mostly at home, but sometimes in the city too."
+      },
+      {
+        "speaker": "agent",
+        "text": "I've enabled Voice over LTE on your line, which should improve call quality significantly."
+      },
+      {
+        "speaker": "customer",
+        "text": "And I also want to cancel my contract after that."
+      },
+      {
+        "speaker": "agent",
+        "text": "Let me check your contract end date."
+      },
+      {
+        "speaker": "customer",
+        "text": "My contract ends next month anyway."
+      },
+      {
+        "speaker": "agent",
+        "text": "I've processed the termination; your service ends on the last day of next month."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alright, cheers."
+      },
+      {
+        "speaker": "agent",
+        "text": "My pleasure. Thanks for being with us."
+      }
+    ]
+  }
+]

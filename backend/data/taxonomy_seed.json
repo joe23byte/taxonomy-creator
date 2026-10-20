@@ -1,0 +1,27 @@
+{
+  "name": "Telco Customer Service Taxonomy",
+  "version": 1,
+  "categories": [
+    {"id": "L1-BIL", "label": "Billing & Payments", "description": "Questions and problems about invoices, charges and payments.", "parent_id": null, "level": 1},
+    {"id": "L2-BIL-INV", "label": "Invoice Questions", "description": "Customer wants an invoice, bill line items or billing cycle explained, or requests a copy of a bill.", "parent_id": "L1-BIL", "level": 2},
+    {"id": "L2-BIL-DSP", "label": "Billing Disputes", "description": "Customer believes a charge on the bill is wrong, unexpected or duplicated and wants it corrected or refunded.", "parent_id": "L1-BIL", "level": 2},
+    {"id": "L2-BIL-PAY", "label": "Payment Issues", "description": "Problems paying a bill: failed or declined payments, payment methods, direct debit and payment arrangements.", "parent_id": "L1-BIL", "level": 2},
+
+    {"id": "L1-NET", "label": "Network & Connectivity", "description": "Problems with mobile network service quality and availability.", "parent_id": null, "level": 1},
+    {"id": "L2-NET-DAT", "label": "Mobile Data", "description": "Mobile internet performance: data is slow, unstable or not working, or the data connection cannot be established. Not about how much data was used or billed.", "parent_id": "L1-NET", "level": 2},
+    {"id": "L2-NET-VOC", "label": "Voice Connectivity", "description": "Problems making or receiving calls, dropped calls and poor call quality.", "parent_id": "L1-NET", "level": 2},
+    {"id": "L2-NET-COV", "label": "Network Coverage", "description": "No signal, coverage gaps and network outages in an area.", "parent_id": "L1-NET", "level": 2},
+
+    {"id": "L1-ACC", "label": "Account & SIM", "description": "Managing the customer account, SIM cards and access credentials.", "parent_id": null, "level": 1},
+    {"id": "L2-ACC-SIM", "label": "SIM Management", "description": "Activating, replacing, swapping or blocking SIM and eSIM cards.", "parent_id": "L1-ACC", "level": 2},
+    {"id": "L2-ACC-ACS", "label": "Account Access", "description": "Logging in to the online account or app, passwords, locked accounts and verification codes.", "parent_id": "L1-ACC", "level": 2},
+    {"id": "L2-ACC-DET", "label": "Customer Details", "description": "Updating personal details such as address, name, email or contact preferences.", "parent_id": "L1-ACC", "level": 2},
+
+    {"id": "L1-PRD", "label": "Products & Services", "description": "Tariffs, bundles, top-ups, contracts and number portability.", "parent_id": null, "level": 1},
+    {"id": "L2-PRD-TAR", "label": "Tariff Management", "description": "Changing, comparing or understanding the customer's base tariff or price plan, including upgrading or downgrading to a plan with more or less data.", "parent_id": "L1-PRD", "level": 2},
+    {"id": "L2-PRD-BUN", "label": "Data & Service Bundles", "description": "Buying, activating or removing add-on bundles, data packs and service options, and questions about remaining data allowance or how data usage is counted.", "parent_id": "L1-PRD", "level": 2},
+    {"id": "L2-PRD-TOP", "label": "Prepaid Top-ups", "description": "Topping up prepaid credit, missing or failed top-ups and prepaid balance questions.", "parent_id": "L1-PRD", "level": 2},
+    {"id": "L2-PRD-CON", "label": "Contract & Subscription Management", "description": "Contract terms, renewals, cancellations and recurring subscriptions.", "parent_id": "L1-PRD", "level": 2},
+    {"id": "L2-PRD-POR", "label": "Number Portability", "description": "Porting a phone number to or from another operator.", "parent_id": "L1-PRD", "level": 2}
+  ]
+}

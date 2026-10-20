@@ -1,0 +1,1484 @@
+{
+  "seed": 20261020,
+  "note": "Ground truth for evaluation only. Never provided to the analysis pipeline.",
+  "intent_types": [
+    {
+      "key": "duplicate_charge",
+      "label": "Duplicate charge",
+      "l1_id": "L1-BIL",
+      "l2_id": "L2-BIL-DSP"
+    },
+    {
+      "key": "missing_topup",
+      "label": "Missing prepaid top-up",
+      "l1_id": "L1-PRD",
+      "l2_id": "L2-PRD-TOP"
+    },
+    {
+      "key": "slow_data",
+      "label": "Slow mobile data",
+      "l1_id": "L1-NET",
+      "l2_id": "L2-NET-DAT"
+    },
+    {
+      "key": "invoice_explanation",
+      "label": "Invoice explanation",
+      "l1_id": "L1-BIL",
+      "l2_id": "L2-BIL-INV"
+    },
+    {
+      "key": "roaming_charges",
+      "label": "Incorrect roaming fees",
+      "l1_id": "L1-BIL",
+      "l2_id": "L2-BIL-DSP"
+    },
+    {
+      "key": "password_reset",
+      "label": "Password reset",
+      "l1_id": "L1-ACC",
+      "l2_id": "L2-ACC-ACS"
+    },
+    {
+      "key": "failed_payment",
+      "label": "Failed payment",
+      "l1_id": "L1-BIL",
+      "l2_id": "L2-BIL-PAY"
+    },
+    {
+      "key": "network_outage",
+      "label": "Network outage",
+      "l1_id": "L1-NET",
+      "l2_id": "L2-NET-COV"
+    },
+    {
+      "key": "tariff_upgrade",
+      "label": "Tariff upgrade",
+      "l1_id": "L1-PRD",
+      "l2_id": "L2-PRD-TAR"
+    },
+    {
+      "key": "bundle_activation",
+      "label": "Bundle activation",
+      "l1_id": "L1-PRD",
+      "l2_id": "L2-PRD-BUN"
+    },
+    {
+      "key": "call_quality",
+      "label": "Call quality problems",
+      "l1_id": "L1-NET",
+      "l2_id": "L2-NET-VOC"
+    },
+    {
+      "key": "sim_activation",
+      "label": "SIM activation",
+      "l1_id": "L1-ACC",
+      "l2_id": "L2-ACC-SIM"
+    },
+    {
+      "key": "incorrect_data_usage",
+      "label": "Incorrect data usage",
+      "l1_id": "L1-PRD",
+      "l2_id": "L2-PRD-BUN"
+    },
+    {
+      "key": "account_locked",
+      "label": "Account locked",
+      "l1_id": "L1-ACC",
+      "l2_id": "L2-ACC-ACS"
+    },
+    {
+      "key": "contract_cancellation",
+      "label": "Contract cancellation",
+      "l1_id": "L1-PRD",
+      "l2_id": "L2-PRD-CON"
+    },
+    {
+      "key": "subscription_renewal",
+      "label": "Unexpected subscription renewal",
+      "l1_id": "L1-PRD",
+      "l2_id": "L2-PRD-CON"
+    },
+    {
+      "key": "tariff_downgrade",
+      "label": "Tariff downgrade",
+      "l1_id": "L1-PRD",
+      "l2_id": "L2-PRD-TAR"
+    },
+    {
+      "key": "overage_charges",
+      "label": "Incorrect data overage charges",
+      "l1_id": "L1-BIL",
+      "l2_id": "L2-BIL-DSP"
+    },
+    {
+      "key": "lost_sim",
+      "label": "Lost SIM replacement",
+      "l1_id": "L1-ACC",
+      "l2_id": "L2-ACC-SIM"
+    },
+    {
+      "key": "sim_swap",
+      "label": "SIM swap request",
+      "l1_id": "L1-ACC",
+      "l2_id": "L2-ACC-SIM"
+    },
+    {
+      "key": "number_porting",
+      "label": "Number porting",
+      "l1_id": "L1-PRD",
+      "l2_id": "L2-PRD-POR"
+    },
+    {
+      "key": "address_change",
+      "label": "Address change",
+      "l1_id": "L1-ACC",
+      "l2_id": "L2-ACC-DET"
+    }
+  ],
+  "conversations": [
+    {
+      "conversation_id": "TELCO-0001",
+      "tags": [],
+      "intents": [
+        {
+          "key": "account_locked",
+          "label": "Account locked",
+          "l1_id": "L1-ACC",
+          "l2_id": "L2-ACC-ACS"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0002",
+      "tags": [],
+      "intents": [
+        {
+          "key": "roaming_charges",
+          "label": "Incorrect roaming fees",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-DSP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0003",
+      "tags": [],
+      "intents": [
+        {
+          "key": "network_outage",
+          "label": "Network outage",
+          "l1_id": "L1-NET",
+          "l2_id": "L2-NET-COV"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0004",
+      "tags": [],
+      "intents": [
+        {
+          "key": "incorrect_data_usage",
+          "label": "Incorrect data usage",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-BUN"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0005",
+      "tags": [],
+      "intents": [
+        {
+          "key": "duplicate_charge",
+          "label": "Duplicate charge",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-DSP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0006",
+      "tags": [],
+      "intents": [
+        {
+          "key": "network_outage",
+          "label": "Network outage",
+          "l1_id": "L1-NET",
+          "l2_id": "L2-NET-COV"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0007",
+      "tags": [],
+      "intents": [
+        {
+          "key": "contract_cancellation",
+          "label": "Contract cancellation",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-CON"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0008",
+      "tags": [],
+      "intents": [
+        {
+          "key": "roaming_charges",
+          "label": "Incorrect roaming fees",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-DSP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0009",
+      "tags": [
+        "multi_intent"
+      ],
+      "intents": [
+        {
+          "key": "failed_payment",
+          "label": "Failed payment",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-PAY"
+        },
+        {
+          "key": "network_outage",
+          "label": "Network outage",
+          "l1_id": "L1-NET",
+          "l2_id": "L2-NET-COV"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0010",
+      "tags": [],
+      "intents": [
+        {
+          "key": "password_reset",
+          "label": "Password reset",
+          "l1_id": "L1-ACC",
+          "l2_id": "L2-ACC-ACS"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0011",
+      "tags": [],
+      "intents": [
+        {
+          "key": "duplicate_charge",
+          "label": "Duplicate charge",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-DSP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0012",
+      "tags": [],
+      "intents": [
+        {
+          "key": "tariff_downgrade",
+          "label": "Tariff downgrade",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-TAR"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0013",
+      "tags": [
+        "small_talk"
+      ],
+      "intents": [
+        {
+          "key": "roaming_charges",
+          "label": "Incorrect roaming fees",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-DSP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0014",
+      "tags": [
+        "multi_intent"
+      ],
+      "intents": [
+        {
+          "key": "incorrect_data_usage",
+          "label": "Incorrect data usage",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-BUN"
+        },
+        {
+          "key": "duplicate_charge",
+          "label": "Duplicate charge",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-DSP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0015",
+      "tags": [],
+      "intents": [
+        {
+          "key": "network_outage",
+          "label": "Network outage",
+          "l1_id": "L1-NET",
+          "l2_id": "L2-NET-COV"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0016",
+      "tags": [],
+      "intents": [
+        {
+          "key": "slow_data",
+          "label": "Slow mobile data",
+          "l1_id": "L1-NET",
+          "l2_id": "L2-NET-DAT"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0017",
+      "tags": [
+        "multi_intent"
+      ],
+      "intents": [
+        {
+          "key": "tariff_upgrade",
+          "label": "Tariff upgrade",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-TAR"
+        },
+        {
+          "key": "slow_data",
+          "label": "Slow mobile data",
+          "l1_id": "L1-NET",
+          "l2_id": "L2-NET-DAT"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0018",
+      "tags": [],
+      "intents": [
+        {
+          "key": "bundle_activation",
+          "label": "Bundle activation",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-BUN"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0019",
+      "tags": [
+        "multi_intent"
+      ],
+      "intents": [
+        {
+          "key": "subscription_renewal",
+          "label": "Unexpected subscription renewal",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-CON"
+        },
+        {
+          "key": "missing_topup",
+          "label": "Missing prepaid top-up",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-TOP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0020",
+      "tags": [],
+      "intents": [
+        {
+          "key": "duplicate_charge",
+          "label": "Duplicate charge",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-DSP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0021",
+      "tags": [],
+      "intents": [
+        {
+          "key": "missing_topup",
+          "label": "Missing prepaid top-up",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-TOP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0022",
+      "tags": [],
+      "intents": [
+        {
+          "key": "duplicate_charge",
+          "label": "Duplicate charge",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-DSP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0023",
+      "tags": [
+        "small_talk"
+      ],
+      "intents": [
+        {
+          "key": "call_quality",
+          "label": "Call quality problems",
+          "l1_id": "L1-NET",
+          "l2_id": "L2-NET-VOC"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0024",
+      "tags": [],
+      "intents": [
+        {
+          "key": "slow_data",
+          "label": "Slow mobile data",
+          "l1_id": "L1-NET",
+          "l2_id": "L2-NET-DAT"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0025",
+      "tags": [
+        "small_talk"
+      ],
+      "intents": [
+        {
+          "key": "bundle_activation",
+          "label": "Bundle activation",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-BUN"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0026",
+      "tags": [],
+      "intents": [
+        {
+          "key": "invoice_explanation",
+          "label": "Invoice explanation",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-INV"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0027",
+      "tags": [],
+      "intents": [
+        {
+          "key": "contract_cancellation",
+          "label": "Contract cancellation",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-CON"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0028",
+      "tags": [],
+      "intents": [
+        {
+          "key": "network_outage",
+          "label": "Network outage",
+          "l1_id": "L1-NET",
+          "l2_id": "L2-NET-COV"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0029",
+      "tags": [],
+      "intents": [
+        {
+          "key": "tariff_downgrade",
+          "label": "Tariff downgrade",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-TAR"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0030",
+      "tags": [
+        "small_talk",
+        "multi_intent"
+      ],
+      "intents": [
+        {
+          "key": "slow_data",
+          "label": "Slow mobile data",
+          "l1_id": "L1-NET",
+          "l2_id": "L2-NET-DAT"
+        },
+        {
+          "key": "network_outage",
+          "label": "Network outage",
+          "l1_id": "L1-NET",
+          "l2_id": "L2-NET-COV"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0031",
+      "tags": [],
+      "intents": [
+        {
+          "key": "bundle_activation",
+          "label": "Bundle activation",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-BUN"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0032",
+      "tags": [],
+      "intents": [
+        {
+          "key": "bundle_activation",
+          "label": "Bundle activation",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-BUN"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0033",
+      "tags": [
+        "ambiguous"
+      ],
+      "intents": [
+        {
+          "key": "duplicate_charge",
+          "label": "Duplicate charge",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-DSP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0034",
+      "tags": [],
+      "intents": [
+        {
+          "key": "sim_swap",
+          "label": "SIM swap request",
+          "l1_id": "L1-ACC",
+          "l2_id": "L2-ACC-SIM"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0035",
+      "tags": [],
+      "intents": [
+        {
+          "key": "password_reset",
+          "label": "Password reset",
+          "l1_id": "L1-ACC",
+          "l2_id": "L2-ACC-ACS"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0036",
+      "tags": [],
+      "intents": [
+        {
+          "key": "failed_payment",
+          "label": "Failed payment",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-PAY"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0037",
+      "tags": [
+        "ambiguous",
+        "multi_intent"
+      ],
+      "intents": [
+        {
+          "key": "missing_topup",
+          "label": "Missing prepaid top-up",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-TOP"
+        },
+        {
+          "key": "call_quality",
+          "label": "Call quality problems",
+          "l1_id": "L1-NET",
+          "l2_id": "L2-NET-VOC"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0038",
+      "tags": [
+        "small_talk"
+      ],
+      "intents": [
+        {
+          "key": "missing_topup",
+          "label": "Missing prepaid top-up",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-TOP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0039",
+      "tags": [],
+      "intents": [
+        {
+          "key": "sim_activation",
+          "label": "SIM activation",
+          "l1_id": "L1-ACC",
+          "l2_id": "L2-ACC-SIM"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0040",
+      "tags": [
+        "small_talk"
+      ],
+      "intents": [
+        {
+          "key": "invoice_explanation",
+          "label": "Invoice explanation",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-INV"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0041",
+      "tags": [],
+      "intents": [
+        {
+          "key": "invoice_explanation",
+          "label": "Invoice explanation",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-INV"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0042",
+      "tags": [
+        "small_talk"
+      ],
+      "intents": [
+        {
+          "key": "missing_topup",
+          "label": "Missing prepaid top-up",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-TOP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0043",
+      "tags": [],
+      "intents": [
+        {
+          "key": "duplicate_charge",
+          "label": "Duplicate charge",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-DSP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0044",
+      "tags": [],
+      "intents": [
+        {
+          "key": "number_porting",
+          "label": "Number porting",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-POR"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0045",
+      "tags": [],
+      "intents": [
+        {
+          "key": "account_locked",
+          "label": "Account locked",
+          "l1_id": "L1-ACC",
+          "l2_id": "L2-ACC-ACS"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0046",
+      "tags": [
+        "multi_intent"
+      ],
+      "intents": [
+        {
+          "key": "slow_data",
+          "label": "Slow mobile data",
+          "l1_id": "L1-NET",
+          "l2_id": "L2-NET-DAT"
+        },
+        {
+          "key": "failed_payment",
+          "label": "Failed payment",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-PAY"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0047",
+      "tags": [],
+      "intents": [
+        {
+          "key": "missing_topup",
+          "label": "Missing prepaid top-up",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-TOP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0048",
+      "tags": [],
+      "intents": [
+        {
+          "key": "missing_topup",
+          "label": "Missing prepaid top-up",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-TOP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0049",
+      "tags": [],
+      "intents": [
+        {
+          "key": "incorrect_data_usage",
+          "label": "Incorrect data usage",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-BUN"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0050",
+      "tags": [],
+      "intents": [
+        {
+          "key": "roaming_charges",
+          "label": "Incorrect roaming fees",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-DSP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0051",
+      "tags": [],
+      "intents": [
+        {
+          "key": "tariff_upgrade",
+          "label": "Tariff upgrade",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-TAR"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0052",
+      "tags": [],
+      "intents": [
+        {
+          "key": "call_quality",
+          "label": "Call quality problems",
+          "l1_id": "L1-NET",
+          "l2_id": "L2-NET-VOC"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0053",
+      "tags": [],
+      "intents": [
+        {
+          "key": "bundle_activation",
+          "label": "Bundle activation",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-BUN"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0054",
+      "tags": [],
+      "intents": [
+        {
+          "key": "missing_topup",
+          "label": "Missing prepaid top-up",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-TOP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0055",
+      "tags": [
+        "ambiguous"
+      ],
+      "intents": [
+        {
+          "key": "slow_data",
+          "label": "Slow mobile data",
+          "l1_id": "L1-NET",
+          "l2_id": "L2-NET-DAT"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0056",
+      "tags": [],
+      "intents": [
+        {
+          "key": "roaming_charges",
+          "label": "Incorrect roaming fees",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-DSP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0057",
+      "tags": [],
+      "intents": [
+        {
+          "key": "slow_data",
+          "label": "Slow mobile data",
+          "l1_id": "L1-NET",
+          "l2_id": "L2-NET-DAT"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0058",
+      "tags": [],
+      "intents": [
+        {
+          "key": "lost_sim",
+          "label": "Lost SIM replacement",
+          "l1_id": "L1-ACC",
+          "l2_id": "L2-ACC-SIM"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0059",
+      "tags": [],
+      "intents": [
+        {
+          "key": "failed_payment",
+          "label": "Failed payment",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-PAY"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0060",
+      "tags": [],
+      "intents": [
+        {
+          "key": "failed_payment",
+          "label": "Failed payment",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-PAY"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0061",
+      "tags": [],
+      "intents": [
+        {
+          "key": "bundle_activation",
+          "label": "Bundle activation",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-BUN"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0062",
+      "tags": [],
+      "intents": [
+        {
+          "key": "address_change",
+          "label": "Address change",
+          "l1_id": "L1-ACC",
+          "l2_id": "L2-ACC-DET"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0063",
+      "tags": [],
+      "intents": [
+        {
+          "key": "password_reset",
+          "label": "Password reset",
+          "l1_id": "L1-ACC",
+          "l2_id": "L2-ACC-ACS"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0064",
+      "tags": [],
+      "intents": [
+        {
+          "key": "password_reset",
+          "label": "Password reset",
+          "l1_id": "L1-ACC",
+          "l2_id": "L2-ACC-ACS"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0065",
+      "tags": [],
+      "intents": [
+        {
+          "key": "account_locked",
+          "label": "Account locked",
+          "l1_id": "L1-ACC",
+          "l2_id": "L2-ACC-ACS"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0066",
+      "tags": [
+        "multi_intent"
+      ],
+      "intents": [
+        {
+          "key": "invoice_explanation",
+          "label": "Invoice explanation",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-INV"
+        },
+        {
+          "key": "duplicate_charge",
+          "label": "Duplicate charge",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-DSP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0067",
+      "tags": [
+        "ambiguous",
+        "multi_intent"
+      ],
+      "intents": [
+        {
+          "key": "invoice_explanation",
+          "label": "Invoice explanation",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-INV"
+        },
+        {
+          "key": "subscription_renewal",
+          "label": "Unexpected subscription renewal",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-CON"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0068",
+      "tags": [
+        "small_talk"
+      ],
+      "intents": [
+        {
+          "key": "subscription_renewal",
+          "label": "Unexpected subscription renewal",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-CON"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0069",
+      "tags": [],
+      "intents": [
+        {
+          "key": "slow_data",
+          "label": "Slow mobile data",
+          "l1_id": "L1-NET",
+          "l2_id": "L2-NET-DAT"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0070",
+      "tags": [],
+      "intents": [
+        {
+          "key": "duplicate_charge",
+          "label": "Duplicate charge",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-DSP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0071",
+      "tags": [],
+      "intents": [
+        {
+          "key": "overage_charges",
+          "label": "Incorrect data overage charges",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-DSP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0072",
+      "tags": [],
+      "intents": [
+        {
+          "key": "invoice_explanation",
+          "label": "Invoice explanation",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-INV"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0073",
+      "tags": [],
+      "intents": [
+        {
+          "key": "tariff_upgrade",
+          "label": "Tariff upgrade",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-TAR"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0074",
+      "tags": [],
+      "intents": [
+        {
+          "key": "invoice_explanation",
+          "label": "Invoice explanation",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-INV"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0075",
+      "tags": [
+        "multi_intent"
+      ],
+      "intents": [
+        {
+          "key": "password_reset",
+          "label": "Password reset",
+          "l1_id": "L1-ACC",
+          "l2_id": "L2-ACC-ACS"
+        },
+        {
+          "key": "tariff_downgrade",
+          "label": "Tariff downgrade",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-TAR"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0076",
+      "tags": [
+        "multi_intent"
+      ],
+      "intents": [
+        {
+          "key": "lost_sim",
+          "label": "Lost SIM replacement",
+          "l1_id": "L1-ACC",
+          "l2_id": "L2-ACC-SIM"
+        },
+        {
+          "key": "roaming_charges",
+          "label": "Incorrect roaming fees",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-DSP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0077",
+      "tags": [
+        "small_talk",
+        "multi_intent"
+      ],
+      "intents": [
+        {
+          "key": "invoice_explanation",
+          "label": "Invoice explanation",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-INV"
+        },
+        {
+          "key": "sim_swap",
+          "label": "SIM swap request",
+          "l1_id": "L1-ACC",
+          "l2_id": "L2-ACC-SIM"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0078",
+      "tags": [],
+      "intents": [
+        {
+          "key": "sim_activation",
+          "label": "SIM activation",
+          "l1_id": "L1-ACC",
+          "l2_id": "L2-ACC-SIM"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0079",
+      "tags": [
+        "ambiguous"
+      ],
+      "intents": [
+        {
+          "key": "slow_data",
+          "label": "Slow mobile data",
+          "l1_id": "L1-NET",
+          "l2_id": "L2-NET-DAT"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0080",
+      "tags": [],
+      "intents": [
+        {
+          "key": "call_quality",
+          "label": "Call quality problems",
+          "l1_id": "L1-NET",
+          "l2_id": "L2-NET-VOC"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0081",
+      "tags": [],
+      "intents": [
+        {
+          "key": "contract_cancellation",
+          "label": "Contract cancellation",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-CON"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0082",
+      "tags": [],
+      "intents": [
+        {
+          "key": "invoice_explanation",
+          "label": "Invoice explanation",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-INV"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0083",
+      "tags": [],
+      "intents": [
+        {
+          "key": "duplicate_charge",
+          "label": "Duplicate charge",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-DSP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0084",
+      "tags": [
+        "small_talk"
+      ],
+      "intents": [
+        {
+          "key": "password_reset",
+          "label": "Password reset",
+          "l1_id": "L1-ACC",
+          "l2_id": "L2-ACC-ACS"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0085",
+      "tags": [
+        "multi_intent"
+      ],
+      "intents": [
+        {
+          "key": "sim_activation",
+          "label": "SIM activation",
+          "l1_id": "L1-ACC",
+          "l2_id": "L2-ACC-SIM"
+        },
+        {
+          "key": "account_locked",
+          "label": "Account locked",
+          "l1_id": "L1-ACC",
+          "l2_id": "L2-ACC-ACS"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0086",
+      "tags": [],
+      "intents": [
+        {
+          "key": "failed_payment",
+          "label": "Failed payment",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-PAY"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0087",
+      "tags": [
+        "ambiguous"
+      ],
+      "intents": [
+        {
+          "key": "slow_data",
+          "label": "Slow mobile data",
+          "l1_id": "L1-NET",
+          "l2_id": "L2-NET-DAT"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0088",
+      "tags": [],
+      "intents": [
+        {
+          "key": "tariff_upgrade",
+          "label": "Tariff upgrade",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-TAR"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0089",
+      "tags": [],
+      "intents": [
+        {
+          "key": "tariff_upgrade",
+          "label": "Tariff upgrade",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-TAR"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0090",
+      "tags": [],
+      "intents": [
+        {
+          "key": "duplicate_charge",
+          "label": "Duplicate charge",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-DSP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0091",
+      "tags": [],
+      "intents": [
+        {
+          "key": "incorrect_data_usage",
+          "label": "Incorrect data usage",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-BUN"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0092",
+      "tags": [],
+      "intents": [
+        {
+          "key": "failed_payment",
+          "label": "Failed payment",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-PAY"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0093",
+      "tags": [],
+      "intents": [
+        {
+          "key": "sim_activation",
+          "label": "SIM activation",
+          "l1_id": "L1-ACC",
+          "l2_id": "L2-ACC-SIM"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0094",
+      "tags": [],
+      "intents": [
+        {
+          "key": "tariff_upgrade",
+          "label": "Tariff upgrade",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-TAR"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0095",
+      "tags": [
+        "small_talk"
+      ],
+      "intents": [
+        {
+          "key": "missing_topup",
+          "label": "Missing prepaid top-up",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-TOP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0096",
+      "tags": [],
+      "intents": [
+        {
+          "key": "overage_charges",
+          "label": "Incorrect data overage charges",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-DSP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0097",
+      "tags": [],
+      "intents": [
+        {
+          "key": "roaming_charges",
+          "label": "Incorrect roaming fees",
+          "l1_id": "L1-BIL",
+          "l2_id": "L2-BIL-DSP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0098",
+      "tags": [
+        "small_talk"
+      ],
+      "intents": [
+        {
+          "key": "missing_topup",
+          "label": "Missing prepaid top-up",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-TOP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0099",
+      "tags": [],
+      "intents": [
+        {
+          "key": "password_reset",
+          "label": "Password reset",
+          "l1_id": "L1-ACC",
+          "l2_id": "L2-ACC-ACS"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TELCO-0100",
+      "tags": [
+        "multi_intent"
+      ],
+      "intents": [
+        {
+          "key": "call_quality",
+          "label": "Call quality problems",
+          "l1_id": "L1-NET",
+          "l2_id": "L2-NET-VOC"
+        },
+        {
+          "key": "contract_cancellation",
+          "label": "Contract cancellation",
+          "l1_id": "L1-PRD",
+          "l2_id": "L2-PRD-CON"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+# secrets & local config
+.env
+backend/.env
+
+# runtime data (transcripts, embeddings, results)
+backend/var/
+*.db
+*.db-wal
+*.db-shm
+
+# python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# node
+node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+# exported results and office lock files
+intent_studio_*.xlsx
+intent_studio_*.csv
+intent_studio_*.json
+intent_studio_*.zip
+~$*
+
+.DS_Store
+
+# local documents
+*.pptx
