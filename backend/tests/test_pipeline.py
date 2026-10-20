@@ -229,3 +229,44 @@ def test_semantically_distant_reuse_goes_to_review(conn, fake, monkeypatch):
     assert prop and "first matched" in json.loads(prop["proposed_json"])["conflict"]
     assert not conn.execute("SELECT 1 FROM assignments WHERE l4_id=? AND intent_id IN (%s)" % ",".join(
         str(m["intent_id"]) for m in members), (a["id"],)).fetchone()
+
+
+def test_cluster_matched_to_pending_proposal_is_attached(conn, fake, monkeypatch):
+    from app import clustering, embeddings, pipeline, taxonomy_builder
+
+    db.save_settings(conn, {"batch_size": 30, "auto_accept_new_categories": False})
+    load_sample(conn, 30)
+    _run(AnalysisWorker())
+    creates = [c for c in taxonomy.list_changes(conn, status="proposed") if c["change_type"] == "create"]
+    target, other = creates[0], creates[1]
+    ids = other["proposed"]["member_intent_ids"]
+    with db.transaction(conn):
+        taxonomy.reject(conn, other["id"])
+    rows = conn.execute(
+        "SELECT a.id AS aid, a.intent_id, i.intent_text, i.evidence, i.embedding_id, x.conversation_id "
+        f"FROM assignments a JOIN intents i ON i.id=a.intent_id JOIN interactions x ON x.id=a.interaction_id "
+        f"WHERE a.intent_id IN ({','.join('?' * len(ids))})", ids).fetchall()
+    vecs = embeddings.load(conn, [r["embedding_id"] for r in rows])
+    members = [{**dict(r), "vec": vecs[r["embedding_id"]]} for r in rows]
+
+    calls = []
+    monkeypatch.setattr(taxonomy_builder, "name_cluster", lambda *a, **kw: calls.append(1) or taxonomy_builder.Decision(
+        "existing", target["node_id"], "", "", None, "", "", "same intent"))
+    monkeypatch.setattr(clustering, "cluster_candidates", lambda X, t: clustering.ClusteringResult(
+        [clustering.Cluster(list(range(len(X))), 0.9, "test")], [], "test"))
+    l2 = pipeline._l2_lookup(conn)[target["proposed"]["l2_id"]]
+    pipeline.cluster_l2(pipeline.Ctx(conn, None, db.load_settings(conn), None), l2, members,
+                        {"proposals": 0, "new_l4": 0, "new_l3": 0})
+
+    prop = taxonomy.list_changes(conn, node_id=target["node_id"])[0]
+    assert set(ids) <= set(prop["proposed"]["member_intent_ids"])
+    assert set(ids) <= taxonomy.pending_member_intents(conn)
+    waiting = conn.execute(f"SELECT needs_review, l4_id FROM assignments WHERE intent_id IN "
+                           f"({','.join('?' * len(ids))})", ids).fetchall()
+    assert all(r["needs_review"] == 1 and r["l4_id"] is None for r in waiting)
+
+    with db.transaction(conn):
+        taxonomy.accept(conn, target["id"], actor="user", settings=db.load_settings(conn))
+    done = conn.execute(f"SELECT needs_review, l4_id FROM assignments WHERE intent_id IN "
+                        f"({','.join('?' * len(ids))})", ids).fetchall()
+    assert all(r["l4_id"] == target["node_id"] and r["needs_review"] == 0 for r in done)

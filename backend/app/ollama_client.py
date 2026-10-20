@@ -17,6 +17,10 @@ log = logging.getLogger("intent_studio.ollama")
 
 T = TypeVar("T", bound=BaseModel)
 
+# Caps runaway generations (repetition loops) well below the request timeout; the longest
+# legitimate answers (outlier decisions for a full chunk) stay far below this.
+MAX_OUTPUT_TOKENS = 3000
+
 
 class OllamaError(RuntimeError):
     """Safe-to-display error (no transcript content)."""
@@ -89,12 +93,12 @@ class OllamaClient:
             raise OllamaError(f"Cannot reach Ollama at {self.base_url} ({type(e).__name__})") from e
 
     def chat(self, model: str, messages: list[dict], schema: dict | None = None, temperature: float = 0.0,
-             num_ctx: int = 8192) -> str:
+             num_ctx: int = 8192, num_predict: int = MAX_OUTPUT_TOKENS) -> str:
         payload: dict[str, Any] = {
             "model": model,
             "messages": messages,
             "stream": False,
-            "options": {"temperature": temperature, "num_ctx": num_ctx, "seed": 42},
+            "options": {"temperature": temperature, "num_ctx": num_ctx, "num_predict": num_predict, "seed": 42},
         }
         if schema is not None:
             payload["format"] = schema

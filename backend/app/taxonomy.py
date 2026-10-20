@@ -375,6 +375,20 @@ def propose_create(conn: sqlite3.Connection, *, l2_id: str, l3: dict, l4: dict, 
     return {"change_id": cid, "l4_id": l4_id, "l3_id": l3_id, "l3_new": l3_new, "accepted": accepted}
 
 
+def attach_to_pending_create(conn: sqlite3.Connection, l4_id: str, intent_ids: list[int]) -> int | None:
+    """Add intents to the open creation proposal of a proposed L4; they are assigned when it is accepted."""
+    row = conn.execute("SELECT id, proposed_json FROM taxonomy_changes WHERE node_id=? AND change_type='create' "
+                       "AND status='proposed' ORDER BY id DESC LIMIT 1", (l4_id,)).fetchone()
+    if not row:
+        return None
+    p = db.loads(row["proposed_json"], {})
+    members = p.get("member_intent_ids", [])
+    added = [i for i in intent_ids if i not in members]
+    p["member_intent_ids"] = members + added
+    conn.execute("UPDATE taxonomy_changes SET proposed_json=? WHERE id=?", (db.dumps(p), row["id"]))
+    return len(added)
+
+
 def propose_merge(conn: sqlite3.Connection, source_id: str, target_id: str, similarity: float, rationale: str,
                   run_id: int | None) -> int | None:
     if pair_already_proposed(conn, source_id, target_id):

@@ -233,6 +233,19 @@ def _assign_members_to_existing(ctx: Ctx, members: list[dict], node_id: str, met
     return n
 
 
+def _attach_to_proposal(ctx: Ctx, members: list[dict], node: dict) -> bool:
+    added = taxonomy.attach_to_pending_create(ctx.conn, node["id"], [m["intent_id"] for m in members])
+    if added is None:
+        return False
+    for m in members:
+        ctx.conn.execute("UPDATE assignments SET needs_review=1, review_reason=? WHERE id=? AND review_status='pending'",
+                         (f"Waiting for proposed category “{node['label']}” to be reviewed", m["aid"]))
+    ctx.emit("needs_review", f"{len(members)} intent(s) added to proposed category “{node['label']}” — assigned "
+             f"once the proposal is accepted", level="warning", node_id=node["id"],
+             data={"intent_ids": [m["intent_id"] for m in members]})
+    return True
+
+
 def _cluster_similarity(conn: sqlite3.Connection, members: list[dict], node_id: str | None) -> float | None:
     cent = embeddings.centroids(conn).get(node_id) if node_id else None
     if cent is None:
@@ -340,6 +353,8 @@ def cluster_l2(ctx: Ctx, l2: dict, cands: list[dict], stats: dict) -> None:
                     n = _assign_members_to_existing(ctx, members, node["id"], "llm_cluster_match", review_below_match=True)
                     ctx.emit("matched_existing", f"Cluster of {len(members)} matched existing intent: {node['label']}",
                              node_id=node["id"], level="success", data={"assigned": n, "rationale": decision.rationale})
+                elif node and node["status"] == "proposed":
+                    _attach_to_proposal(ctx, members, node)
                 continue
             out = _create_from_decision(ctx, l2["id"], decision, members, cluster_info, doubt=doubt)
             if out:
@@ -376,6 +391,8 @@ def outlier_pass(ctx: Ctx, l2: dict, cands: list[dict], stats: dict) -> None:
                         _assign_members_to_existing(ctx, [c], node["id"], "llm_outlier", review_below_match=True)
                         ctx.emit("matched_existing", f"Interaction {c['conversation_id']} — rare intent placed in "
                                  f"{node['label']}", conversation_id=c["conversation_id"], node_id=node["id"])
+                        continue
+                    if node and node["status"] == "proposed" and _attach_to_proposal(ctx, [c], node):
                         continue
                     action = "unclassified"
                 if action == "new" and dec:
