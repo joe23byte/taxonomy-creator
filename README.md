@@ -123,7 +123,8 @@ Then open **http://127.0.0.1:5173** in your browser:
 
 1. The header should show **Ollama connected**. If not, open Settings (gear icon), check the Ollama URL and click
    *Test connection* (it runs a real inference and embedding request).
-2. Click **Load 100 Sample Interactions**, then **Start Analysis**. 100 interactions take roughly 10–15 minutes.
+2. Click **Load 100 Sample Interactions**, then **Start Analysis**. 100 interactions take about 20 minutes on a
+   mid-range GPU (see [Performance reference](#performance-reference)).
 
 To stop, press `Ctrl+C` in both terminals. Everything is saved; after the next start you continue where you left off.
 
@@ -162,7 +163,7 @@ To stop, press `Ctrl+C` in both terminals. Everything is saved; after the next s
 8. **Export Results** → Excel (4 sheets), CSV or JSON.
 9. Stop the backend and start it again: everything is in SQLite; an interrupted run shows **Resume**.
 
-Processing time with qwen3:8b on a consumer GPU is roughly 4–7 s per interaction (≈10–15 min for 100).
+On a mid-range GPU, 100 interactions take about 20 minutes; see [Performance reference](#performance-reference).
 
 ## Project structure
 
@@ -243,6 +244,108 @@ LLM makes the semantic decisions at batch boundaries. Sensitivity presets (Setti
 is committed separately. On restart, runs that were *running* become *interrupted* and half-processed interactions are
 rolled back to *pending*, so **Resume** never processes an interaction twice. Embeddings are never recomputed for known texts.
 Importing more data later and pressing Start processes only the new interactions and refines the existing structure.
+
+## Performance reference
+
+Measured on October 20, 2026 with the 100 synthetic sample interactions, starting from an empty database
+(only the predefined 4 L1 / 14 L2 categories, no cached embeddings), batch size 25, sensitivity *medium*.
+
+### Reference hardware
+
+The AI machine is a desktop PC with an **AMD Radeon RX 7700 XT (12 GB VRAM)** running Ollama. Intent Studio itself ran
+on a Mac in the same local network; its own computing load is negligible.
+
+| | Qwen3 8B (LLM) | Qwen3 Embedding 0.6B |
+| --- | --- | --- |
+| Memory according to Ollama | 6.3 GB | 5.8 GB |
+| Processor | 100 % GPU | 100 % GPU |
+| Context window | 8,192 tokens | 32,768 tokens |
+| Runtime | llama.cpp | llama.cpp |
+
+Both models fit completely into VRAM at the same time, so no model computation is offloaded to the CPU and Ollama
+never has to swap models between requests. This is the most important precondition for the numbers below.
+
+### Where the time goes
+
+Total run time: **22.7 minutes for 100 interactions (13.6 s per interaction)**.
+
+| Part | Time | Share |
+| --- | --- | --- |
+| Processing the 100 conversations (extraction, embedding, matching) | 11.2 min (6.7 s per conversation) | ≈ 50 % |
+| Batch refinements after 25, 50, 75 and 100 conversations | ≈ 72–78 s each, ≈ 5 min in total | ≈ 22 % |
+| Final pass (placing rare intents that never formed a cluster) | ≈ 5.5 min | ≈ 24 % |
+
+- Per conversation: median 5.7 s; 80 % of the conversations take between 5.2 and 9.3 s.
+- Almost all of that is the LLM extraction. One embedding request takes about 0.03 s.
+- The duration depends almost only on the **number of intents in a conversation**: about 1.8 s base time plus 3.5 s per
+  intent. Transcript length hardly matters. Together this explains 92 % of the variation between conversations.
+- The final pass in this run was inflated by two defects that have since been fixed (a 180 s LLM timeout caused by a
+  runaway generation, and candidates that were repeatedly re-sent to the LLM instead of being attached to a pending
+  proposal). Without them, the same run is estimated at 17–18 minutes (≈ 10–11 s per interaction).
+
+### Does it get slower as the taxonomy grows?
+
+No. The processing time per conversation stays flat whether no L4 category exists yet or 18 already do, because the
+extraction prompt only contains the fixed L2 categories:
+
+| Conversations | Ø time per conversation | L4 categories before | Intents matched immediately |
+| --- | --- | --- | --- |
+| 1–20 | 6.5 s | 0 | 0 % |
+| 21–40 | 7.0 s | 4.5 | 25 % |
+| 41–60 | 6.8 s | 9.5 | 46 % |
+| 61–80 | 6.9 s | 14 | 50 % |
+| 81–100 | 6.5 s | 18 | 52 % |
+
+Indirectly it tends to get **faster**: at the start every intent is an open candidate, from the middle on about half
+are matched to an existing category by embedding alone, which costs practically nothing. Fewer open candidates mean
+less work in the batch refinements. With only 100 interactions this saturation is not yet visible in the refinement
+times (each batch still took ≈ 75 s); it is an expectation for larger datasets, not a measurement.
+
+### Projection for larger datasets
+
+Estimates for the reference hardware, extrapolated from the measurement above. They assume conversations similar to the
+sample (≈ 1.3 intents each) and one analysis job at a time.
+
+| Interactions | Lower bound: extraction only (6.7 s) | Expected: saturation, batch size 100 (≈ 7.7 s) | Conservative: refinement as measured (≈ 9.7 s) |
+| --- | --- | --- | --- |
+| 1,000 | ≈ 1.9 h | ≈ 2.1 h | ≈ 2.7 h |
+| 2,500 | ≈ 4.7 h | ≈ 5.3 h | ≈ 6.7 h |
+| 5,000 | ≈ 9.3 h | ≈ 10.7 h | ≈ 13.5 h |
+
+Add roughly 10–30 minutes for the final pass; it grows with the number of rare intents in the long tail. The
+*expected* column assumes that refinement drops to ≈ 1 s per interaction once most intents match existing categories;
+the *conservative* column keeps the measured ≈ 3 s per interaction.
+
+### Recommendations for productive use
+
+- **Up to ≈ 1,000 interactions:** fine on the reference hardware within an afternoon or overnight.
+- **2,500–5,000 interactions:** plan an overnight or weekend run. Runs survive restarts and can be paused and resumed,
+  so the work can also be split over several evenings.
+- **Build the taxonomy on a sample first:** analyse a representative 500–1,000 interactions, review the proposals and
+  correct the taxonomy, then import and process the rest. Later interactions then mostly match existing categories,
+  which reduces refinement work and the review effort. The extraction cost per conversation stays the same.
+- **Increase the batch size to 50–100** for large datasets (Settings). Fewer, larger refinements need fewer LLM calls
+  per interaction and give HDBSCAN more data per cluster.
+- **Keep the AI machine awake:** disable sleep mode for the duration of the run. If Ollama stops responding, Intent
+  Studio pauses the run after two failed requests; press **Resume** once the machine is back.
+
+### Hardware matters
+
+The GPU and its VRAM determine the performance more than anything else:
+
+- **Everything must fit into VRAM.** If Ollama shows less than 100 % GPU for a model, part of the computation runs on
+  the CPU and processing becomes several times slower. Both models together currently need ≈ 12 GB, which is the whole
+  VRAM of the RX 7700 XT.
+- **Generation speed scales with GPU memory bandwidth.** The extraction time is dominated by generating the JSON answer
+  token by token. GPUs with higher memory bandwidth (and enough VRAM) process each conversation correspondingly faster;
+  slower or older GPUs, or CPU-only machines, correspondingly slower. Re-measure on your own hardware with the sample
+  dataset before planning a large run.
+- **VRAM tuning potential:** the embedding model is loaded with its default 32,768-token context, although intent
+  texts are only a few dozen tokens long. That context accounts for most of its 5.8 GB. Requesting a smaller context
+  (for example 2,048 tokens) would free several GB of VRAM. Intent Studio does not do this yet.
+- **No parallel processing yet:** Intent Studio sends one request at a time. A GPU with spare capacity could serve
+  several conversations in parallel (Ollama `OLLAMA_NUM_PARALLEL`), which would need a concurrent worker; this is a
+  possible future extension.
 
 ## Import format
 
