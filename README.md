@@ -1,7 +1,7 @@
-# Intent Studio — Local AI Taxonomy Discovery
+# Intent Studio - Local AI Taxonomy Discovery
 
 Intent Studio turns customer-service transcripts into a traceable **L1 → L2 → L3 → L4 intent taxonomy**.
-L1/L2 are predefined and fixed; L3/L4 are discovered from the data with a local LLM (Ollama), semantic
+L1/L2 are predefined and fixed; L3/L4 are discovered from the data with a local LLM (via Ollama), semantic
 embeddings and density-based clustering. Every step is persisted, streamed live to the UI, reviewable and exportable.
 
 ![Workspace with live activity feed and discovery curve](docs/screenshots/workspace.png)
