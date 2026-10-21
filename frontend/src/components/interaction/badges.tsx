@@ -1,30 +1,29 @@
+import { useI18n } from "@/lib/i18n";
 import { Badge, type Tone } from "../ui/primitives";
 
-const REVIEW: Record<string, [Tone, string]> = {
-  pending: ["neutral", "Pending review"],
-  needs_review: ["amber", "Needs review"],
-  confirmed: ["green", "Confirmed"],
-  corrected: ["blue", "Corrected"],
-  unclassified: ["outline", "Unclassified"],
+// labels live under "review.<status>" / "classification.<status>" in the i18n files
+export const REVIEW_TONES: Record<string, Tone> = {
+  pending: "neutral",
+  needs_review: "amber",
+  confirmed: "green",
+  corrected: "blue",
+  unclassified: "outline",
 };
 
-const CLASS: Record<string, [Tone, string]> = {
-  classified: ["green", "Classified"],
-  partial: ["blue", "L1/L2 only"],
-  unclassified: ["amber", "Unclassified"],
-  failed: ["red", "Failed"],
-  not_processed: ["outline", "Not processed"],
+export const CLASS_TONES: Record<string, Tone> = {
+  classified: "green",
+  partial: "blue",
+  unclassified: "amber",
+  failed: "red",
+  not_processed: "outline",
 };
 
 export function ReviewBadge({ status }: { status: string }) {
-  const [tone, label] = REVIEW[status] ?? ["neutral", status];
-  return <Badge tone={tone}>{label}</Badge>;
+  const { t } = useI18n();
+  return <Badge tone={REVIEW_TONES[status] ?? "neutral"}>{status in REVIEW_TONES ? t(`review.${status}`) : status}</Badge>;
 }
 
 export function ClassificationBadge({ status }: { status: string }) {
-  const [tone, label] = CLASS[status] ?? ["neutral", status];
-  return <Badge tone={tone}>{label}</Badge>;
+  const { t } = useI18n();
+  return <Badge tone={CLASS_TONES[status] ?? "neutral"}>{status in CLASS_TONES ? t(`classification.${status}`) : status}</Badge>;
 }
-
-export const REVIEW_LABELS = Object.fromEntries(Object.entries(REVIEW).map(([k, v]) => [k, v[1]]));
-export const CLASS_LABELS = Object.fromEntries(Object.entries(CLASS).map(([k, v]) => [k, v[1]]));

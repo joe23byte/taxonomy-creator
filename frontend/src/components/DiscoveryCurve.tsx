@@ -1,7 +1,9 @@
 import { useMemo, useState } from "react";
 import type { Curve } from "@/lib/api";
+import { useI18n } from "@/lib/i18n";
 
 export function DiscoveryCurve({ curve, height = 140 }: { curve: Curve | undefined; height?: number }) {
+  const { t } = useI18n();
   const [hover, setHover] = useState<number | null>(null);
   const pts = curve?.points ?? [];
   const W = 560, H = height, P = { l: 30, r: 10, t: 10, b: 22 };
@@ -20,7 +22,7 @@ export function DiscoveryCurve({ curve, height = 140 }: { curve: Curve | undefin
   }, [pts, H]);
 
   if (!pts.length) {
-    return <div className="flex items-center justify-center text-xs text-zinc-400" style={{ height }}>The curve appears once interactions are analysed.</div>;
+    return <div className="flex items-center justify-center text-xs text-zinc-400" style={{ height }}>{t("insights.curveEmpty")}</div>;
   }
   const yTicks = [0, Math.round(maxY / 2), maxY];
   const xTicks = [0, Math.round(maxX / 2), maxX];
@@ -37,13 +39,13 @@ export function DiscoveryCurve({ curve, height = 140 }: { curve: Curve | undefin
           pts.forEach((p, i) => { if (Math.abs(p.interactions - n) < Math.abs(pts[best].interactions - n)) best = i; });
           setHover(best);
         }}>
-        {yTicks.map((t) => (
-          <g key={t}>
-            <line x1={P.l} x2={W - P.r} y1={ys(t)} y2={ys(t)} stroke="#f4f4f5" />
-            <text x={P.l - 6} y={ys(t) + 3} textAnchor="end" className="fill-zinc-400 text-[9px]">{t}</text>
+        {yTicks.map((v) => (
+          <g key={v}>
+            <line x1={P.l} x2={W - P.r} y1={ys(v)} y2={ys(v)} stroke="#f4f4f5" />
+            <text x={P.l - 6} y={ys(v) + 3} textAnchor="end" className="fill-zinc-400 text-[9px]">{v}</text>
           </g>
         ))}
-        {xTicks.map((t) => <text key={t} x={xs(t)} y={H - 6} textAnchor="middle" className="fill-zinc-400 text-[9px]">{t}</text>)}
+        {xTicks.map((v) => <text key={v} x={xs(v)} y={H - 6} textAnchor="middle" className="fill-zinc-400 text-[9px]">{v}</text>)}
         {(curve?.batches ?? []).map((b, i) => (
           <line key={i} x1={xs(b.processed_total)} x2={xs(b.processed_total)} y1={P.t} y2={H - P.b} stroke="#ddd6fe" strokeDasharray="2 3" />
         ))}
@@ -53,7 +55,7 @@ export function DiscoveryCurve({ curve, height = 140 }: { curve: Curve | undefin
       </svg>
       {hp && (
         <div className="pointer-events-none absolute right-2 top-0 rounded-md bg-zinc-900 px-2 py-1 text-[11px] text-white">
-          {hp.interactions} interactions → {hp.categories} L4 categories
+          {t("insights.curveHover", { n: hp.interactions, k: hp.categories })}
         </div>
       )}
     </div>

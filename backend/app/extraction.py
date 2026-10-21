@@ -6,13 +6,14 @@ from dataclasses import dataclass
 
 from pydantic import BaseModel, Field, field_validator
 
+from . import language
 from .ollama_client import OllamaClient
 
 UNMATCHED = "UNMATCHED"
 MAX_TRANSCRIPT_CHARS = 12000
 MAX_INTENTS = 5
 
-SYSTEM_PROMPT = """You are an expert customer service analyst for a telecommunications company.
+SYSTEM_PROMPT = """You are an expert customer service analyst. The category list shows the industry and the domain.
 You read a transcript between a customer and an agent and identify what the CUSTOMER actually wants or which problem they need solved.
 
 Rules:
@@ -112,12 +113,15 @@ class ExtractionResult:
     dropped: int
 
 
-def extract_intents(client: OllamaClient, model: str, turns: list[dict], categories: list[dict]) -> ExtractionResult:
+def extract_intents(client: OllamaClient, model: str, turns: list[dict], categories: list[dict],
+                    lang: str = "en") -> ExtractionResult:
     valid = {c["id"] for c in categories}
     schema = build_schema(sorted(valid))
     user = (f"Categories:\n{format_categories(categories)}\n\nTranscript:\n{format_transcript(turns)}\n\n"
             f"Return the JSON analysis of the customer's intents.")
-    out = client.chat_structured(model, SYSTEM_PROMPT, user, ExtractionOutput, schema=schema)
+    system = SYSTEM_PROMPT + language.rule(lang) + (
+        " The evidence quote stays verbatim in the transcript's language." if lang != "en" else "")
+    out = client.chat_structured(model, system, user, ExtractionOutput, schema=schema)
     intents: list[dict] = []
     seen: set[str] = set()
     dropped = 0

@@ -21,6 +21,8 @@ export interface Summary {
   pending: number;
   intents_extracted: number;
   discovered_intents: number;
+  l1_nodes: number;
+  l2_nodes: number;
   l3_nodes: number;
   l4_nodes: number;
   needs_review: number;
@@ -34,6 +36,8 @@ export interface Summary {
   taxonomy_version: number;
   run: Run | null;
   worker_alive: boolean;
+  project: { id: string; name: string };
+  taxonomy_language: string;
 }
 
 export interface Settings {
@@ -46,6 +50,13 @@ export interface Settings {
   auto_accept_new_categories: boolean;
   thresholds: Record<string, number>;
   sensitivity_presets: Record<string, Record<string, number>>;
+  taxonomy_language: string;
+  languages: Record<string, string>;
+}
+
+export interface Branding {
+  logo: boolean;
+  version: number | null;
 }
 
 export interface OllamaStatus {
@@ -241,6 +252,69 @@ export interface Evaluation {
   note?: string;
 }
 
+export interface IntentVolumeItem {
+  rank: number;
+  id: string;
+  label: string;
+  description: string;
+  path: { id: string; label: string; level: number }[];
+  interactions: number;
+  intents: number;
+  share: number;
+  channels: { name: string; interactions: number; share: number }[];
+  segments: { name: string; interactions: number; share: number }[];
+}
+
+export interface IntentVolume {
+  processed: number;
+  top_n: number;
+  items: IntentVolumeItem[];
+  kpis: {
+    classified_interactions: number;
+    classified_share: number;
+    top_coverage: number;
+    top_intent_share: number;
+    intents_for_80: number | null;
+    active_l4: number;
+    long_tail: number;
+    long_tail_max: number;
+    multi_intent_share: number;
+    avg_intents: number;
+  };
+  coverage: number[];
+  mix: { id: string | null; kind: "intent" | "other" | "none"; count?: number; label: string; intents: number }[];
+  notes: Record<string, { text: string; model: string; created_at: string; stale: boolean }>;
+}
+
+export interface Overlaps {
+  merge_threshold: number;
+  compared: number;
+  pairs: {
+    a: { id: string; label: string; intents: number };
+    b: { id: string; label: string; intents: number };
+    l2: string;
+    similarity: number;
+    same_l3: boolean;
+    proposal_id: number | null;
+  }[];
+}
+
+export interface Project {
+  id: string;
+  name: string;
+  description: string;
+  created_at: string;
+  stats?: {
+    interactions?: number; processed?: number; imports?: number; l1?: number; l2?: number; l4?: number;
+    pending_proposals?: number; run_status?: RunStatus | null; last_activity?: string | null; dataset?: string | null;
+  };
+}
+
+export interface ProjectList {
+  active: string;
+  projects: Project[];
+}
+
 export class ApiError extends Error {
   status: number;
   constructor(status: number, message: string) {
@@ -284,7 +358,6 @@ export const api = {
   resetAnalysis: () => request("/api/analysis/reset", json("POST")),
   resetWorkspace: () => request("/api/workspace/reset", json("POST")),
 
-  loadSample: () => request<{ imported: number; skipped_existing: number }>("/api/import/sample", json("POST")),
   previewImport: (files: File[], txtSeparator?: string) => {
     const fd = new FormData();
     files.forEach((f) => fd.append("files", f));
@@ -298,7 +371,7 @@ export const api = {
   importTaxonomy: (file: File) => {
     const fd = new FormData();
     fd.append("file", file);
-    return request<{ version: number }>("/api/taxonomy/import", { method: "POST", body: fd });
+    return request<{ version: number; language: string }>("/api/taxonomy/import", { method: "POST", body: fd });
   },
 
   taxonomy: (includeInactive = false) => request<TaxonomyTree>(`/api/taxonomy?include_inactive=${includeInactive}`),
@@ -323,4 +396,28 @@ export const api = {
   events: (limit = 200) => request<AnalysisEvent[]>(`/api/events?limit=${limit}&newest=true`),
   curve: () => request<Curve>("/api/insights/curve"),
   evaluation: () => request<Evaluation>("/api/insights/evaluation"),
+  intentVolume: (lang: string) => request<IntentVolume>(`/api/insights/intents?lang=${lang}`),
+  generateIntentNotes: (force: boolean, lang: string) =>
+    request<{ generated: number; failed?: string[]; busy: boolean }>(`/api/insights/intents/notes?force=${force}&lang=${lang}`, json("POST")),
+
+  reportPdf: async (lang: string) => {
+    const res = await fetch(`/api/export/report.pdf?lang=${lang}`);
+    if (!res.ok) throw new ApiError(res.status, res.statusText);
+    return res.blob();
+  },
+
+  branding: () => request<Branding>("/api/branding"),
+  uploadLogo: (file: File) => {
+    const fd = new FormData();
+    fd.append("file", file);
+    return request<Branding>("/api/branding/logo", { method: "POST", body: fd });
+  },
+  deleteLogo: () => request<Branding>("/api/branding/logo", json("DELETE")),
+
+  projects: () => request<ProjectList>("/api/projects"),
+  createProject: (b: { name: string; description?: string }) => request<Project>("/api/projects", json("POST", b)),
+  updateProject: (id: string, b: { name?: string; description?: string }) => request<Project>(`/api/projects/${id}`, json("PATCH", b)),
+  activateProject: (id: string) => request<Project>(`/api/projects/${id}/activate`, json("POST")),
+  deleteProject: (id: string) => request<{ ok: boolean }>(`/api/projects/${id}`, json("DELETE")),
+  overlaps: () => request<Overlaps>("/api/insights/overlaps"),
 };

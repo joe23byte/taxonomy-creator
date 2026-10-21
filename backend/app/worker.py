@@ -38,6 +38,8 @@ class AnalysisWorker:
             self._stop.clear()
             with db.session() as conn:
                 settings = db.load_settings(conn)
+                if not conn.execute("SELECT 1 FROM taxonomy_nodes WHERE level=2 AND status='active' LIMIT 1").fetchone():
+                    raise WorkerBusy("Import an L1/L2 taxonomy before starting the analysis")
                 pending = conn.execute("SELECT COUNT(*) FROM interactions WHERE status='pending'").fetchone()[0]
                 if job == "analysis" and not pending and resume_run is None:
                     unrefined = self._needs_final_refinement(conn)

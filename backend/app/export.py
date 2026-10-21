@@ -16,6 +16,69 @@ from . import db, insights, interactions, taxonomy
 
 SHEETS = ["Taxonomy", "Interaction Assignments", "Review Queue", "Taxonomy Changes"]
 
+# Column headers, sheet names and fixed values per export language. Generated text (labels,
+# descriptions, intents) stays in the analysis language.
+TRANSLATIONS: dict[str, dict[str, str]] = {
+    "de": {
+        "Taxonomy": "Taxonomie", "Interaction Assignments": "Interaktionszuordnungen", "Review Queue": "Prüfliste",
+        "Taxonomy Changes": "Taxonomie-Änderungen",
+        "L1 ID": "L1-ID", "L2 ID": "L2-ID", "L3 ID": "L3-ID", "L4 ID": "L4-ID",
+        "L1 Name": "L1-Name", "L2 Name": "L2-Name", "L3 Name": "L3-Name", "L4 Name": "L4-Name",
+        "Level": "Ebene", "Source": "Quelle", "Description": "Beschreibung", "Interaction Count": "Anzahl Interaktionen",
+        "Supporting Examples": "Belegende Beispiele", "Conversation ID": "Gesprächs-ID", "Channel": "Kanal",
+        "Segment": "Segment", "Original Intent Summary": "Zusammenfassung", "Extracted Intent": "Extrahierter Intent",
+        "Evidence Excerpt": "Belegstelle", "Similarity": "Ähnlichkeit", "Classification Method": "Zuordnungsmethode",
+        "Review Status": "Prüfstatus", "Reviewer Notes": "Prüfnotizen", "Queue Reason": "Grund",
+        "Current Path": "Aktueller Pfad", "Suggested Correction": "Vorgeschlagene Korrektur",
+        "Change Timestamp": "Zeitpunkt", "Category ID": "Kategorie-ID", "Change Type": "Änderungsart",
+        "Previous Value": "Vorheriger Wert", "Proposed / New Value": "Vorgeschlagener / neuer Wert",
+        "Approval Status": "Freigabestatus", "Rationale": "Begründung", "Decided At": "Entschieden am",
+        "Taxonomy Version": "Taxonomie-Version", "(empty)": "(leer)",
+        # values
+        "pending": "Ungeprüft", "needs_review": "Zu prüfen", "confirmed": "Bestätigt", "corrected": "Korrigiert",
+        "unclassified": "Nicht klassifiziert", "failed": "Fehlgeschlagen", "processed": "Verarbeitet",
+        "predefined": "fest", "ai": "KI-generiert", "user": "manuell",
+        "create": "Angelegt", "update": "Bearbeitet", "refine": "Beschreibung verfeinert", "merge": "Zusammenführung",
+        "split": "Aufteilung", "retire": "Stillgelegt", "move": "Verschoben",
+        "proposed": "vorgeschlagen", "accepted": "übernommen", "auto_accepted": "automatisch übernommen",
+        "rejected": "abgelehnt",
+        "llm_extraction": "LLM-Extraktion", "embedding_match": "Embedding-Treffer", "cluster": "Cluster",
+        "llm_cluster_match": "LLM-Clusterzuordnung", "llm_outlier": "LLM (seltener Intent)", "manual": "Manuell",
+        "candidate": "Kandidat",
+        "Processing failed": "Verarbeitung fehlgeschlagen", "No customer intent extracted": "Kein Kundenanliegen erkannt",
+        "Unclassified": "Nicht klassifiziert", "No matching L1/L2 category": "Keine passende L1/L2-Kategorie",
+        "No L3/L4 category yet": "Noch keine L3/L4-Kategorie", "Low similarity": "Geringe Ähnlichkeit",
+        "Flagged by reviewer": "Von Prüfer markiert", "Awaiting validation": "Wartet auf Bestätigung",
+    },
+}
+VALUE_COLUMNS = {"Source", "Review Status", "Classification Method", "Change Type", "Approval Status"}
+
+
+def tr(text: str, lang: str) -> str:
+    return TRANSLATIONS.get(lang, {}).get(text, text)
+
+
+def _localize(rows: list[dict], lang: str) -> list[dict]:
+    if lang not in TRANSLATIONS:
+        return rows
+    out = []
+    for r in rows:
+        row = {}
+        for k, v in r.items():
+            if k in VALUE_COLUMNS and isinstance(v, str):
+                v = tr(v, lang)
+            elif k == "Queue Reason" and isinstance(v, str):
+                v = "; ".join(_reason(part, lang) for part in v.split("; "))
+            row[tr(k, lang)] = v
+        out.append(row)
+    return out
+
+
+def _reason(part: str, lang: str) -> str:
+    if part.startswith("Low similarity"):
+        return tr("Low similarity", lang) + part[len("Low similarity"):]
+    return tr(part, lang)
+
 
 def _node_stats(conn: sqlite3.Connection) -> tuple[dict, dict]:
     counts: dict[str, set] = defaultdict(set)
@@ -161,18 +224,26 @@ def _compact(p: dict) -> dict:
         {"members": len(p["member_intent_ids"])} if "member_intent_ids" in p else {})
 
 
-def all_sheets(conn: sqlite3.Connection) -> dict[str, list[dict]]:
-    return {"Taxonomy": taxonomy_rows(conn), "Interaction Assignments": assignment_rows(conn),
-            "Review Queue": review_rows(conn), "Taxonomy Changes": change_rows(conn)}
+def all_sheets(conn: sqlite3.Connection, lang: str = "en") -> dict[str, list[dict]]:
+    """Sheets keyed by their English id; rows use headers and fixed values in ``lang``."""
+    return {"Taxonomy": _localize(taxonomy_rows(conn), lang),
+            "Interaction Assignments": _localize(assignment_rows(conn), lang),
+            "Review Queue": _localize(review_rows(conn), lang),
+            "Taxonomy Changes": _localize(change_rows(conn), lang)}
 
 
-def to_xlsx(conn: sqlite3.Connection) -> bytes:
+def _file_name(sheet: str, lang: str) -> str:
+    name = tr(sheet, lang).lower().translate(str.maketrans({"ä": "ae", "ö": "oe", "ü": "ue", "ß": "ss", " ": "_"}))
+    return name + ".csv"
+
+
+def to_xlsx(conn: sqlite3.Connection, lang: str = "en") -> bytes:
     wb = Workbook()
     wb.remove(wb.active)
     header_fill = PatternFill("solid", fgColor="F1F5F9")
-    for name, rows in all_sheets(conn).items():
-        ws = wb.create_sheet(name[:31])
-        cols = list(rows[0].keys()) if rows else ["(empty)"]
+    for name, rows in all_sheets(conn, lang).items():
+        ws = wb.create_sheet(tr(name, lang)[:31])
+        cols = list(rows[0].keys()) if rows else [tr("(empty)", lang)]
         ws.append(cols)
         for c in ws[1]:
             c.font = Font(bold=True)
@@ -201,16 +272,16 @@ def _csv(rows: list[dict]) -> str:
     return buf.getvalue()
 
 
-def to_csv(conn: sqlite3.Connection, sheet: str | None) -> tuple[bytes, str, str]:
-    sheets = all_sheets(conn)
+def to_csv(conn: sqlite3.Connection, sheet: str | None, lang: str = "en") -> tuple[bytes, str, str]:
+    if sheet and sheet not in SHEETS:
+        raise KeyError(sheet)
+    sheets = all_sheets(conn, lang)
     if sheet:
-        if sheet not in sheets:
-            raise KeyError(sheet)
-        return ("\ufeff" + _csv(sheets[sheet])).encode("utf-8"), "text/csv", sheet.lower().replace(" ", "_") + ".csv"
+        return ("\ufeff" + _csv(sheets[sheet])).encode("utf-8"), "text/csv", _file_name(sheet, lang)
     buf = io.BytesIO()
     with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as z:
         for name, rows in sheets.items():
-            z.writestr(name.lower().replace(" ", "_") + ".csv", "\ufeff" + _csv(rows))
+            z.writestr(_file_name(name, lang), "\ufeff" + _csv(rows))
     return buf.getvalue(), "application/zip", "intent_studio_export_csv.zip"
 
 

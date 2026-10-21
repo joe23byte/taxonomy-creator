@@ -1,0 +1,1485 @@
+{
+  "seed": 20261021,
+  "note": "Reference only. Do not import; Intent Studio's ground-truth check reads only the telco sample.",
+  "intent_types": [
+    {
+      "key": "krankengeld_auszahlung",
+      "label": "Krankengeld-Auszahlung verzögert",
+      "l1_id": "L1-LEI",
+      "l2_id": "L2-LEI-KRG"
+    },
+    {
+      "key": "egk_ersatz",
+      "label": "Ersatz für verlorene Gesundheitskarte",
+      "l1_id": "L1-MIT",
+      "l2_id": "L2-MIT-DAT"
+    },
+    {
+      "key": "kind_familienversichern",
+      "label": "Kind familienversichern",
+      "l1_id": "L1-MIT",
+      "l2_id": "L2-MIT-FAM"
+    },
+    {
+      "key": "mitgliedsbescheinigung",
+      "label": "Mitgliedsbescheinigung für Arbeitgeber",
+      "l1_id": "L1-MIT",
+      "l2_id": "L2-MIT-BEG"
+    },
+    {
+      "key": "kostenerstattung_status",
+      "label": "Status Kostenerstattung",
+      "l1_id": "L1-LEI",
+      "l2_id": "L2-LEI-ERS"
+    },
+    {
+      "key": "zuzahlungsbefreiung",
+      "label": "Zuzahlungsbefreiung beantragen",
+      "l1_id": "L1-LEI",
+      "l2_id": "L2-LEI-ERS"
+    },
+    {
+      "key": "app_login",
+      "label": "Login in die App funktioniert nicht",
+      "l1_id": "L1-SER",
+      "l2_id": "L2-SER-APP"
+    },
+    {
+      "key": "physio_genehmigung",
+      "label": "Genehmigung Physiotherapie",
+      "l1_id": "L1-LEI",
+      "l2_id": "L2-LEI-HHM"
+    },
+    {
+      "key": "zahnersatz_hkp",
+      "label": "Zuschuss Zahnersatz / Heil- und Kostenplan",
+      "l1_id": "L1-LEI",
+      "l2_id": "L2-LEI-ZAN"
+    },
+    {
+      "key": "bonus_einloesen",
+      "label": "Bonuspunkte einlösen",
+      "l1_id": "L1-BEI",
+      "l2_id": "L2-BEI-BON"
+    },
+    {
+      "key": "beitrag_selbststaendig",
+      "label": "Beitragseinstufung Selbständige",
+      "l1_id": "L1-BEI",
+      "l2_id": "L2-BEI-HOE"
+    },
+    {
+      "key": "zusatzbeitrag",
+      "label": "Frage zur Erhöhung des Zusatzbeitrags",
+      "l1_id": "L1-BEI",
+      "l2_id": "L2-BEI-HOE"
+    },
+    {
+      "key": "beitragsrueckstand",
+      "label": "Mahnung wegen Beitragsrückstand",
+      "l1_id": "L1-BEI",
+      "l2_id": "L2-BEI-ZAH"
+    },
+    {
+      "key": "kassenwechsel",
+      "label": "Kündigung / Kassenwechsel",
+      "l1_id": "L1-MIT",
+      "l2_id": "L2-MIT-BEG"
+    },
+    {
+      "key": "kinderkrankengeld",
+      "label": "Kinderkrankengeld beantragen",
+      "l1_id": "L1-LEI",
+      "l2_id": "L2-LEI-KRG"
+    },
+    {
+      "key": "hilfsmittel_rollator",
+      "label": "Kostenübernahme Rollator",
+      "l1_id": "L1-LEI",
+      "l2_id": "L2-LEI-HHM"
+    },
+    {
+      "key": "adresse_aendern",
+      "label": "Adressänderung",
+      "l1_id": "L1-MIT",
+      "l2_id": "L2-MIT-DAT"
+    },
+    {
+      "key": "reha_antrag",
+      "label": "Reha-Antrag stellen",
+      "l1_id": "L1-LEI",
+      "l2_id": "L2-LEI-REH"
+    },
+    {
+      "key": "widerspruch",
+      "label": "Widerspruch gegen Ablehnung",
+      "l1_id": "L1-SER",
+      "l2_id": "L2-SER-BES"
+    },
+    {
+      "key": "facharzttermin",
+      "label": "Hilfe bei Facharzttermin",
+      "l1_id": "L1-SER",
+      "l2_id": "L2-SER-ARZ"
+    },
+    {
+      "key": "reiseimpfung",
+      "label": "Erstattung Reiseimpfung",
+      "l1_id": "L1-LEI",
+      "l2_id": "L2-LEI-ERS"
+    },
+    {
+      "key": "epa_einrichten",
+      "label": "Elektronische Patientenakte einrichten",
+      "l1_id": "L1-SER",
+      "l2_id": "L2-SER-APP"
+    }
+  ],
+  "conversations": [
+    {
+      "conversation_id": "GKV-0001",
+      "tags": [],
+      "intents": [
+        {
+          "key": "kind_familienversichern",
+          "label": "Kind familienversichern",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-FAM"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0002",
+      "tags": [],
+      "intents": [
+        {
+          "key": "beitragsrueckstand",
+          "label": "Mahnung wegen Beitragsrückstand",
+          "l1_id": "L1-BEI",
+          "l2_id": "L2-BEI-ZAH"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0003",
+      "tags": [],
+      "intents": [
+        {
+          "key": "kinderkrankengeld",
+          "label": "Kinderkrankengeld beantragen",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-KRG"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0004",
+      "tags": [
+        "ambiguous"
+      ],
+      "intents": [
+        {
+          "key": "kostenerstattung_status",
+          "label": "Status Kostenerstattung",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-ERS"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0005",
+      "tags": [],
+      "intents": [
+        {
+          "key": "zahnersatz_hkp",
+          "label": "Zuschuss Zahnersatz / Heil- und Kostenplan",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-ZAN"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0006",
+      "tags": [
+        "small_talk"
+      ],
+      "intents": [
+        {
+          "key": "egk_ersatz",
+          "label": "Ersatz für verlorene Gesundheitskarte",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-DAT"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0007",
+      "tags": [],
+      "intents": [
+        {
+          "key": "kinderkrankengeld",
+          "label": "Kinderkrankengeld beantragen",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-KRG"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0008",
+      "tags": [],
+      "intents": [
+        {
+          "key": "kassenwechsel",
+          "label": "Kündigung / Kassenwechsel",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-BEG"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0009",
+      "tags": [],
+      "intents": [
+        {
+          "key": "beitrag_selbststaendig",
+          "label": "Beitragseinstufung Selbständige",
+          "l1_id": "L1-BEI",
+          "l2_id": "L2-BEI-HOE"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0010",
+      "tags": [],
+      "intents": [
+        {
+          "key": "krankengeld_auszahlung",
+          "label": "Krankengeld-Auszahlung verzögert",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-KRG"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0011",
+      "tags": [],
+      "intents": [
+        {
+          "key": "zuzahlungsbefreiung",
+          "label": "Zuzahlungsbefreiung beantragen",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-ERS"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0012",
+      "tags": [
+        "small_talk"
+      ],
+      "intents": [
+        {
+          "key": "app_login",
+          "label": "Login in die App funktioniert nicht",
+          "l1_id": "L1-SER",
+          "l2_id": "L2-SER-APP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0013",
+      "tags": [],
+      "intents": [
+        {
+          "key": "reha_antrag",
+          "label": "Reha-Antrag stellen",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-REH"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0014",
+      "tags": [
+        "ambiguous"
+      ],
+      "intents": [
+        {
+          "key": "krankengeld_auszahlung",
+          "label": "Krankengeld-Auszahlung verzögert",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-KRG"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0015",
+      "tags": [
+        "multi_intent"
+      ],
+      "intents": [
+        {
+          "key": "bonus_einloesen",
+          "label": "Bonuspunkte einlösen",
+          "l1_id": "L1-BEI",
+          "l2_id": "L2-BEI-BON"
+        },
+        {
+          "key": "krankengeld_auszahlung",
+          "label": "Krankengeld-Auszahlung verzögert",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-KRG"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0016",
+      "tags": [
+        "small_talk"
+      ],
+      "intents": [
+        {
+          "key": "app_login",
+          "label": "Login in die App funktioniert nicht",
+          "l1_id": "L1-SER",
+          "l2_id": "L2-SER-APP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0017",
+      "tags": [],
+      "intents": [
+        {
+          "key": "zuzahlungsbefreiung",
+          "label": "Zuzahlungsbefreiung beantragen",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-ERS"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0018",
+      "tags": [],
+      "intents": [
+        {
+          "key": "bonus_einloesen",
+          "label": "Bonuspunkte einlösen",
+          "l1_id": "L1-BEI",
+          "l2_id": "L2-BEI-BON"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0019",
+      "tags": [],
+      "intents": [
+        {
+          "key": "kostenerstattung_status",
+          "label": "Status Kostenerstattung",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-ERS"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0020",
+      "tags": [
+        "multi_intent"
+      ],
+      "intents": [
+        {
+          "key": "zuzahlungsbefreiung",
+          "label": "Zuzahlungsbefreiung beantragen",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-ERS"
+        },
+        {
+          "key": "physio_genehmigung",
+          "label": "Genehmigung Physiotherapie",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-HHM"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0021",
+      "tags": [],
+      "intents": [
+        {
+          "key": "bonus_einloesen",
+          "label": "Bonuspunkte einlösen",
+          "l1_id": "L1-BEI",
+          "l2_id": "L2-BEI-BON"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0022",
+      "tags": [],
+      "intents": [
+        {
+          "key": "mitgliedsbescheinigung",
+          "label": "Mitgliedsbescheinigung für Arbeitgeber",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-BEG"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0023",
+      "tags": [],
+      "intents": [
+        {
+          "key": "mitgliedsbescheinigung",
+          "label": "Mitgliedsbescheinigung für Arbeitgeber",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-BEG"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0024",
+      "tags": [
+        "small_talk"
+      ],
+      "intents": [
+        {
+          "key": "mitgliedsbescheinigung",
+          "label": "Mitgliedsbescheinigung für Arbeitgeber",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-BEG"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0025",
+      "tags": [],
+      "intents": [
+        {
+          "key": "zusatzbeitrag",
+          "label": "Frage zur Erhöhung des Zusatzbeitrags",
+          "l1_id": "L1-BEI",
+          "l2_id": "L2-BEI-HOE"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0026",
+      "tags": [],
+      "intents": [
+        {
+          "key": "krankengeld_auszahlung",
+          "label": "Krankengeld-Auszahlung verzögert",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-KRG"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0027",
+      "tags": [],
+      "intents": [
+        {
+          "key": "kinderkrankengeld",
+          "label": "Kinderkrankengeld beantragen",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-KRG"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0028",
+      "tags": [],
+      "intents": [
+        {
+          "key": "beitrag_selbststaendig",
+          "label": "Beitragseinstufung Selbständige",
+          "l1_id": "L1-BEI",
+          "l2_id": "L2-BEI-HOE"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0029",
+      "tags": [
+        "multi_intent"
+      ],
+      "intents": [
+        {
+          "key": "adresse_aendern",
+          "label": "Adressänderung",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-DAT"
+        },
+        {
+          "key": "reha_antrag",
+          "label": "Reha-Antrag stellen",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-REH"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0030",
+      "tags": [
+        "multi_intent"
+      ],
+      "intents": [
+        {
+          "key": "physio_genehmigung",
+          "label": "Genehmigung Physiotherapie",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-HHM"
+        },
+        {
+          "key": "beitrag_selbststaendig",
+          "label": "Beitragseinstufung Selbständige",
+          "l1_id": "L1-BEI",
+          "l2_id": "L2-BEI-HOE"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0031",
+      "tags": [],
+      "intents": [
+        {
+          "key": "egk_ersatz",
+          "label": "Ersatz für verlorene Gesundheitskarte",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-DAT"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0032",
+      "tags": [],
+      "intents": [
+        {
+          "key": "zusatzbeitrag",
+          "label": "Frage zur Erhöhung des Zusatzbeitrags",
+          "l1_id": "L1-BEI",
+          "l2_id": "L2-BEI-HOE"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0033",
+      "tags": [],
+      "intents": [
+        {
+          "key": "mitgliedsbescheinigung",
+          "label": "Mitgliedsbescheinigung für Arbeitgeber",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-BEG"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0034",
+      "tags": [],
+      "intents": [
+        {
+          "key": "beitragsrueckstand",
+          "label": "Mahnung wegen Beitragsrückstand",
+          "l1_id": "L1-BEI",
+          "l2_id": "L2-BEI-ZAH"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0035",
+      "tags": [],
+      "intents": [
+        {
+          "key": "beitragsrueckstand",
+          "label": "Mahnung wegen Beitragsrückstand",
+          "l1_id": "L1-BEI",
+          "l2_id": "L2-BEI-ZAH"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0036",
+      "tags": [],
+      "intents": [
+        {
+          "key": "app_login",
+          "label": "Login in die App funktioniert nicht",
+          "l1_id": "L1-SER",
+          "l2_id": "L2-SER-APP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0037",
+      "tags": [],
+      "intents": [
+        {
+          "key": "facharzttermin",
+          "label": "Hilfe bei Facharzttermin",
+          "l1_id": "L1-SER",
+          "l2_id": "L2-SER-ARZ"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0038",
+      "tags": [],
+      "intents": [
+        {
+          "key": "app_login",
+          "label": "Login in die App funktioniert nicht",
+          "l1_id": "L1-SER",
+          "l2_id": "L2-SER-APP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0039",
+      "tags": [
+        "small_talk"
+      ],
+      "intents": [
+        {
+          "key": "krankengeld_auszahlung",
+          "label": "Krankengeld-Auszahlung verzögert",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-KRG"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0040",
+      "tags": [],
+      "intents": [
+        {
+          "key": "egk_ersatz",
+          "label": "Ersatz für verlorene Gesundheitskarte",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-DAT"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0041",
+      "tags": [
+        "small_talk"
+      ],
+      "intents": [
+        {
+          "key": "egk_ersatz",
+          "label": "Ersatz für verlorene Gesundheitskarte",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-DAT"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0042",
+      "tags": [
+        "multi_intent"
+      ],
+      "intents": [
+        {
+          "key": "adresse_aendern",
+          "label": "Adressänderung",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-DAT"
+        },
+        {
+          "key": "bonus_einloesen",
+          "label": "Bonuspunkte einlösen",
+          "l1_id": "L1-BEI",
+          "l2_id": "L2-BEI-BON"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0043",
+      "tags": [],
+      "intents": [
+        {
+          "key": "bonus_einloesen",
+          "label": "Bonuspunkte einlösen",
+          "l1_id": "L1-BEI",
+          "l2_id": "L2-BEI-BON"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0044",
+      "tags": [
+        "multi_intent"
+      ],
+      "intents": [
+        {
+          "key": "kind_familienversichern",
+          "label": "Kind familienversichern",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-FAM"
+        },
+        {
+          "key": "zuzahlungsbefreiung",
+          "label": "Zuzahlungsbefreiung beantragen",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-ERS"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0045",
+      "tags": [],
+      "intents": [
+        {
+          "key": "kind_familienversichern",
+          "label": "Kind familienversichern",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-FAM"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0046",
+      "tags": [],
+      "intents": [
+        {
+          "key": "kind_familienversichern",
+          "label": "Kind familienversichern",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-FAM"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0047",
+      "tags": [],
+      "intents": [
+        {
+          "key": "reiseimpfung",
+          "label": "Erstattung Reiseimpfung",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-ERS"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0048",
+      "tags": [],
+      "intents": [
+        {
+          "key": "krankengeld_auszahlung",
+          "label": "Krankengeld-Auszahlung verzögert",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-KRG"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0049",
+      "tags": [
+        "small_talk"
+      ],
+      "intents": [
+        {
+          "key": "egk_ersatz",
+          "label": "Ersatz für verlorene Gesundheitskarte",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-DAT"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0050",
+      "tags": [],
+      "intents": [
+        {
+          "key": "kind_familienversichern",
+          "label": "Kind familienversichern",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-FAM"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0051",
+      "tags": [],
+      "intents": [
+        {
+          "key": "beitrag_selbststaendig",
+          "label": "Beitragseinstufung Selbständige",
+          "l1_id": "L1-BEI",
+          "l2_id": "L2-BEI-HOE"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0052",
+      "tags": [],
+      "intents": [
+        {
+          "key": "kind_familienversichern",
+          "label": "Kind familienversichern",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-FAM"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0053",
+      "tags": [],
+      "intents": [
+        {
+          "key": "mitgliedsbescheinigung",
+          "label": "Mitgliedsbescheinigung für Arbeitgeber",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-BEG"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0054",
+      "tags": [],
+      "intents": [
+        {
+          "key": "egk_ersatz",
+          "label": "Ersatz für verlorene Gesundheitskarte",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-DAT"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0055",
+      "tags": [],
+      "intents": [
+        {
+          "key": "zahnersatz_hkp",
+          "label": "Zuschuss Zahnersatz / Heil- und Kostenplan",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-ZAN"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0056",
+      "tags": [
+        "multi_intent"
+      ],
+      "intents": [
+        {
+          "key": "zuzahlungsbefreiung",
+          "label": "Zuzahlungsbefreiung beantragen",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-ERS"
+        },
+        {
+          "key": "hilfsmittel_rollator",
+          "label": "Kostenübernahme Rollator",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-HHM"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0057",
+      "tags": [
+        "multi_intent"
+      ],
+      "intents": [
+        {
+          "key": "egk_ersatz",
+          "label": "Ersatz für verlorene Gesundheitskarte",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-DAT"
+        },
+        {
+          "key": "kind_familienversichern",
+          "label": "Kind familienversichern",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-FAM"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0058",
+      "tags": [],
+      "intents": [
+        {
+          "key": "kind_familienversichern",
+          "label": "Kind familienversichern",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-FAM"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0059",
+      "tags": [
+        "small_talk",
+        "multi_intent"
+      ],
+      "intents": [
+        {
+          "key": "beitragsrueckstand",
+          "label": "Mahnung wegen Beitragsrückstand",
+          "l1_id": "L1-BEI",
+          "l2_id": "L2-BEI-ZAH"
+        },
+        {
+          "key": "zahnersatz_hkp",
+          "label": "Zuschuss Zahnersatz / Heil- und Kostenplan",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-ZAN"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0060",
+      "tags": [],
+      "intents": [
+        {
+          "key": "kostenerstattung_status",
+          "label": "Status Kostenerstattung",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-ERS"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0061",
+      "tags": [],
+      "intents": [
+        {
+          "key": "kostenerstattung_status",
+          "label": "Status Kostenerstattung",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-ERS"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0062",
+      "tags": [
+        "multi_intent"
+      ],
+      "intents": [
+        {
+          "key": "zahnersatz_hkp",
+          "label": "Zuschuss Zahnersatz / Heil- und Kostenplan",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-ZAN"
+        },
+        {
+          "key": "beitrag_selbststaendig",
+          "label": "Beitragseinstufung Selbständige",
+          "l1_id": "L1-BEI",
+          "l2_id": "L2-BEI-HOE"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0063",
+      "tags": [],
+      "intents": [
+        {
+          "key": "kind_familienversichern",
+          "label": "Kind familienversichern",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-FAM"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0064",
+      "tags": [],
+      "intents": [
+        {
+          "key": "egk_ersatz",
+          "label": "Ersatz für verlorene Gesundheitskarte",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-DAT"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0065",
+      "tags": [],
+      "intents": [
+        {
+          "key": "hilfsmittel_rollator",
+          "label": "Kostenübernahme Rollator",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-HHM"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0066",
+      "tags": [],
+      "intents": [
+        {
+          "key": "adresse_aendern",
+          "label": "Adressänderung",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-DAT"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0067",
+      "tags": [],
+      "intents": [
+        {
+          "key": "widerspruch",
+          "label": "Widerspruch gegen Ablehnung",
+          "l1_id": "L1-SER",
+          "l2_id": "L2-SER-BES"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0068",
+      "tags": [],
+      "intents": [
+        {
+          "key": "krankengeld_auszahlung",
+          "label": "Krankengeld-Auszahlung verzögert",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-KRG"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0069",
+      "tags": [],
+      "intents": [
+        {
+          "key": "zahnersatz_hkp",
+          "label": "Zuschuss Zahnersatz / Heil- und Kostenplan",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-ZAN"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0070",
+      "tags": [
+        "ambiguous"
+      ],
+      "intents": [
+        {
+          "key": "krankengeld_auszahlung",
+          "label": "Krankengeld-Auszahlung verzögert",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-KRG"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0071",
+      "tags": [
+        "small_talk",
+        "ambiguous"
+      ],
+      "intents": [
+        {
+          "key": "krankengeld_auszahlung",
+          "label": "Krankengeld-Auszahlung verzögert",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-KRG"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0072",
+      "tags": [
+        "ambiguous"
+      ],
+      "intents": [
+        {
+          "key": "krankengeld_auszahlung",
+          "label": "Krankengeld-Auszahlung verzögert",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-KRG"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0073",
+      "tags": [
+        "ambiguous",
+        "multi_intent"
+      ],
+      "intents": [
+        {
+          "key": "app_login",
+          "label": "Login in die App funktioniert nicht",
+          "l1_id": "L1-SER",
+          "l2_id": "L2-SER-APP"
+        },
+        {
+          "key": "zuzahlungsbefreiung",
+          "label": "Zuzahlungsbefreiung beantragen",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-ERS"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0074",
+      "tags": [],
+      "intents": [
+        {
+          "key": "bonus_einloesen",
+          "label": "Bonuspunkte einlösen",
+          "l1_id": "L1-BEI",
+          "l2_id": "L2-BEI-BON"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0075",
+      "tags": [],
+      "intents": [
+        {
+          "key": "zusatzbeitrag",
+          "label": "Frage zur Erhöhung des Zusatzbeitrags",
+          "l1_id": "L1-BEI",
+          "l2_id": "L2-BEI-HOE"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0076",
+      "tags": [
+        "small_talk"
+      ],
+      "intents": [
+        {
+          "key": "epa_einrichten",
+          "label": "Elektronische Patientenakte einrichten",
+          "l1_id": "L1-SER",
+          "l2_id": "L2-SER-APP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0077",
+      "tags": [],
+      "intents": [
+        {
+          "key": "physio_genehmigung",
+          "label": "Genehmigung Physiotherapie",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-HHM"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0078",
+      "tags": [],
+      "intents": [
+        {
+          "key": "physio_genehmigung",
+          "label": "Genehmigung Physiotherapie",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-HHM"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0079",
+      "tags": [],
+      "intents": [
+        {
+          "key": "mitgliedsbescheinigung",
+          "label": "Mitgliedsbescheinigung für Arbeitgeber",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-BEG"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0080",
+      "tags": [
+        "multi_intent"
+      ],
+      "intents": [
+        {
+          "key": "zusatzbeitrag",
+          "label": "Frage zur Erhöhung des Zusatzbeitrags",
+          "l1_id": "L1-BEI",
+          "l2_id": "L2-BEI-HOE"
+        },
+        {
+          "key": "kostenerstattung_status",
+          "label": "Status Kostenerstattung",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-ERS"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0081",
+      "tags": [],
+      "intents": [
+        {
+          "key": "egk_ersatz",
+          "label": "Ersatz für verlorene Gesundheitskarte",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-DAT"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0082",
+      "tags": [
+        "multi_intent"
+      ],
+      "intents": [
+        {
+          "key": "zahnersatz_hkp",
+          "label": "Zuschuss Zahnersatz / Heil- und Kostenplan",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-ZAN"
+        },
+        {
+          "key": "zuzahlungsbefreiung",
+          "label": "Zuzahlungsbefreiung beantragen",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-ERS"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0083",
+      "tags": [],
+      "intents": [
+        {
+          "key": "egk_ersatz",
+          "label": "Ersatz für verlorene Gesundheitskarte",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-DAT"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0084",
+      "tags": [
+        "multi_intent"
+      ],
+      "intents": [
+        {
+          "key": "kassenwechsel",
+          "label": "Kündigung / Kassenwechsel",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-BEG"
+        },
+        {
+          "key": "widerspruch",
+          "label": "Widerspruch gegen Ablehnung",
+          "l1_id": "L1-SER",
+          "l2_id": "L2-SER-BES"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0085",
+      "tags": [
+        "small_talk"
+      ],
+      "intents": [
+        {
+          "key": "app_login",
+          "label": "Login in die App funktioniert nicht",
+          "l1_id": "L1-SER",
+          "l2_id": "L2-SER-APP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0086",
+      "tags": [],
+      "intents": [
+        {
+          "key": "kind_familienversichern",
+          "label": "Kind familienversichern",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-FAM"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0087",
+      "tags": [],
+      "intents": [
+        {
+          "key": "kinderkrankengeld",
+          "label": "Kinderkrankengeld beantragen",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-KRG"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0088",
+      "tags": [],
+      "intents": [
+        {
+          "key": "facharzttermin",
+          "label": "Hilfe bei Facharzttermin",
+          "l1_id": "L1-SER",
+          "l2_id": "L2-SER-ARZ"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0089",
+      "tags": [],
+      "intents": [
+        {
+          "key": "physio_genehmigung",
+          "label": "Genehmigung Physiotherapie",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-HHM"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0090",
+      "tags": [],
+      "intents": [
+        {
+          "key": "physio_genehmigung",
+          "label": "Genehmigung Physiotherapie",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-HHM"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0091",
+      "tags": [],
+      "intents": [
+        {
+          "key": "app_login",
+          "label": "Login in die App funktioniert nicht",
+          "l1_id": "L1-SER",
+          "l2_id": "L2-SER-APP"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0092",
+      "tags": [],
+      "intents": [
+        {
+          "key": "kassenwechsel",
+          "label": "Kündigung / Kassenwechsel",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-BEG"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0093",
+      "tags": [],
+      "intents": [
+        {
+          "key": "mitgliedsbescheinigung",
+          "label": "Mitgliedsbescheinigung für Arbeitgeber",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-BEG"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0094",
+      "tags": [],
+      "intents": [
+        {
+          "key": "mitgliedsbescheinigung",
+          "label": "Mitgliedsbescheinigung für Arbeitgeber",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-BEG"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0095",
+      "tags": [],
+      "intents": [
+        {
+          "key": "hilfsmittel_rollator",
+          "label": "Kostenübernahme Rollator",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-HHM"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0096",
+      "tags": [],
+      "intents": [
+        {
+          "key": "kassenwechsel",
+          "label": "Kündigung / Kassenwechsel",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-BEG"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0097",
+      "tags": [],
+      "intents": [
+        {
+          "key": "kostenerstattung_status",
+          "label": "Status Kostenerstattung",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-ERS"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0098",
+      "tags": [],
+      "intents": [
+        {
+          "key": "krankengeld_auszahlung",
+          "label": "Krankengeld-Auszahlung verzögert",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-KRG"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0099",
+      "tags": [
+        "small_talk"
+      ],
+      "intents": [
+        {
+          "key": "kostenerstattung_status",
+          "label": "Status Kostenerstattung",
+          "l1_id": "L1-LEI",
+          "l2_id": "L2-LEI-ERS"
+        }
+      ]
+    },
+    {
+      "conversation_id": "GKV-0100",
+      "tags": [],
+      "intents": [
+        {
+          "key": "mitgliedsbescheinigung",
+          "label": "Mitgliedsbescheinigung für Arbeitgeber",
+          "l1_id": "L1-MIT",
+          "l2_id": "L2-MIT-BEG"
+        }
+      ]
+    }
+  ]
+}

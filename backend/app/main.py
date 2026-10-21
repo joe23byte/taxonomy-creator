@@ -13,8 +13,8 @@ from fastapi.responses import FileResponse, JSONResponse, Response, StreamingRes
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from . import (assignments, config, db, evaluation, events, export, importers, insights, interactions,
-               ollama_client, taxonomy)
+from . import (assignments, branding, config, db, evaluation, events, export, importers, insights, interactions,
+               language, ollama_client, pipeline, projects, report, taxonomy)
 from .worker import WorkerBusy, worker
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
@@ -23,8 +23,8 @@ log = logging.getLogger("intent_studio")
 
 @asynccontextmanager
 async def lifespan(_: FastAPI):
-    db.init_db()
-    log.info("Intent Studio ready (database: %s)", db.get_db_path())
+    project = projects.init()
+    log.info("Intent Studio ready (project: %s, database: %s)", project["name"], db.get_db_path())
     yield
     worker.stop()
 
@@ -37,6 +37,8 @@ app = FastAPI(title="Intent Studio", version="0.1.0", lifespan=lifespan)
 @app.exception_handler(taxonomy.TaxonomyError)
 @app.exception_handler(assignments.AssignmentError)
 @app.exception_handler(importers.ImportErrorSafe)
+@app.exception_handler(projects.ProjectError)
+@app.exception_handler(branding.BrandingError)
 async def _bad_request(_: Request, exc: Exception):
     return JSONResponse({"detail": str(exc)}, status_code=400)
 
@@ -62,10 +64,16 @@ def health():
     return {"ok": True}
 
 
+def _settings_payload(s: config.Settings) -> dict:
+    with db.session() as conn:
+        lang = language.get(conn)
+    return {**s.to_dict(), "thresholds": s.thresholds(), "sensitivity_presets": config.SENSITIVITY_PRESETS,
+            "taxonomy_language": lang, "languages": language.NAMES}
+
+
 @app.get("/api/settings")
 def get_settings():
-    s = db.load_settings()
-    return {**s.to_dict(), "thresholds": s.thresholds(), "sensitivity_presets": config.SENSITIVITY_PRESETS}
+    return _settings_payload(db.load_settings())
 
 
 @app.put("/api/settings")
@@ -78,10 +86,17 @@ def put_settings(values: dict[str, Any] = Body(...)):
         raise HTTPException(400, "Unknown clustering sensitivity")
     if "request_timeout" in clean and not 5 <= float(clean["request_timeout"]) <= 1800:
         raise HTTPException(400, "Timeout must be between 5 and 1800 seconds")
+    lang = values.get("taxonomy_language")
+    if lang is not None and lang not in language.NAMES:
+        raise HTTPException(400, "Unsupported analysis language")
     with db.session() as conn:
         s = db.save_settings(conn, clean)
+        if lang is not None and lang != language.get(conn):
+            with db.transaction(conn):
+                language.store(conn, lang)
+                events.emit(conn, "info", f"Analysis language set to {language.name(lang)}")
     _status_cache["at"] = 0
-    return {**s.to_dict(), "thresholds": s.thresholds(), "sensitivity_presets": config.SENSITIVITY_PRESETS}
+    return _settings_payload(s)
 
 
 @app.post("/api/settings/test")
@@ -126,7 +141,47 @@ def _run_state(conn) -> dict:
 def summary():
     with db.session() as conn:
         s = insights.summary(conn)
-        return {**s, **_run_state(conn)}
+        p = projects.active()
+        return {**s, **_run_state(conn), "project": {"id": p["id"], "name": p["name"]},
+                "taxonomy_language": language.get(conn)}
+
+
+# --- projects ------------------------------------------------------------------------------------
+
+class ProjectBody(BaseModel):
+    name: str | None = None
+    description: str | None = None
+
+
+@app.get("/api/projects")
+def list_projects():
+    return projects.list_projects()
+
+
+@app.post("/api/projects")
+def create_project(body: ProjectBody):
+    inherited = {k: v for k, v in db.load_settings().to_dict().items()
+                 if k in ("ollama_url", "llm_model", "embedding_model", "request_timeout")}
+    return projects.create(body.name or "", body.description or "", inherited)
+
+
+@app.patch("/api/projects/{pid}")
+def update_project(pid: str, body: ProjectBody):
+    return projects.update(pid, body.name, body.description)
+
+
+@app.post("/api/projects/{pid}/activate")
+def activate_project(pid: str):
+    _require_idle()
+    project = projects.activate(pid)
+    _uploads.clear()
+    return project
+
+
+@app.delete("/api/projects/{pid}")
+def delete_project(pid: str):
+    projects.delete(pid)
+    return {"ok": True}
 
 
 @app.post("/api/analysis/start")
@@ -184,7 +239,8 @@ def reset_analysis():
         conn.execute("DELETE FROM taxonomy_nodes WHERE level IN (3,4)")
         conn.execute("UPDATE interactions SET status='pending', summary=NULL, no_intent_reason=NULL, error=NULL, "
                      "processed_at=NULL, processed_order=NULL, batch_index=NULL, review_flag=0, review_unclassified=0")
-        conn.execute("DELETE FROM meta WHERE key IN ('last_refined_order','seq_l3','seq_l4')")
+        conn.execute("DELETE FROM meta WHERE key IN ('last_refined_order','seq_l3','seq_l4') OR key LIKE ?",
+                     (insights.NOTES_META_KEY + "%",))
         v = taxonomy.bump_version(conn, "Analysis reset — L3/L4 removed")
         events.emit(conn, "info", "Analysis results reset — imported interactions kept")
     return {"ok": True, "version": v}
@@ -279,6 +335,21 @@ def csv_template():
                         filename="intent_studio_import_template.csv")
 
 
+@app.get("/api/import/template.json")
+def json_template():
+    example = [
+        {"conversation_id": "CONV-0001", "channel": "voice", "segment": "prepaid", "language": "en",
+         "timestamp": "2026-10-20T10:00:00Z", "queue": "Prepaid Support",
+         "turns": [{"speaker": "customer", "text": "I topped up yesterday, but the credit is still missing."},
+                   {"speaker": "agent", "text": "I can check the transaction for you."}]},
+        {"conversation_id": "CONV-0002", "channel": "whatsapp", "segment": "postpaid", "language": "en",
+         "turns": [{"speaker": "customer", "text": "Why is my bill higher than last month?"},
+                   {"speaker": "agent", "text": "Let me go through the line items with you."}]},
+    ]
+    return Response(json.dumps(example, indent=2), media_type="application/json",
+                    headers={"Content-Disposition": "attachment; filename=intent_studio_import_template.json"})
+
+
 @app.get("/api/import/sample.csv")
 def sample_csv():
     return FileResponse(config.SAMPLE_DIR / "sample_transcripts.csv", media_type="text/csv",
@@ -348,9 +419,11 @@ async def import_taxonomy(file: UploadFile = File(...)):
         raise HTTPException(400, "Taxonomy file must be valid JSON")
     with db.session() as conn:
         v = taxonomy.replace_base_taxonomy(conn, data)
+        lang = language.get(conn)
         with db.transaction(conn):
-            events.emit(conn, "taxonomy_edited", "Base L1/L2 taxonomy replaced from file")
-    return {"version": v}
+            events.emit(conn, "taxonomy_edited", f"Base L1/L2 taxonomy replaced from file "
+                        f"(analysis language: {language.name(lang)})")
+    return {"version": v, "language": lang}
 
 
 @app.get("/api/taxonomy/base.json")
@@ -480,23 +553,43 @@ def evaluation_view():
         return evaluation.compare(conn)
 
 
+@app.get("/api/insights/intents")
+def intent_volume(lang: str = "en"):
+    with db.session() as conn:
+        dist = insights.intent_distribution(conn)
+        return {**dist, "notes": insights.cached_notes(conn, dist, lang)}
+
+
+@app.post("/api/insights/intents/notes")
+def intent_notes(force: bool = False, lang: str = "en"):
+    s = db.load_settings()
+    with db.session() as conn, pipeline.make_client(s) as client:
+        return insights.generate_notes(conn, client, s.llm_model, force=force, lang=lang)
+
+
+@app.get("/api/insights/overlaps")
+def overlaps():
+    with db.session() as conn:
+        return insights.overlap_pairs(conn, db.load_settings().thresholds()["merge"])
+
+
 def _stamp() -> str:
     return time.strftime("%Y%m%d-%H%M")
 
 
 @app.get("/api/export/xlsx")
-def export_xlsx():
+def export_xlsx(lang: str = "en"):
     with db.session() as conn:
-        data = export.to_xlsx(conn)
+        data = export.to_xlsx(conn, lang)
     return Response(data, media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
                     headers={"Content-Disposition": f"attachment; filename=intent_studio_{_stamp()}.xlsx"})
 
 
 @app.get("/api/export/csv")
-def export_csv(sheet: str | None = None):
+def export_csv(sheet: str | None = None, lang: str = "en"):
     with db.session() as conn:
         try:
-            data, mime, name = export.to_csv(conn, sheet)
+            data, mime, name = export.to_csv(conn, sheet, lang)
         except KeyError:
             raise HTTPException(400, f"Unknown sheet; choose one of {export.SHEETS}")
     return Response(data, media_type=mime, headers={"Content-Disposition": f"attachment; filename={name}"})
@@ -508,6 +601,40 @@ def export_json():
         data = export.to_json(conn)
     return Response(json.dumps(data, ensure_ascii=False, indent=2), media_type="application/json",
                     headers={"Content-Disposition": f"attachment; filename=intent_studio_{_stamp()}.json"})
+
+
+@app.get("/api/export/report.pdf")
+def export_report(lang: str = "en"):
+    project = projects.active()
+    with db.session() as conn:
+        data = report.build(conn, lang, project["name"], branding.logo_path())
+    return Response(data, media_type="application/pdf",
+                    headers={"Content-Disposition": f"attachment; filename=intent_studio_report_{_stamp()}.pdf"})
+
+
+# --- branding ----------------------------------------------------------------------------------------
+
+@app.get("/api/branding")
+def get_branding():
+    return branding.info()
+
+
+@app.get("/api/branding/logo")
+def get_logo():
+    path = branding.logo_path()
+    if not path.exists():
+        raise HTTPException(404, "No logo uploaded")
+    return FileResponse(path, media_type="image/png", headers={"Cache-Control": "no-cache"})
+
+
+@app.post("/api/branding/logo")
+async def upload_logo(file: UploadFile = File(...)):
+    return branding.save_logo(await file.read())
+
+
+@app.delete("/api/branding/logo")
+def delete_logo():
+    return branding.delete_logo()
 
 
 # --- built frontend (optional single-process mode) ----------------------------------------------------

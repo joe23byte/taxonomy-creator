@@ -1,0 +1,4126 @@
+[
+  {
+    "conversation_id": "GKV-0001",
+    "channel": "web_messaging",
+    "segment": "rentner",
+    "language": "de",
+    "timestamp": "2026-09-04T16:37:00Z",
+    "queue": "Online-Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hallo, hier ist Herr Schulz vom Kundenservice. Wie kann ich Ihnen im Chat helfen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Wir haben im Mai ein Baby bekommen, wie kann ich unsere Tochter bei Ihnen mitversichern?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Ich brauche den Namen und das Geburtsdatum des Kindes."
+      },
+      {
+        "speaker": "customer",
+        "text": "Die Geburtsurkunde habe ich schon da."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ihr Kind ist ab Geburt familienversichert, die Gesundheitskarte schicken wir in etwa zwei Wochen zu."
+      },
+      {
+        "speaker": "customer",
+        "text": "Prima, vielen Dank."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0002",
+    "channel": "voice",
+    "segment": "freiwillig",
+    "language": "de",
+    "timestamp": "2026-09-07T21:18:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Herr Wagner. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hallo, ich bin mit meinen Beiträgen im Rückstand, kann ich in Raten zahlen?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Möchten Sie eine Ratenzahlung vereinbaren?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Es geht um 312,40 €."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe eine Ratenzahlung über sechs Monate eingerichtet, das Mahnverfahren ruht."
+      },
+      {
+        "speaker": "customer",
+        "text": "Und das passiert nicht noch mal?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe einen Vermerk angelegt, damit wir das im Blick behalten."
+      },
+      {
+        "speaker": "customer",
+        "text": "Vielen Dank, das hilft mir sehr."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0003",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-05T02:13:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Herr Schulz. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hallo, wie beantrage ich Kinderkrankengeld?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gute Besserung für Ihr Kind. Hat der Kinderarzt die Bescheinigung schon ausgestellt?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Der Kinderarzt hat eine Bescheinigung ausgestellt."
+      },
+      {
+        "speaker": "agent",
+        "text": "Als Alleinerziehende haben Sie dieses Jahr noch zwölf Tage Anspruch. Der Antrag ist angelegt."
+      },
+      {
+        "speaker": "customer",
+        "text": "Prima, vielen Dank."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gerne. Bleiben Sie gesund!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0004",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-08T19:07:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Becker. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich habe Ihnen da mal was geschickt und weiß nicht, ob das angekommen ist oder was jetzt passiert."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich schaue nach. Wann haben Sie die Rechnung eingereicht?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich habe keine Eingangsbestätigung bekommen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Es fehlte die ärztliche Verordnung. Wenn Sie die nachreichen, erstatten wir sofort."
+      },
+      {
+        "speaker": "customer",
+        "text": "Vielen Dank, das hilft mir sehr."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gerne. Bleiben Sie gesund!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0005",
+    "channel": "web_messaging",
+    "segment": "rentner",
+    "language": "de",
+    "timestamp": "2026-09-04T08:23:00Z",
+    "queue": "Online-Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hallo, hier ist Herr Schulz vom Kundenservice. Wie kann ich Ihnen im Chat helfen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hallo, ich brauche eine Brücke und der Eigenanteil ist sehr hoch."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich schaue nach. Hat die Praxis den Plan schon digital an uns geschickt?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Der Plan geht über 124,00 €."
+      },
+      {
+        "speaker": "agent",
+        "text": "Der Plan ist genehmigt. Mit Ihrem Bonusheft bekommen Sie 75 Prozent Festzuschuss."
+      },
+      {
+        "speaker": "customer",
+        "text": "Wie lange dauert das ungefähr?"
+      },
+      {
+        "speaker": "agent",
+        "text": "In der Regel ist das innerhalb weniger Werktage erledigt."
+      },
+      {
+        "speaker": "customer",
+        "text": "Danke für die Hilfe."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0006",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-10-15T17:05:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Herr Schulz. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Schönes Wetter heute, oder? Endlich mal Sonne."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ja, wirklich! Hoffentlich können Sie es nachher genießen."
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich habe meine Gesundheitskarte verloren und brauche eine neue."
+      },
+      {
+        "speaker": "agent",
+        "text": "Das bekommen wir hin. Sollen wir das vorhandene Foto weiterverwenden?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Die Karte war erst ein Jahr alt."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe die Ersatzkarte bestellt. Bis dahin kann die Praxis Ihren Versicherungsnachweis online bei uns abrufen."
+      },
+      {
+        "speaker": "customer",
+        "text": "Muss ich sonst noch etwas tun?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Nein, von Ihrer Seite ist nichts weiter nötig."
+      },
+      {
+        "speaker": "customer",
+        "text": "Prima, vielen Dank."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gerne. Bleiben Sie gesund!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0007",
+    "channel": "email",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-21T19:14:00Z",
+    "queue": "Posteingang E-Mail",
+    "turns": [
+      {
+        "speaker": "customer",
+        "text": "Hallo, wie beantrage ich Kinderkrankengeld?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gute Besserung für Ihr Kind. Hat der Kinderarzt die Bescheinigung schon ausgestellt?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Der Kinderarzt hat eine Bescheinigung ausgestellt."
+      },
+      {
+        "speaker": "agent",
+        "text": "Als Alleinerziehende haben Sie dieses Jahr noch zwölf Tage Anspruch. Der Antrag ist angelegt."
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0008",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-10-06T09:07:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Herr Yilmaz. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hallo, wie lange ist die Kündigungsfrist, wenn ich die Krankenkasse wechseln will?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich prüfe das. Haben Sie sich schon bei der neuen Kasse angemeldet?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich ziehe im März nach Österreich."
+      },
+      {
+        "speaker": "agent",
+        "text": "Die neue Kasse meldet den Wechsel elektronisch, eine Kündigung bei uns ist nicht nötig. Die Frist beträgt zwei Monate zum Monatsende."
+      },
+      {
+        "speaker": "customer",
+        "text": "Super, danke schön."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gerne. Bleiben Sie gesund!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0009",
+    "channel": "voice",
+    "segment": "freiwillig",
+    "language": "de",
+    "timestamp": "2026-09-05T11:25:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Nowak. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich bin seit kurzem selbständig, wie berechnet sich mein Beitrag?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Seit wann sind Sie selbständig tätig?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Mein Gewinn lag letztes Jahr deutlich unter dem, was Sie angesetzt haben."
+      },
+      {
+        "speaker": "agent",
+        "text": "Laden Sie den Steuerbescheid in der App hoch, dann stufen wir Sie rückwirkend neu ein und erstatten zu viel gezahlte Beiträge."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alles klar, das war's, danke."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0010",
+    "channel": "web_messaging",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-10-02T00:57:00Z",
+    "queue": "Online-Chat",
+    "turns": [
+      {
+        "speaker": "customer",
+        "text": "Ich habe die Folgebescheinigung längst geschickt, aber die Zahlung ist nicht da."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich schaue gleich nach. Seit wann sind Sie arbeitsunfähig?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich bin seit dem 3. Juni durchgehend arbeitsunfähig."
+      },
+      {
+        "speaker": "agent",
+        "text": "Die Entgeltbescheinigung lag erst gestern vor. Ich habe die Zahlung angewiesen, das Geld ist in zwei bis drei Werktagen auf Ihrem Konto."
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0011",
+    "channel": "email",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-10-02T13:12:00Z",
+    "queue": "Posteingang E-Mail",
+    "turns": [
+      {
+        "speaker": "customer",
+        "text": "Meine Mutter ist chronisch krank, gibt es da eine Obergrenze für Zuzahlungen?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Die Belastungsgrenze liegt bei zwei Prozent des Bruttoeinkommens, bei chronisch Kranken bei einem Prozent. Haben Sie Ihre Quittungen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Mein Arzt hat eine chronische Erkrankung bescheinigt."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe Ihnen den Antrag geschickt. Schicken Sie ihn mit den Quittungen zurück, dann stellen wir den Befreiungsausweis aus."
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0012",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-10-13T13:05:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Becker. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich hänge schon eine Weile in der Warteschleife, die Musik kann ich jetzt mitsingen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Entschuldigen Sie die Wartezeit, und danke für Ihre Geduld!"
+      },
+      {
+        "speaker": "customer",
+        "text": "Seit dem Handywechsel kann ich mich in der App nicht mehr anmelden."
+      },
+      {
+        "speaker": "agent",
+        "text": "Das klären wir. Haben Sie das Gerät gewechselt oder die App neu installiert?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich habe es schon dreimal versucht."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe Ihr altes Gerät abgemeldet und einen neuen Freischaltcode verschickt. Der kommt in drei Tagen per Post."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alles klar, das war's, danke."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0013",
+    "channel": "voice",
+    "segment": "freiwillig",
+    "language": "de",
+    "timestamp": "2026-09-18T14:12:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Hoffmann. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hallo, ich möchte eine Mutter-Kind-Kur beantragen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Sind Sie berufstätig? Dann ist eventuell die Rentenversicherung zuständig."
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich bin seit Monaten erschöpft."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich schicke Ihnen den Antrag zu. Wir prüfen, wer zuständig ist, und leiten ihn bei Bedarf weiter."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alles klar, das war's, danke."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0014",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-10-10T01:37:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Krüger. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich bin ja schon länger krank und irgendwie kommt kein Geld, ich weiß gar nicht, wer da jetzt zuständig ist."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich schaue gleich nach. Seit wann sind Sie arbeitsunfähig?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich bin seit dem 15. April durchgehend arbeitsunfähig."
+      },
+      {
+        "speaker": "agent",
+        "text": "Es fehlte die Folgebescheinigung für eine Woche. Die liegt jetzt vor, die Auszahlung von 89,90 € ist veranlasst."
+      },
+      {
+        "speaker": "customer",
+        "text": "Super, danke schön."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0015",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-10-15T19:17:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Herr Wagner. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hallo, meine Bonuspunkte für den Gesundheitscheck sind nicht gutgeschrieben."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Haben Sie die Nachweise über die App eingereicht?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich war beim Check-up und beim Zahnarzt."
+      },
+      {
+        "speaker": "agent",
+        "text": "Die Punkte sind jetzt gutgeschrieben. Ihre Prämie von 240,00 € wird auf Ihr Konto überwiesen."
+      },
+      {
+        "speaker": "customer",
+        "text": "Wie lange dauert das ungefähr?"
+      },
+      {
+        "speaker": "agent",
+        "text": "In der Regel ist das innerhalb weniger Werktage erledigt."
+      },
+      {
+        "speaker": "customer",
+        "text": "Und dann noch etwas: Mein Krankengeld für diesen Monat ist auch noch nicht da."
+      },
+      {
+        "speaker": "agent",
+        "text": "Das tut mir leid. Darf ich kurz Ihre Versichertennummer aufnehmen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich bin seit dem 3. Juni durchgehend arbeitsunfähig."
+      },
+      {
+        "speaker": "agent",
+        "text": "Es fehlte die Folgebescheinigung für eine Woche. Die liegt jetzt vor, die Auszahlung von 980,00 € ist veranlasst."
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0016",
+    "channel": "voice",
+    "segment": "freiwillig",
+    "language": "de",
+    "timestamp": "2026-09-24T16:06:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Krüger. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich hänge schon eine Weile in der Warteschleife, die Musik kann ich jetzt mitsingen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Entschuldigen Sie die Wartezeit, und danke für Ihre Geduld!"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich komme nicht mehr in Ihre App, der Login schlägt immer fehl."
+      },
+      {
+        "speaker": "agent",
+        "text": "Kein Problem. Wann haben Sie sich zuletzt erfolgreich angemeldet?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich habe es schon dreimal versucht."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ihr Konto war nach mehreren Fehlversuchen gesperrt. Es ist entsperrt, Sie können sich wieder anmelden."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alles klar, das war's, danke."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0017",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-19T09:51:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Krüger. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Meine Mutter ist chronisch krank, gibt es da eine Obergrenze für Zuzahlungen?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Die Belastungsgrenze liegt bei zwei Prozent des Bruttoeinkommens, bei chronisch Kranken bei einem Prozent. Haben Sie Ihre Quittungen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich bekomme eine kleine Rente."
+      },
+      {
+        "speaker": "agent",
+        "text": "Die Belastungsgrenze ist erreicht. Ihr Befreiungsausweis kommt per Post, zu viel gezahlte 89,90 € erstatten wir."
+      },
+      {
+        "speaker": "customer",
+        "text": "Prima, vielen Dank."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gerne. Bleiben Sie gesund!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0018",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-10-06T07:13:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Becker. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hallo, meine Bonuspunkte für den Gesundheitscheck sind nicht gutgeschrieben."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Haben Sie die Nachweise über die App eingereicht?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich war beim Check-up und beim Zahnarzt."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe die Auszahlung veranlasst, das Geld ist in etwa einer Woche da."
+      },
+      {
+        "speaker": "customer",
+        "text": "Danke für die Hilfe."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0019",
+    "channel": "web_messaging",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-19T08:26:00Z",
+    "queue": "Online-Chat",
+    "turns": [
+      {
+        "speaker": "customer",
+        "text": "Hallo, wie ist der Stand bei meiner Kostenerstattung für die Osteopathie?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Wissen Sie noch, auf welchem Weg Sie die Rechnung geschickt haben?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich habe keine Eingangsbestätigung bekommen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Es fehlte die ärztliche Verordnung. Wenn Sie die nachreichen, erstatten wir sofort."
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0020",
+    "channel": "email",
+    "segment": "rentner",
+    "language": "de",
+    "timestamp": "2026-09-23T07:58:00Z",
+    "queue": "Posteingang E-Mail",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Sehr geehrte Damen und Herren, vielen Dank für Ihre Nachricht. Mein Name ist Herr Schulz, ich kümmere mich um Ihr Anliegen."
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich habe dieses Jahr schon sehr viele Zuzahlungen geleistet, kann ich mich befreien lassen?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich helfe Ihnen. Möchten Sie die Befreiung für den Rest des Jahres beantragen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Mein Arzt hat eine chronische Erkrankung bescheinigt."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe Ihnen den Antrag geschickt. Schicken Sie ihn mit den Quittungen zurück, dann stellen wir den Befreiungsausweis aus."
+      },
+      {
+        "speaker": "customer",
+        "text": "Außerdem habe ich eine neue Verordnung für Krankengymnastik, geht die in Ordnung?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe die Genehmigung erteilt, die Praxis bekommt heute eine Bestätigung."
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0021",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-18T21:24:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Herr Schulz. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Wie kann ich meine Bonusprämie auszahlen lassen?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Haben Sie die Nachweise über die App eingereicht?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich habe die Nachweise vor drei Wochen hochgeladen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe die Auszahlung veranlasst, das Geld ist in etwa einer Woche da."
+      },
+      {
+        "speaker": "customer",
+        "text": "Super, danke schön."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0022",
+    "channel": "email",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-26T13:45:00Z",
+    "queue": "Posteingang E-Mail",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Sehr geehrte Damen und Herren, vielen Dank für Ihre Nachricht. Mein Name ist Frau Krüger, ich kümmere mich um Ihr Anliegen."
+      },
+      {
+        "speaker": "customer",
+        "text": "Können Sie meinem Arbeitgeber bitte bestätigen, dass ich bei Ihnen versichert bin?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Kein Problem. Soll die Bescheinigung direkt an den Arbeitgeber gehen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich brauche das relativ schnell."
+      },
+      {
+        "speaker": "agent",
+        "text": "Die Mitgliedsbescheinigung ist elektronisch an Ihren Arbeitgeber übermittelt. Eine Kopie finden Sie in der App."
+      },
+      {
+        "speaker": "customer",
+        "text": "Vielen Dank, das hilft mir sehr."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gerne. Bleiben Sie gesund!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0023",
+    "channel": "web_messaging",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-10-05T13:52:00Z",
+    "queue": "Online-Chat",
+    "turns": [
+      {
+        "speaker": "customer",
+        "text": "Guten Tag, die Personalabteilung fragt nach meiner Mitgliedsbescheinigung."
+      },
+      {
+        "speaker": "agent",
+        "text": "Kein Problem. Soll die Bescheinigung direkt an den Arbeitgeber gehen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich starte am 20. August bei der neuen Firma."
+      },
+      {
+        "speaker": "agent",
+        "text": "Die Mitgliedsbescheinigung ist elektronisch an Ihren Arbeitgeber übermittelt. Eine Kopie finden Sie in der App."
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0024",
+    "channel": "email",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-23T02:15:00Z",
+    "queue": "Posteingang E-Mail",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Sehr geehrte Damen und Herren, vielen Dank für Ihre Nachricht. Mein Name ist Frau Hoffmann, ich kümmere mich um Ihr Anliegen."
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich hänge schon eine Weile in der Warteschleife, die Musik kann ich jetzt mitsingen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Entschuldigen Sie die Wartezeit, und danke für Ihre Geduld!"
+      },
+      {
+        "speaker": "customer",
+        "text": "Guten Tag, die Personalabteilung fragt nach meiner Mitgliedsbescheinigung."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gerne. Wie heißt Ihr neuer Arbeitgeber und ab wann beginnt die Beschäftigung?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich brauche das relativ schnell."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe die Bescheinigung erstellt, sie liegt in Ihrem Postfach in der Online-Geschäftsstelle."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alles klar, das war's, danke."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0025",
+    "channel": "voice",
+    "segment": "freiwillig",
+    "language": "de",
+    "timestamp": "2026-10-05T16:59:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Herr Schulz. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich habe einen Brief bekommen, dass der Zusatzbeitrag steigt. Warum?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Möchten Sie wissen, wie viel Sie konkret mehr zahlen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Andere Kassen sind günstiger, habe ich gelesen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Die Erhöhung gilt ab Januar. Sie haben dadurch ein Sonderkündigungsrecht bis Ende des Monats."
+      },
+      {
+        "speaker": "customer",
+        "text": "Super, danke schön."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0026",
+    "channel": "web_messaging",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-20T21:56:00Z",
+    "queue": "Online-Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hallo, hier ist Frau Nowak vom Kundenservice. Wie kann ich Ihnen im Chat helfen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Guten Tag, das Krankengeld für den letzten Zeitraum fehlt auf meinem Konto."
+      },
+      {
+        "speaker": "agent",
+        "text": "Das tut mir leid. Darf ich kurz Ihre Versichertennummer aufnehmen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Die Arbeitsunfähigkeitsbescheinigung hat mein Arzt direkt elektronisch übermittelt."
+      },
+      {
+        "speaker": "agent",
+        "text": "Die Entgeltbescheinigung lag erst gestern vor. Ich habe die Zahlung angewiesen, das Geld ist in zwei bis drei Werktagen auf Ihrem Konto."
+      },
+      {
+        "speaker": "customer",
+        "text": "Super, danke schön."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gerne. Bleiben Sie gesund!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0027",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-24T21:31:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Nowak. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Mein Kind ist krank und ich muss zu Hause bleiben. Bekomme ich Kinderkrankengeld?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gute Besserung für Ihr Kind. Hat der Kinderarzt die Bescheinigung schon ausgestellt?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Meine Tochter ist fünf und hat Fieber."
+      },
+      {
+        "speaker": "agent",
+        "text": "Schicken Sie die Bescheinigung über die App, das Kinderkrankengeld zahlen wir dann direkt an Sie aus."
+      },
+      {
+        "speaker": "customer",
+        "text": "Muss ich sonst noch etwas tun?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Nein, von Ihrer Seite ist nichts weiter nötig."
+      },
+      {
+        "speaker": "customer",
+        "text": "Prima, vielen Dank."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gerne. Bleiben Sie gesund!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0028",
+    "channel": "voice",
+    "segment": "freiwillig",
+    "language": "de",
+    "timestamp": "2026-09-02T06:10:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Nowak. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich bin seit kurzem selbständig, wie berechnet sich mein Beitrag?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Seit wann sind Sie selbständig tätig?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Mein Gewinn lag letztes Jahr deutlich unter dem, was Sie angesetzt haben."
+      },
+      {
+        "speaker": "agent",
+        "text": "Laden Sie den Steuerbescheid in der App hoch, dann stufen wir Sie rückwirkend neu ein und erstatten zu viel gezahlte Beiträge."
+      },
+      {
+        "speaker": "customer",
+        "text": "Super, danke schön."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0029",
+    "channel": "voice",
+    "segment": "freiwillig",
+    "language": "de",
+    "timestamp": "2026-10-01T13:12:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Herr Schulz. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich bin umgezogen und möchte meine neue Adresse mitteilen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Wie lautet Ihre neue Anschrift?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Die neue Adresse ist in Freiburg."
+      },
+      {
+        "speaker": "agent",
+        "text": "Die neue Anschrift ist gespeichert, die Post geht ab sofort dorthin."
+      },
+      {
+        "speaker": "customer",
+        "text": "Wie lange dauert das ungefähr?"
+      },
+      {
+        "speaker": "agent",
+        "text": "In der Regel ist das innerhalb weniger Werktage erledigt."
+      },
+      {
+        "speaker": "customer",
+        "text": "Und wie beantrage ich eigentlich eine Reha?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Sind Sie berufstätig? Dann ist eventuell die Rentenversicherung zuständig."
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich bin seit Monaten erschöpft."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich schicke Ihnen den Antrag zu. Wir prüfen, wer zuständig ist, und leiten ihn bei Bedarf weiter."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alles klar, das war's, danke."
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0030",
+    "channel": "voice",
+    "segment": "freiwillig",
+    "language": "de",
+    "timestamp": "2026-09-08T18:31:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Krüger. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Mein Orthopäde hat mir Physiotherapie verordnet, muss die Krankenkasse das genehmigen?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Ist das eine Erst- oder eine Folgeverordnung?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Es ist schon die dritte Verordnung."
+      },
+      {
+        "speaker": "agent",
+        "text": "Für diese Diagnose ist keine Genehmigung nötig, die Praxis kann direkt mit uns abrechnen."
+      },
+      {
+        "speaker": "customer",
+        "text": "Wie lange dauert das ungefähr?"
+      },
+      {
+        "speaker": "agent",
+        "text": "In der Regel ist das innerhalb weniger Werktage erledigt."
+      },
+      {
+        "speaker": "customer",
+        "text": "Und wie wird eigentlich mein Beitrag als Selbständiger berechnet?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Seit wann sind Sie selbständig tätig?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich zahle aktuell 312,40 € im Monat."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe Ihre Einstufung angepasst. Ihr neuer Beitrag beträgt 312,40 € im Monat."
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0031",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-15T16:49:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Nowak. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Guten Tag, meine elektronische Gesundheitskarte ist weg, ich habe nächste Woche einen Arzttermin."
+      },
+      {
+        "speaker": "agent",
+        "text": "Kein Problem. Ich sperre die alte Karte. Ist Ihre Adresse noch aktuell?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Die Karte war erst ein Jahr alt."
+      },
+      {
+        "speaker": "agent",
+        "text": "Die alte Karte ist gesperrt, die neue kommt in etwa zehn Tagen. Für den Arzttermin schicke ich Ihnen eine Ersatzbescheinigung."
+      },
+      {
+        "speaker": "customer",
+        "text": "Danke für die Hilfe."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gerne. Bleiben Sie gesund!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0032",
+    "channel": "web_messaging",
+    "segment": "freiwillig",
+    "language": "de",
+    "timestamp": "2026-09-19T08:23:00Z",
+    "queue": "Online-Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hallo, hier ist Herr Schulz vom Kundenservice. Wie kann ich Ihnen im Chat helfen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich habe einen Brief bekommen, dass der Zusatzbeitrag steigt. Warum?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Möchten Sie wissen, wie viel Sie konkret mehr zahlen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Der Brief kam letzte Woche."
+      },
+      {
+        "speaker": "agent",
+        "text": "Die Erhöhung gilt ab Januar. Sie haben dadurch ein Sonderkündigungsrecht bis Ende des Monats."
+      },
+      {
+        "speaker": "customer",
+        "text": "Prima, vielen Dank."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0033",
+    "channel": "web_messaging",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-10-10T19:01:00Z",
+    "queue": "Online-Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hallo, hier ist Frau Nowak vom Kundenservice. Wie kann ich Ihnen im Chat helfen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Mein neuer Arbeitgeber braucht eine Mitgliedsbescheinigung von Ihnen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Kein Problem. Soll die Bescheinigung direkt an den Arbeitgeber gehen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich starte am 20. August bei der neuen Firma."
+      },
+      {
+        "speaker": "agent",
+        "text": "Die Mitgliedsbescheinigung ist elektronisch an Ihren Arbeitgeber übermittelt. Eine Kopie finden Sie in der App."
+      },
+      {
+        "speaker": "customer",
+        "text": "Bekomme ich dazu eine Bestätigung?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Ja, die Bestätigung kommt in Ihr Postfach in der App."
+      },
+      {
+        "speaker": "customer",
+        "text": "Prima, vielen Dank."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0034",
+    "channel": "voice",
+    "segment": "freiwillig",
+    "language": "de",
+    "timestamp": "2026-10-14T20:53:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Herr Yilmaz. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hallo, ich bin mit meinen Beiträgen im Rückstand, kann ich in Raten zahlen?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Möchten Sie eine Ratenzahlung vereinbaren?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich hatte die letzten Monate finanzielle Schwierigkeiten."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe eine Ratenzahlung über sechs Monate eingerichtet, das Mahnverfahren ruht."
+      },
+      {
+        "speaker": "customer",
+        "text": "Super, danke schön."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gerne. Bleiben Sie gesund!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0035",
+    "channel": "voice",
+    "segment": "freiwillig",
+    "language": "de",
+    "timestamp": "2026-09-02T17:17:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Hoffmann. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hallo, ich bin mit meinen Beiträgen im Rückstand, kann ich in Raten zahlen?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Möchten Sie eine Ratenzahlung vereinbaren?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Es geht um 124,00 €."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe eine Ratenzahlung über sechs Monate eingerichtet, das Mahnverfahren ruht."
+      },
+      {
+        "speaker": "customer",
+        "text": "Vielen Dank, das hilft mir sehr."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0036",
+    "channel": "email",
+    "segment": "familienversichert",
+    "language": "de",
+    "timestamp": "2026-09-25T22:24:00Z",
+    "queue": "Posteingang E-Mail",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Sehr geehrte Damen und Herren, vielen Dank für Ihre Nachricht. Mein Name ist Frau Krüger, ich kümmere mich um Ihr Anliegen."
+      },
+      {
+        "speaker": "customer",
+        "text": "Seit dem Handywechsel kann ich mich in der App nicht mehr anmelden."
+      },
+      {
+        "speaker": "agent",
+        "text": "Kein Problem. Wann haben Sie sich zuletzt erfolgreich angemeldet?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Der Brief mit dem Code kam nicht."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe Ihr altes Gerät abgemeldet und einen neuen Freischaltcode verschickt. Der kommt in drei Tagen per Post."
+      },
+      {
+        "speaker": "customer",
+        "text": "Danke für die Hilfe."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gerne. Bleiben Sie gesund!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0037",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-10-10T22:51:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Herr Wagner. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hallo, haben Sie einen Terminservice für Fachärzte?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. In welcher Region suchen Sie?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich habe eine Überweisung vom Hausarzt."
+      },
+      {
+        "speaker": "agent",
+        "text": "Mit dem Dringlichkeitscode vermittelt die Terminservicestelle einen Termin innerhalb von vier Wochen."
+      },
+      {
+        "speaker": "customer",
+        "text": "Prima, vielen Dank."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0038",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-18T04:26:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Herr Wagner. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Guten Tag, die App sagt immer 'Identifizierung fehlgeschlagen'."
+      },
+      {
+        "speaker": "agent",
+        "text": "Kein Problem. Wann haben Sie sich zuletzt erfolgreich angemeldet?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich habe ein neues Smartphone."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe Ihr altes Gerät abgemeldet und einen neuen Freischaltcode verschickt. Der kommt in drei Tagen per Post."
+      },
+      {
+        "speaker": "customer",
+        "text": "Prima, vielen Dank."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0039",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-28T04:12:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Hoffmann. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Schönes Wetter heute, oder? Endlich mal Sonne."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ja, wirklich! Hoffentlich können Sie es nachher genießen."
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich habe die Folgebescheinigung längst geschickt, aber die Zahlung ist nicht da."
+      },
+      {
+        "speaker": "agent",
+        "text": "Das tut mir leid. Darf ich kurz Ihre Versichertennummer aufnehmen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Die Entgeltbescheinigung hat mein Arbeitgeber laut Personalabteilung schon geschickt."
+      },
+      {
+        "speaker": "agent",
+        "text": "Es fehlte die Folgebescheinigung für eine Woche. Die liegt jetzt vor, die Auszahlung von 89,90 € ist veranlasst."
+      },
+      {
+        "speaker": "customer",
+        "text": "Super, danke schön."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0040",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-10-10T04:16:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Herr Schulz. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich habe meine Gesundheitskarte verloren und brauche eine neue."
+      },
+      {
+        "speaker": "agent",
+        "text": "Kein Problem. Ich sperre die alte Karte. Ist Ihre Adresse noch aktuell?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Die Karte war erst ein Jahr alt."
+      },
+      {
+        "speaker": "agent",
+        "text": "Die alte Karte ist gesperrt, die neue kommt in etwa zehn Tagen. Für den Arzttermin schicke ich Ihnen eine Ersatzbescheinigung."
+      },
+      {
+        "speaker": "customer",
+        "text": "Super, danke schön."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0041",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-22T12:05:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Herr Yilmaz. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Mein Hund bellt im Hintergrund, tut mir leid."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ach, das macht gar nichts."
+      },
+      {
+        "speaker": "customer",
+        "text": "Meine Karte ist gebrochen, der Arzt kann sie nicht mehr einlesen. Wie komme ich an eine neue?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Das bekommen wir hin. Sollen wir das vorhandene Foto weiterverwenden?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich habe nächste Woche einen Termin beim Hausarzt."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe die Ersatzkarte bestellt. Bis dahin kann die Praxis Ihren Versicherungsnachweis online bei uns abrufen."
+      },
+      {
+        "speaker": "customer",
+        "text": "Muss ich sonst noch etwas tun?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Nein, von Ihrer Seite ist nichts weiter nötig."
+      },
+      {
+        "speaker": "customer",
+        "text": "Vielen Dank, das hilft mir sehr."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0042",
+    "channel": "voice",
+    "segment": "freiwillig",
+    "language": "de",
+    "timestamp": "2026-10-14T00:36:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Herr Yilmaz. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich bin umgezogen und möchte meine neue Adresse mitteilen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Kein Problem. Ab wann gilt die neue Adresse?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich wohne seit dem 1. Oktober dort."
+      },
+      {
+        "speaker": "agent",
+        "text": "Die neue Anschrift ist gespeichert, die Post geht ab sofort dorthin."
+      },
+      {
+        "speaker": "customer",
+        "text": "Ach ja, meine Punkte aus dem Bonusprogramm sind auch noch nicht da."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Haben Sie die Nachweise über die App eingereicht?"
+      },
+      {
+        "speaker": "customer",
+        "text": "In der App steht, dass ich 38,50 € Prämie habe."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe die Auszahlung veranlasst, das Geld ist in etwa einer Woche da."
+      },
+      {
+        "speaker": "customer",
+        "text": "Danke für die Hilfe."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gerne. Bleiben Sie gesund!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0043",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-30T01:09:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Hoffmann. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Guten Tag, ich habe Nachweise für das Bonusprogramm hochgeladen, aber die Punkte fehlen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich schaue nach. Für welches Jahr möchten Sie die Prämie einlösen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich war beim Check-up und beim Zahnarzt."
+      },
+      {
+        "speaker": "agent",
+        "text": "Die Punkte sind jetzt gutgeschrieben. Ihre Prämie von 312,40 € wird auf Ihr Konto überwiesen."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alles klar, das war's, danke."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0044",
+    "channel": "web_messaging",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-20T03:10:00Z",
+    "queue": "Online-Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hallo, hier ist Frau Krüger vom Kundenservice. Wie kann ich Ihnen im Chat helfen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Kann mein Kind beitragsfrei über mich versichert werden? Mein Mann ist privat versichert."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Ich brauche den Namen und das Geburtsdatum des Kindes."
+      },
+      {
+        "speaker": "customer",
+        "text": "Unser Kind ist jetzt drei Wochen alt."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe Ihnen den Fragebogen zur Familienversicherung in die App gelegt. Sobald er zurück ist, ist Ihr Kind ab Geburt versichert."
+      },
+      {
+        "speaker": "customer",
+        "text": "Und das passiert nicht noch mal?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe einen Vermerk angelegt, damit wir das im Blick behalten."
+      },
+      {
+        "speaker": "customer",
+        "text": "Und kann ich mich eigentlich von den Zuzahlungen befreien lassen?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich helfe Ihnen. Möchten Sie die Befreiung für den Rest des Jahres beantragen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich habe alle Quittungen von Apotheke und Physiotherapie gesammelt."
+      },
+      {
+        "speaker": "agent",
+        "text": "Die Belastungsgrenze ist erreicht. Ihr Befreiungsausweis kommt per Post, zu viel gezahlte 89,90 € erstatten wir."
+      },
+      {
+        "speaker": "customer",
+        "text": "Prima, vielen Dank."
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0045",
+    "channel": "email",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-09T15:58:00Z",
+    "queue": "Posteingang E-Mail",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Sehr geehrte Damen und Herren, vielen Dank für Ihre Nachricht. Mein Name ist Herr Wagner, ich kümmere mich um Ihr Anliegen."
+      },
+      {
+        "speaker": "customer",
+        "text": "Wir haben im Juli ein Baby bekommen, wie kann ich unsere Tochter bei Ihnen mitversichern?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Herzlichen Glückwunsch! Sind Sie und der andere Elternteil beide gesetzlich versichert?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Mein Partner verdient mehr als ich, ist das ein Problem?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe Ihnen den Fragebogen zur Familienversicherung in die App gelegt. Sobald er zurück ist, ist Ihr Kind ab Geburt versichert."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alles klar, das war's, danke."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gerne. Bleiben Sie gesund!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0046",
+    "channel": "web_messaging",
+    "segment": "familienversichert",
+    "language": "de",
+    "timestamp": "2026-10-08T02:16:00Z",
+    "queue": "Online-Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hallo, hier ist Frau Krüger vom Kundenservice. Wie kann ich Ihnen im Chat helfen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hallo, ich möchte meinen Sohn in die Familienversicherung aufnehmen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Herzlichen Glückwunsch! Sind Sie und der andere Elternteil beide gesetzlich versichert?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Die Geburtsurkunde habe ich schon da."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe Ihnen den Fragebogen zur Familienversicherung in die App gelegt. Sobald er zurück ist, ist Ihr Kind ab Geburt versichert."
+      },
+      {
+        "speaker": "customer",
+        "text": "Bekomme ich dazu eine Bestätigung?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Ja, die Bestätigung kommt in Ihr Postfach in der App."
+      },
+      {
+        "speaker": "customer",
+        "text": "Vielen Dank, das hilft mir sehr."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0047",
+    "channel": "voice",
+    "segment": "freiwillig",
+    "language": "de",
+    "timestamp": "2026-10-15T06:44:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Becker. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Übernehmen Sie die Kosten für meine Reiseimpfung gegen Typhus?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Haben Sie die Rechnung von der Impfung schon?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich fliege im Januar nach Thailand."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ja, wir erstatten Reiseimpfungen. Reichen Sie die Rechnung über die App ein."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alles klar, das war's, danke."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gerne. Bleiben Sie gesund!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0048",
+    "channel": "email",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-19T23:27:00Z",
+    "queue": "Posteingang E-Mail",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Sehr geehrte Damen und Herren, vielen Dank für Ihre Nachricht. Mein Name ist Frau Nowak, ich kümmere mich um Ihr Anliegen."
+      },
+      {
+        "speaker": "customer",
+        "text": "Guten Tag, das Krankengeld für den letzten Zeitraum fehlt auf meinem Konto."
+      },
+      {
+        "speaker": "agent",
+        "text": "Das tut mir leid. Darf ich kurz Ihre Versichertennummer aufnehmen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Die Entgeltbescheinigung hat mein Arbeitgeber laut Personalabteilung schon geschickt."
+      },
+      {
+        "speaker": "agent",
+        "text": "Die Entgeltbescheinigung lag erst gestern vor. Ich habe die Zahlung angewiesen, das Geld ist in zwei bis drei Werktagen auf Ihrem Konto."
+      },
+      {
+        "speaker": "customer",
+        "text": "Prima, vielen Dank."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gerne. Bleiben Sie gesund!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0049",
+    "channel": "voice",
+    "segment": "freiwillig",
+    "language": "de",
+    "timestamp": "2026-09-11T01:35:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Becker. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Schönes Wochenende schon mal, falls ich es nachher vergesse."
+      },
+      {
+        "speaker": "agent",
+        "text": "Danke, Ihnen auch!"
+      },
+      {
+        "speaker": "customer",
+        "text": "Guten Tag, meine elektronische Gesundheitskarte ist weg, ich habe nächste Woche einen Arzttermin."
+      },
+      {
+        "speaker": "agent",
+        "text": "Das bekommen wir hin. Sollen wir das vorhandene Foto weiterverwenden?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich habe nächste Woche einen Termin beim Hausarzt."
+      },
+      {
+        "speaker": "agent",
+        "text": "Die alte Karte ist gesperrt, die neue kommt in etwa zehn Tagen. Für den Arzttermin schicke ich Ihnen eine Ersatzbescheinigung."
+      },
+      {
+        "speaker": "customer",
+        "text": "Vielen Dank, das hilft mir sehr."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0050",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-17T14:30:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Hoffmann. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Kann mein Kind beitragsfrei über mich versichert werden? Mein Mann ist privat versichert."
+      },
+      {
+        "speaker": "agent",
+        "text": "Herzlichen Glückwunsch! Sind Sie und der andere Elternteil beide gesetzlich versichert?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Mein Partner verdient mehr als ich, ist das ein Problem?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Ihr Kind ist ab Geburt familienversichert, die Gesundheitskarte schicken wir in etwa zwei Wochen zu."
+      },
+      {
+        "speaker": "customer",
+        "text": "Prima, vielen Dank."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0051",
+    "channel": "voice",
+    "segment": "freiwillig",
+    "language": "de",
+    "timestamp": "2026-09-21T07:10:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Becker. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich bin seit kurzem selbständig, wie berechnet sich mein Beitrag?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich helfe Ihnen. Liegt Ihnen der aktuelle Einkommensteuerbescheid vor?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Der Steuerbescheid ist von letzter Woche."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe Ihre Einstufung angepasst. Ihr neuer Beitrag beträgt 312,40 € im Monat."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alles klar, das war's, danke."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0052",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-17T03:52:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Herr Wagner. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hallo, ich möchte meinen Sohn in die Familienversicherung aufnehmen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Herzlichen Glückwunsch! Sind Sie und der andere Elternteil beide gesetzlich versichert?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Unser Kind ist jetzt drei Wochen alt."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe Ihnen den Fragebogen zur Familienversicherung in die App gelegt. Sobald er zurück ist, ist Ihr Kind ab Geburt versichert."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alles klar, das war's, danke."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0053",
+    "channel": "web_messaging",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-10-15T09:26:00Z",
+    "queue": "Online-Chat",
+    "turns": [
+      {
+        "speaker": "customer",
+        "text": "Hallo, ich fange am Ersten eine neue Stelle an und soll eine Bescheinigung der Krankenkasse vorlegen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Kein Problem. Soll die Bescheinigung direkt an den Arbeitgeber gehen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich brauche das relativ schnell."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe die Bescheinigung erstellt, sie liegt in Ihrem Postfach in der Online-Geschäftsstelle."
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0054",
+    "channel": "web_messaging",
+    "segment": "rentner",
+    "language": "de",
+    "timestamp": "2026-09-05T20:01:00Z",
+    "queue": "Online-Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hallo, hier ist Frau Krüger vom Kundenservice. Wie kann ich Ihnen im Chat helfen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Guten Tag, meine elektronische Gesundheitskarte ist weg, ich habe nächste Woche einen Arzttermin."
+      },
+      {
+        "speaker": "agent",
+        "text": "Kein Problem. Ich sperre die alte Karte. Ist Ihre Adresse noch aktuell?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Brauche ich dafür ein neues Foto?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Die alte Karte ist gesperrt, die neue kommt in etwa zehn Tagen. Für den Arzttermin schicke ich Ihnen eine Ersatzbescheinigung."
+      },
+      {
+        "speaker": "customer",
+        "text": "Und das passiert nicht noch mal?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe einen Vermerk angelegt, damit wir das im Blick behalten."
+      },
+      {
+        "speaker": "customer",
+        "text": "Prima, vielen Dank."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0055",
+    "channel": "email",
+    "segment": "rentner",
+    "language": "de",
+    "timestamp": "2026-09-12T02:34:00Z",
+    "queue": "Posteingang E-Mail",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Sehr geehrte Damen und Herren, vielen Dank für Ihre Nachricht. Mein Name ist Frau Nowak, ich kümmere mich um Ihr Anliegen."
+      },
+      {
+        "speaker": "customer",
+        "text": "Mein Zahnarzt hat mir einen Heil- und Kostenplan für eine Krone gegeben, was zahlen Sie dazu?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Haben Sie ein Bonusheft und wie viele Jahre ist es lückenlos?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Der Plan geht über 980,00 €."
+      },
+      {
+        "speaker": "agent",
+        "text": "Der Kostenplan liegt vor, wir übernehmen 38,50 €. Der Rest ist Ihr Eigenanteil."
+      },
+      {
+        "speaker": "customer",
+        "text": "Super, danke schön."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0056",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-10-14T06:09:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Nowak. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Guten Tag, ich möchte einen Antrag auf Zuzahlungsbefreiung stellen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich helfe Ihnen. Möchten Sie die Befreiung für den Rest des Jahres beantragen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Mein Arzt hat eine chronische Erkrankung bescheinigt."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe Ihnen den Antrag geschickt. Schicken Sie ihn mit den Quittungen zurück, dann stellen wir den Befreiungsausweis aus."
+      },
+      {
+        "speaker": "customer",
+        "text": "Und meine Mutter bräuchte noch einen Rollator, zahlen Sie den?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Liegt schon eine ärztliche Verordnung vor?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Das Sanitätshaus hat den Antrag letzte Woche geschickt."
+      },
+      {
+        "speaker": "agent",
+        "text": "Der Rollator ist genehmigt. Das Sanitätshaus liefert ihn, Sie zahlen nur die gesetzliche Zuzahlung von zehn Euro."
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0057",
+    "channel": "email",
+    "segment": "freiwillig",
+    "language": "de",
+    "timestamp": "2026-09-20T00:02:00Z",
+    "queue": "Posteingang E-Mail",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Sehr geehrte Damen und Herren, vielen Dank für Ihre Nachricht. Mein Name ist Frau Krüger, ich kümmere mich um Ihr Anliegen."
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich habe meine Gesundheitskarte verloren und brauche eine neue."
+      },
+      {
+        "speaker": "agent",
+        "text": "Das bekommen wir hin. Sollen wir das vorhandene Foto weiterverwenden?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Brauche ich dafür ein neues Foto?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Die alte Karte ist gesperrt, die neue kommt in etwa zehn Tagen. Für den Arzttermin schicke ich Ihnen eine Ersatzbescheinigung."
+      },
+      {
+        "speaker": "customer",
+        "text": "Außerdem: Wie bekomme ich unser Neugeborenes in die Familienversicherung?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe Ihnen den Fragebogen zur Familienversicherung in die App gelegt. Sobald er zurück ist, ist Ihr Kind ab Geburt versichert."
+      },
+      {
+        "speaker": "customer",
+        "text": "Vielen Dank, das hilft mir sehr."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0058",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-05T09:35:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Nowak. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hallo, ich möchte meinen Sohn in die Familienversicherung aufnehmen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Herzlichen Glückwunsch! Sind Sie und der andere Elternteil beide gesetzlich versichert?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Mein Partner verdient mehr als ich, ist das ein Problem?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Ihr Kind ist ab Geburt familienversichert, die Gesundheitskarte schicken wir in etwa zwei Wochen zu."
+      },
+      {
+        "speaker": "customer",
+        "text": "Danke für die Hilfe."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0059",
+    "channel": "voice",
+    "segment": "freiwillig",
+    "language": "de",
+    "timestamp": "2026-09-17T17:52:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Herr Schulz. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Entschuldigung, ich bin gerade im Auto, es kann etwas rauschen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Kein Problem, ich verstehe Sie gut."
+      },
+      {
+        "speaker": "customer",
+        "text": "Hallo, ich bin mit meinen Beiträgen im Rückstand, kann ich in Raten zahlen?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Möchten Sie eine Ratenzahlung vereinbaren?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Es geht um 124,00 €."
+      },
+      {
+        "speaker": "agent",
+        "text": "Die Zahlung ist inzwischen eingegangen. Den Säumniszuschlag nehme ich zurück."
+      },
+      {
+        "speaker": "customer",
+        "text": "Muss ich sonst noch etwas tun?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Nein, von Ihrer Seite ist nichts weiter nötig."
+      },
+      {
+        "speaker": "customer",
+        "text": "Außerdem habe ich einen Heil- und Kostenplan vom Zahnarzt, können Sie den prüfen?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Der Kostenplan liegt vor, wir übernehmen 38,50 €. Der Rest ist Ihr Eigenanteil."
+      },
+      {
+        "speaker": "customer",
+        "text": "Super, danke schön."
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0060",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-12T17:02:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Becker. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Guten Tag, meine eingereichte Arztrechnung ist immer noch nicht erstattet."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Wissen Sie noch, auf welchem Weg Sie die Rechnung geschickt haben?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Es geht um 980,00 €."
+      },
+      {
+        "speaker": "agent",
+        "text": "Die Rechnung ist geprüft, Sie bekommen 980,00 € erstattet. Die Überweisung geht morgen raus."
+      },
+      {
+        "speaker": "customer",
+        "text": "Super, danke schön."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gerne. Bleiben Sie gesund!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0061",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-10-08T00:38:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Herr Yilmaz. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hallo, wie ist der Stand bei meiner Kostenerstattung für die Osteopathie?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Wissen Sie noch, auf welchem Weg Sie die Rechnung geschickt haben?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Es geht um 64,20 €."
+      },
+      {
+        "speaker": "agent",
+        "text": "Die Rechnung ist geprüft, Sie bekommen 186,75 € erstattet. Die Überweisung geht morgen raus."
+      },
+      {
+        "speaker": "customer",
+        "text": "Und das passiert nicht noch mal?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe einen Vermerk angelegt, damit wir das im Blick behalten."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alles klar, das war's, danke."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0062",
+    "channel": "web_messaging",
+    "segment": "freiwillig",
+    "language": "de",
+    "timestamp": "2026-09-03T18:52:00Z",
+    "queue": "Online-Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hallo, hier ist Herr Schulz vom Kundenservice. Wie kann ich Ihnen im Chat helfen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Guten Tag, ich habe den Kostenplan für mein Implantat eingereicht, ist der genehmigt?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Haben Sie ein Bonusheft und wie viele Jahre ist es lückenlos?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich habe ein lückenloses Bonusheft seit zehn Jahren."
+      },
+      {
+        "speaker": "agent",
+        "text": "Der Kostenplan liegt vor, wir übernehmen 38,50 €. Der Rest ist Ihr Eigenanteil."
+      },
+      {
+        "speaker": "customer",
+        "text": "Wie lange dauert das ungefähr?"
+      },
+      {
+        "speaker": "agent",
+        "text": "In der Regel ist das innerhalb weniger Werktage erledigt."
+      },
+      {
+        "speaker": "customer",
+        "text": "Und wie wird eigentlich mein Beitrag als Selbständiger berechnet?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe Ihre Einstufung angepasst. Ihr neuer Beitrag beträgt 186,75 € im Monat."
+      },
+      {
+        "speaker": "customer",
+        "text": "Danke für die Hilfe."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gerne. Bleiben Sie gesund!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0063",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-13T11:43:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Hoffmann. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hallo, ich möchte meinen Sohn in die Familienversicherung aufnehmen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Herzlichen Glückwunsch! Sind Sie und der andere Elternteil beide gesetzlich versichert?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Mein Partner verdient mehr als ich, ist das ein Problem?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe Ihnen den Fragebogen zur Familienversicherung in die App gelegt. Sobald er zurück ist, ist Ihr Kind ab Geburt versichert."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alles klar, das war's, danke."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gerne. Bleiben Sie gesund!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0064",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-12T13:11:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Hoffmann. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Meine Karte ist gebrochen, der Arzt kann sie nicht mehr einlesen. Wie komme ich an eine neue?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Kein Problem. Ich sperre die alte Karte. Ist Ihre Adresse noch aktuell?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich habe nächste Woche einen Termin beim Hausarzt."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe die Ersatzkarte bestellt. Bis dahin kann die Praxis Ihren Versicherungsnachweis online bei uns abrufen."
+      },
+      {
+        "speaker": "customer",
+        "text": "Wie lange dauert das ungefähr?"
+      },
+      {
+        "speaker": "agent",
+        "text": "In der Regel ist das innerhalb weniger Werktage erledigt."
+      },
+      {
+        "speaker": "customer",
+        "text": "Super, danke schön."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0065",
+    "channel": "email",
+    "segment": "familienversichert",
+    "language": "de",
+    "timestamp": "2026-10-04T06:27:00Z",
+    "queue": "Posteingang E-Mail",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Sehr geehrte Damen und Herren, vielen Dank für Ihre Nachricht. Mein Name ist Herr Schulz, ich kümmere mich um Ihr Anliegen."
+      },
+      {
+        "speaker": "customer",
+        "text": "Hallo, der Arzt hat mir einen Rollator verschrieben, wo bekomme ich den?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Liegt schon eine ärztliche Verordnung vor?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Sie kann nach der Hüft-OP nicht mehr sicher laufen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe den Antrag bevorzugt bearbeitet, die Genehmigung ist raus."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alles klar, das war's, danke."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0066",
+    "channel": "email",
+    "segment": "freiwillig",
+    "language": "de",
+    "timestamp": "2026-09-27T15:38:00Z",
+    "queue": "Posteingang E-Mail",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Sehr geehrte Damen und Herren, vielen Dank für Ihre Nachricht. Mein Name ist Frau Hoffmann, ich kümmere mich um Ihr Anliegen."
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich bin umgezogen und möchte meine neue Adresse mitteilen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Wie lautet Ihre neue Anschrift?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Die neue Adresse ist in Freiburg."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe Ihre Adresse geändert. Eine neue Karte brauchen Sie nicht."
+      },
+      {
+        "speaker": "customer",
+        "text": "Wie lange dauert das ungefähr?"
+      },
+      {
+        "speaker": "agent",
+        "text": "In der Regel ist das innerhalb weniger Werktage erledigt."
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0067",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-26T11:08:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Nowak. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Sie haben meinen Antrag abgelehnt, dagegen möchte ich Widerspruch einlegen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Haben Sie eine Begründung oder ein ärztliches Schreiben?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Mein Arzt hält die Behandlung für notwendig."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich nehme Ihren Widerspruch auf. Er wird erneut geprüft, die Frist ist gewahrt."
+      },
+      {
+        "speaker": "customer",
+        "text": "Wie lange dauert das ungefähr?"
+      },
+      {
+        "speaker": "agent",
+        "text": "In der Regel ist das innerhalb weniger Werktage erledigt."
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0068",
+    "channel": "web_messaging",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-02T07:21:00Z",
+    "queue": "Online-Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hallo, hier ist Frau Becker vom Kundenservice. Wie kann ich Ihnen im Chat helfen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich habe die Folgebescheinigung längst geschickt, aber die Zahlung ist nicht da."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich schaue gleich nach. Seit wann sind Sie arbeitsunfähig?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Die Arbeitsunfähigkeitsbescheinigung hat mein Arzt direkt elektronisch übermittelt."
+      },
+      {
+        "speaker": "agent",
+        "text": "Es fehlte die Folgebescheinigung für eine Woche. Die liegt jetzt vor, die Auszahlung von 186,75 € ist veranlasst."
+      },
+      {
+        "speaker": "customer",
+        "text": "Und das passiert nicht noch mal?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe einen Vermerk angelegt, damit wir das im Blick behalten."
+      },
+      {
+        "speaker": "customer",
+        "text": "Vielen Dank, das hilft mir sehr."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0069",
+    "channel": "web_messaging",
+    "segment": "freiwillig",
+    "language": "de",
+    "timestamp": "2026-10-14T10:12:00Z",
+    "queue": "Online-Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hallo, hier ist Frau Krüger vom Kundenservice. Wie kann ich Ihnen im Chat helfen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Guten Tag, ich habe den Kostenplan für mein Implantat eingereicht, ist der genehmigt?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Haben Sie ein Bonusheft und wie viele Jahre ist es lückenlos?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Der Plan geht über 124,00 €."
+      },
+      {
+        "speaker": "agent",
+        "text": "Der Kostenplan liegt vor, wir übernehmen 38,50 €. Der Rest ist Ihr Eigenanteil."
+      },
+      {
+        "speaker": "customer",
+        "text": "Vielen Dank, das hilft mir sehr."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0070",
+    "channel": "email",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-09T12:52:00Z",
+    "queue": "Posteingang E-Mail",
+    "turns": [
+      {
+        "speaker": "customer",
+        "text": "Ich bin ja schon länger krank und irgendwie kommt kein Geld, ich weiß gar nicht, wer da jetzt zuständig ist."
+      },
+      {
+        "speaker": "agent",
+        "text": "Das tut mir leid. Darf ich kurz Ihre Versichertennummer aufnehmen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Die Entgeltbescheinigung hat mein Arbeitgeber laut Personalabteilung schon geschickt."
+      },
+      {
+        "speaker": "agent",
+        "text": "Die Entgeltbescheinigung lag erst gestern vor. Ich habe die Zahlung angewiesen, das Geld ist in zwei bis drei Werktagen auf Ihrem Konto."
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0071",
+    "channel": "web_messaging",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-10-05T11:37:00Z",
+    "queue": "Online-Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hallo, hier ist Frau Becker vom Kundenservice. Wie kann ich Ihnen im Chat helfen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich hänge schon eine Weile in der Warteschleife, die Musik kann ich jetzt mitsingen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Entschuldigen Sie die Wartezeit, und danke für Ihre Geduld!"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich bin ja schon länger krank und irgendwie kommt kein Geld, ich weiß gar nicht, wer da jetzt zuständig ist."
+      },
+      {
+        "speaker": "agent",
+        "text": "Das tut mir leid. Darf ich kurz Ihre Versichertennummer aufnehmen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Die Arbeitsunfähigkeitsbescheinigung hat mein Arzt direkt elektronisch übermittelt."
+      },
+      {
+        "speaker": "agent",
+        "text": "Es fehlte die Folgebescheinigung für eine Woche. Die liegt jetzt vor, die Auszahlung von 64,20 € ist veranlasst."
+      },
+      {
+        "speaker": "customer",
+        "text": "Und das passiert nicht noch mal?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe einen Vermerk angelegt, damit wir das im Blick behalten."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alles klar, das war's, danke."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gerne. Bleiben Sie gesund!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0072",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-16T13:02:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Becker. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich bin ja schon länger krank und irgendwie kommt kein Geld, ich weiß gar nicht, wer da jetzt zuständig ist."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich schaue gleich nach. Seit wann sind Sie arbeitsunfähig?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich bin seit dem 20. August durchgehend arbeitsunfähig."
+      },
+      {
+        "speaker": "agent",
+        "text": "Es fehlte die Folgebescheinigung für eine Woche. Die liegt jetzt vor, die Auszahlung von 124,00 € ist veranlasst."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alles klar, das war's, danke."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0073",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-26T16:34:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Herr Wagner. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Mit dem Handy und Ihrem Programm da klappt irgendwas nicht, ich bin da nicht so fit."
+      },
+      {
+        "speaker": "agent",
+        "text": "Das klären wir. Haben Sie das Gerät gewechselt oder die App neu installiert?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich habe ein neues Smartphone."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ihr Konto war nach mehreren Fehlversuchen gesperrt. Es ist entsperrt, Sie können sich wieder anmelden."
+      },
+      {
+        "speaker": "customer",
+        "text": "Und kann ich mich eigentlich von den Zuzahlungen befreien lassen?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich helfe Ihnen. Möchten Sie die Befreiung für den Rest des Jahres beantragen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich habe alle Quittungen von Apotheke und Physiotherapie gesammelt."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe Ihnen den Antrag geschickt. Schicken Sie ihn mit den Quittungen zurück, dann stellen wir den Befreiungsausweis aus."
+      },
+      {
+        "speaker": "customer",
+        "text": "Prima, vielen Dank."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gerne. Bleiben Sie gesund!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0074",
+    "channel": "web_messaging",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-05T15:44:00Z",
+    "queue": "Online-Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hallo, hier ist Herr Wagner vom Kundenservice. Wie kann ich Ihnen im Chat helfen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hallo, meine Bonuspunkte für den Gesundheitscheck sind nicht gutgeschrieben."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich schaue nach. Für welches Jahr möchten Sie die Prämie einlösen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "In der App steht, dass ich 980,00 € Prämie habe."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe die Auszahlung veranlasst, das Geld ist in etwa einer Woche da."
+      },
+      {
+        "speaker": "customer",
+        "text": "Vielen Dank, das hilft mir sehr."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0075",
+    "channel": "web_messaging",
+    "segment": "freiwillig",
+    "language": "de",
+    "timestamp": "2026-10-02T00:36:00Z",
+    "queue": "Online-Chat",
+    "turns": [
+      {
+        "speaker": "customer",
+        "text": "Der Zusatzbeitrag wird schon wieder erhöht, was bedeutet das für mich?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich erkläre es Ihnen gern. Sind Sie angestellt?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Andere Kassen sind günstiger, habe ich gelesen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Die Erhöhung gilt ab Januar. Sie haben dadurch ein Sonderkündigungsrecht bis Ende des Monats."
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0076",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-10-04T02:57:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Herr Schulz. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Mein Hund bellt im Hintergrund, tut mir leid."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ach, das macht gar nichts."
+      },
+      {
+        "speaker": "customer",
+        "text": "Wie richte ich die elektronische Patientenakte ein?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Haben Sie unsere App schon installiert?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich möchte, dass mein Hausarzt die Befunde dort ablegt."
+      },
+      {
+        "speaker": "agent",
+        "text": "Die ePA ist automatisch angelegt. In der App können Sie festlegen, welche Praxen zugreifen dürfen."
+      },
+      {
+        "speaker": "customer",
+        "text": "Prima, vielen Dank."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gerne. Bleiben Sie gesund!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0077",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-10-02T04:45:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Krüger. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Mein Orthopäde hat mir Physiotherapie verordnet, muss die Krankenkasse das genehmigen?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Ist das eine Erst- oder eine Folgeverordnung?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Es ist schon die dritte Verordnung."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe die Genehmigung erteilt, die Praxis bekommt heute eine Bestätigung."
+      },
+      {
+        "speaker": "customer",
+        "text": "Prima, vielen Dank."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0078",
+    "channel": "web_messaging",
+    "segment": "rentner",
+    "language": "de",
+    "timestamp": "2026-10-03T19:54:00Z",
+    "queue": "Online-Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hallo, hier ist Frau Krüger vom Kundenservice. Wie kann ich Ihnen im Chat helfen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Mein Orthopäde hat mir Physiotherapie verordnet, muss die Krankenkasse das genehmigen?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich schaue mir das an. Welche Diagnose steht auf der Verordnung?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Es ist schon die dritte Verordnung."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe die Genehmigung erteilt, die Praxis bekommt heute eine Bestätigung."
+      },
+      {
+        "speaker": "customer",
+        "text": "Super, danke schön."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0079",
+    "channel": "email",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-08T21:26:00Z",
+    "queue": "Posteingang E-Mail",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Sehr geehrte Damen und Herren, vielen Dank für Ihre Nachricht. Mein Name ist Frau Krüger, ich kümmere mich um Ihr Anliegen."
+      },
+      {
+        "speaker": "customer",
+        "text": "Hallo, ich fange am Ersten eine neue Stelle an und soll eine Bescheinigung der Krankenkasse vorlegen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gerne. Wie heißt Ihr neuer Arbeitgeber und ab wann beginnt die Beschäftigung?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich starte am 20. August bei der neuen Firma."
+      },
+      {
+        "speaker": "agent",
+        "text": "Die Mitgliedsbescheinigung ist elektronisch an Ihren Arbeitgeber übermittelt. Eine Kopie finden Sie in der App."
+      },
+      {
+        "speaker": "customer",
+        "text": "Danke für die Hilfe."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0080",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-10-02T08:25:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Herr Yilmaz. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich habe einen Brief bekommen, dass der Zusatzbeitrag steigt. Warum?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich erkläre es Ihnen gern. Sind Sie angestellt?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich verdiene etwa 3.500 Euro brutto."
+      },
+      {
+        "speaker": "agent",
+        "text": "Die Erhöhung gilt ab Januar. Sie haben dadurch ein Sonderkündigungsrecht bis Ende des Monats."
+      },
+      {
+        "speaker": "customer",
+        "text": "Außerdem warte ich noch auf die Erstattung einer eingereichten Rechnung."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Wissen Sie noch, auf welchem Weg Sie die Rechnung geschickt haben?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Es geht um 64,20 €."
+      },
+      {
+        "speaker": "agent",
+        "text": "Es fehlte die ärztliche Verordnung. Wenn Sie die nachreichen, erstatten wir sofort."
+      },
+      {
+        "speaker": "customer",
+        "text": "Vielen Dank, das hilft mir sehr."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0081",
+    "channel": "email",
+    "segment": "rentner",
+    "language": "de",
+    "timestamp": "2026-10-02T09:20:00Z",
+    "queue": "Posteingang E-Mail",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Sehr geehrte Damen und Herren, vielen Dank für Ihre Nachricht. Mein Name ist Herr Yilmaz, ich kümmere mich um Ihr Anliegen."
+      },
+      {
+        "speaker": "customer",
+        "text": "Guten Tag, meine elektronische Gesundheitskarte ist weg, ich habe nächste Woche einen Arzttermin."
+      },
+      {
+        "speaker": "agent",
+        "text": "Das bekommen wir hin. Sollen wir das vorhandene Foto weiterverwenden?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Brauche ich dafür ein neues Foto?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Die alte Karte ist gesperrt, die neue kommt in etwa zehn Tagen. Für den Arzttermin schicke ich Ihnen eine Ersatzbescheinigung."
+      },
+      {
+        "speaker": "customer",
+        "text": "Prima, vielen Dank."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gerne. Bleiben Sie gesund!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0082",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-24T09:38:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Herr Yilmaz. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Mein Zahnarzt hat mir einen Heil- und Kostenplan für eine Krone gegeben, was zahlen Sie dazu?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Haben Sie ein Bonusheft und wie viele Jahre ist es lückenlos?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Der Zahnarzt möchte im Juli anfangen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Der Kostenplan liegt vor, wir übernehmen 38,50 €. Der Rest ist Ihr Eigenanteil."
+      },
+      {
+        "speaker": "customer",
+        "text": "Wie lange dauert das ungefähr?"
+      },
+      {
+        "speaker": "agent",
+        "text": "In der Regel ist das innerhalb weniger Werktage erledigt."
+      },
+      {
+        "speaker": "customer",
+        "text": "Und kann ich mich eigentlich von den Zuzahlungen befreien lassen?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Die Belastungsgrenze liegt bei zwei Prozent des Bruttoeinkommens, bei chronisch Kranken bei einem Prozent. Haben Sie Ihre Quittungen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich bekomme eine kleine Rente."
+      },
+      {
+        "speaker": "agent",
+        "text": "Die Belastungsgrenze ist erreicht. Ihr Befreiungsausweis kommt per Post, zu viel gezahlte 455,00 € erstatten wir."
+      },
+      {
+        "speaker": "customer",
+        "text": "Super, danke schön."
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0083",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-23T00:52:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Hoffmann. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich habe meine Gesundheitskarte verloren und brauche eine neue."
+      },
+      {
+        "speaker": "agent",
+        "text": "Das bekommen wir hin. Sollen wir das vorhandene Foto weiterverwenden?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Brauche ich dafür ein neues Foto?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Die alte Karte ist gesperrt, die neue kommt in etwa zehn Tagen. Für den Arzttermin schicke ich Ihnen eine Ersatzbescheinigung."
+      },
+      {
+        "speaker": "customer",
+        "text": "Wie lange dauert das ungefähr?"
+      },
+      {
+        "speaker": "agent",
+        "text": "In der Regel ist das innerhalb weniger Werktage erledigt."
+      },
+      {
+        "speaker": "customer",
+        "text": "Vielen Dank, das hilft mir sehr."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0084",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-04T07:55:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Becker. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich möchte meine Mitgliedschaft kündigen und zu einer anderen Kasse wechseln."
+      },
+      {
+        "speaker": "agent",
+        "text": "Schade, dass Sie gehen möchten. Darf ich fragen, warum?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Die andere Kasse ist günstiger."
+      },
+      {
+        "speaker": "agent",
+        "text": "Die neue Kasse meldet den Wechsel elektronisch, eine Kündigung bei uns ist nicht nötig. Die Frist beträgt zwei Monate zum Monatsende."
+      },
+      {
+        "speaker": "customer",
+        "text": "Wie lange dauert das ungefähr?"
+      },
+      {
+        "speaker": "agent",
+        "text": "In der Regel ist das innerhalb weniger Werktage erledigt."
+      },
+      {
+        "speaker": "customer",
+        "text": "Und gegen die Ablehnung möchte ich noch Widerspruch einlegen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Das verstehe ich. Um welchen Bescheid geht es genau?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Der Bescheid ist vom 1. Oktober."
+      },
+      {
+        "speaker": "agent",
+        "text": "Schicken Sie den Widerspruch schriftlich innerhalb eines Monats, ich gebe Ihnen die Adresse."
+      },
+      {
+        "speaker": "customer",
+        "text": "Super, danke schön."
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0085",
+    "channel": "web_messaging",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-04T07:11:00Z",
+    "queue": "Online-Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hallo, hier ist Herr Schulz vom Kundenservice. Wie kann ich Ihnen im Chat helfen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Entschuldigung, ich bin gerade im Auto, es kann etwas rauschen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Kein Problem, ich verstehe Sie gut."
+      },
+      {
+        "speaker": "customer",
+        "text": "Hallo, der Freischaltcode für die App ist nie bei mir angekommen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Kein Problem. Wann haben Sie sich zuletzt erfolgreich angemeldet?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich habe es schon dreimal versucht."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe Ihr altes Gerät abgemeldet und einen neuen Freischaltcode verschickt. Der kommt in drei Tagen per Post."
+      },
+      {
+        "speaker": "customer",
+        "text": "Super, danke schön."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0086",
+    "channel": "email",
+    "segment": "freiwillig",
+    "language": "de",
+    "timestamp": "2026-09-27T15:13:00Z",
+    "queue": "Posteingang E-Mail",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Sehr geehrte Damen und Herren, vielen Dank für Ihre Nachricht. Mein Name ist Frau Becker, ich kümmere mich um Ihr Anliegen."
+      },
+      {
+        "speaker": "customer",
+        "text": "Wir haben im Juli ein Baby bekommen, wie kann ich unsere Tochter bei Ihnen mitversichern?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Ich brauche den Namen und das Geburtsdatum des Kindes."
+      },
+      {
+        "speaker": "customer",
+        "text": "Die Geburtsurkunde habe ich schon da."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe Ihnen den Fragebogen zur Familienversicherung in die App gelegt. Sobald er zurück ist, ist Ihr Kind ab Geburt versichert."
+      },
+      {
+        "speaker": "customer",
+        "text": "Bekomme ich dazu eine Bestätigung?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Ja, die Bestätigung kommt in Ihr Postfach in der App."
+      },
+      {
+        "speaker": "customer",
+        "text": "Prima, vielen Dank."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0087",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-23T00:12:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Herr Wagner. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hallo, wie beantrage ich Kinderkrankengeld?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Wie alt ist Ihr Kind?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich bin alleinerziehend."
+      },
+      {
+        "speaker": "agent",
+        "text": "Schicken Sie die Bescheinigung über die App, das Kinderkrankengeld zahlen wir dann direkt an Sie aus."
+      },
+      {
+        "speaker": "customer",
+        "text": "Vielen Dank, das hilft mir sehr."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0088",
+    "channel": "web_messaging",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-10-02T07:53:00Z",
+    "queue": "Online-Chat",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Hallo, hier ist Frau Hoffmann vom Kundenservice. Wie kann ich Ihnen im Chat helfen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hallo, haben Sie einen Terminservice für Fachärzte?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich helfe gern. Haben Sie eine Überweisung mit Dringlichkeitscode?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Die Praxen sagen, frühestens in vier Monaten."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe Sie an unseren Terminservice weitergegeben, der meldet sich innerhalb von zwei Tagen mit einem Termin."
+      },
+      {
+        "speaker": "customer",
+        "text": "Super, danke schön."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0089",
+    "channel": "voice",
+    "segment": "freiwillig",
+    "language": "de",
+    "timestamp": "2026-10-04T01:33:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Herr Schulz. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Mein Orthopäde hat mir Physiotherapie verordnet, muss die Krankenkasse das genehmigen?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich schaue mir das an. Welche Diagnose steht auf der Verordnung?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Es geht um meinen Rücken nach einem Bandscheibenvorfall."
+      },
+      {
+        "speaker": "agent",
+        "text": "Für diese Diagnose ist keine Genehmigung nötig, die Praxis kann direkt mit uns abrechnen."
+      },
+      {
+        "speaker": "customer",
+        "text": "Super, danke schön."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0090",
+    "channel": "voice",
+    "segment": "freiwillig",
+    "language": "de",
+    "timestamp": "2026-09-24T05:16:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Herr Wagner. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Meine Physiopraxis sagt, für die Folgeverordnung brauche ich eine Genehmigung von Ihnen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Ist das eine Erst- oder eine Folgeverordnung?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Die Praxis möchte nächste Woche anfangen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Für diese Diagnose ist keine Genehmigung nötig, die Praxis kann direkt mit uns abrechnen."
+      },
+      {
+        "speaker": "customer",
+        "text": "Wie lange dauert das ungefähr?"
+      },
+      {
+        "speaker": "agent",
+        "text": "In der Regel ist das innerhalb weniger Werktage erledigt."
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0091",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-15T19:41:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Herr Schulz. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Seit dem Handywechsel kann ich mich in der App nicht mehr anmelden."
+      },
+      {
+        "speaker": "agent",
+        "text": "Kein Problem. Wann haben Sie sich zuletzt erfolgreich angemeldet?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich habe es schon dreimal versucht."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ihr Konto war nach mehreren Fehlversuchen gesperrt. Es ist entsperrt, Sie können sich wieder anmelden."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alles klar, das war's, danke."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0092",
+    "channel": "email",
+    "segment": "freiwillig",
+    "language": "de",
+    "timestamp": "2026-10-08T10:10:00Z",
+    "queue": "Posteingang E-Mail",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Sehr geehrte Damen und Herren, vielen Dank für Ihre Nachricht. Mein Name ist Frau Krüger, ich kümmere mich um Ihr Anliegen."
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich möchte meine Mitgliedschaft kündigen und zu einer anderen Kasse wechseln."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich prüfe das. Haben Sie sich schon bei der neuen Kasse angemeldet?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich bin seit fünf Jahren bei Ihnen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ihre Mitgliedschaft endet mit dem Wegzug. Bitte schicken Sie uns die Abmeldebescheinigung."
+      },
+      {
+        "speaker": "customer",
+        "text": "Muss ich sonst noch etwas tun?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Nein, von Ihrer Seite ist nichts weiter nötig."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alles klar, das war's, danke."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gerne. Bleiben Sie gesund!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0093",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-28T16:38:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Herr Yilmaz. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Guten Tag, die Personalabteilung fragt nach meiner Mitgliedsbescheinigung."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gerne. Wie heißt Ihr neuer Arbeitgeber und ab wann beginnt die Beschäftigung?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Die Personalabteilung hat gesagt, das geht inzwischen elektronisch."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe die Bescheinigung erstellt, sie liegt in Ihrem Postfach in der Online-Geschäftsstelle."
+      },
+      {
+        "speaker": "customer",
+        "text": "Muss ich sonst noch etwas tun?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Nein, von Ihrer Seite ist nichts weiter nötig."
+      },
+      {
+        "speaker": "customer",
+        "text": "Vielen Dank, das hilft mir sehr."
+      },
+      {
+        "speaker": "agent",
+        "text": "Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0094",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-09T07:37:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Krüger. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Hallo, ich fange am Ersten eine neue Stelle an und soll eine Bescheinigung der Krankenkasse vorlegen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Kein Problem. Soll die Bescheinigung direkt an den Arbeitgeber gehen?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich brauche das relativ schnell."
+      },
+      {
+        "speaker": "agent",
+        "text": "Die Mitgliedsbescheinigung ist elektronisch an Ihren Arbeitgeber übermittelt. Eine Kopie finden Sie in der App."
+      },
+      {
+        "speaker": "customer",
+        "text": "Prima, vielen Dank."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gerne. Bleiben Sie gesund!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0095",
+    "channel": "web_messaging",
+    "segment": "freiwillig",
+    "language": "de",
+    "timestamp": "2026-09-12T23:55:00Z",
+    "queue": "Online-Chat",
+    "turns": [
+      {
+        "speaker": "customer",
+        "text": "Meine Mutter braucht einen Rollator, übernimmt die Kasse die Kosten?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich schaue nach. Welches Sanitätshaus ist es?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Sie kann nach der Hüft-OP nicht mehr sicher laufen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe den Antrag bevorzugt bearbeitet, die Genehmigung ist raus."
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0096",
+    "channel": "voice",
+    "segment": "freiwillig",
+    "language": "de",
+    "timestamp": "2026-09-21T02:32:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Herr Yilmaz. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich ziehe ins Ausland und muss meine Versicherung bei Ihnen beenden."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich prüfe das. Haben Sie sich schon bei der neuen Kasse angemeldet?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich bin seit fünf Jahren bei Ihnen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ihre Mitgliedschaft endet mit dem Wegzug. Bitte schicken Sie uns die Abmeldebescheinigung."
+      },
+      {
+        "speaker": "customer",
+        "text": "Alles klar, das war's, danke."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gerne. Bleiben Sie gesund!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0097",
+    "channel": "voice",
+    "segment": "freiwillig",
+    "language": "de",
+    "timestamp": "2026-10-16T02:56:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Herr Yilmaz. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich habe vor vier Wochen eine Rechnung zur Erstattung eingereicht und noch nichts gehört."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Wissen Sie noch, auf welchem Weg Sie die Rechnung geschickt haben?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Es geht um 980,00 €."
+      },
+      {
+        "speaker": "agent",
+        "text": "Die Rechnung ist geprüft, Sie bekommen 89,90 € erstattet. Die Überweisung geht morgen raus."
+      },
+      {
+        "speaker": "customer",
+        "text": "Bekomme ich dazu eine Bestätigung?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Ja, die Bestätigung kommt in Ihr Postfach in der App."
+      },
+      {
+        "speaker": "customer",
+        "text": "Prima, vielen Dank."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0098",
+    "channel": "email",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-09-16T17:24:00Z",
+    "queue": "Posteingang E-Mail",
+    "turns": [
+      {
+        "speaker": "customer",
+        "text": "Hallo, ich bin seit sechs Wochen krankgeschrieben und habe noch kein Krankengeld bekommen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich schaue gleich nach. Seit wann sind Sie arbeitsunfähig?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Die Arbeitsunfähigkeitsbescheinigung hat mein Arzt direkt elektronisch übermittelt."
+      },
+      {
+        "speaker": "agent",
+        "text": "Es fehlte die Folgebescheinigung für eine Woche. Die liegt jetzt vor, die Auszahlung von 64,20 € ist veranlasst."
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0099",
+    "channel": "voice",
+    "segment": "freiwillig",
+    "language": "de",
+    "timestamp": "2026-10-11T06:39:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Nowak. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Mein Hund bellt im Hintergrund, tut mir leid."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ach, das macht gar nichts."
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich habe die Rechnung über 89,90 € hochgeladen, wann bekomme ich das Geld?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern. Wissen Sie noch, auf welchem Weg Sie die Rechnung geschickt haben?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich habe keine Eingangsbestätigung bekommen."
+      },
+      {
+        "speaker": "agent",
+        "text": "Es fehlte die ärztliche Verordnung. Wenn Sie die nachreichen, erstatten wir sofort."
+      },
+      {
+        "speaker": "customer",
+        "text": "Vielen Dank, das hilft mir sehr."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gerne. Bleiben Sie gesund!"
+      }
+    ]
+  },
+  {
+    "conversation_id": "GKV-0100",
+    "channel": "voice",
+    "segment": "pflichtversichert",
+    "language": "de",
+    "timestamp": "2026-10-07T11:05:00Z",
+    "queue": "Servicecenter Telefon",
+    "turns": [
+      {
+        "speaker": "agent",
+        "text": "Guten Tag, Ihre Krankenkasse, mein Name ist Frau Krüger. Was kann ich für Sie tun?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Guten Tag, die Personalabteilung fragt nach meiner Mitgliedsbescheinigung."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gerne. Wie heißt Ihr neuer Arbeitgeber und ab wann beginnt die Beschäftigung?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Die Personalabteilung hat gesagt, das geht inzwischen elektronisch."
+      },
+      {
+        "speaker": "agent",
+        "text": "Ich habe die Bescheinigung erstellt, sie liegt in Ihrem Postfach in der Online-Geschäftsstelle."
+      },
+      {
+        "speaker": "customer",
+        "text": "Bekomme ich dazu eine Bestätigung?"
+      },
+      {
+        "speaker": "agent",
+        "text": "Ja, die Bestätigung kommt in Ihr Postfach in der App."
+      },
+      {
+        "speaker": "customer",
+        "text": "Vielen Dank, das hilft mir sehr."
+      },
+      {
+        "speaker": "agent",
+        "text": "Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+      }
+    ]
+  }
+]

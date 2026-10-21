@@ -1,0 +1,782 @@
+conversation_id,channel,segment,language,timestamp,queue,transcript
+GKV-0001,web_messaging,rentner,de,2026-09-04T16:37:00Z,Online-Chat,"Mitarbeiter: Hallo, hier ist Herr Schulz vom Kundenservice. Wie kann ich Ihnen im Chat helfen?
+Kunde: Wir haben im Mai ein Baby bekommen, wie kann ich unsere Tochter bei Ihnen mitversichern?
+Mitarbeiter: Gern. Ich brauche den Namen und das Geburtsdatum des Kindes.
+Kunde: Die Geburtsurkunde habe ich schon da.
+Mitarbeiter: Ihr Kind ist ab Geburt familienversichert, die Gesundheitskarte schicken wir in etwa zwei Wochen zu.
+Kunde: Prima, vielen Dank.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0002,voice,freiwillig,de,2026-09-07T21:18:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Herr Wagner. Was kann ich für Sie tun?
+Kunde: Hallo, ich bin mit meinen Beiträgen im Rückstand, kann ich in Raten zahlen?
+Mitarbeiter: Gern. Möchten Sie eine Ratenzahlung vereinbaren?
+Kunde: Es geht um 312,40 €.
+Mitarbeiter: Ich habe eine Ratenzahlung über sechs Monate eingerichtet, das Mahnverfahren ruht.
+Kunde: Und das passiert nicht noch mal?
+Mitarbeiter: Ich habe einen Vermerk angelegt, damit wir das im Blick behalten.
+Kunde: Vielen Dank, das hilft mir sehr.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0003,voice,pflichtversichert,de,2026-09-05T02:13:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Herr Schulz. Was kann ich für Sie tun?
+Kunde: Hallo, wie beantrage ich Kinderkrankengeld?
+Mitarbeiter: Gute Besserung für Ihr Kind. Hat der Kinderarzt die Bescheinigung schon ausgestellt?
+Kunde: Der Kinderarzt hat eine Bescheinigung ausgestellt.
+Mitarbeiter: Als Alleinerziehende haben Sie dieses Jahr noch zwölf Tage Anspruch. Der Antrag ist angelegt.
+Kunde: Prima, vielen Dank.
+Mitarbeiter: Gerne. Bleiben Sie gesund!"
+GKV-0004,voice,pflichtversichert,de,2026-09-08T19:07:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Becker. Was kann ich für Sie tun?
+Kunde: Ich habe Ihnen da mal was geschickt und weiß nicht, ob das angekommen ist oder was jetzt passiert.
+Mitarbeiter: Ich schaue nach. Wann haben Sie die Rechnung eingereicht?
+Kunde: Ich habe keine Eingangsbestätigung bekommen.
+Mitarbeiter: Es fehlte die ärztliche Verordnung. Wenn Sie die nachreichen, erstatten wir sofort.
+Kunde: Vielen Dank, das hilft mir sehr.
+Mitarbeiter: Gerne. Bleiben Sie gesund!"
+GKV-0005,web_messaging,rentner,de,2026-09-04T08:23:00Z,Online-Chat,"Mitarbeiter: Hallo, hier ist Herr Schulz vom Kundenservice. Wie kann ich Ihnen im Chat helfen?
+Kunde: Hallo, ich brauche eine Brücke und der Eigenanteil ist sehr hoch.
+Mitarbeiter: Ich schaue nach. Hat die Praxis den Plan schon digital an uns geschickt?
+Kunde: Der Plan geht über 124,00 €.
+Mitarbeiter: Der Plan ist genehmigt. Mit Ihrem Bonusheft bekommen Sie 75 Prozent Festzuschuss.
+Kunde: Wie lange dauert das ungefähr?
+Mitarbeiter: In der Regel ist das innerhalb weniger Werktage erledigt.
+Kunde: Danke für die Hilfe.
+Mitarbeiter: Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+GKV-0006,voice,pflichtversichert,de,2026-10-15T17:05:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Herr Schulz. Was kann ich für Sie tun?
+Kunde: Schönes Wetter heute, oder? Endlich mal Sonne.
+Mitarbeiter: Ja, wirklich! Hoffentlich können Sie es nachher genießen.
+Kunde: Ich habe meine Gesundheitskarte verloren und brauche eine neue.
+Mitarbeiter: Das bekommen wir hin. Sollen wir das vorhandene Foto weiterverwenden?
+Kunde: Die Karte war erst ein Jahr alt.
+Mitarbeiter: Ich habe die Ersatzkarte bestellt. Bis dahin kann die Praxis Ihren Versicherungsnachweis online bei uns abrufen.
+Kunde: Muss ich sonst noch etwas tun?
+Mitarbeiter: Nein, von Ihrer Seite ist nichts weiter nötig.
+Kunde: Prima, vielen Dank.
+Mitarbeiter: Gerne. Bleiben Sie gesund!"
+GKV-0007,email,pflichtversichert,de,2026-09-21T19:14:00Z,Posteingang E-Mail,"Kunde: Hallo, wie beantrage ich Kinderkrankengeld?
+Mitarbeiter: Gute Besserung für Ihr Kind. Hat der Kinderarzt die Bescheinigung schon ausgestellt?
+Kunde: Der Kinderarzt hat eine Bescheinigung ausgestellt.
+Mitarbeiter: Als Alleinerziehende haben Sie dieses Jahr noch zwölf Tage Anspruch. Der Antrag ist angelegt."
+GKV-0008,voice,pflichtversichert,de,2026-10-06T09:07:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Herr Yilmaz. Was kann ich für Sie tun?
+Kunde: Hallo, wie lange ist die Kündigungsfrist, wenn ich die Krankenkasse wechseln will?
+Mitarbeiter: Ich prüfe das. Haben Sie sich schon bei der neuen Kasse angemeldet?
+Kunde: Ich ziehe im März nach Österreich.
+Mitarbeiter: Die neue Kasse meldet den Wechsel elektronisch, eine Kündigung bei uns ist nicht nötig. Die Frist beträgt zwei Monate zum Monatsende.
+Kunde: Super, danke schön.
+Mitarbeiter: Gerne. Bleiben Sie gesund!"
+GKV-0009,voice,freiwillig,de,2026-09-05T11:25:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Nowak. Was kann ich für Sie tun?
+Kunde: Ich bin seit kurzem selbständig, wie berechnet sich mein Beitrag?
+Mitarbeiter: Gern. Seit wann sind Sie selbständig tätig?
+Kunde: Mein Gewinn lag letztes Jahr deutlich unter dem, was Sie angesetzt haben.
+Mitarbeiter: Laden Sie den Steuerbescheid in der App hoch, dann stufen wir Sie rückwirkend neu ein und erstatten zu viel gezahlte Beiträge.
+Kunde: Alles klar, das war's, danke.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0010,web_messaging,pflichtversichert,de,2026-10-02T00:57:00Z,Online-Chat,"Kunde: Ich habe die Folgebescheinigung längst geschickt, aber die Zahlung ist nicht da.
+Mitarbeiter: Ich schaue gleich nach. Seit wann sind Sie arbeitsunfähig?
+Kunde: Ich bin seit dem 3. Juni durchgehend arbeitsunfähig.
+Mitarbeiter: Die Entgeltbescheinigung lag erst gestern vor. Ich habe die Zahlung angewiesen, das Geld ist in zwei bis drei Werktagen auf Ihrem Konto."
+GKV-0011,email,pflichtversichert,de,2026-10-02T13:12:00Z,Posteingang E-Mail,"Kunde: Meine Mutter ist chronisch krank, gibt es da eine Obergrenze für Zuzahlungen?
+Mitarbeiter: Gern. Die Belastungsgrenze liegt bei zwei Prozent des Bruttoeinkommens, bei chronisch Kranken bei einem Prozent. Haben Sie Ihre Quittungen?
+Kunde: Mein Arzt hat eine chronische Erkrankung bescheinigt.
+Mitarbeiter: Ich habe Ihnen den Antrag geschickt. Schicken Sie ihn mit den Quittungen zurück, dann stellen wir den Befreiungsausweis aus."
+GKV-0012,voice,pflichtversichert,de,2026-10-13T13:05:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Becker. Was kann ich für Sie tun?
+Kunde: Ich hänge schon eine Weile in der Warteschleife, die Musik kann ich jetzt mitsingen.
+Mitarbeiter: Entschuldigen Sie die Wartezeit, und danke für Ihre Geduld!
+Kunde: Seit dem Handywechsel kann ich mich in der App nicht mehr anmelden.
+Mitarbeiter: Das klären wir. Haben Sie das Gerät gewechselt oder die App neu installiert?
+Kunde: Ich habe es schon dreimal versucht.
+Mitarbeiter: Ich habe Ihr altes Gerät abgemeldet und einen neuen Freischaltcode verschickt. Der kommt in drei Tagen per Post.
+Kunde: Alles klar, das war's, danke.
+Mitarbeiter: Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+GKV-0013,voice,freiwillig,de,2026-09-18T14:12:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Hoffmann. Was kann ich für Sie tun?
+Kunde: Hallo, ich möchte eine Mutter-Kind-Kur beantragen.
+Mitarbeiter: Gern. Sind Sie berufstätig? Dann ist eventuell die Rentenversicherung zuständig.
+Kunde: Ich bin seit Monaten erschöpft.
+Mitarbeiter: Ich schicke Ihnen den Antrag zu. Wir prüfen, wer zuständig ist, und leiten ihn bei Bedarf weiter.
+Kunde: Alles klar, das war's, danke.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0014,voice,pflichtversichert,de,2026-10-10T01:37:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Krüger. Was kann ich für Sie tun?
+Kunde: Ich bin ja schon länger krank und irgendwie kommt kein Geld, ich weiß gar nicht, wer da jetzt zuständig ist.
+Mitarbeiter: Ich schaue gleich nach. Seit wann sind Sie arbeitsunfähig?
+Kunde: Ich bin seit dem 15. April durchgehend arbeitsunfähig.
+Mitarbeiter: Es fehlte die Folgebescheinigung für eine Woche. Die liegt jetzt vor, die Auszahlung von 89,90 € ist veranlasst.
+Kunde: Super, danke schön.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0015,voice,pflichtversichert,de,2026-10-15T19:17:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Herr Wagner. Was kann ich für Sie tun?
+Kunde: Hallo, meine Bonuspunkte für den Gesundheitscheck sind nicht gutgeschrieben.
+Mitarbeiter: Gern. Haben Sie die Nachweise über die App eingereicht?
+Kunde: Ich war beim Check-up und beim Zahnarzt.
+Mitarbeiter: Die Punkte sind jetzt gutgeschrieben. Ihre Prämie von 240,00 € wird auf Ihr Konto überwiesen.
+Kunde: Wie lange dauert das ungefähr?
+Mitarbeiter: In der Regel ist das innerhalb weniger Werktage erledigt.
+Kunde: Und dann noch etwas: Mein Krankengeld für diesen Monat ist auch noch nicht da.
+Mitarbeiter: Das tut mir leid. Darf ich kurz Ihre Versichertennummer aufnehmen?
+Kunde: Ich bin seit dem 3. Juni durchgehend arbeitsunfähig.
+Mitarbeiter: Es fehlte die Folgebescheinigung für eine Woche. Die liegt jetzt vor, die Auszahlung von 980,00 € ist veranlasst."
+GKV-0016,voice,freiwillig,de,2026-09-24T16:06:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Krüger. Was kann ich für Sie tun?
+Kunde: Ich hänge schon eine Weile in der Warteschleife, die Musik kann ich jetzt mitsingen.
+Mitarbeiter: Entschuldigen Sie die Wartezeit, und danke für Ihre Geduld!
+Kunde: Ich komme nicht mehr in Ihre App, der Login schlägt immer fehl.
+Mitarbeiter: Kein Problem. Wann haben Sie sich zuletzt erfolgreich angemeldet?
+Kunde: Ich habe es schon dreimal versucht.
+Mitarbeiter: Ihr Konto war nach mehreren Fehlversuchen gesperrt. Es ist entsperrt, Sie können sich wieder anmelden.
+Kunde: Alles klar, das war's, danke.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0017,voice,pflichtversichert,de,2026-09-19T09:51:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Krüger. Was kann ich für Sie tun?
+Kunde: Meine Mutter ist chronisch krank, gibt es da eine Obergrenze für Zuzahlungen?
+Mitarbeiter: Gern. Die Belastungsgrenze liegt bei zwei Prozent des Bruttoeinkommens, bei chronisch Kranken bei einem Prozent. Haben Sie Ihre Quittungen?
+Kunde: Ich bekomme eine kleine Rente.
+Mitarbeiter: Die Belastungsgrenze ist erreicht. Ihr Befreiungsausweis kommt per Post, zu viel gezahlte 89,90 € erstatten wir.
+Kunde: Prima, vielen Dank.
+Mitarbeiter: Gerne. Bleiben Sie gesund!"
+GKV-0018,voice,pflichtversichert,de,2026-10-06T07:13:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Becker. Was kann ich für Sie tun?
+Kunde: Hallo, meine Bonuspunkte für den Gesundheitscheck sind nicht gutgeschrieben.
+Mitarbeiter: Gern. Haben Sie die Nachweise über die App eingereicht?
+Kunde: Ich war beim Check-up und beim Zahnarzt.
+Mitarbeiter: Ich habe die Auszahlung veranlasst, das Geld ist in etwa einer Woche da.
+Kunde: Danke für die Hilfe.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0019,web_messaging,pflichtversichert,de,2026-09-19T08:26:00Z,Online-Chat,"Kunde: Hallo, wie ist der Stand bei meiner Kostenerstattung für die Osteopathie?
+Mitarbeiter: Gern. Wissen Sie noch, auf welchem Weg Sie die Rechnung geschickt haben?
+Kunde: Ich habe keine Eingangsbestätigung bekommen.
+Mitarbeiter: Es fehlte die ärztliche Verordnung. Wenn Sie die nachreichen, erstatten wir sofort."
+GKV-0020,email,rentner,de,2026-09-23T07:58:00Z,Posteingang E-Mail,"Mitarbeiter: Sehr geehrte Damen und Herren, vielen Dank für Ihre Nachricht. Mein Name ist Herr Schulz, ich kümmere mich um Ihr Anliegen.
+Kunde: Ich habe dieses Jahr schon sehr viele Zuzahlungen geleistet, kann ich mich befreien lassen?
+Mitarbeiter: Ich helfe Ihnen. Möchten Sie die Befreiung für den Rest des Jahres beantragen?
+Kunde: Mein Arzt hat eine chronische Erkrankung bescheinigt.
+Mitarbeiter: Ich habe Ihnen den Antrag geschickt. Schicken Sie ihn mit den Quittungen zurück, dann stellen wir den Befreiungsausweis aus.
+Kunde: Außerdem habe ich eine neue Verordnung für Krankengymnastik, geht die in Ordnung?
+Mitarbeiter: Ich habe die Genehmigung erteilt, die Praxis bekommt heute eine Bestätigung."
+GKV-0021,voice,pflichtversichert,de,2026-09-18T21:24:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Herr Schulz. Was kann ich für Sie tun?
+Kunde: Wie kann ich meine Bonusprämie auszahlen lassen?
+Mitarbeiter: Gern. Haben Sie die Nachweise über die App eingereicht?
+Kunde: Ich habe die Nachweise vor drei Wochen hochgeladen.
+Mitarbeiter: Ich habe die Auszahlung veranlasst, das Geld ist in etwa einer Woche da.
+Kunde: Super, danke schön.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0022,email,pflichtversichert,de,2026-09-26T13:45:00Z,Posteingang E-Mail,"Mitarbeiter: Sehr geehrte Damen und Herren, vielen Dank für Ihre Nachricht. Mein Name ist Frau Krüger, ich kümmere mich um Ihr Anliegen.
+Kunde: Können Sie meinem Arbeitgeber bitte bestätigen, dass ich bei Ihnen versichert bin?
+Mitarbeiter: Kein Problem. Soll die Bescheinigung direkt an den Arbeitgeber gehen?
+Kunde: Ich brauche das relativ schnell.
+Mitarbeiter: Die Mitgliedsbescheinigung ist elektronisch an Ihren Arbeitgeber übermittelt. Eine Kopie finden Sie in der App.
+Kunde: Vielen Dank, das hilft mir sehr.
+Mitarbeiter: Gerne. Bleiben Sie gesund!"
+GKV-0023,web_messaging,pflichtversichert,de,2026-10-05T13:52:00Z,Online-Chat,"Kunde: Guten Tag, die Personalabteilung fragt nach meiner Mitgliedsbescheinigung.
+Mitarbeiter: Kein Problem. Soll die Bescheinigung direkt an den Arbeitgeber gehen?
+Kunde: Ich starte am 20. August bei der neuen Firma.
+Mitarbeiter: Die Mitgliedsbescheinigung ist elektronisch an Ihren Arbeitgeber übermittelt. Eine Kopie finden Sie in der App."
+GKV-0024,email,pflichtversichert,de,2026-09-23T02:15:00Z,Posteingang E-Mail,"Mitarbeiter: Sehr geehrte Damen und Herren, vielen Dank für Ihre Nachricht. Mein Name ist Frau Hoffmann, ich kümmere mich um Ihr Anliegen.
+Kunde: Ich hänge schon eine Weile in der Warteschleife, die Musik kann ich jetzt mitsingen.
+Mitarbeiter: Entschuldigen Sie die Wartezeit, und danke für Ihre Geduld!
+Kunde: Guten Tag, die Personalabteilung fragt nach meiner Mitgliedsbescheinigung.
+Mitarbeiter: Gerne. Wie heißt Ihr neuer Arbeitgeber und ab wann beginnt die Beschäftigung?
+Kunde: Ich brauche das relativ schnell.
+Mitarbeiter: Ich habe die Bescheinigung erstellt, sie liegt in Ihrem Postfach in der Online-Geschäftsstelle.
+Kunde: Alles klar, das war's, danke.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0025,voice,freiwillig,de,2026-10-05T16:59:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Herr Schulz. Was kann ich für Sie tun?
+Kunde: Ich habe einen Brief bekommen, dass der Zusatzbeitrag steigt. Warum?
+Mitarbeiter: Gern. Möchten Sie wissen, wie viel Sie konkret mehr zahlen?
+Kunde: Andere Kassen sind günstiger, habe ich gelesen.
+Mitarbeiter: Die Erhöhung gilt ab Januar. Sie haben dadurch ein Sonderkündigungsrecht bis Ende des Monats.
+Kunde: Super, danke schön.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0026,web_messaging,pflichtversichert,de,2026-09-20T21:56:00Z,Online-Chat,"Mitarbeiter: Hallo, hier ist Frau Nowak vom Kundenservice. Wie kann ich Ihnen im Chat helfen?
+Kunde: Guten Tag, das Krankengeld für den letzten Zeitraum fehlt auf meinem Konto.
+Mitarbeiter: Das tut mir leid. Darf ich kurz Ihre Versichertennummer aufnehmen?
+Kunde: Die Arbeitsunfähigkeitsbescheinigung hat mein Arzt direkt elektronisch übermittelt.
+Mitarbeiter: Die Entgeltbescheinigung lag erst gestern vor. Ich habe die Zahlung angewiesen, das Geld ist in zwei bis drei Werktagen auf Ihrem Konto.
+Kunde: Super, danke schön.
+Mitarbeiter: Gerne. Bleiben Sie gesund!"
+GKV-0027,voice,pflichtversichert,de,2026-09-24T21:31:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Nowak. Was kann ich für Sie tun?
+Kunde: Mein Kind ist krank und ich muss zu Hause bleiben. Bekomme ich Kinderkrankengeld?
+Mitarbeiter: Gute Besserung für Ihr Kind. Hat der Kinderarzt die Bescheinigung schon ausgestellt?
+Kunde: Meine Tochter ist fünf und hat Fieber.
+Mitarbeiter: Schicken Sie die Bescheinigung über die App, das Kinderkrankengeld zahlen wir dann direkt an Sie aus.
+Kunde: Muss ich sonst noch etwas tun?
+Mitarbeiter: Nein, von Ihrer Seite ist nichts weiter nötig.
+Kunde: Prima, vielen Dank.
+Mitarbeiter: Gerne. Bleiben Sie gesund!"
+GKV-0028,voice,freiwillig,de,2026-09-02T06:10:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Nowak. Was kann ich für Sie tun?
+Kunde: Ich bin seit kurzem selbständig, wie berechnet sich mein Beitrag?
+Mitarbeiter: Gern. Seit wann sind Sie selbständig tätig?
+Kunde: Mein Gewinn lag letztes Jahr deutlich unter dem, was Sie angesetzt haben.
+Mitarbeiter: Laden Sie den Steuerbescheid in der App hoch, dann stufen wir Sie rückwirkend neu ein und erstatten zu viel gezahlte Beiträge.
+Kunde: Super, danke schön.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0029,voice,freiwillig,de,2026-10-01T13:12:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Herr Schulz. Was kann ich für Sie tun?
+Kunde: Ich bin umgezogen und möchte meine neue Adresse mitteilen.
+Mitarbeiter: Gern. Wie lautet Ihre neue Anschrift?
+Kunde: Die neue Adresse ist in Freiburg.
+Mitarbeiter: Die neue Anschrift ist gespeichert, die Post geht ab sofort dorthin.
+Kunde: Wie lange dauert das ungefähr?
+Mitarbeiter: In der Regel ist das innerhalb weniger Werktage erledigt.
+Kunde: Und wie beantrage ich eigentlich eine Reha?
+Mitarbeiter: Gern. Sind Sie berufstätig? Dann ist eventuell die Rentenversicherung zuständig.
+Kunde: Ich bin seit Monaten erschöpft.
+Mitarbeiter: Ich schicke Ihnen den Antrag zu. Wir prüfen, wer zuständig ist, und leiten ihn bei Bedarf weiter.
+Kunde: Alles klar, das war's, danke."
+GKV-0030,voice,freiwillig,de,2026-09-08T18:31:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Krüger. Was kann ich für Sie tun?
+Kunde: Mein Orthopäde hat mir Physiotherapie verordnet, muss die Krankenkasse das genehmigen?
+Mitarbeiter: Gern. Ist das eine Erst- oder eine Folgeverordnung?
+Kunde: Es ist schon die dritte Verordnung.
+Mitarbeiter: Für diese Diagnose ist keine Genehmigung nötig, die Praxis kann direkt mit uns abrechnen.
+Kunde: Wie lange dauert das ungefähr?
+Mitarbeiter: In der Regel ist das innerhalb weniger Werktage erledigt.
+Kunde: Und wie wird eigentlich mein Beitrag als Selbständiger berechnet?
+Mitarbeiter: Gern. Seit wann sind Sie selbständig tätig?
+Kunde: Ich zahle aktuell 312,40 € im Monat.
+Mitarbeiter: Ich habe Ihre Einstufung angepasst. Ihr neuer Beitrag beträgt 312,40 € im Monat."
+GKV-0031,voice,pflichtversichert,de,2026-09-15T16:49:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Nowak. Was kann ich für Sie tun?
+Kunde: Guten Tag, meine elektronische Gesundheitskarte ist weg, ich habe nächste Woche einen Arzttermin.
+Mitarbeiter: Kein Problem. Ich sperre die alte Karte. Ist Ihre Adresse noch aktuell?
+Kunde: Die Karte war erst ein Jahr alt.
+Mitarbeiter: Die alte Karte ist gesperrt, die neue kommt in etwa zehn Tagen. Für den Arzttermin schicke ich Ihnen eine Ersatzbescheinigung.
+Kunde: Danke für die Hilfe.
+Mitarbeiter: Gerne. Bleiben Sie gesund!"
+GKV-0032,web_messaging,freiwillig,de,2026-09-19T08:23:00Z,Online-Chat,"Mitarbeiter: Hallo, hier ist Herr Schulz vom Kundenservice. Wie kann ich Ihnen im Chat helfen?
+Kunde: Ich habe einen Brief bekommen, dass der Zusatzbeitrag steigt. Warum?
+Mitarbeiter: Gern. Möchten Sie wissen, wie viel Sie konkret mehr zahlen?
+Kunde: Der Brief kam letzte Woche.
+Mitarbeiter: Die Erhöhung gilt ab Januar. Sie haben dadurch ein Sonderkündigungsrecht bis Ende des Monats.
+Kunde: Prima, vielen Dank.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0033,web_messaging,pflichtversichert,de,2026-10-10T19:01:00Z,Online-Chat,"Mitarbeiter: Hallo, hier ist Frau Nowak vom Kundenservice. Wie kann ich Ihnen im Chat helfen?
+Kunde: Mein neuer Arbeitgeber braucht eine Mitgliedsbescheinigung von Ihnen.
+Mitarbeiter: Kein Problem. Soll die Bescheinigung direkt an den Arbeitgeber gehen?
+Kunde: Ich starte am 20. August bei der neuen Firma.
+Mitarbeiter: Die Mitgliedsbescheinigung ist elektronisch an Ihren Arbeitgeber übermittelt. Eine Kopie finden Sie in der App.
+Kunde: Bekomme ich dazu eine Bestätigung?
+Mitarbeiter: Ja, die Bestätigung kommt in Ihr Postfach in der App.
+Kunde: Prima, vielen Dank.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0034,voice,freiwillig,de,2026-10-14T20:53:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Herr Yilmaz. Was kann ich für Sie tun?
+Kunde: Hallo, ich bin mit meinen Beiträgen im Rückstand, kann ich in Raten zahlen?
+Mitarbeiter: Gern. Möchten Sie eine Ratenzahlung vereinbaren?
+Kunde: Ich hatte die letzten Monate finanzielle Schwierigkeiten.
+Mitarbeiter: Ich habe eine Ratenzahlung über sechs Monate eingerichtet, das Mahnverfahren ruht.
+Kunde: Super, danke schön.
+Mitarbeiter: Gerne. Bleiben Sie gesund!"
+GKV-0035,voice,freiwillig,de,2026-09-02T17:17:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Hoffmann. Was kann ich für Sie tun?
+Kunde: Hallo, ich bin mit meinen Beiträgen im Rückstand, kann ich in Raten zahlen?
+Mitarbeiter: Gern. Möchten Sie eine Ratenzahlung vereinbaren?
+Kunde: Es geht um 124,00 €.
+Mitarbeiter: Ich habe eine Ratenzahlung über sechs Monate eingerichtet, das Mahnverfahren ruht.
+Kunde: Vielen Dank, das hilft mir sehr.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0036,email,familienversichert,de,2026-09-25T22:24:00Z,Posteingang E-Mail,"Mitarbeiter: Sehr geehrte Damen und Herren, vielen Dank für Ihre Nachricht. Mein Name ist Frau Krüger, ich kümmere mich um Ihr Anliegen.
+Kunde: Seit dem Handywechsel kann ich mich in der App nicht mehr anmelden.
+Mitarbeiter: Kein Problem. Wann haben Sie sich zuletzt erfolgreich angemeldet?
+Kunde: Der Brief mit dem Code kam nicht.
+Mitarbeiter: Ich habe Ihr altes Gerät abgemeldet und einen neuen Freischaltcode verschickt. Der kommt in drei Tagen per Post.
+Kunde: Danke für die Hilfe.
+Mitarbeiter: Gerne. Bleiben Sie gesund!"
+GKV-0037,voice,pflichtversichert,de,2026-10-10T22:51:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Herr Wagner. Was kann ich für Sie tun?
+Kunde: Hallo, haben Sie einen Terminservice für Fachärzte?
+Mitarbeiter: Gern. In welcher Region suchen Sie?
+Kunde: Ich habe eine Überweisung vom Hausarzt.
+Mitarbeiter: Mit dem Dringlichkeitscode vermittelt die Terminservicestelle einen Termin innerhalb von vier Wochen.
+Kunde: Prima, vielen Dank.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0038,voice,pflichtversichert,de,2026-09-18T04:26:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Herr Wagner. Was kann ich für Sie tun?
+Kunde: Guten Tag, die App sagt immer 'Identifizierung fehlgeschlagen'.
+Mitarbeiter: Kein Problem. Wann haben Sie sich zuletzt erfolgreich angemeldet?
+Kunde: Ich habe ein neues Smartphone.
+Mitarbeiter: Ich habe Ihr altes Gerät abgemeldet und einen neuen Freischaltcode verschickt. Der kommt in drei Tagen per Post.
+Kunde: Prima, vielen Dank.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0039,voice,pflichtversichert,de,2026-09-28T04:12:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Hoffmann. Was kann ich für Sie tun?
+Kunde: Schönes Wetter heute, oder? Endlich mal Sonne.
+Mitarbeiter: Ja, wirklich! Hoffentlich können Sie es nachher genießen.
+Kunde: Ich habe die Folgebescheinigung längst geschickt, aber die Zahlung ist nicht da.
+Mitarbeiter: Das tut mir leid. Darf ich kurz Ihre Versichertennummer aufnehmen?
+Kunde: Die Entgeltbescheinigung hat mein Arbeitgeber laut Personalabteilung schon geschickt.
+Mitarbeiter: Es fehlte die Folgebescheinigung für eine Woche. Die liegt jetzt vor, die Auszahlung von 89,90 € ist veranlasst.
+Kunde: Super, danke schön.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0040,voice,pflichtversichert,de,2026-10-10T04:16:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Herr Schulz. Was kann ich für Sie tun?
+Kunde: Ich habe meine Gesundheitskarte verloren und brauche eine neue.
+Mitarbeiter: Kein Problem. Ich sperre die alte Karte. Ist Ihre Adresse noch aktuell?
+Kunde: Die Karte war erst ein Jahr alt.
+Mitarbeiter: Die alte Karte ist gesperrt, die neue kommt in etwa zehn Tagen. Für den Arzttermin schicke ich Ihnen eine Ersatzbescheinigung.
+Kunde: Super, danke schön.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0041,voice,pflichtversichert,de,2026-09-22T12:05:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Herr Yilmaz. Was kann ich für Sie tun?
+Kunde: Mein Hund bellt im Hintergrund, tut mir leid.
+Mitarbeiter: Ach, das macht gar nichts.
+Kunde: Meine Karte ist gebrochen, der Arzt kann sie nicht mehr einlesen. Wie komme ich an eine neue?
+Mitarbeiter: Das bekommen wir hin. Sollen wir das vorhandene Foto weiterverwenden?
+Kunde: Ich habe nächste Woche einen Termin beim Hausarzt.
+Mitarbeiter: Ich habe die Ersatzkarte bestellt. Bis dahin kann die Praxis Ihren Versicherungsnachweis online bei uns abrufen.
+Kunde: Muss ich sonst noch etwas tun?
+Mitarbeiter: Nein, von Ihrer Seite ist nichts weiter nötig.
+Kunde: Vielen Dank, das hilft mir sehr.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0042,voice,freiwillig,de,2026-10-14T00:36:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Herr Yilmaz. Was kann ich für Sie tun?
+Kunde: Ich bin umgezogen und möchte meine neue Adresse mitteilen.
+Mitarbeiter: Kein Problem. Ab wann gilt die neue Adresse?
+Kunde: Ich wohne seit dem 1. Oktober dort.
+Mitarbeiter: Die neue Anschrift ist gespeichert, die Post geht ab sofort dorthin.
+Kunde: Ach ja, meine Punkte aus dem Bonusprogramm sind auch noch nicht da.
+Mitarbeiter: Gern. Haben Sie die Nachweise über die App eingereicht?
+Kunde: In der App steht, dass ich 38,50 € Prämie habe.
+Mitarbeiter: Ich habe die Auszahlung veranlasst, das Geld ist in etwa einer Woche da.
+Kunde: Danke für die Hilfe.
+Mitarbeiter: Gerne. Bleiben Sie gesund!"
+GKV-0043,voice,pflichtversichert,de,2026-09-30T01:09:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Hoffmann. Was kann ich für Sie tun?
+Kunde: Guten Tag, ich habe Nachweise für das Bonusprogramm hochgeladen, aber die Punkte fehlen.
+Mitarbeiter: Ich schaue nach. Für welches Jahr möchten Sie die Prämie einlösen?
+Kunde: Ich war beim Check-up und beim Zahnarzt.
+Mitarbeiter: Die Punkte sind jetzt gutgeschrieben. Ihre Prämie von 312,40 € wird auf Ihr Konto überwiesen.
+Kunde: Alles klar, das war's, danke.
+Mitarbeiter: Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+GKV-0044,web_messaging,pflichtversichert,de,2026-09-20T03:10:00Z,Online-Chat,"Mitarbeiter: Hallo, hier ist Frau Krüger vom Kundenservice. Wie kann ich Ihnen im Chat helfen?
+Kunde: Kann mein Kind beitragsfrei über mich versichert werden? Mein Mann ist privat versichert.
+Mitarbeiter: Gern. Ich brauche den Namen und das Geburtsdatum des Kindes.
+Kunde: Unser Kind ist jetzt drei Wochen alt.
+Mitarbeiter: Ich habe Ihnen den Fragebogen zur Familienversicherung in die App gelegt. Sobald er zurück ist, ist Ihr Kind ab Geburt versichert.
+Kunde: Und das passiert nicht noch mal?
+Mitarbeiter: Ich habe einen Vermerk angelegt, damit wir das im Blick behalten.
+Kunde: Und kann ich mich eigentlich von den Zuzahlungen befreien lassen?
+Mitarbeiter: Ich helfe Ihnen. Möchten Sie die Befreiung für den Rest des Jahres beantragen?
+Kunde: Ich habe alle Quittungen von Apotheke und Physiotherapie gesammelt.
+Mitarbeiter: Die Belastungsgrenze ist erreicht. Ihr Befreiungsausweis kommt per Post, zu viel gezahlte 89,90 € erstatten wir.
+Kunde: Prima, vielen Dank."
+GKV-0045,email,pflichtversichert,de,2026-09-09T15:58:00Z,Posteingang E-Mail,"Mitarbeiter: Sehr geehrte Damen und Herren, vielen Dank für Ihre Nachricht. Mein Name ist Herr Wagner, ich kümmere mich um Ihr Anliegen.
+Kunde: Wir haben im Juli ein Baby bekommen, wie kann ich unsere Tochter bei Ihnen mitversichern?
+Mitarbeiter: Herzlichen Glückwunsch! Sind Sie und der andere Elternteil beide gesetzlich versichert?
+Kunde: Mein Partner verdient mehr als ich, ist das ein Problem?
+Mitarbeiter: Ich habe Ihnen den Fragebogen zur Familienversicherung in die App gelegt. Sobald er zurück ist, ist Ihr Kind ab Geburt versichert.
+Kunde: Alles klar, das war's, danke.
+Mitarbeiter: Gerne. Bleiben Sie gesund!"
+GKV-0046,web_messaging,familienversichert,de,2026-10-08T02:16:00Z,Online-Chat,"Mitarbeiter: Hallo, hier ist Frau Krüger vom Kundenservice. Wie kann ich Ihnen im Chat helfen?
+Kunde: Hallo, ich möchte meinen Sohn in die Familienversicherung aufnehmen.
+Mitarbeiter: Herzlichen Glückwunsch! Sind Sie und der andere Elternteil beide gesetzlich versichert?
+Kunde: Die Geburtsurkunde habe ich schon da.
+Mitarbeiter: Ich habe Ihnen den Fragebogen zur Familienversicherung in die App gelegt. Sobald er zurück ist, ist Ihr Kind ab Geburt versichert.
+Kunde: Bekomme ich dazu eine Bestätigung?
+Mitarbeiter: Ja, die Bestätigung kommt in Ihr Postfach in der App.
+Kunde: Vielen Dank, das hilft mir sehr.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0047,voice,freiwillig,de,2026-10-15T06:44:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Becker. Was kann ich für Sie tun?
+Kunde: Übernehmen Sie die Kosten für meine Reiseimpfung gegen Typhus?
+Mitarbeiter: Gern. Haben Sie die Rechnung von der Impfung schon?
+Kunde: Ich fliege im Januar nach Thailand.
+Mitarbeiter: Ja, wir erstatten Reiseimpfungen. Reichen Sie die Rechnung über die App ein.
+Kunde: Alles klar, das war's, danke.
+Mitarbeiter: Gerne. Bleiben Sie gesund!"
+GKV-0048,email,pflichtversichert,de,2026-09-19T23:27:00Z,Posteingang E-Mail,"Mitarbeiter: Sehr geehrte Damen und Herren, vielen Dank für Ihre Nachricht. Mein Name ist Frau Nowak, ich kümmere mich um Ihr Anliegen.
+Kunde: Guten Tag, das Krankengeld für den letzten Zeitraum fehlt auf meinem Konto.
+Mitarbeiter: Das tut mir leid. Darf ich kurz Ihre Versichertennummer aufnehmen?
+Kunde: Die Entgeltbescheinigung hat mein Arbeitgeber laut Personalabteilung schon geschickt.
+Mitarbeiter: Die Entgeltbescheinigung lag erst gestern vor. Ich habe die Zahlung angewiesen, das Geld ist in zwei bis drei Werktagen auf Ihrem Konto.
+Kunde: Prima, vielen Dank.
+Mitarbeiter: Gerne. Bleiben Sie gesund!"
+GKV-0049,voice,freiwillig,de,2026-09-11T01:35:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Becker. Was kann ich für Sie tun?
+Kunde: Schönes Wochenende schon mal, falls ich es nachher vergesse.
+Mitarbeiter: Danke, Ihnen auch!
+Kunde: Guten Tag, meine elektronische Gesundheitskarte ist weg, ich habe nächste Woche einen Arzttermin.
+Mitarbeiter: Das bekommen wir hin. Sollen wir das vorhandene Foto weiterverwenden?
+Kunde: Ich habe nächste Woche einen Termin beim Hausarzt.
+Mitarbeiter: Die alte Karte ist gesperrt, die neue kommt in etwa zehn Tagen. Für den Arzttermin schicke ich Ihnen eine Ersatzbescheinigung.
+Kunde: Vielen Dank, das hilft mir sehr.
+Mitarbeiter: Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+GKV-0050,voice,pflichtversichert,de,2026-09-17T14:30:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Hoffmann. Was kann ich für Sie tun?
+Kunde: Kann mein Kind beitragsfrei über mich versichert werden? Mein Mann ist privat versichert.
+Mitarbeiter: Herzlichen Glückwunsch! Sind Sie und der andere Elternteil beide gesetzlich versichert?
+Kunde: Mein Partner verdient mehr als ich, ist das ein Problem?
+Mitarbeiter: Ihr Kind ist ab Geburt familienversichert, die Gesundheitskarte schicken wir in etwa zwei Wochen zu.
+Kunde: Prima, vielen Dank.
+Mitarbeiter: Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+GKV-0051,voice,freiwillig,de,2026-09-21T07:10:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Becker. Was kann ich für Sie tun?
+Kunde: Ich bin seit kurzem selbständig, wie berechnet sich mein Beitrag?
+Mitarbeiter: Ich helfe Ihnen. Liegt Ihnen der aktuelle Einkommensteuerbescheid vor?
+Kunde: Der Steuerbescheid ist von letzter Woche.
+Mitarbeiter: Ich habe Ihre Einstufung angepasst. Ihr neuer Beitrag beträgt 312,40 € im Monat.
+Kunde: Alles klar, das war's, danke.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0052,voice,pflichtversichert,de,2026-09-17T03:52:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Herr Wagner. Was kann ich für Sie tun?
+Kunde: Hallo, ich möchte meinen Sohn in die Familienversicherung aufnehmen.
+Mitarbeiter: Herzlichen Glückwunsch! Sind Sie und der andere Elternteil beide gesetzlich versichert?
+Kunde: Unser Kind ist jetzt drei Wochen alt.
+Mitarbeiter: Ich habe Ihnen den Fragebogen zur Familienversicherung in die App gelegt. Sobald er zurück ist, ist Ihr Kind ab Geburt versichert.
+Kunde: Alles klar, das war's, danke.
+Mitarbeiter: Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+GKV-0053,web_messaging,pflichtversichert,de,2026-10-15T09:26:00Z,Online-Chat,"Kunde: Hallo, ich fange am Ersten eine neue Stelle an und soll eine Bescheinigung der Krankenkasse vorlegen.
+Mitarbeiter: Kein Problem. Soll die Bescheinigung direkt an den Arbeitgeber gehen?
+Kunde: Ich brauche das relativ schnell.
+Mitarbeiter: Ich habe die Bescheinigung erstellt, sie liegt in Ihrem Postfach in der Online-Geschäftsstelle."
+GKV-0054,web_messaging,rentner,de,2026-09-05T20:01:00Z,Online-Chat,"Mitarbeiter: Hallo, hier ist Frau Krüger vom Kundenservice. Wie kann ich Ihnen im Chat helfen?
+Kunde: Guten Tag, meine elektronische Gesundheitskarte ist weg, ich habe nächste Woche einen Arzttermin.
+Mitarbeiter: Kein Problem. Ich sperre die alte Karte. Ist Ihre Adresse noch aktuell?
+Kunde: Brauche ich dafür ein neues Foto?
+Mitarbeiter: Die alte Karte ist gesperrt, die neue kommt in etwa zehn Tagen. Für den Arzttermin schicke ich Ihnen eine Ersatzbescheinigung.
+Kunde: Und das passiert nicht noch mal?
+Mitarbeiter: Ich habe einen Vermerk angelegt, damit wir das im Blick behalten.
+Kunde: Prima, vielen Dank.
+Mitarbeiter: Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+GKV-0055,email,rentner,de,2026-09-12T02:34:00Z,Posteingang E-Mail,"Mitarbeiter: Sehr geehrte Damen und Herren, vielen Dank für Ihre Nachricht. Mein Name ist Frau Nowak, ich kümmere mich um Ihr Anliegen.
+Kunde: Mein Zahnarzt hat mir einen Heil- und Kostenplan für eine Krone gegeben, was zahlen Sie dazu?
+Mitarbeiter: Gern. Haben Sie ein Bonusheft und wie viele Jahre ist es lückenlos?
+Kunde: Der Plan geht über 980,00 €.
+Mitarbeiter: Der Kostenplan liegt vor, wir übernehmen 38,50 €. Der Rest ist Ihr Eigenanteil.
+Kunde: Super, danke schön.
+Mitarbeiter: Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+GKV-0056,voice,pflichtversichert,de,2026-10-14T06:09:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Nowak. Was kann ich für Sie tun?
+Kunde: Guten Tag, ich möchte einen Antrag auf Zuzahlungsbefreiung stellen.
+Mitarbeiter: Ich helfe Ihnen. Möchten Sie die Befreiung für den Rest des Jahres beantragen?
+Kunde: Mein Arzt hat eine chronische Erkrankung bescheinigt.
+Mitarbeiter: Ich habe Ihnen den Antrag geschickt. Schicken Sie ihn mit den Quittungen zurück, dann stellen wir den Befreiungsausweis aus.
+Kunde: Und meine Mutter bräuchte noch einen Rollator, zahlen Sie den?
+Mitarbeiter: Gern. Liegt schon eine ärztliche Verordnung vor?
+Kunde: Das Sanitätshaus hat den Antrag letzte Woche geschickt.
+Mitarbeiter: Der Rollator ist genehmigt. Das Sanitätshaus liefert ihn, Sie zahlen nur die gesetzliche Zuzahlung von zehn Euro."
+GKV-0057,email,freiwillig,de,2026-09-20T00:02:00Z,Posteingang E-Mail,"Mitarbeiter: Sehr geehrte Damen und Herren, vielen Dank für Ihre Nachricht. Mein Name ist Frau Krüger, ich kümmere mich um Ihr Anliegen.
+Kunde: Ich habe meine Gesundheitskarte verloren und brauche eine neue.
+Mitarbeiter: Das bekommen wir hin. Sollen wir das vorhandene Foto weiterverwenden?
+Kunde: Brauche ich dafür ein neues Foto?
+Mitarbeiter: Die alte Karte ist gesperrt, die neue kommt in etwa zehn Tagen. Für den Arzttermin schicke ich Ihnen eine Ersatzbescheinigung.
+Kunde: Außerdem: Wie bekomme ich unser Neugeborenes in die Familienversicherung?
+Mitarbeiter: Ich habe Ihnen den Fragebogen zur Familienversicherung in die App gelegt. Sobald er zurück ist, ist Ihr Kind ab Geburt versichert.
+Kunde: Vielen Dank, das hilft mir sehr.
+Mitarbeiter: Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+GKV-0058,voice,pflichtversichert,de,2026-09-05T09:35:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Nowak. Was kann ich für Sie tun?
+Kunde: Hallo, ich möchte meinen Sohn in die Familienversicherung aufnehmen.
+Mitarbeiter: Herzlichen Glückwunsch! Sind Sie und der andere Elternteil beide gesetzlich versichert?
+Kunde: Mein Partner verdient mehr als ich, ist das ein Problem?
+Mitarbeiter: Ihr Kind ist ab Geburt familienversichert, die Gesundheitskarte schicken wir in etwa zwei Wochen zu.
+Kunde: Danke für die Hilfe.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0059,voice,freiwillig,de,2026-09-17T17:52:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Herr Schulz. Was kann ich für Sie tun?
+Kunde: Entschuldigung, ich bin gerade im Auto, es kann etwas rauschen.
+Mitarbeiter: Kein Problem, ich verstehe Sie gut.
+Kunde: Hallo, ich bin mit meinen Beiträgen im Rückstand, kann ich in Raten zahlen?
+Mitarbeiter: Gern. Möchten Sie eine Ratenzahlung vereinbaren?
+Kunde: Es geht um 124,00 €.
+Mitarbeiter: Die Zahlung ist inzwischen eingegangen. Den Säumniszuschlag nehme ich zurück.
+Kunde: Muss ich sonst noch etwas tun?
+Mitarbeiter: Nein, von Ihrer Seite ist nichts weiter nötig.
+Kunde: Außerdem habe ich einen Heil- und Kostenplan vom Zahnarzt, können Sie den prüfen?
+Mitarbeiter: Der Kostenplan liegt vor, wir übernehmen 38,50 €. Der Rest ist Ihr Eigenanteil.
+Kunde: Super, danke schön."
+GKV-0060,voice,pflichtversichert,de,2026-09-12T17:02:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Becker. Was kann ich für Sie tun?
+Kunde: Guten Tag, meine eingereichte Arztrechnung ist immer noch nicht erstattet.
+Mitarbeiter: Gern. Wissen Sie noch, auf welchem Weg Sie die Rechnung geschickt haben?
+Kunde: Es geht um 980,00 €.
+Mitarbeiter: Die Rechnung ist geprüft, Sie bekommen 980,00 € erstattet. Die Überweisung geht morgen raus.
+Kunde: Super, danke schön.
+Mitarbeiter: Gerne. Bleiben Sie gesund!"
+GKV-0061,voice,pflichtversichert,de,2026-10-08T00:38:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Herr Yilmaz. Was kann ich für Sie tun?
+Kunde: Hallo, wie ist der Stand bei meiner Kostenerstattung für die Osteopathie?
+Mitarbeiter: Gern. Wissen Sie noch, auf welchem Weg Sie die Rechnung geschickt haben?
+Kunde: Es geht um 64,20 €.
+Mitarbeiter: Die Rechnung ist geprüft, Sie bekommen 186,75 € erstattet. Die Überweisung geht morgen raus.
+Kunde: Und das passiert nicht noch mal?
+Mitarbeiter: Ich habe einen Vermerk angelegt, damit wir das im Blick behalten.
+Kunde: Alles klar, das war's, danke.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0062,web_messaging,freiwillig,de,2026-09-03T18:52:00Z,Online-Chat,"Mitarbeiter: Hallo, hier ist Herr Schulz vom Kundenservice. Wie kann ich Ihnen im Chat helfen?
+Kunde: Guten Tag, ich habe den Kostenplan für mein Implantat eingereicht, ist der genehmigt?
+Mitarbeiter: Gern. Haben Sie ein Bonusheft und wie viele Jahre ist es lückenlos?
+Kunde: Ich habe ein lückenloses Bonusheft seit zehn Jahren.
+Mitarbeiter: Der Kostenplan liegt vor, wir übernehmen 38,50 €. Der Rest ist Ihr Eigenanteil.
+Kunde: Wie lange dauert das ungefähr?
+Mitarbeiter: In der Regel ist das innerhalb weniger Werktage erledigt.
+Kunde: Und wie wird eigentlich mein Beitrag als Selbständiger berechnet?
+Mitarbeiter: Ich habe Ihre Einstufung angepasst. Ihr neuer Beitrag beträgt 186,75 € im Monat.
+Kunde: Danke für die Hilfe.
+Mitarbeiter: Gerne. Bleiben Sie gesund!"
+GKV-0063,voice,pflichtversichert,de,2026-09-13T11:43:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Hoffmann. Was kann ich für Sie tun?
+Kunde: Hallo, ich möchte meinen Sohn in die Familienversicherung aufnehmen.
+Mitarbeiter: Herzlichen Glückwunsch! Sind Sie und der andere Elternteil beide gesetzlich versichert?
+Kunde: Mein Partner verdient mehr als ich, ist das ein Problem?
+Mitarbeiter: Ich habe Ihnen den Fragebogen zur Familienversicherung in die App gelegt. Sobald er zurück ist, ist Ihr Kind ab Geburt versichert.
+Kunde: Alles klar, das war's, danke.
+Mitarbeiter: Gerne. Bleiben Sie gesund!"
+GKV-0064,voice,pflichtversichert,de,2026-09-12T13:11:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Hoffmann. Was kann ich für Sie tun?
+Kunde: Meine Karte ist gebrochen, der Arzt kann sie nicht mehr einlesen. Wie komme ich an eine neue?
+Mitarbeiter: Kein Problem. Ich sperre die alte Karte. Ist Ihre Adresse noch aktuell?
+Kunde: Ich habe nächste Woche einen Termin beim Hausarzt.
+Mitarbeiter: Ich habe die Ersatzkarte bestellt. Bis dahin kann die Praxis Ihren Versicherungsnachweis online bei uns abrufen.
+Kunde: Wie lange dauert das ungefähr?
+Mitarbeiter: In der Regel ist das innerhalb weniger Werktage erledigt.
+Kunde: Super, danke schön.
+Mitarbeiter: Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+GKV-0065,email,familienversichert,de,2026-10-04T06:27:00Z,Posteingang E-Mail,"Mitarbeiter: Sehr geehrte Damen und Herren, vielen Dank für Ihre Nachricht. Mein Name ist Herr Schulz, ich kümmere mich um Ihr Anliegen.
+Kunde: Hallo, der Arzt hat mir einen Rollator verschrieben, wo bekomme ich den?
+Mitarbeiter: Gern. Liegt schon eine ärztliche Verordnung vor?
+Kunde: Sie kann nach der Hüft-OP nicht mehr sicher laufen.
+Mitarbeiter: Ich habe den Antrag bevorzugt bearbeitet, die Genehmigung ist raus.
+Kunde: Alles klar, das war's, danke.
+Mitarbeiter: Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+GKV-0066,email,freiwillig,de,2026-09-27T15:38:00Z,Posteingang E-Mail,"Mitarbeiter: Sehr geehrte Damen und Herren, vielen Dank für Ihre Nachricht. Mein Name ist Frau Hoffmann, ich kümmere mich um Ihr Anliegen.
+Kunde: Ich bin umgezogen und möchte meine neue Adresse mitteilen.
+Mitarbeiter: Gern. Wie lautet Ihre neue Anschrift?
+Kunde: Die neue Adresse ist in Freiburg.
+Mitarbeiter: Ich habe Ihre Adresse geändert. Eine neue Karte brauchen Sie nicht.
+Kunde: Wie lange dauert das ungefähr?
+Mitarbeiter: In der Regel ist das innerhalb weniger Werktage erledigt."
+GKV-0067,voice,pflichtversichert,de,2026-09-26T11:08:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Nowak. Was kann ich für Sie tun?
+Kunde: Sie haben meinen Antrag abgelehnt, dagegen möchte ich Widerspruch einlegen.
+Mitarbeiter: Gern. Haben Sie eine Begründung oder ein ärztliches Schreiben?
+Kunde: Mein Arzt hält die Behandlung für notwendig.
+Mitarbeiter: Ich nehme Ihren Widerspruch auf. Er wird erneut geprüft, die Frist ist gewahrt.
+Kunde: Wie lange dauert das ungefähr?
+Mitarbeiter: In der Regel ist das innerhalb weniger Werktage erledigt."
+GKV-0068,web_messaging,pflichtversichert,de,2026-09-02T07:21:00Z,Online-Chat,"Mitarbeiter: Hallo, hier ist Frau Becker vom Kundenservice. Wie kann ich Ihnen im Chat helfen?
+Kunde: Ich habe die Folgebescheinigung längst geschickt, aber die Zahlung ist nicht da.
+Mitarbeiter: Ich schaue gleich nach. Seit wann sind Sie arbeitsunfähig?
+Kunde: Die Arbeitsunfähigkeitsbescheinigung hat mein Arzt direkt elektronisch übermittelt.
+Mitarbeiter: Es fehlte die Folgebescheinigung für eine Woche. Die liegt jetzt vor, die Auszahlung von 186,75 € ist veranlasst.
+Kunde: Und das passiert nicht noch mal?
+Mitarbeiter: Ich habe einen Vermerk angelegt, damit wir das im Blick behalten.
+Kunde: Vielen Dank, das hilft mir sehr.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0069,web_messaging,freiwillig,de,2026-10-14T10:12:00Z,Online-Chat,"Mitarbeiter: Hallo, hier ist Frau Krüger vom Kundenservice. Wie kann ich Ihnen im Chat helfen?
+Kunde: Guten Tag, ich habe den Kostenplan für mein Implantat eingereicht, ist der genehmigt?
+Mitarbeiter: Gern. Haben Sie ein Bonusheft und wie viele Jahre ist es lückenlos?
+Kunde: Der Plan geht über 124,00 €.
+Mitarbeiter: Der Kostenplan liegt vor, wir übernehmen 38,50 €. Der Rest ist Ihr Eigenanteil.
+Kunde: Vielen Dank, das hilft mir sehr.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0070,email,pflichtversichert,de,2026-09-09T12:52:00Z,Posteingang E-Mail,"Kunde: Ich bin ja schon länger krank und irgendwie kommt kein Geld, ich weiß gar nicht, wer da jetzt zuständig ist.
+Mitarbeiter: Das tut mir leid. Darf ich kurz Ihre Versichertennummer aufnehmen?
+Kunde: Die Entgeltbescheinigung hat mein Arbeitgeber laut Personalabteilung schon geschickt.
+Mitarbeiter: Die Entgeltbescheinigung lag erst gestern vor. Ich habe die Zahlung angewiesen, das Geld ist in zwei bis drei Werktagen auf Ihrem Konto."
+GKV-0071,web_messaging,pflichtversichert,de,2026-10-05T11:37:00Z,Online-Chat,"Mitarbeiter: Hallo, hier ist Frau Becker vom Kundenservice. Wie kann ich Ihnen im Chat helfen?
+Kunde: Ich hänge schon eine Weile in der Warteschleife, die Musik kann ich jetzt mitsingen.
+Mitarbeiter: Entschuldigen Sie die Wartezeit, und danke für Ihre Geduld!
+Kunde: Ich bin ja schon länger krank und irgendwie kommt kein Geld, ich weiß gar nicht, wer da jetzt zuständig ist.
+Mitarbeiter: Das tut mir leid. Darf ich kurz Ihre Versichertennummer aufnehmen?
+Kunde: Die Arbeitsunfähigkeitsbescheinigung hat mein Arzt direkt elektronisch übermittelt.
+Mitarbeiter: Es fehlte die Folgebescheinigung für eine Woche. Die liegt jetzt vor, die Auszahlung von 64,20 € ist veranlasst.
+Kunde: Und das passiert nicht noch mal?
+Mitarbeiter: Ich habe einen Vermerk angelegt, damit wir das im Blick behalten.
+Kunde: Alles klar, das war's, danke.
+Mitarbeiter: Gerne. Bleiben Sie gesund!"
+GKV-0072,voice,pflichtversichert,de,2026-09-16T13:02:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Becker. Was kann ich für Sie tun?
+Kunde: Ich bin ja schon länger krank und irgendwie kommt kein Geld, ich weiß gar nicht, wer da jetzt zuständig ist.
+Mitarbeiter: Ich schaue gleich nach. Seit wann sind Sie arbeitsunfähig?
+Kunde: Ich bin seit dem 20. August durchgehend arbeitsunfähig.
+Mitarbeiter: Es fehlte die Folgebescheinigung für eine Woche. Die liegt jetzt vor, die Auszahlung von 124,00 € ist veranlasst.
+Kunde: Alles klar, das war's, danke.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0073,voice,pflichtversichert,de,2026-09-26T16:34:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Herr Wagner. Was kann ich für Sie tun?
+Kunde: Mit dem Handy und Ihrem Programm da klappt irgendwas nicht, ich bin da nicht so fit.
+Mitarbeiter: Das klären wir. Haben Sie das Gerät gewechselt oder die App neu installiert?
+Kunde: Ich habe ein neues Smartphone.
+Mitarbeiter: Ihr Konto war nach mehreren Fehlversuchen gesperrt. Es ist entsperrt, Sie können sich wieder anmelden.
+Kunde: Und kann ich mich eigentlich von den Zuzahlungen befreien lassen?
+Mitarbeiter: Ich helfe Ihnen. Möchten Sie die Befreiung für den Rest des Jahres beantragen?
+Kunde: Ich habe alle Quittungen von Apotheke und Physiotherapie gesammelt.
+Mitarbeiter: Ich habe Ihnen den Antrag geschickt. Schicken Sie ihn mit den Quittungen zurück, dann stellen wir den Befreiungsausweis aus.
+Kunde: Prima, vielen Dank.
+Mitarbeiter: Gerne. Bleiben Sie gesund!"
+GKV-0074,web_messaging,pflichtversichert,de,2026-09-05T15:44:00Z,Online-Chat,"Mitarbeiter: Hallo, hier ist Herr Wagner vom Kundenservice. Wie kann ich Ihnen im Chat helfen?
+Kunde: Hallo, meine Bonuspunkte für den Gesundheitscheck sind nicht gutgeschrieben.
+Mitarbeiter: Ich schaue nach. Für welches Jahr möchten Sie die Prämie einlösen?
+Kunde: In der App steht, dass ich 980,00 € Prämie habe.
+Mitarbeiter: Ich habe die Auszahlung veranlasst, das Geld ist in etwa einer Woche da.
+Kunde: Vielen Dank, das hilft mir sehr.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0075,web_messaging,freiwillig,de,2026-10-02T00:36:00Z,Online-Chat,"Kunde: Der Zusatzbeitrag wird schon wieder erhöht, was bedeutet das für mich?
+Mitarbeiter: Ich erkläre es Ihnen gern. Sind Sie angestellt?
+Kunde: Andere Kassen sind günstiger, habe ich gelesen.
+Mitarbeiter: Die Erhöhung gilt ab Januar. Sie haben dadurch ein Sonderkündigungsrecht bis Ende des Monats."
+GKV-0076,voice,pflichtversichert,de,2026-10-04T02:57:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Herr Schulz. Was kann ich für Sie tun?
+Kunde: Mein Hund bellt im Hintergrund, tut mir leid.
+Mitarbeiter: Ach, das macht gar nichts.
+Kunde: Wie richte ich die elektronische Patientenakte ein?
+Mitarbeiter: Gern. Haben Sie unsere App schon installiert?
+Kunde: Ich möchte, dass mein Hausarzt die Befunde dort ablegt.
+Mitarbeiter: Die ePA ist automatisch angelegt. In der App können Sie festlegen, welche Praxen zugreifen dürfen.
+Kunde: Prima, vielen Dank.
+Mitarbeiter: Gerne. Bleiben Sie gesund!"
+GKV-0077,voice,pflichtversichert,de,2026-10-02T04:45:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Krüger. Was kann ich für Sie tun?
+Kunde: Mein Orthopäde hat mir Physiotherapie verordnet, muss die Krankenkasse das genehmigen?
+Mitarbeiter: Gern. Ist das eine Erst- oder eine Folgeverordnung?
+Kunde: Es ist schon die dritte Verordnung.
+Mitarbeiter: Ich habe die Genehmigung erteilt, die Praxis bekommt heute eine Bestätigung.
+Kunde: Prima, vielen Dank.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0078,web_messaging,rentner,de,2026-10-03T19:54:00Z,Online-Chat,"Mitarbeiter: Hallo, hier ist Frau Krüger vom Kundenservice. Wie kann ich Ihnen im Chat helfen?
+Kunde: Mein Orthopäde hat mir Physiotherapie verordnet, muss die Krankenkasse das genehmigen?
+Mitarbeiter: Ich schaue mir das an. Welche Diagnose steht auf der Verordnung?
+Kunde: Es ist schon die dritte Verordnung.
+Mitarbeiter: Ich habe die Genehmigung erteilt, die Praxis bekommt heute eine Bestätigung.
+Kunde: Super, danke schön.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0079,email,pflichtversichert,de,2026-09-08T21:26:00Z,Posteingang E-Mail,"Mitarbeiter: Sehr geehrte Damen und Herren, vielen Dank für Ihre Nachricht. Mein Name ist Frau Krüger, ich kümmere mich um Ihr Anliegen.
+Kunde: Hallo, ich fange am Ersten eine neue Stelle an und soll eine Bescheinigung der Krankenkasse vorlegen.
+Mitarbeiter: Gerne. Wie heißt Ihr neuer Arbeitgeber und ab wann beginnt die Beschäftigung?
+Kunde: Ich starte am 20. August bei der neuen Firma.
+Mitarbeiter: Die Mitgliedsbescheinigung ist elektronisch an Ihren Arbeitgeber übermittelt. Eine Kopie finden Sie in der App.
+Kunde: Danke für die Hilfe.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0080,voice,pflichtversichert,de,2026-10-02T08:25:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Herr Yilmaz. Was kann ich für Sie tun?
+Kunde: Ich habe einen Brief bekommen, dass der Zusatzbeitrag steigt. Warum?
+Mitarbeiter: Ich erkläre es Ihnen gern. Sind Sie angestellt?
+Kunde: Ich verdiene etwa 3.500 Euro brutto.
+Mitarbeiter: Die Erhöhung gilt ab Januar. Sie haben dadurch ein Sonderkündigungsrecht bis Ende des Monats.
+Kunde: Außerdem warte ich noch auf die Erstattung einer eingereichten Rechnung.
+Mitarbeiter: Gern. Wissen Sie noch, auf welchem Weg Sie die Rechnung geschickt haben?
+Kunde: Es geht um 64,20 €.
+Mitarbeiter: Es fehlte die ärztliche Verordnung. Wenn Sie die nachreichen, erstatten wir sofort.
+Kunde: Vielen Dank, das hilft mir sehr.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0081,email,rentner,de,2026-10-02T09:20:00Z,Posteingang E-Mail,"Mitarbeiter: Sehr geehrte Damen und Herren, vielen Dank für Ihre Nachricht. Mein Name ist Herr Yilmaz, ich kümmere mich um Ihr Anliegen.
+Kunde: Guten Tag, meine elektronische Gesundheitskarte ist weg, ich habe nächste Woche einen Arzttermin.
+Mitarbeiter: Das bekommen wir hin. Sollen wir das vorhandene Foto weiterverwenden?
+Kunde: Brauche ich dafür ein neues Foto?
+Mitarbeiter: Die alte Karte ist gesperrt, die neue kommt in etwa zehn Tagen. Für den Arzttermin schicke ich Ihnen eine Ersatzbescheinigung.
+Kunde: Prima, vielen Dank.
+Mitarbeiter: Gerne. Bleiben Sie gesund!"
+GKV-0082,voice,pflichtversichert,de,2026-09-24T09:38:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Herr Yilmaz. Was kann ich für Sie tun?
+Kunde: Mein Zahnarzt hat mir einen Heil- und Kostenplan für eine Krone gegeben, was zahlen Sie dazu?
+Mitarbeiter: Gern. Haben Sie ein Bonusheft und wie viele Jahre ist es lückenlos?
+Kunde: Der Zahnarzt möchte im Juli anfangen.
+Mitarbeiter: Der Kostenplan liegt vor, wir übernehmen 38,50 €. Der Rest ist Ihr Eigenanteil.
+Kunde: Wie lange dauert das ungefähr?
+Mitarbeiter: In der Regel ist das innerhalb weniger Werktage erledigt.
+Kunde: Und kann ich mich eigentlich von den Zuzahlungen befreien lassen?
+Mitarbeiter: Gern. Die Belastungsgrenze liegt bei zwei Prozent des Bruttoeinkommens, bei chronisch Kranken bei einem Prozent. Haben Sie Ihre Quittungen?
+Kunde: Ich bekomme eine kleine Rente.
+Mitarbeiter: Die Belastungsgrenze ist erreicht. Ihr Befreiungsausweis kommt per Post, zu viel gezahlte 455,00 € erstatten wir.
+Kunde: Super, danke schön."
+GKV-0083,voice,pflichtversichert,de,2026-09-23T00:52:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Hoffmann. Was kann ich für Sie tun?
+Kunde: Ich habe meine Gesundheitskarte verloren und brauche eine neue.
+Mitarbeiter: Das bekommen wir hin. Sollen wir das vorhandene Foto weiterverwenden?
+Kunde: Brauche ich dafür ein neues Foto?
+Mitarbeiter: Die alte Karte ist gesperrt, die neue kommt in etwa zehn Tagen. Für den Arzttermin schicke ich Ihnen eine Ersatzbescheinigung.
+Kunde: Wie lange dauert das ungefähr?
+Mitarbeiter: In der Regel ist das innerhalb weniger Werktage erledigt.
+Kunde: Vielen Dank, das hilft mir sehr.
+Mitarbeiter: Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+GKV-0084,voice,pflichtversichert,de,2026-09-04T07:55:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Becker. Was kann ich für Sie tun?
+Kunde: Ich möchte meine Mitgliedschaft kündigen und zu einer anderen Kasse wechseln.
+Mitarbeiter: Schade, dass Sie gehen möchten. Darf ich fragen, warum?
+Kunde: Die andere Kasse ist günstiger.
+Mitarbeiter: Die neue Kasse meldet den Wechsel elektronisch, eine Kündigung bei uns ist nicht nötig. Die Frist beträgt zwei Monate zum Monatsende.
+Kunde: Wie lange dauert das ungefähr?
+Mitarbeiter: In der Regel ist das innerhalb weniger Werktage erledigt.
+Kunde: Und gegen die Ablehnung möchte ich noch Widerspruch einlegen.
+Mitarbeiter: Das verstehe ich. Um welchen Bescheid geht es genau?
+Kunde: Der Bescheid ist vom 1. Oktober.
+Mitarbeiter: Schicken Sie den Widerspruch schriftlich innerhalb eines Monats, ich gebe Ihnen die Adresse.
+Kunde: Super, danke schön."
+GKV-0085,web_messaging,pflichtversichert,de,2026-09-04T07:11:00Z,Online-Chat,"Mitarbeiter: Hallo, hier ist Herr Schulz vom Kundenservice. Wie kann ich Ihnen im Chat helfen?
+Kunde: Entschuldigung, ich bin gerade im Auto, es kann etwas rauschen.
+Mitarbeiter: Kein Problem, ich verstehe Sie gut.
+Kunde: Hallo, der Freischaltcode für die App ist nie bei mir angekommen.
+Mitarbeiter: Kein Problem. Wann haben Sie sich zuletzt erfolgreich angemeldet?
+Kunde: Ich habe es schon dreimal versucht.
+Mitarbeiter: Ich habe Ihr altes Gerät abgemeldet und einen neuen Freischaltcode verschickt. Der kommt in drei Tagen per Post.
+Kunde: Super, danke schön.
+Mitarbeiter: Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+GKV-0086,email,freiwillig,de,2026-09-27T15:13:00Z,Posteingang E-Mail,"Mitarbeiter: Sehr geehrte Damen und Herren, vielen Dank für Ihre Nachricht. Mein Name ist Frau Becker, ich kümmere mich um Ihr Anliegen.
+Kunde: Wir haben im Juli ein Baby bekommen, wie kann ich unsere Tochter bei Ihnen mitversichern?
+Mitarbeiter: Gern. Ich brauche den Namen und das Geburtsdatum des Kindes.
+Kunde: Die Geburtsurkunde habe ich schon da.
+Mitarbeiter: Ich habe Ihnen den Fragebogen zur Familienversicherung in die App gelegt. Sobald er zurück ist, ist Ihr Kind ab Geburt versichert.
+Kunde: Bekomme ich dazu eine Bestätigung?
+Mitarbeiter: Ja, die Bestätigung kommt in Ihr Postfach in der App.
+Kunde: Prima, vielen Dank.
+Mitarbeiter: Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+GKV-0087,voice,pflichtversichert,de,2026-09-23T00:12:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Herr Wagner. Was kann ich für Sie tun?
+Kunde: Hallo, wie beantrage ich Kinderkrankengeld?
+Mitarbeiter: Gern. Wie alt ist Ihr Kind?
+Kunde: Ich bin alleinerziehend.
+Mitarbeiter: Schicken Sie die Bescheinigung über die App, das Kinderkrankengeld zahlen wir dann direkt an Sie aus.
+Kunde: Vielen Dank, das hilft mir sehr.
+Mitarbeiter: Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+GKV-0088,web_messaging,pflichtversichert,de,2026-10-02T07:53:00Z,Online-Chat,"Mitarbeiter: Hallo, hier ist Frau Hoffmann vom Kundenservice. Wie kann ich Ihnen im Chat helfen?
+Kunde: Hallo, haben Sie einen Terminservice für Fachärzte?
+Mitarbeiter: Ich helfe gern. Haben Sie eine Überweisung mit Dringlichkeitscode?
+Kunde: Die Praxen sagen, frühestens in vier Monaten.
+Mitarbeiter: Ich habe Sie an unseren Terminservice weitergegeben, der meldet sich innerhalb von zwei Tagen mit einem Termin.
+Kunde: Super, danke schön.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0089,voice,freiwillig,de,2026-10-04T01:33:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Herr Schulz. Was kann ich für Sie tun?
+Kunde: Mein Orthopäde hat mir Physiotherapie verordnet, muss die Krankenkasse das genehmigen?
+Mitarbeiter: Ich schaue mir das an. Welche Diagnose steht auf der Verordnung?
+Kunde: Es geht um meinen Rücken nach einem Bandscheibenvorfall.
+Mitarbeiter: Für diese Diagnose ist keine Genehmigung nötig, die Praxis kann direkt mit uns abrechnen.
+Kunde: Super, danke schön.
+Mitarbeiter: Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+GKV-0090,voice,freiwillig,de,2026-09-24T05:16:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Herr Wagner. Was kann ich für Sie tun?
+Kunde: Meine Physiopraxis sagt, für die Folgeverordnung brauche ich eine Genehmigung von Ihnen.
+Mitarbeiter: Gern. Ist das eine Erst- oder eine Folgeverordnung?
+Kunde: Die Praxis möchte nächste Woche anfangen.
+Mitarbeiter: Für diese Diagnose ist keine Genehmigung nötig, die Praxis kann direkt mit uns abrechnen.
+Kunde: Wie lange dauert das ungefähr?
+Mitarbeiter: In der Regel ist das innerhalb weniger Werktage erledigt."
+GKV-0091,voice,pflichtversichert,de,2026-09-15T19:41:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Herr Schulz. Was kann ich für Sie tun?
+Kunde: Seit dem Handywechsel kann ich mich in der App nicht mehr anmelden.
+Mitarbeiter: Kein Problem. Wann haben Sie sich zuletzt erfolgreich angemeldet?
+Kunde: Ich habe es schon dreimal versucht.
+Mitarbeiter: Ihr Konto war nach mehreren Fehlversuchen gesperrt. Es ist entsperrt, Sie können sich wieder anmelden.
+Kunde: Alles klar, das war's, danke.
+Mitarbeiter: Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+GKV-0092,email,freiwillig,de,2026-10-08T10:10:00Z,Posteingang E-Mail,"Mitarbeiter: Sehr geehrte Damen und Herren, vielen Dank für Ihre Nachricht. Mein Name ist Frau Krüger, ich kümmere mich um Ihr Anliegen.
+Kunde: Ich möchte meine Mitgliedschaft kündigen und zu einer anderen Kasse wechseln.
+Mitarbeiter: Ich prüfe das. Haben Sie sich schon bei der neuen Kasse angemeldet?
+Kunde: Ich bin seit fünf Jahren bei Ihnen.
+Mitarbeiter: Ihre Mitgliedschaft endet mit dem Wegzug. Bitte schicken Sie uns die Abmeldebescheinigung.
+Kunde: Muss ich sonst noch etwas tun?
+Mitarbeiter: Nein, von Ihrer Seite ist nichts weiter nötig.
+Kunde: Alles klar, das war's, danke.
+Mitarbeiter: Gerne. Bleiben Sie gesund!"
+GKV-0093,voice,pflichtversichert,de,2026-09-28T16:38:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Herr Yilmaz. Was kann ich für Sie tun?
+Kunde: Guten Tag, die Personalabteilung fragt nach meiner Mitgliedsbescheinigung.
+Mitarbeiter: Gerne. Wie heißt Ihr neuer Arbeitgeber und ab wann beginnt die Beschäftigung?
+Kunde: Die Personalabteilung hat gesagt, das geht inzwischen elektronisch.
+Mitarbeiter: Ich habe die Bescheinigung erstellt, sie liegt in Ihrem Postfach in der Online-Geschäftsstelle.
+Kunde: Muss ich sonst noch etwas tun?
+Mitarbeiter: Nein, von Ihrer Seite ist nichts weiter nötig.
+Kunde: Vielen Dank, das hilft mir sehr.
+Mitarbeiter: Sehr gern. Ich wünsche Ihnen einen schönen Tag!"
+GKV-0094,voice,pflichtversichert,de,2026-09-09T07:37:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Krüger. Was kann ich für Sie tun?
+Kunde: Hallo, ich fange am Ersten eine neue Stelle an und soll eine Bescheinigung der Krankenkasse vorlegen.
+Mitarbeiter: Kein Problem. Soll die Bescheinigung direkt an den Arbeitgeber gehen?
+Kunde: Ich brauche das relativ schnell.
+Mitarbeiter: Die Mitgliedsbescheinigung ist elektronisch an Ihren Arbeitgeber übermittelt. Eine Kopie finden Sie in der App.
+Kunde: Prima, vielen Dank.
+Mitarbeiter: Gerne. Bleiben Sie gesund!"
+GKV-0095,web_messaging,freiwillig,de,2026-09-12T23:55:00Z,Online-Chat,"Kunde: Meine Mutter braucht einen Rollator, übernimmt die Kasse die Kosten?
+Mitarbeiter: Ich schaue nach. Welches Sanitätshaus ist es?
+Kunde: Sie kann nach der Hüft-OP nicht mehr sicher laufen.
+Mitarbeiter: Ich habe den Antrag bevorzugt bearbeitet, die Genehmigung ist raus."
+GKV-0096,voice,freiwillig,de,2026-09-21T02:32:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Herr Yilmaz. Was kann ich für Sie tun?
+Kunde: Ich ziehe ins Ausland und muss meine Versicherung bei Ihnen beenden.
+Mitarbeiter: Ich prüfe das. Haben Sie sich schon bei der neuen Kasse angemeldet?
+Kunde: Ich bin seit fünf Jahren bei Ihnen.
+Mitarbeiter: Ihre Mitgliedschaft endet mit dem Wegzug. Bitte schicken Sie uns die Abmeldebescheinigung.
+Kunde: Alles klar, das war's, danke.
+Mitarbeiter: Gerne. Bleiben Sie gesund!"
+GKV-0097,voice,freiwillig,de,2026-10-16T02:56:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Herr Yilmaz. Was kann ich für Sie tun?
+Kunde: Ich habe vor vier Wochen eine Rechnung zur Erstattung eingereicht und noch nichts gehört.
+Mitarbeiter: Gern. Wissen Sie noch, auf welchem Weg Sie die Rechnung geschickt haben?
+Kunde: Es geht um 980,00 €.
+Mitarbeiter: Die Rechnung ist geprüft, Sie bekommen 89,90 € erstattet. Die Überweisung geht morgen raus.
+Kunde: Bekomme ich dazu eine Bestätigung?
+Mitarbeiter: Ja, die Bestätigung kommt in Ihr Postfach in der App.
+Kunde: Prima, vielen Dank.
+Mitarbeiter: Gern geschehen! Kann ich sonst noch etwas für Sie tun?"
+GKV-0098,email,pflichtversichert,de,2026-09-16T17:24:00Z,Posteingang E-Mail,"Kunde: Hallo, ich bin seit sechs Wochen krankgeschrieben und habe noch kein Krankengeld bekommen.
+Mitarbeiter: Ich schaue gleich nach. Seit wann sind Sie arbeitsunfähig?
+Kunde: Die Arbeitsunfähigkeitsbescheinigung hat mein Arzt direkt elektronisch übermittelt.
+Mitarbeiter: Es fehlte die Folgebescheinigung für eine Woche. Die liegt jetzt vor, die Auszahlung von 64,20 € ist veranlasst."
+GKV-0099,voice,freiwillig,de,2026-10-11T06:39:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Nowak. Was kann ich für Sie tun?
+Kunde: Mein Hund bellt im Hintergrund, tut mir leid.
+Mitarbeiter: Ach, das macht gar nichts.
+Kunde: Ich habe die Rechnung über 89,90 € hochgeladen, wann bekomme ich das Geld?
+Mitarbeiter: Gern. Wissen Sie noch, auf welchem Weg Sie die Rechnung geschickt haben?
+Kunde: Ich habe keine Eingangsbestätigung bekommen.
+Mitarbeiter: Es fehlte die ärztliche Verordnung. Wenn Sie die nachreichen, erstatten wir sofort.
+Kunde: Vielen Dank, das hilft mir sehr.
+Mitarbeiter: Gerne. Bleiben Sie gesund!"
+GKV-0100,voice,pflichtversichert,de,2026-10-07T11:05:00Z,Servicecenter Telefon,"Mitarbeiter: Guten Tag, Ihre Krankenkasse, mein Name ist Frau Krüger. Was kann ich für Sie tun?
+Kunde: Guten Tag, die Personalabteilung fragt nach meiner Mitgliedsbescheinigung.
+Mitarbeiter: Gerne. Wie heißt Ihr neuer Arbeitgeber und ab wann beginnt die Beschäftigung?
+Kunde: Die Personalabteilung hat gesagt, das geht inzwischen elektronisch.
+Mitarbeiter: Ich habe die Bescheinigung erstellt, sie liegt in Ihrem Postfach in der Online-Geschäftsstelle.
+Kunde: Bekomme ich dazu eine Bestätigung?
+Mitarbeiter: Ja, die Bestätigung kommt in Ihr Postfach in der App.
+Kunde: Vielen Dank, das hilft mir sehr.
+Mitarbeiter: Gern geschehen! Kann ich sonst noch etwas für Sie tun?"

@@ -1,6 +1,7 @@
 import { memo, useEffect, useMemo, useState } from "react";
 import { ChevronRight, GitMerge, Lock, Search, Sparkles, Split, UserPen, ChevronsDownUp, ChevronsUpDown } from "lucide-react";
 import type { TaxNode } from "@/lib/api";
+import { useI18n } from "@/lib/i18n";
 import { useLive } from "@/lib/live";
 import { cn } from "@/lib/utils";
 import { Badge, Input, Tip } from "../ui/primitives";
@@ -21,6 +22,7 @@ export function buildChildren(nodes: TaxNode[]) {
 export function TaxonomyTree({ nodes, selectedId, onSelect, autoExpand = true }: {
   nodes: TaxNode[]; selectedId: string | null; onSelect: (id: string) => void; autoExpand?: boolean;
 }) {
+  const { t } = useI18n();
   const { highlights } = useLive();
   const [query, setQuery] = useState("");
   const [expanded, setExpanded] = useState<Set<string>>(() => new Set(nodes.filter((n) => n.level === 1).map((n) => n.id)));
@@ -81,11 +83,11 @@ export function TaxonomyTree({ nodes, selectedId, onSelect, autoExpand = true }:
       <div className="flex items-center gap-2 px-4 pb-3">
         <div className="relative flex-1">
           <Search className="pointer-events-none absolute left-2.5 top-1/2 size-3.5 -translate-y-1/2 text-zinc-400" />
-          <Input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search categories…" className="h-8 pl-8 text-[13px]" />
+          <Input value={query} onChange={(e) => setQuery(e.target.value)} placeholder={t("taxonomy.search")} className="h-8 pl-8 text-[13px]" />
         </div>
-        <Tip content={allExpanded ? "Collapse all" : "Expand all"}>
+        <Tip content={allExpanded ? t("taxonomy.collapseAll") : t("taxonomy.expandAll")}>
           <button
-            aria-label={allExpanded ? "Collapse all" : "Expand all"}
+            aria-label={allExpanded ? t("taxonomy.collapseAll") : t("taxonomy.expandAll")}
             className="rounded-md p-1.5 text-zinc-500 hover:bg-zinc-100 cursor-pointer"
             onClick={() => setExpanded(allExpanded ? new Set() : new Set(nodes.filter((n) => children.has(n.id)).map((n) => n.id)))}
           >
@@ -135,6 +137,7 @@ const NodeRow = memo(function NodeRow({ node, hasKids, isOpen, toggle, selected,
   node: TaxNode; hasKids: boolean; isOpen: boolean; toggle: (id: string) => void; selected: boolean;
   onSelect: (id: string) => void; highlight?: string;
 }) {
+  const { t } = useI18n();
   const fixed = node.level <= 2;
   const proposed = node.status === "proposed";
   const inactive = ["merged", "split", "retired"].includes(node.status);
@@ -164,7 +167,7 @@ const NodeRow = memo(function NodeRow({ node, hasKids, isOpen, toggle, selected,
       <button
         className={cn("flex size-5 shrink-0 items-center justify-center rounded text-zinc-400 hover:text-zinc-700 cursor-pointer", !hasKids && "invisible")}
         onClick={(e) => { e.stopPropagation(); toggle(node.id); }}
-        aria-label={isOpen ? "Collapse" : "Expand"}
+        aria-label={isOpen ? t("taxonomy.collapse") : t("taxonomy.expand")}
       >
         <ChevronRight className={cn("size-3.5 transition-transform duration-200", isOpen && "rotate-90")} />
       </button>
@@ -189,17 +192,17 @@ const NodeRow = memo(function NodeRow({ node, hasKids, isOpen, toggle, selected,
       ) : (
         <Sparkles className="size-3 shrink-0 text-blue-400" />
       )}
-      {proposed && <Badge tone="dashed">Proposed</Badge>}
-      {merge && <Badge tone="amber"><GitMerge />Merge</Badge>}
-      {split && <Badge tone="amber"><Split />Split</Badge>}
-      {inactive && <Badge tone="neutral">{node.status}</Badge>}
+      {proposed && <Badge tone="dashed">{t("taxonomy.proposed")}</Badge>}
+      {merge && <Badge tone="amber"><GitMerge />{t("taxonomy.merge")}</Badge>}
+      {split && <Badge tone="amber"><Split />{t("taxonomy.split")}</Badge>}
+      {inactive && <Badge tone="neutral">{t(`nodeStatus.${node.status}`)}</Badge>}
       <span className="ml-auto flex items-center gap-2 pl-2">
         {node.level === 2 && node.candidate_count > 0 && (
-          <Tip content="Extracted intents in this L2 not yet grouped into an L3/L4 category">
-            <span className="rounded-full bg-zinc-50 px-1.5 text-[11px] text-zinc-400 ring-1 ring-zinc-200">{node.candidate_count} open</span>
+          <Tip content={t("taxonomy.openHint")}>
+            <span className="rounded-full bg-zinc-50 px-1.5 text-[11px] text-zinc-400 ring-1 ring-zinc-200">{t("taxonomy.open", { n: node.candidate_count })}</span>
           </Tip>
         )}
-        <Tip content={`${node.interaction_count} interactions · ${node.intent_count} intents`}>
+        <Tip content={`${t("common.interactions", { count: node.interaction_count })} · ${t("common.intents", { count: node.intent_count })}`}>
           <span key={node.interaction_count} className={cn("inline-block min-w-6 text-right font-mono text-xs tabular-nums", node.interaction_count ? "text-zinc-700 animate-bump" : "text-zinc-300")}>
             {node.interaction_count}
           </span>

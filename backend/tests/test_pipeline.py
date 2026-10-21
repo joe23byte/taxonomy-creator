@@ -4,7 +4,7 @@ from pathlib import Path
 
 from openpyxl import load_workbook
 
-from app import assignments, db, export, insights, interactions, taxonomy
+from app import assignments, db, export, insights, interactions, pipeline, taxonomy
 from app.worker import AnalysisWorker
 from conftest import load_sample
 
@@ -270,3 +270,31 @@ def test_cluster_matched_to_pending_proposal_is_attached(conn, fake, monkeypatch
     done = conn.execute(f"SELECT needs_review, l4_id FROM assignments WHERE intent_id IN "
                         f"({','.join('?' * len(ids))})", ids).fetchall()
     assert all(r["l4_id"] == target["node_id"] and r["needs_review"] == 0 for r in done)
+
+
+def test_intent_volume_insights_and_notes(conn, fake):
+    db.save_settings(conn, {"batch_size": 10})
+    load_sample(conn, 40)
+    _run(AnalysisWorker())
+    dist = insights.intent_distribution(conn)
+    items = dist["items"]
+    assert dist["processed"] == 40 and items
+    assert [it["interactions"] for it in items] == sorted((it["interactions"] for it in items), reverse=True)
+    assert all([p["level"] for p in it["path"]] == [1, 2, 3, 4] for it in items)
+    assert all(abs(it["share"] - it["interactions"] / 40) < 1e-9 for it in items)
+    assert sum(c["interactions"] for c in items[0]["channels"]) == items[0]["interactions"]
+    k = dist["kpis"]
+    assert 0 < k["top_coverage"] <= k["classified_share"] <= 1
+    assert dist["coverage"] == sorted(dist["coverage"]) and dist["coverage"][-1] == k["classified_share"]
+    assert sum(m["intents"] for m in dist["mix"]) == conn.execute("SELECT COUNT(*) FROM assignments").fetchone()[0]
+
+    client = pipeline.make_client(db.load_settings(conn))
+    first = insights.generate_notes(conn, client, "qwen3:8b")
+    assert first["generated"] == min(5, len(items))
+    assert insights.generate_notes(conn, client, "qwen3:8b")["generated"] == 0
+    notes = insights.cached_notes(conn, insights.intent_distribution(conn))
+    assert set(notes) == {it["id"] for it in items[:5]} and not any(n["stale"] for n in notes.values())
+
+    ov = insights.overlap_pairs(conn, 0.88)
+    sims = [p["similarity"] for p in ov["pairs"]]
+    assert sims == sorted(sims, reverse=True) and all(-1.0 <= s <= 1.0001 for s in sims)

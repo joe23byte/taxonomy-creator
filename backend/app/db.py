@@ -90,12 +90,16 @@ def migrate(conn: sqlite3.Connection) -> list[str]:
     return newly
 
 
-def init_db() -> None:
+def init_db(seed: bool = True) -> None:
+    """Migrate the active database; ``seed=False`` creates it without a taxonomy (version 0)."""
     from . import taxonomy  # local import to avoid cycles
 
     with session() as conn:
         migrate(conn)
-        taxonomy.seed_if_empty(conn)
+        if seed:
+            taxonomy.seed_if_empty(conn)
+        elif get_meta(conn, "taxonomy_version") is None:
+            set_meta(conn, "taxonomy_version", "0")
         recover_interrupted(conn)
 
 

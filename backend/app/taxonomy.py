@@ -10,7 +10,7 @@ from typing import Any
 
 import numpy as np
 
-from . import assignments, clustering, config, db, embeddings, events
+from . import assignments, clustering, config, db, embeddings, events, language
 
 ACTIVE = "active"
 PENDING = "proposed"
@@ -56,7 +56,8 @@ def _insert_seed(conn: sqlite3.Connection, cats: list[dict]) -> None:
 
 
 def seed_if_empty(conn: sqlite3.Connection, path: Path | None = None) -> bool:
-    if conn.execute("SELECT COUNT(*) FROM taxonomy_nodes").fetchone()[0]:
+    """Load the default taxonomy into a database that has never had one (projects start without it)."""
+    if conn.execute("SELECT COUNT(*) FROM taxonomy_nodes").fetchone()[0] or db.get_meta(conn, "taxonomy_version"):
         return False
     cats = validate_seed(json.loads(Path(path or config.TAXONOMY_SEED_PATH).read_text()))
     with db.transaction(conn):
@@ -68,8 +69,13 @@ def seed_if_empty(conn: sqlite3.Connection, path: Path | None = None) -> bool:
 
 
 def replace_base_taxonomy(conn: sqlite3.Connection, data: dict) -> int:
-    """Load a new L1/L2 taxonomy. Only allowed before any intents have been classified."""
+    """Load a new L1/L2 taxonomy. Only allowed before any intents have been classified.
+
+    The analysis language is taken from an explicit ``language`` field or detected from the labels.
+    """
     cats = validate_seed(data)
+    explicit = str(data.get("language") or "").lower()[:2] if isinstance(data, dict) else ""
+    lang = explicit if explicit in language.NAMES else language.detect_categories(cats)
     with db.write_lock, db.transaction(conn):
         if conn.execute("SELECT COUNT(*) FROM assignments").fetchone()[0]:
             raise TaxonomyError("Reset the analysis before replacing the L1/L2 taxonomy")
@@ -77,6 +83,7 @@ def replace_base_taxonomy(conn: sqlite3.Connection, data: dict) -> int:
         conn.execute("DELETE FROM taxonomy_nodes WHERE level=2")
         conn.execute("DELETE FROM taxonomy_nodes WHERE level=1")
         _insert_seed(conn, cats)
+        language.store(conn, lang)
         v = bump_version(conn, f"Base taxonomy replaced ({len(cats)} categories)")
     return v
 

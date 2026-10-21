@@ -9,16 +9,17 @@ from dataclasses import dataclass
 
 from pydantic import BaseModel, Field
 
+from . import language
 from .ollama_client import OllamaClient
 
 NEW = "NEW"
 NONE = "NONE"
 
 TAXONOMY_RULES = """Taxonomy levels: L1 domain > L2 topic (fixed) > L3 sub-topic > L4 specific intent.
-- An L4 category names ONE specific customer intent (2-5 words, Title Case), e.g. a concrete problem or request. It must not just repeat the L2 name.
-- An L3 category is a broader sub-topic inside the L2 that can hold several related L4 categories (1-4 words, Title Case).
+- An L4 category names ONE specific customer intent (2-5 words), e.g. a concrete problem or request. It must not just repeat the L2 name.
+- An L3 category is a broader sub-topic inside the L2 that can hold several related L4 categories (1-4 words).
 - Reuse an existing L3 whenever the intent fits it. Create a new L3 only for a genuinely different sub-topic.
-- Avoid synonyms of existing categories. Semantically similar but different problems (e.g. a lost SIM vs. swapping SIM size) stay separate L4 categories.
+- Avoid synonyms of existing categories. Semantically similar but different problems (e.g. a lost card vs. replacing a damaged card) stay separate L4 categories.
 - Descriptions: one sentence describing which customer situations belong in the category."""
 
 
@@ -74,7 +75,9 @@ def _decision_schema(l3_ids: list[str], l4_ids: list[str]) -> dict:
     }
 
 
-def _to_decision(out: ClusterDecision, l3_ids: set[str], l4_ids: set[str]) -> Decision | None:
+def _to_decision(out: ClusterDecision, l3_ids: set[str], l4_ids: set[str], lang: str = "en") -> Decision | None:
+    out.l4_label = language.tidy_label(out.l4_label.strip(), lang)
+    out.new_l3_label = language.tidy_label(out.new_l3_label.strip(), lang)
     if out.existing_l4_id in l4_ids:
         return Decision("existing", out.existing_l4_id, "", "", None, "", "", out.rationale)
     if not out.l4_label.strip():
@@ -89,16 +92,16 @@ def _to_decision(out: ClusterDecision, l3_ids: set[str], l4_ids: set[str]) -> De
 
 def name_cluster(client: OllamaClient, model: str, l2: dict, l3_nodes: list[dict], l4_by_l3: dict[str, list[dict]],
                  statements: list[str], evidence: list[str],
-                 exclude_l4: dict[str, float] | None = None) -> Decision | None:
+                 exclude_l4: dict[str, float] | None = None, lang: str = "en") -> Decision | None:
     """exclude_l4 maps L4 ids the group must not be assigned to → their semantic similarity."""
     exclude_l4 = exclude_l4 or {}
     l3_ids = [n["id"] for n in l3_nodes]
     l4_ids = [n["id"] for ns in l4_by_l3.values() for n in ns if n["id"] not in exclude_l4]
     labels = {n["id"]: n["label"] for ns in l4_by_l3.values() for n in ns}
-    system = ("You design a customer intent taxonomy for a telecom contact center.\n" + TAXONOMY_RULES +
+    system = ("You design a customer intent taxonomy for a contact center.\n" + TAXONOMY_RULES +
               "\nIf the group expresses exactly the same specific intent as an existing L4, return its id in "
               "existing_l4_id. Otherwise set existing_l4_id to NONE and propose a new L4, choosing an existing L3 "
-              "id in l3_choice or NEW with a new L3 label.")
+              "id in l3_choice or NEW with a new L3 label." + language.rule(lang))
     user = (f"L2 category: {l2['l1_label']} > {l2['label']} — {l2['description']}\n\n"
             f"Existing categories under this L2:\n{describe_existing(l3_nodes, l4_by_l3)}\n\n"
             f"A group of {len(statements)} semantically similar customer intents was found:\n"
@@ -109,7 +112,7 @@ def name_cluster(client: OllamaClient, model: str, l2: dict, l3_nodes: list[dict
                       f"same intent; otherwise propose a new L4." for i, s in exclude_l4.items())
             + "\n\nDecide how this group fits into the taxonomy.")
     out = client.chat_structured(model, system, user, ClusterDecision, schema=_decision_schema(l3_ids, l4_ids))
-    return _to_decision(out, set(l3_ids), set(l4_ids))
+    return _to_decision(out, set(l3_ids), set(l4_ids), lang)
 
 
 # --- outlier placement ---------------------------------------------------------------------
@@ -124,7 +127,7 @@ class OutlierOutput(BaseModel):
 
 
 def place_outliers(client: OllamaClient, model: str, l2: dict, l3_nodes: list[dict], l4_by_l3: dict[str, list[dict]],
-                   candidates: list[str]) -> dict[int, tuple[str, Decision | None]]:
+                   candidates: list[str], lang: str = "en") -> dict[int, tuple[str, Decision | None]]:
     """Return index -> (action, decision) with action in existing | new | unclassified."""
     l3_ids = [n["id"] for n in l3_nodes]
     l4_ids = [n["id"] for ns in l4_by_l3.values() for n in ns]
@@ -134,12 +137,12 @@ def place_outliers(client: OllamaClient, model: str, l2: dict, l3_nodes: list[di
     item_schema["required"] = ["index", "action"] + item_schema["required"]
     schema = {"type": "object", "properties": {"decisions": {"type": "array", "items": item_schema}},
               "required": ["decisions"]}
-    system = ("You design a customer intent taxonomy for a telecom contact center.\n" + TAXONOMY_RULES +
+    system = ("You design a customer intent taxonomy for a contact center.\n" + TAXONOMY_RULES +
               "\nYou receive rare customer intents that did not form a group with others. For each one decide:\n"
               "- existing_l4: it is the same specific intent as an existing L4 (give existing_l4_id)\n"
               "- new_l4: it is a distinct, clearly described intent that deserves its own L4 (give labels; "
               "existing_l4_id NONE)\n- unclassified: too vague or not a real request.\n"
-              "If several listed intents are the same, give them the identical new L4 label.")
+              "If several listed intents are the same, give them the identical new L4 label." + language.rule(lang))
     user = (f"L2 category: {l2['l1_label']} > {l2['label']} — {l2['description']}\n\n"
             f"Existing categories under this L2:\n{describe_existing(l3_nodes, l4_by_l3)}\n\n"
             "Intents:\n" + "\n".join(f"{i}. {c}" for i, c in enumerate(candidates)) +
@@ -152,7 +155,7 @@ def place_outliers(client: OllamaClient, model: str, l2: dict, l3_nodes: list[di
         if d.action == "unclassified":
             result[d.index] = ("unclassified", None)
             continue
-        dec = _to_decision(d, set(l3_ids), set(l4_ids))
+        dec = _to_decision(d, set(l3_ids), set(l4_ids), lang)
         if dec is None or (d.action == "existing_l4" and dec.kind != "existing"):
             result[d.index] = ("unclassified", None)
         else:
@@ -166,10 +169,11 @@ class Refinement(BaseModel):
     description: str = Field(max_length=400)
 
 
-def refine_description(client: OllamaClient, model: str, label: str, description: str, statements: list[str]) -> str | None:
+def refine_description(client: OllamaClient, model: str, label: str, description: str, statements: list[str],
+                       lang: str = "en") -> str | None:
     system = ("You maintain a customer intent taxonomy. Rewrite the category description so it accurately covers "
               "the supporting customer intents. One or two sentences, generic wording, no examples with names or "
-              "numbers. Keep the meaning of the category label.")
+              "numbers. Keep the meaning of the category label." + language.rule(lang))
     user = (f"Category: {label}\nCurrent description: {description}\n\nSupporting intents:\n"
             + "\n".join(f"- {s}" for s in statements[:20]))
     out = client.chat_structured(model, system, user, Refinement)
@@ -192,10 +196,10 @@ class SplitOutput(BaseModel):
 
 
 def propose_split_labels(client: OllamaClient, model: str, label: str, description: str,
-                         groups: list[list[str]]) -> SplitOutput | None:
+                         groups: list[list[str]], lang: str = "en") -> SplitOutput | None:
     system = ("You maintain a customer intent taxonomy. A category may contain distinct specific intents that should "
               "be separate L4 categories. Decide whether the groups below are genuinely different customer intents. "
-              "If yes, give each group a specific 2-5 word Title Case label and a one sentence description.")
+              "If yes, give each group a specific 2-5 word label and a one sentence description." + language.rule(lang))
     user = (f"Category: {label} — {description}\n\n" + "\n\n".join(
         f"Group {gi}:\n" + "\n".join(f"- {s}" for s in g[:10]) for gi, g in enumerate(groups)))
     out = client.chat_structured(model, system, user, SplitOutput)
@@ -204,4 +208,6 @@ def propose_split_labels(client: OllamaClient, model: str, label: str, descripti
     seen = {p.group for p in out.parts if 0 <= p.group < len(groups) and p.label.strip()}
     if len(seen) != len(groups):
         return None
+    for part in out.parts:
+        part.label = language.tidy_label(part.label.strip(), lang)
     return out

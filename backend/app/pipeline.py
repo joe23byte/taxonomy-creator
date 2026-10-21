@@ -14,7 +14,8 @@ from typing import Callable
 
 import numpy as np
 
-from . import assignments, clustering, config, db, embeddings, events, extraction, taxonomy, taxonomy_builder
+from . import (assignments, clustering, config, db, embeddings, events, extraction, language, taxonomy,
+               taxonomy_builder)
 from .ollama_client import OllamaClient, OllamaError, StructuredOutputError
 
 log = logging.getLogger("intent_studio.pipeline")
@@ -38,6 +39,7 @@ class Ctx:
         self.settings = settings
         self.run_id = run_id
         self.th = settings.thresholds()
+        self.lang = language.get(conn)
         self.should_stop = should_stop
 
     def emit(self, kind: str, message: str, **kw) -> None:
@@ -67,7 +69,7 @@ def process_interaction(ctx: Ctx, row: sqlite3.Row) -> str:
 
     categories = taxonomy.base_categories(conn)
     try:
-        result = extraction.extract_intents(ctx.client, s.llm_model, turns, categories)
+        result = extraction.extract_intents(ctx.client, s.llm_model, turns, categories, ctx.lang)
     except StructuredOutputError as e:
         with db.transaction(conn):
             conn.execute("UPDATE interactions SET status='failed', error=? WHERE id=?", (str(e), row["id"]))
@@ -313,7 +315,7 @@ def cluster_l2(ctx: Ctx, l2: dict, cands: list[dict], stats: dict) -> None:
         l3s, l4_by_l3 = _structure(conn, l2["id"])
         try:
             decision = taxonomy_builder.name_cluster(ctx.client, ctx.settings.llm_model, l2, l3s, l4_by_l3, statements,
-                                                     [m["evidence"] for m in members if m["evidence"]])
+                                                     [m["evidence"] for m in members if m["evidence"]], lang=ctx.lang)
         except OllamaError as e:
             with db.transaction(conn):
                 ctx.emit("warning", f"Cluster naming failed in {l2['label']} ({e}); candidates kept for review",
@@ -335,7 +337,7 @@ def cluster_l2(ctx: Ctx, l2: dict, cands: list[dict], stats: dict) -> None:
                 try:
                     alt = taxonomy_builder.name_cluster(
                         ctx.client, ctx.settings.llm_model, l2, l3s, l4_by_l3, statements,
-                        [m["evidence"] for m in members if m["evidence"]], exclude_l4={chosen["id"]: sim})
+                        [m["evidence"] for m in members if m["evidence"]], exclude_l4={chosen["id"]: sim}, lang=ctx.lang)
                 except OllamaError:
                     alt = None
                 if alt is not None:
@@ -376,7 +378,7 @@ def outlier_pass(ctx: Ctx, l2: dict, cands: list[dict], stats: dict) -> None:
         l3s, l4_by_l3 = _structure(conn, l2["id"])
         try:
             decisions = taxonomy_builder.place_outliers(ctx.client, ctx.settings.llm_model, l2, l3s, l4_by_l3,
-                                                        [c["intent_text"] for c in chunk])
+                                                        [c["intent_text"] for c in chunk], lang=ctx.lang)
         except OllamaError as e:
             with db.transaction(conn):
                 ctx.emit("warning", f"Outlier review failed in {l2['label']} ({e})", level="warning", node_id=l2["id"])
@@ -464,7 +466,7 @@ def refine_descriptions(ctx: Ctx) -> int:
             f"({','.join('?' * len(aids))})", aids)]
         try:
             desc = taxonomy_builder.refine_description(ctx.client, ctx.settings.llm_model, node["label"],
-                                                       node["description"], texts)
+                                                       node["description"], texts, lang=ctx.lang)
         except OllamaError:
             continue
         if desc and desc != node["description"]:
@@ -494,7 +496,7 @@ def detect_splits(ctx: Ctx) -> int:
         node = taxonomy.get_node(conn, nid)
         try:
             out = taxonomy_builder.propose_split_labels(ctx.client, ctx.settings.llm_model, node["label"],
-                                                        node["description"], text_groups)
+                                                        node["description"], text_groups, lang=ctx.lang)
         except OllamaError:
             continue
         if not out:

@@ -20,6 +20,9 @@ T = TypeVar("T", bound=BaseModel)
 # Caps runaway generations (repetition loops) well below the request timeout; the longest
 # legitimate answers (outlier decisions for a full chunk) stay far below this.
 MAX_OUTPUT_TOKENS = 3000
+# Intent statements are one or two sentences; without this, Ollama loads the embedding model with its
+# 32k default context and reserves ~5 GB instead of ~1 GB. Longer inputs are truncated.
+EMBED_NUM_CTX = 2048
 
 
 class OllamaError(RuntimeError):
@@ -136,7 +139,8 @@ class OllamaClient:
     def embed(self, model: str, inputs: list[str]) -> list[list[float]]:
         if not inputs:
             return []
-        data = self._post("/api/embed", {"model": model, "input": inputs, "truncate": True})
+        data = self._post("/api/embed", {"model": model, "input": inputs, "truncate": True,
+                                         "options": {"num_ctx": EMBED_NUM_CTX}})
         vectors = data.get("embeddings")
         if not isinstance(vectors, list) or len(vectors) != len(inputs):
             raise OllamaError("Ollama /api/embed returned an unexpected number of embeddings")

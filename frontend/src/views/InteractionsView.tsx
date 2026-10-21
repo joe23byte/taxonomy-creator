@@ -2,23 +2,24 @@ import { useMemo, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { ArrowDown, ArrowUp, Search } from "lucide-react";
 import { api, type InteractionRow } from "@/lib/api";
+import { useI18n } from "@/lib/i18n";
 import { cn, titleCase } from "@/lib/utils";
-import { ClassificationBadge, CLASS_LABELS, ReviewBadge, REVIEW_LABELS } from "@/components/interaction/badges";
+import { ClassificationBadge, CLASS_TONES, ReviewBadge, REVIEW_TONES } from "@/components/interaction/badges";
 import { Card, Empty, Input, Select, Spinner } from "@/components/ui/primitives";
 
 type SortKey = "conversation_id" | "channel" | "segment" | "summary" | "l1" | "l2" | "l3" | "l4" | "classification_status" | "review_status";
 
-const COLS: { key: SortKey; label: string; className?: string }[] = [
-  { key: "conversation_id", label: "Conversation", className: "w-[118px]" },
-  { key: "channel", label: "Channel", className: "w-[104px]" },
-  { key: "segment", label: "Segment", className: "w-[80px]" },
-  { key: "summary", label: "Customer intent summary", className: "min-w-[220px]" },
-  { key: "l1", label: "L1", className: "w-[130px]" },
-  { key: "l2", label: "L2", className: "w-[140px]" },
-  { key: "l3", label: "L3", className: "w-[140px]" },
-  { key: "l4", label: "L4", className: "w-[160px]" },
-  { key: "classification_status", label: "Classification", className: "w-[110px]" },
-  { key: "review_status", label: "Review", className: "w-[110px]" },
+const COLS: { key: SortKey; className?: string }[] = [
+  { key: "conversation_id", className: "w-[118px]" },
+  { key: "channel", className: "w-[104px]" },
+  { key: "segment", className: "w-[80px]" },
+  { key: "summary", className: "min-w-[220px]" },
+  { key: "l1", className: "w-[130px]" },
+  { key: "l2", className: "w-[140px]" },
+  { key: "l3", className: "w-[140px]" },
+  { key: "l4", className: "w-[160px]" },
+  { key: "classification_status", className: "w-[110px]" },
+  { key: "review_status", className: "w-[110px]" },
 ];
 
 function sortValue(r: InteractionRow, k: SortKey): string {
@@ -27,12 +28,15 @@ function sortValue(r: InteractionRow, k: SortKey): string {
   return String((r as any)[k] ?? "~");
 }
 
-export function InteractionsView({ openInteraction }: { openInteraction: (id: number) => void }) {
+export function InteractionsView({ initialReview, initialClassification, openInteraction }: {
+  initialReview?: string; initialClassification?: string; openInteraction: (id: number) => void;
+}) {
+  const { t } = useI18n();
   const { data, isLoading } = useQuery({ queryKey: ["interactions"], queryFn: api.interactions });
   const [q, setQ] = useState("");
   const [channel, setChannel] = useState("");
-  const [review, setReview] = useState("");
-  const [klass, setKlass] = useState("");
+  const [review, setReview] = useState(initialReview ?? "");
+  const [klass, setKlass] = useState(initialClassification ?? "");
   const [l1, setL1] = useState("");
   const [sort, setSort] = useState<{ key: SortKey; dir: 1 | -1 }>({ key: "conversation_id", dir: 1 });
 
@@ -55,26 +59,26 @@ export function InteractionsView({ openInteraction }: { openInteraction: (id: nu
     <div className="space-y-4">
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div>
-          <h1 className="text-xl font-semibold tracking-tight text-zinc-900">Interactions & review</h1>
+          <h1 className="text-xl font-semibold tracking-tight text-zinc-900">{t("interactions.title")}</h1>
           <p className="mt-0.5 text-xs text-zinc-500">
-            {filtered.length} of {rows.length} interactions · {rows.reduce((n, r) => n + r.assignments.length, 0)} intent assignments
+            {t("interactions.count", { shown: filtered.length, count: rows.length, assignments: rows.reduce((n, r) => n + r.assignments.length, 0) })}
           </p>
         </div>
       </div>
       <div className="flex flex-wrap items-center gap-2">
         <div className="relative w-72">
           <Search className="pointer-events-none absolute left-2.5 top-1/2 size-3.5 -translate-y-1/2 text-zinc-400" />
-          <Input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search ID, intent, category…" className="h-8 pl-8 text-[13px]" />
+          <Input value={q} onChange={(e) => setQ(e.target.value)} placeholder={t("interactions.search")} className="h-8 pl-8 text-[13px]" />
         </div>
-        <Filter value={channel} onChange={setChannel} label="All channels" options={channels.map((c) => [c, titleCase(c)])} />
-        <Filter value={l1} onChange={setL1} label="All L1" options={l1s} />
-        <Filter value={klass} onChange={setKlass} label="Any classification" options={Object.entries(CLASS_LABELS)} />
-        <Filter value={review} onChange={setReview} label="Any review status" options={Object.entries(REVIEW_LABELS)} />
+        <Filter value={channel} onChange={setChannel} label={t("interactions.allChannels")} options={channels.map((c) => [c, titleCase(c)])} />
+        <Filter value={l1} onChange={setL1} label={t("interactions.allL1")} options={l1s} />
+        <Filter value={klass} onChange={setKlass} label={t("interactions.anyClassification")} options={Object.keys(CLASS_TONES).map((k): [string, string] => [k, t(`classification.${k}`)])} />
+        <Filter value={review} onChange={setReview} label={t("interactions.anyReview")} options={Object.keys(REVIEW_TONES).map((k): [string, string] => [k, t(`review.${k}`)])} />
       </div>
 
       <Card className="overflow-hidden">
         {isLoading ? <div className="flex h-40 items-center justify-center text-zinc-400"><Spinner /></div> : rows.length === 0 ? (
-          <Empty title="No interactions yet" description="Import data or load the sample dataset from the Workspace." />
+          <Empty title={t("interactions.emptyTitle")} description={t("interactions.emptyText")} />
         ) : (
           <div className="scroll-thin max-h-[calc(100vh-230px)] overflow-auto">
             <table className="w-full min-w-[1300px] border-collapse text-[13px]">
@@ -83,7 +87,7 @@ export function InteractionsView({ openInteraction }: { openInteraction: (id: nu
                   {COLS.map((c) => (
                     <th key={c.key} className={cn("px-3 py-2 text-left text-[11px] font-semibold uppercase tracking-wide text-zinc-500", c.className)}>
                       <button className="flex items-center gap-1 hover:text-zinc-800 cursor-pointer" onClick={() => setSort((s) => ({ key: c.key, dir: s.key === c.key ? (s.dir === 1 ? -1 : 1) : 1 }))}>
-                        {c.label}
+                        {t(`interactions.cols.${c.key}`)}
                         {sort.key === c.key && (sort.dir === 1 ? <ArrowUp className="size-3" /> : <ArrowDown className="size-3" />)}
                       </button>
                     </th>
@@ -99,7 +103,7 @@ export function InteractionsView({ openInteraction }: { openInteraction: (id: nu
                     <td className="px-3 py-2.5">
                       {r.assignments.length ? (
                         <ul className="space-y-1">{r.assignments.map((a) => <li key={a.id} className="text-zinc-800">{a.intent_text}</li>)}</ul>
-                      ) : <span className="text-zinc-400">{r.summary ?? (r.status === "processed" ? "No intent found" : "—")}</span>}
+                      ) : <span className="text-zinc-400">{r.summary ?? (r.status === "processed" ? t("interactions.noIntent") : "—")}</span>}
                     </td>
                     {(["l1", "l2", "l3", "l4"] as const).map((lvl) => (
                       <td key={lvl} className="px-3 py-2.5">

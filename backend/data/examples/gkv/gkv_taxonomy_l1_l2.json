@@ -1,0 +1,132 @@
+{
+  "name": "GKV Kundenservice – Basisstruktur",
+  "version": 1,
+  "categories": [
+    {
+      "id": "L1-MIT",
+      "level": 1,
+      "parent_id": null,
+      "label": "Mitgliedschaft & Versicherung",
+      "description": "Fragen rund um Versicherungsverhältnis, Familienversicherung, Stammdaten und Gesundheitskarte."
+    },
+    {
+      "id": "L2-MIT-FAM",
+      "level": 2,
+      "parent_id": "L1-MIT",
+      "label": "Familienversicherung",
+      "description": "Beitragsfreie Mitversicherung von Kindern oder Ehepartnern: Anmeldung, Voraussetzungen, Einkommensgrenzen, Ende."
+    },
+    {
+      "id": "L2-MIT-BEG",
+      "level": 2,
+      "parent_id": "L1-MIT",
+      "label": "Beginn & Ende der Mitgliedschaft",
+      "description": "Mitgliedsbescheinigungen, Kassenwechsel, Kündigung, Beginn oder Ende der Versicherung."
+    },
+    {
+      "id": "L2-MIT-DAT",
+      "level": 2,
+      "parent_id": "L1-MIT",
+      "label": "Stammdaten & Gesundheitskarte",
+      "description": "Adresse, Name oder Bankverbindung ändern, elektronische Gesundheitskarte (eGK) beantragen, ersetzen oder Foto hochladen."
+    },
+    {
+      "id": "L1-BEI",
+      "level": 1,
+      "parent_id": null,
+      "label": "Beiträge & Finanzen",
+      "description": "Beitragshöhe, Beitragszahlungen und finanzielle Vorteile wie Bonusprogramme."
+    },
+    {
+      "id": "L2-BEI-HOE",
+      "level": 2,
+      "parent_id": "L1-BEI",
+      "label": "Beitragshöhe & Einstufung",
+      "description": "Wie der Beitrag berechnet wird: Einstufung freiwillig Versicherter und Selbständiger, Einkommensnachweise, Zusatzbeitrag."
+    },
+    {
+      "id": "L2-BEI-ZAH",
+      "level": 2,
+      "parent_id": "L1-BEI",
+      "label": "Beitragszahlung & Rückstände",
+      "description": "Zahlung der Beiträge: Lastschrift, Überweisung, Mahnungen, Rückstände, Stundung und Ratenzahlung."
+    },
+    {
+      "id": "L2-BEI-BON",
+      "level": 2,
+      "parent_id": "L1-BEI",
+      "label": "Bonusprogramm & Wahltarife",
+      "description": "Bonuspunkte sammeln und einlösen, Prämien, Wahltarife und deren Auszahlung."
+    },
+    {
+      "id": "L1-LEI",
+      "level": 1,
+      "parent_id": null,
+      "label": "Leistungen & Anträge",
+      "description": "Anträge auf und Fragen zu Leistungen der Krankenkasse."
+    },
+    {
+      "id": "L2-LEI-KRG",
+      "level": 2,
+      "parent_id": "L1-LEI",
+      "label": "Krankengeld",
+      "description": "Krankengeld und Kinderkrankengeld: Anspruch, Arbeitsunfähigkeitsbescheinigung, Berechnung, Auszahlung."
+    },
+    {
+      "id": "L2-LEI-HHM",
+      "level": 2,
+      "parent_id": "L1-LEI",
+      "label": "Hilfs- & Heilmittel",
+      "description": "Genehmigung und Kostenübernahme für Hilfsmittel (z. B. Rollator, Hörgerät) und Heilmittel (z. B. Physiotherapie)."
+    },
+    {
+      "id": "L2-LEI-ZAN",
+      "level": 2,
+      "parent_id": "L1-LEI",
+      "label": "Zahnersatz & Zahnbehandlung",
+      "description": "Heil- und Kostenplan, Festzuschuss, Bonusheft und Kosten für Zahnbehandlungen."
+    },
+    {
+      "id": "L2-LEI-ERS",
+      "level": 2,
+      "parent_id": "L1-LEI",
+      "label": "Kostenerstattung & Zuzahlungen",
+      "description": "Eingereichte Rechnungen erstatten lassen, Zuzahlungen und Befreiung von Zuzahlungen."
+    },
+    {
+      "id": "L2-LEI-REH",
+      "level": 2,
+      "parent_id": "L1-LEI",
+      "label": "Vorsorge & Reha",
+      "description": "Anträge auf Rehabilitation, Kuren und Vorsorgemaßnahmen."
+    },
+    {
+      "id": "L1-SER",
+      "level": 1,
+      "parent_id": null,
+      "label": "Service & Digitales",
+      "description": "Digitale Angebote, Bearbeitungsstände, Beschwerden und Unterstützung bei der Arztsuche."
+    },
+    {
+      "id": "L2-SER-APP",
+      "level": 2,
+      "parent_id": "L1-SER",
+      "label": "App & Online-Geschäftsstelle",
+      "description": "Registrierung, Login und Funktionen der App oder Online-Geschäftsstelle, elektronische Patientenakte (ePA)."
+    },
+    {
+      "id": "L2-SER-BES",
+      "level": 2,
+      "parent_id": "L1-SER",
+      "label": "Widerspruch & Beschwerde",
+      "description": "Kunde ist mit einer Entscheidung oder dem Service nicht einverstanden: Widerspruch gegen Bescheide, Beschwerden."
+    },
+    {
+      "id": "L2-SER-ARZ",
+      "level": 2,
+      "parent_id": "L1-SER",
+      "label": "Arzt- & Terminsuche",
+      "description": "Unterstützung bei der Suche nach Ärzten, Fachärzten oder Terminen, Terminservice."
+    }
+  ]
+}

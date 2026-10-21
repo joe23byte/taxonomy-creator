@@ -69,6 +69,8 @@ class FakeOllama:
     def answer(self, system: str, user: str, schema: dict | None) -> dict:
         if "health check" in system:
             return {"status": "ok"}
+        if "contact center analyst" in system:
+            return {"rationale": "Frequent intent in the analysed interactions; worth examining for clearer information."}
         if "expert customer service analyst" in system:
             transcript = user.split("Transcript:", 1)[1]
             customer = [l[len("Customer: "):] for l in transcript.splitlines() if l.startswith("Customer: ")]

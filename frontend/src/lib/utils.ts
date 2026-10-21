@@ -1,28 +1,29 @@
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
+import { translate, type Lang } from "./i18n";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export function timeAgo(iso: string | null | undefined): string {
+export function timeAgo(iso: string | null | undefined, lang: Lang = "en"): string {
   if (!iso) return "";
   const diff = (Date.now() - new Date(iso).getTime()) / 1000;
-  if (diff < 10) return "just now";
-  if (diff < 60) return `${Math.floor(diff)}s ago`;
-  if (diff < 3600) return `${Math.floor(diff / 60)}m ago`;
-  if (diff < 86400) return `${Math.floor(diff / 3600)}h ago`;
-  return new Date(iso).toLocaleDateString();
+  if (diff < 10) return translate(lang, "time.justNow");
+  if (diff < 60) return translate(lang, "time.secondsAgo", { n: Math.floor(diff) });
+  if (diff < 3600) return translate(lang, "time.minutesAgo", { n: Math.floor(diff / 60) });
+  if (diff < 86400) return translate(lang, "time.hoursAgo", { n: Math.floor(diff / 3600) });
+  return new Date(iso).toLocaleDateString(lang);
 }
 
-export function formatTime(iso: string | null | undefined): string {
+export function formatTime(iso: string | null | undefined, lang: Lang = "en"): string {
   if (!iso) return "";
-  return new Date(iso).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", second: "2-digit" });
+  return new Date(iso).toLocaleTimeString(lang, { hour: "2-digit", minute: "2-digit", second: "2-digit" });
 }
 
-export function formatDateTime(iso: string | null | undefined): string {
+export function formatDateTime(iso: string | null | undefined, lang: Lang = "en"): string {
   if (!iso) return "";
-  return new Date(iso).toLocaleString([], { dateStyle: "medium", timeStyle: "short" });
+  return new Date(iso).toLocaleString(lang, { dateStyle: "medium", timeStyle: "short" });
 }
 
 export const channelLabel: Record<string, string> = {

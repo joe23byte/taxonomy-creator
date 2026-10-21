@@ -4,53 +4,50 @@ import {
   PenLine, Play, ScanText, Sparkles, Split, Square, UserCheck, Waypoints, XCircle, Info, CircleCheckBig, Radio,
 } from "lucide-react";
 import type { AnalysisEvent } from "@/lib/api";
+import { useI18n } from "@/lib/i18n";
 import { useLive } from "@/lib/live";
 import { cn, formatTime } from "@/lib/utils";
 import { Badge, Empty, type Tone } from "./ui/primitives";
 
-type Meta = { icon: typeof Info; tone: Tone; label: string; group: "interaction" | "taxonomy" | "run" | "review" };
+type Meta = { icon: typeof Info; tone: Tone; group: "interaction" | "taxonomy" | "run" | "review" };
 
+// badge labels live under "events.<kind>" in the i18n files
 export const EVENT_META: Record<string, Meta> = {
-  extracting: { icon: ScanText, tone: "neutral", label: "Extracting", group: "interaction" },
-  intents_extracted: { icon: ListChecks, tone: "neutral", label: "Intents identified", group: "interaction" },
-  embedding: { icon: Waypoints, tone: "neutral", label: "Embedding", group: "interaction" },
-  candidate_extracted: { icon: CircleDot, tone: "outline", label: "Extracted candidate", group: "interaction" },
-  matched_existing: { icon: Link2, tone: "green", label: "Matched existing intent", group: "interaction" },
-  candidate_new: { icon: Sparkles, tone: "blue", label: "New intent candidate", group: "interaction" },
-  cluster_forming: { icon: Orbit, tone: "violet", label: "Cluster forming", group: "interaction" },
-  interaction_assigned: { icon: CircleCheckBig, tone: "neutral", label: "Interaction assigned", group: "interaction" },
-  needs_review: { icon: AlertTriangle, tone: "amber", label: "Needs human review", group: "review" },
-  no_intent: { icon: AlertTriangle, tone: "amber", label: "Needs human review", group: "review" },
-  interaction_failed: { icon: XCircle, tone: "red", label: "Failed", group: "review" },
-  batch_refinement: { icon: Layers, tone: "violet", label: "Refining taxonomy", group: "taxonomy" },
-  cluster_discovered: { icon: Boxes, tone: "violet", label: "New cluster discovered", group: "taxonomy" },
-  outlier_pass: { icon: Orbit, tone: "violet", label: "Rare intents", group: "taxonomy" },
-  category_proposed: { icon: GitBranchPlus, tone: "blue", label: "Category proposed", group: "taxonomy" },
-  category_approved: { icon: CheckCircle2, tone: "green", label: "Category approved", group: "taxonomy" },
-  category_refined: { icon: PenLine, tone: "blue", label: "Category refined", group: "taxonomy" },
-  merge_proposed: { icon: GitMerge, tone: "amber", label: "Merge proposed", group: "taxonomy" },
-  split_proposed: { icon: Split, tone: "amber", label: "Split proposed", group: "taxonomy" },
-  proposal_accepted: { icon: CheckCircle2, tone: "green", label: "Change approved", group: "taxonomy" },
-  proposal_rejected: { icon: XCircle, tone: "neutral", label: "Change rejected", group: "taxonomy" },
-  taxonomy_edited: { icon: PenLine, tone: "neutral", label: "Edited", group: "taxonomy" },
-  assignment_corrected: { icon: UserCheck, tone: "green", label: "Reviewer", group: "review" },
-  run_started: { icon: Play, tone: "blue", label: "Run", group: "run" },
-  run_resumed: { icon: Play, tone: "blue", label: "Run", group: "run" },
-  run_paused: { icon: Pause, tone: "amber", label: "Run", group: "run" },
-  run_stopped: { icon: Square, tone: "neutral", label: "Run", group: "run" },
-  run_completed: { icon: CheckCircle2, tone: "green", label: "Run", group: "run" },
-  run_failed: { icon: XCircle, tone: "red", label: "Run", group: "run" },
-  warning: { icon: AlertTriangle, tone: "amber", label: "Warning", group: "review" },
-  error: { icon: XCircle, tone: "red", label: "Error", group: "review" },
-  info: { icon: Info, tone: "neutral", label: "Info", group: "run" },
+  extracting: { icon: ScanText, tone: "neutral", group: "interaction" },
+  intents_extracted: { icon: ListChecks, tone: "neutral", group: "interaction" },
+  embedding: { icon: Waypoints, tone: "neutral", group: "interaction" },
+  candidate_extracted: { icon: CircleDot, tone: "outline", group: "interaction" },
+  matched_existing: { icon: Link2, tone: "green", group: "interaction" },
+  candidate_new: { icon: Sparkles, tone: "blue", group: "interaction" },
+  cluster_forming: { icon: Orbit, tone: "violet", group: "interaction" },
+  interaction_assigned: { icon: CircleCheckBig, tone: "neutral", group: "interaction" },
+  needs_review: { icon: AlertTriangle, tone: "amber", group: "review" },
+  no_intent: { icon: AlertTriangle, tone: "amber", group: "review" },
+  interaction_failed: { icon: XCircle, tone: "red", group: "review" },
+  batch_refinement: { icon: Layers, tone: "violet", group: "taxonomy" },
+  cluster_discovered: { icon: Boxes, tone: "violet", group: "taxonomy" },
+  outlier_pass: { icon: Orbit, tone: "violet", group: "taxonomy" },
+  category_proposed: { icon: GitBranchPlus, tone: "blue", group: "taxonomy" },
+  category_approved: { icon: CheckCircle2, tone: "green", group: "taxonomy" },
+  category_refined: { icon: PenLine, tone: "blue", group: "taxonomy" },
+  merge_proposed: { icon: GitMerge, tone: "amber", group: "taxonomy" },
+  split_proposed: { icon: Split, tone: "amber", group: "taxonomy" },
+  proposal_accepted: { icon: CheckCircle2, tone: "green", group: "taxonomy" },
+  proposal_rejected: { icon: XCircle, tone: "neutral", group: "taxonomy" },
+  taxonomy_edited: { icon: PenLine, tone: "neutral", group: "taxonomy" },
+  assignment_corrected: { icon: UserCheck, tone: "green", group: "review" },
+  run_started: { icon: Play, tone: "blue", group: "run" },
+  run_resumed: { icon: Play, tone: "blue", group: "run" },
+  run_paused: { icon: Pause, tone: "amber", group: "run" },
+  run_stopped: { icon: Square, tone: "neutral", group: "run" },
+  run_completed: { icon: CheckCircle2, tone: "green", group: "run" },
+  run_failed: { icon: XCircle, tone: "red", group: "run" },
+  warning: { icon: AlertTriangle, tone: "amber", group: "review" },
+  error: { icon: XCircle, tone: "red", group: "review" },
+  info: { icon: Info, tone: "neutral", group: "run" },
 };
 
-const FILTERS = [
-  { id: "all", label: "All" },
-  { id: "taxonomy", label: "Taxonomy" },
-  { id: "interaction", label: "Interactions" },
-  { id: "review", label: "Warnings & review" },
-] as const;
+const FILTERS = ["all", "taxonomy", "interaction", "review"] as const;
 
 const QUIET = new Set(["extracting", "embedding", "candidate_extracted"]);
 
@@ -60,8 +57,9 @@ export function ActivityFeed({ className, compact = false, onOpenConversation, o
   onOpenConversation?: (conversationId: string) => void;
   onOpenNode?: (nodeId: string) => void;
 }) {
+  const { t } = useI18n();
   const { events, connected } = useLive();
-  const [filter, setFilter] = useState<(typeof FILTERS)[number]["id"]>("all");
+  const [filter, setFilter] = useState<(typeof FILTERS)[number]>("all");
   const [verbose, setVerbose] = useState(false);
   const shown = useMemo(() => events.filter((e) => {
     const meta = EVENT_META[e.kind] ?? EVENT_META.info;
@@ -76,25 +74,27 @@ export function ActivityFeed({ className, compact = false, onOpenConversation, o
       <div className="flex flex-wrap items-center gap-1.5 px-4 pb-2">
         {FILTERS.map((f) => (
           <button
-            key={f.id}
-            onClick={() => setFilter(f.id)}
+            key={f}
+            onClick={() => setFilter(f)}
             className={cn("rounded-md px-2 py-1 text-xs font-medium transition cursor-pointer",
-              filter === f.id ? "bg-zinc-900 text-white" : "text-zinc-500 hover:bg-zinc-100 hover:text-zinc-800")}
+              filter === f ? "bg-zinc-900 text-white" : "text-zinc-500 hover:bg-zinc-100 hover:text-zinc-800")}
           >
-            {f.label}
+            {t(`activity.filters.${f}`)}
           </button>
         ))}
         <label className="ml-auto flex items-center gap-1.5 text-xs text-zinc-500 cursor-pointer select-none">
           <input type="checkbox" className="accent-blue-600" checked={verbose} onChange={(e) => setVerbose(e.target.checked)} />
-          All steps
+          {t("activity.allSteps")}
         </label>
-        <span className={cn("flex items-center gap-1 text-[11px]", connected ? "text-emerald-600" : "text-zinc-400")}>
-          <Radio className="size-3" /> {connected ? "Live" : "Reconnecting"}
-        </span>
+        {!connected && (
+          <span className="flex items-center gap-1 text-[11px] text-zinc-400">
+            <Radio className="size-3" /> {t("activity.reconnecting")}
+          </span>
+        )}
       </div>
       <div className="scroll-thin min-h-0 flex-1 overflow-y-auto px-2 pb-2">
         {shown.length === 0 ? (
-          <Empty icon={<Radio />} title="No activity yet" description="Processing events appear here in real time once an analysis runs." />
+          <Empty icon={<Radio />} title={t("activity.emptyTitle")} description={t("activity.emptyText")} />
         ) : (
           <ol className="space-y-px">
             {shown.map((e) => <EventRow key={e.id} e={e} onOpenConversation={onOpenConversation} onOpenNode={onOpenNode} />)}
@@ -108,6 +108,7 @@ export function ActivityFeed({ className, compact = false, onOpenConversation, o
 function EventRow({ e, onOpenConversation, onOpenNode }: {
   e: AnalysisEvent; onOpenConversation?: (id: string) => void; onOpenNode?: (id: string) => void;
 }) {
+  const { t, lang } = useI18n();
   const meta = EVENT_META[e.kind] ?? EVENT_META.info;
   const Icon = meta.icon;
   const iconTone = {
@@ -131,8 +132,8 @@ function EventRow({ e, onOpenConversation, onOpenNode }: {
         </p>
       </div>
       <div className="flex shrink-0 items-center gap-2 pt-0.5">
-        {showBadge && <Badge tone={meta.tone}>{meta.label}</Badge>}
-        <span className="w-14 text-right font-mono text-[10px] text-zinc-400 tabular-nums">{formatTime(e.created_at)}</span>
+        {showBadge && <Badge tone={meta.tone}>{t(`events.${e.kind in EVENT_META ? e.kind : "info"}`)}</Badge>}
+        <span className="w-14 text-right font-mono text-[10px] text-zinc-400 tabular-nums">{formatTime(e.created_at, lang)}</span>
       </div>
     </li>
   );

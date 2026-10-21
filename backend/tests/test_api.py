@@ -23,6 +23,10 @@ def test_api_end_to_end(tmp_db, fake):
         assert prev["total"] == 1 and prev["mapping"]["conversation_id"] == "id"
         assert client.post("/api/import/commit", json={"token": prev["token"]}).json()["imported"] == 1
 
+        template = client.get("/api/import/template.json").content
+        prev = client.post("/api/import/preview", files={"files": ("t.json", template, "application/json")}).json()
+        assert prev["total"] == 2 and not [i for i in prev["issues"] if i["level"] == "error"]
+
         client.put("/api/settings", json={"batch_size": 50})
         assert client.get("/api/settings").json()["batch_size"] == 50
         assert client.put("/api/settings", json={"batch_size": 0}).status_code == 400
