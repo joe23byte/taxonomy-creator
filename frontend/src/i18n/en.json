@@ -556,6 +556,7 @@
       "l3": "L3 categories",
       "unclassified": "Unclassified interactions",
       "open": "Open candidates (no L4 yet)",
+      "openWaiting": "{n} waiting for approval of a proposal",
       "overlapping": "Overlapping categories"
     },
     "sectionVolume": "Intent volume",

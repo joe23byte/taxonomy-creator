@@ -512,6 +512,24 @@ def detect_splits(ctx: Ctx) -> int:
     return made
 
 
+def _report_waiting(ctx: Ctx) -> None:
+    """Open candidates tied to a pending creation proposal are skipped by clustering; say so."""
+    waiting = taxonomy.pending_member_intents(ctx.conn, include_rejected=False)
+    if not waiting:
+        return
+    n = ctx.conn.execute(
+        f"SELECT COUNT(*) FROM assignments WHERE l4_id IS NULL AND review_status='pending' AND intent_id IN "
+        f"({','.join('?' * len(waiting))})", list(waiting)).fetchone()[0]
+    if not n:
+        return
+    props = ctx.conn.execute("SELECT COUNT(*) FROM taxonomy_changes WHERE change_type='create' AND status='proposed'"
+                             ).fetchone()[0]
+    with db.transaction(ctx.conn):
+        ctx.emit("info", f"{n} open candidate(s) wait for {props} proposed categor{'y' if props == 1 else 'ies'} and "
+                 f"are not re-clustered; approve or reject them under Taxonomy → Proposals", level="warning",
+                 data={"waiting": n, "proposals": props})
+
+
 def refine(ctx: Ctx, batch_index: int, final: bool, label: str | None = None) -> dict:
     conn = ctx.conn
     stats = {"new_l3": 0, "new_l4": 0, "proposals": 0}
@@ -520,6 +538,7 @@ def refine(ctx: Ctx, batch_index: int, final: bool, label: str | None = None) ->
         ctx.emit("batch_refinement", label or f"Batch {batch_index + 1} completed — Refining L3/L4 taxonomy",
                  data={"batch": batch_index, "final": final})
     l2s = _l2_lookup(conn)
+    _report_waiting(ctx)
     for l2_id, cands in _candidates_by_l2(conn).items():
         if ctx.should_stop():
             break

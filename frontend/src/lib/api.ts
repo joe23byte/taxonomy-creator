@@ -28,6 +28,7 @@ export interface Summary {
   needs_review: number;
   unclassified: number;
   open_candidates: number;
+  open_waiting: number;
   pending_proposals: number;
   overlapping_categories: number;
   assignment_review: Record<string, number>;

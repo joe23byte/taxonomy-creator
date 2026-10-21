@@ -556,6 +556,7 @@
       "l3": "L3-Kategorien",
       "unclassified": "Nicht klassifizierte Interaktionen",
       "open": "Offene Kandidaten (noch ohne L4)",
+      "openWaiting": "{n} davon warten auf Freigabe eines Vorschlags",
       "overlapping": "Überschneidende Kategorien"
     },
     "sectionVolume": "Intent-Volumen",

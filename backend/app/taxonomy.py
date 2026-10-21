@@ -148,18 +148,24 @@ def next_id(conn: sqlite3.Connection, level: int) -> str:
 
 
 def norm_label(label: str) -> str:
-    return re.sub(r"[^a-z0-9]+", " ", label.lower()).strip()
+    return re.sub(r"[\W_]+", " ", label.lower()).strip()
 
 
-_DANGLING = {"a", "an", "and", "at", "by", "for", "from", "in", "is", "of", "on", "or", "the", "to", "via", "with", "&", "/"}
+_DANGLING = {"a", "an", "and", "at", "by", "for", "from", "in", "is", "of", "on", "or", "the", "to", "via", "with",
+             "und", "oder", "für", "von", "mit", "zu", "bei", "der", "die", "das", "&", "/"}
 
 
-def clean_label(label: str, max_words: int = 8) -> str:
+def clean_label(label: str, max_words: int = 8, lang: str = "en") -> str:
+    """Trim and shorten a label. Title Case only applies to English; other languages keep their casing."""
     label = re.sub(r"\s+", " ", (label or "").strip().strip(".:-"))
     words = [w for w in label.split(" ") if w][:max_words]
     while len(words) > 1 and words[-1].lower() in _DANGLING:
         words.pop()
-    return " ".join(w if w.isupper() else (w[:1].upper() + w[1:]) for w in words)
+    if lang == "en":
+        return " ".join(w if w.isupper() else (w[:1].upper() + w[1:]) for w in words)
+    if words:
+        words[0] = words[0][:1].upper() + words[0][1:]
+    return language.tidy_label(" ".join(words), lang)
 
 
 def find_by_label(conn: sqlite3.Connection, parent_id: str, label: str,
@@ -353,14 +359,14 @@ def propose_create(conn: sqlite3.Connection, *, l2_id: str, l3: dict, l4: dict, 
         l3_id = l3_node["id"]
         l3_label = l3_node["label"]
     else:
-        l3_label = clean_label(l3["label"])
+        l3_label = clean_label(l3["label"], lang=language.get(conn))
         same = find_by_label(conn, l2_id, l3_label)
         if same:
             l3_id = same["id"]
         else:
             l3_id = _insert_node(conn, 3, l3_label, l3.get("description", "")[:400], l2_id, "ai", PENDING)
             l3_new = True
-    l4_label = clean_label(l4["label"])
+    l4_label = clean_label(l4["label"], lang=language.get(conn))
     l4_id = _insert_node(conn, 4, l4_label, l4.get("description", "")[:400], l3_id, "ai", PENDING)
     proposed = {
         "l1_id": l2["parent_id"], "l2_id": l2_id,
@@ -546,7 +552,7 @@ def _apply_split(conn: sqlite3.Connection, ch: dict, settings: config.Settings, 
     part_ids = []
     intent_to_part: dict[int, str] = {}
     for part in p["parts"]:
-        nid = _insert_node(conn, 4, clean_label(part["label"]), part.get("description", ""), src["parent_id"], "ai",
+        nid = _insert_node(conn, 4, clean_label(part["label"], lang=language.get(conn)), part.get("description", ""), src["parent_id"], "ai",
                            ACTIVE)
         part_ids.append(nid)
         part["id"] = nid
@@ -633,7 +639,7 @@ def rematch_candidates(conn: sqlite3.Connection, l2_id: str, settings: config.Se
 
 def manual_update(conn: sqlite3.Connection, node_id: str, label: str | None, description: str | None) -> dict:
     n = require_node(conn, node_id)
-    new = {"label": clean_label(label, 8) if label else n["label"],
+    new = {"label": clean_label(label, 8, language.get(conn)) if label else n["label"],
            "description": description if description is not None else n["description"]}
     if n["parent_id"] and new["label"] != n["label"]:
         dup = find_by_label(conn, n["parent_id"], new["label"], (ACTIVE,))
@@ -666,10 +672,10 @@ def manual_create(conn: sqlite3.Connection, parent_id: str | None, label: str, d
         now = db.utcnow()
         conn.execute("INSERT INTO taxonomy_nodes(id, label, description, parent_id, level, source, status, "
                      "created_at, updated_at, created_version) VALUES (?,?,?,?,?,?,?,?,?,?)",
-                     (nid, clean_label(label, 8), description, parent_id, level, source, ACTIVE, now, now,
+                     (nid, clean_label(label, 8, language.get(conn)), description, parent_id, level, source, ACTIVE, now, now,
                       current_version(conn)))
     else:
-        nid = _insert_node(conn, level, clean_label(label, 8), description, parent_id, source, ACTIVE)
+        nid = _insert_node(conn, level, clean_label(label, 8, language.get(conn)), description, parent_id, source, ACTIVE)
     v = bump_version(conn, f"Category “{label}” created manually")
     record_change(conn, node_id=nid, change_type="create", previous=None,
                   proposed={"label": label, "description": description, "parent_id": parent_id, "level": level},

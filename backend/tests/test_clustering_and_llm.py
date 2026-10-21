@@ -111,3 +111,5 @@ def test_clean_label_trims_dangling_words():
     assert clean_label("mobile data connection is slow or unavailable in rural areas") == "Mobile Data Connection Is Slow Or Unavailable"
     assert clean_label("Data Connection Is Slow Or", max_words=5) == "Data Connection Is Slow"
     assert clean_label("  SIM  swap request. ") == "SIM Swap Request"
+    assert clean_label("termin für Facharzt suchen", lang="de") == "Termin für Facharzt suchen"
+    assert clean_label("Krankengeld Nicht Ausgezahlt und", lang="de") == "Krankengeld nicht Ausgezahlt"

@@ -32,8 +32,11 @@ def summary(conn: sqlite3.Connection) -> dict:
     unclassified = sum(1 for r in rows if r["classification_status"] == "unclassified")
     pending_props = conn.execute("SELECT COUNT(*) FROM taxonomy_changes WHERE status='proposed'").fetchone()[0]
     overlaps = conn.execute("SELECT COUNT(*) FROM taxonomy_changes WHERE status='proposed' AND change_type='merge'").fetchone()[0]
-    candidates = conn.execute("SELECT COUNT(*) FROM assignments WHERE l2_id IS NOT NULL AND l4_id IS NULL "
-                              "AND review_status='pending'").fetchone()[0]
+    open_rows = conn.execute("SELECT intent_id FROM assignments WHERE l2_id IS NOT NULL AND l4_id IS NULL "
+                             "AND review_status='pending'").fetchall()
+    candidates = len(open_rows)
+    waiting_ids = taxonomy.pending_member_intents(conn, include_rejected=False)
+    waiting = sum(1 for r in open_rows if r[0] in waiting_ids)
     imports = [dict(r) for r in conn.execute("SELECT * FROM imports ORDER BY id DESC")]
     review_counts = {s: 0 for s in assignments.REVIEW_STATUSES}
     for r in conn.execute("SELECT review_status, COUNT(*) FROM assignments GROUP BY review_status"):
@@ -52,6 +55,7 @@ def summary(conn: sqlite3.Connection) -> dict:
         "needs_review": review,
         "unclassified": unclassified,
         "open_candidates": candidates,
+        "open_waiting": waiting,
         "pending_proposals": pending_props,
         "overlapping_categories": overlaps,
         "assignment_review": review_counts,

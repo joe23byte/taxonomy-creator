@@ -24,12 +24,13 @@ export function InsightsView({ summary, openNode, go }: {
   const overlaps = useQuery({ queryKey: ["proposals", "proposed"], queryFn: () => api.proposals("proposed") });
   const merges = (overlaps.data ?? []).filter((p) => p.change_type === "merge");
   const ev = evaluation.data;
-  const metrics: [string, number, () => void][] = summary ? [
+  const metrics: [string, number, () => void, string?][] = summary ? [
     [t("insights.metrics.processed"), summary.processed, () => go("interactions")],
     [t("insights.metrics.discovered"), summary.discovered_intents, () => go("taxonomy")],
     [t("insights.metrics.l3"), summary.l3_nodes, () => go("taxonomy")],
     [t("insights.metrics.unclassified"), summary.unclassified, () => go("interactions", { classification: "unclassified" })],
-    [t("insights.metrics.open"), summary.open_candidates, () => go("interactions", { classification: "partial" })],
+    [t("insights.metrics.open"), summary.open_candidates, () => go("interactions", { classification: "partial" }),
+      summary.open_waiting ? t("insights.metrics.openWaiting", { n: summary.open_waiting }) : undefined],
     [t("insights.metrics.overlapping"), summary.overlapping_categories, openProposals],
   ] : [];
 
@@ -39,10 +40,11 @@ export function InsightsView({ summary, openNode, go }: {
         <h1 className="text-xl font-semibold tracking-tight text-zinc-900">{t("nav.insights")}</h1>
       </div>
       <div className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-6">
-        {metrics.map(([l, v, onClick]) => (
+        {metrics.map(([l, v, onClick, hint]) => (
           <button key={l} onClick={onClick} className="rounded-xl border border-zinc-200/80 bg-white px-4 py-3 text-left shadow-[0_1px_2px_rgba(0,0,0,0.03)] transition hover:border-zinc-300 cursor-pointer">
             <p className="text-xs text-zinc-500">{l}</p>
             <p className="mt-1 text-xl font-semibold tabular-nums text-zinc-900">{v}</p>
+            {hint && <p className="mt-0.5 text-[11px] leading-tight text-amber-700">{hint}</p>}
           </button>
         ))}
       </div>
